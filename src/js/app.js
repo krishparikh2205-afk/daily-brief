@@ -1,6 +1,7 @@
 /**
  * DAILY BRIEF - CORE APPLICATION LOGIC
- * Coordinates data rendering, sticky navigation, IST countdown, reading mode, and theme.
+ * Coordinates news data rendering, uplifting world progress, athletics & sports,
+ * live marquee ticker, 30-minute deep dive mode, share system, and community reader circle.
  */
 
 import { MindGym } from './games.js';
@@ -11,16 +12,21 @@ class DailyBriefApp {
     this.data = null;
     this.targetMidnight = null;
     this.readingModeActive = false;
+    this.currentSportsFilter = 'all';
+    this.currentUser = null;
     this.init();
   }
 
   async init() {
     this.initTheme();
+    this.initAuthModal();
+    this.initShareFeature();
     await this.loadData();
     this.initCountdown();
     this.initScrollSpy();
     this.initReadingMode();
     this.initRegionTabs();
+    this.initSportsTabs();
   }
 
   /* -------------------------------------------------------------
@@ -56,14 +62,14 @@ class DailyBriefApp {
      ------------------------------------------------------------- */
   async loadData() {
     try {
-      // Relative path works both in dev server and on GitHub Pages subdirectory
       const res = await fetch('./data/today.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       this.data = await res.json();
       this.render();
     } catch (e) {
       console.error('Failed to fetch data/today.json:', e);
-      document.getElementById('last-updated-badge').innerHTML = `⚠️ Offline preview`;
+      const badge = document.getElementById('last-updated-badge');
+      if (badge) badge.innerHTML = `⚠️ Offline preview`;
     }
   }
 
@@ -84,30 +90,66 @@ class DailyBriefApp {
       this.targetMidnight = new Date(meta.targetMidnightIST).getTime();
     }
 
+    // 0. Breaking News Wire Ticker
+    this.renderTicker();
+
     // 1. World Pulse
     this.renderWorldPulse();
 
-    // 2. Sports
+    // 2. Uplifting World Progress & Good News
+    this.renderGoodNews();
+
+    // 3. Sports & Athletics
     this.renderSports();
 
-    // 3. Tech & Science
+    // 4. Tech & Science
     this.renderTechScience();
 
-    // 4. Social Trends
+    // 5. Social Trends
     this.renderSocialTrends();
 
-    // 5. Disasters
+    // 6. Disasters
     this.renderDisasters();
 
-    // 6. Daily Facts
+    // 7. Nature & Animal Facts
     this.renderDailyFacts();
 
-    // 7. Mind Gym
+    // 8. Mind Gym
     new MindGym(this.data.mindGym || {});
 
-    // 8. Dhyan
+    // 9. Dhyan
     this.renderDhyan();
     new DhyanSession();
+  }
+
+  /* -------------------------------------------------------------
+     BREAKING NEWS LIVE WIRE TICKER
+     ------------------------------------------------------------- */
+  renderTicker() {
+    const track = document.getElementById('breaking-ticker-track');
+    if (!track) return;
+
+    const headlines = [];
+    const wp = this.data.worldPulse || {};
+    Object.values(wp.regions || {}).forEach(arr => {
+      (arr || []).forEach(it => {
+        if (it.title) headlines.push(`🌍 ${it.source}: ${it.title}`);
+      });
+    });
+
+    const gn = this.data.goodNews || {};
+    (gn.items || []).forEach(it => {
+      if (it.title) headlines.push(`🌟 GOOD NEWS: ${it.title}`);
+    });
+
+    const sp = this.data.sports || {};
+    (sp.latestScores || []).forEach(sc => {
+      headlines.push(`🏃 SCORES: ${sc.match} — ${sc.result}`);
+    });
+
+    if (headlines.length > 0) {
+      track.innerHTML = headlines.map(h => `<span class="ticker-item">${h}</span>`).join('');
+    }
   }
 
   /* -------------------------------------------------------------
@@ -121,7 +163,6 @@ class DailyBriefApp {
       const now = Date.now();
       let target = this.targetMidnight;
 
-      // If no target or past, calculate next midnight IST
       if (!target || target <= now) {
         const istOffset = 5.5 * 3600 * 1000;
         const istNow = new Date(now + istOffset);
@@ -161,10 +202,10 @@ class DailyBriefApp {
       <div class="bento-card col-4 ongoing-tracker-card">
         <div style="display:flex; align-items:center; justify-content:space-between;">
           <h4 style="font-family:var(--font-display); font-size:1.05rem; font-weight:700;">Ongoing Matters Tracker</h4>
-          <span style="font-size:0.7rem; font-weight:700; color:var(--wp-accent);">GLOBAL</span>
+          <span style="font-size:0.7rem; font-weight:700; color:var(--wp-accent);">GLOBAL SHIFTS</span>
         </div>
         <p style="font-size:0.8rem; color:var(--text-secondary);">What shifted over the last 24 hours in key geopolitical negotiations:</p>
-        <div style="display:flex; flex-direction:column; gap:0.25rem;">
+        <div style="display:flex; flex-direction:column; gap:0.35rem; margin-top:0.25rem;">
           ${tracker.map(item => `
             <div class="ongoing-item">
               <div class="ongoing-topic-header">
@@ -178,7 +219,6 @@ class DailyBriefApp {
       </div>
     `;
 
-    // Flatten regional stories
     let allStories = [];
     Object.entries(regions).forEach(([regName, items]) => {
       (items || []).forEach(it => {
@@ -201,7 +241,7 @@ class DailyBriefApp {
 
     let cardsHTML = '';
     filtered.slice(0, 8).forEach((item, idx) => {
-      const colSpan = (idx === 0) ? 'col-8' : (idx === 1 ? 'col-4' : 'col-4');
+      const colSpan = (idx === 0) ? 'col-8' : 'col-4';
       cardsHTML += this.createNewsCard(item, colSpan, 'var(--wp-accent)');
     });
 
@@ -223,7 +263,24 @@ class DailyBriefApp {
   }
 
   /* -------------------------------------------------------------
-     SECTION 2: SPORTS & ACHIEVEMENTS
+     SECTION 2: UPLIFTING WORLD PROGRESS & GOOD NEWS
+     ------------------------------------------------------------- */
+  renderGoodNews() {
+    const gn = this.data.goodNews || {};
+    const items = gn.items || [];
+    const grid = document.getElementById('good-news-grid');
+    if (!grid) return;
+
+    let html = '';
+    items.forEach((it, idx) => {
+      const col = (idx === 0) ? 'col-8' : (idx === 1 ? 'col-4' : 'col-4');
+      html += this.createNewsCard(it, col, 'var(--gn-accent)', 'good-news-card');
+    });
+    grid.innerHTML = html;
+  }
+
+  /* -------------------------------------------------------------
+     SECTION 3: SPORTS & ATHLETICS (WITH RUNNING & TRACK)
      ------------------------------------------------------------- */
   renderSports() {
     const sp = this.data.sports || {};
@@ -234,15 +291,15 @@ class DailyBriefApp {
     const spotlightHTML = `
       <div class="bento-card col-8 achievement-spotlight">
         <div style="display:flex; align-items:center; gap:0.5rem;">
-          <span style="font-size:1.25rem;">🏆</span>
-          <span style="font-size:0.75rem; font-weight:700; text-transform:uppercase; color:var(--sp-accent); letter-spacing:0.08em;">Achievement of the Day</span>
+          <span style="font-size:1.4rem;">🏆</span>
+          <span style="font-size:0.75rem; font-weight:800; text-transform:uppercase; color:var(--sp-accent); letter-spacing:0.08em;">Athletics & Peak Feat of the Day</span>
         </div>
-        <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; margin:0.25rem 0;">${spot.title}</h3>
+        <h3 style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; margin:0.35rem 0;">${spot.title}</h3>
         <p style="font-size:0.95rem; color:var(--text-primary); line-height:1.5;">${spot.achievement}</p>
-        <p style="font-size:0.85rem; color:var(--text-secondary);">${spot.detail}</p>
+        <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.25rem;">${spot.detail}</p>
         <div class="card-footer-row">
           <span class="card-source-chip">${spot.source}</span>
-          <a href="${spot.url}" target="_blank" rel="noopener noreferrer" class="read-link" style="color:var(--sp-accent);">Full Report →</a>
+          <a href="${spot.url}" target="_blank" rel="noopener noreferrer" class="read-link" style="color:var(--sp-accent);">Full Athletics Report →</a>
         </div>
       </div>
     `;
@@ -252,10 +309,10 @@ class DailyBriefApp {
     const tickerHTML = `
       <div class="bento-card col-4 scores-ticker-card">
         <div style="display:flex; align-items:center; justify-content:space-between;">
-          <h4 style="font-family:var(--font-display); font-size:1.05rem; font-weight:700;">Latest Scores & Series</h4>
+          <h4 style="font-family:var(--font-display); font-size:1.05rem; font-weight:700;">Live Scores & Trials</h4>
           <span class="live-pulse"></span>
         </div>
-        <div style="display:flex; flex-direction:column; gap:0.5rem;">
+        <div style="display:flex; flex-direction:column; gap:0.5rem; margin-top:0.25rem;">
           ${scores.map(s => `
             <div class="score-row">
               <span class="score-match">${s.match}</span>
@@ -266,25 +323,54 @@ class DailyBriefApp {
       </div>
     `;
 
-    // Category cards
     const cats = sp.categories || {};
-    const sportsItems = [
-      ...(cats.cricket || []),
-      ...(cats.football || []),
-      ...(cats.tennis || []),
-      ...(cats.general || [])
-    ];
+    this.sportsItems = {
+      all: [
+        ...(cats.athletics || []),
+        ...(cats.cricket || []),
+        ...(cats.football || []),
+        ...(cats.tennis || []),
+        ...(cats.general || [])
+      ],
+      athletics: cats.athletics || [],
+      cricket: cats.cricket || [],
+      football: cats.football || [],
+      tennis: cats.tennis || []
+    };
 
+    this.sportsHeaderHTML = spotlightHTML + tickerHTML;
+    this.renderSportsFiltered('all');
+  }
+
+  renderSportsFiltered(sportKey) {
+    const grid = document.getElementById('sports-grid');
+    if (!grid) return;
+
+    const list = this.sportsItems[sportKey] || this.sportsItems.all;
     let itemsHTML = '';
-    sportsItems.slice(0, 4).forEach(it => {
-      itemsHTML += this.createNewsCard(it, 'col-3', 'var(--sp-accent)');
+    list.slice(0, 6).forEach(it => {
+      itemsHTML += this.createNewsCard(it, 'col-4', 'var(--sp-accent)');
     });
 
-    grid.innerHTML = spotlightHTML + tickerHTML + itemsHTML;
+    grid.innerHTML = (sportKey === 'all')
+      ? (this.sportsHeaderHTML + itemsHTML)
+      : itemsHTML;
+  }
+
+  initSportsTabs() {
+    const tabs = document.querySelectorAll('.sports-tab-btn');
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        btn.classList.add('active');
+        const sport = btn.dataset.sport;
+        this.renderSportsFiltered(sport);
+      });
+    });
   }
 
   /* -------------------------------------------------------------
-     SECTION 3: TECH & SCIENCE
+     SECTION 4: TECH & SCIENCE
      ------------------------------------------------------------- */
   renderTechScience() {
     const ts = this.data.techScience || {};
@@ -301,7 +387,7 @@ class DailyBriefApp {
   }
 
   /* -------------------------------------------------------------
-     SECTION 4: INSTAGRAM & SOCIAL TRENDS
+     SECTION 5: INSTAGRAM & SOCIAL TRENDS
      ------------------------------------------------------------- */
   renderSocialTrends() {
     const st = this.data.socialTrends || {};
@@ -318,7 +404,7 @@ class DailyBriefApp {
   }
 
   /* -------------------------------------------------------------
-     SECTION 5: DISASTERS & EMERGENCIES
+     SECTION 6: DISASTERS & EMERGENCIES
      ------------------------------------------------------------- */
   renderDisasters() {
     const ds = this.data.disasters || {};
@@ -381,7 +467,7 @@ class DailyBriefApp {
   }
 
   /* -------------------------------------------------------------
-     SECTION 6: DAILY FACTS (EXACTLY 5 NEW FACTS)
+     SECTION 7: NATURE & ANIMAL INTELLIGENCE FACTS
      ------------------------------------------------------------- */
   renderDailyFacts() {
     const facts = this.data.dailyFacts || [];
@@ -391,16 +477,16 @@ class DailyBriefApp {
     let html = '';
     facts.forEach(f => {
       html += `
-        <div class="bento-card col-4 fact-card">
+        <div class="bento-card col-4 fact-card" style="border-color:rgba(132, 204, 22, 0.3);">
           <div style="display:flex; align-items:center; justify-content:space-between;">
-            <span class="fact-emoji">${f.emoji || '💡'}</span>
-            <span style="font-size:0.7rem; font-weight:700; text-transform:uppercase; color:var(--fc-accent); letter-spacing:0.06em;">${f.category}</span>
+            <span class="fact-emoji">${f.emoji || '🦁'}</span>
+            <span style="font-size:0.72rem; font-weight:800; text-transform:uppercase; color:var(--fc-accent); letter-spacing:0.06em;">${f.category}</span>
           </div>
-          <h4 class="fact-title">${f.title}</h4>
-          <p class="fact-body">${f.fact}</p>
-          <div class="card-footer-row" style="margin-top:auto;">
+          <h4 class="fact-title" style="margin:0.5rem 0 0.35rem; font-size:1.1rem;">${f.title}</h4>
+          <p class="fact-body" style="font-size:0.88rem; line-height:1.55;">${f.fact}</p>
+          <div class="card-footer-row" style="margin-top:auto; padding-top:0.75rem;">
             <span style="font-size:0.74rem; color:var(--text-muted);">${f.source}</span>
-            <a href="${f.sourceUrl}" target="_blank" rel="noopener noreferrer" class="read-link" style="color:var(--fc-accent);">Verify →</a>
+            <a href="${f.sourceUrl}" target="_blank" rel="noopener noreferrer" class="read-link" style="color:var(--fc-accent);">Learn Science →</a>
           </div>
         </div>
       `;
@@ -409,7 +495,7 @@ class DailyBriefApp {
   }
 
   /* -------------------------------------------------------------
-     SECTION 8: DHYAN (HINDU MEDITATION & WISDOM)
+     SECTION 9: DHYAN (HINDU MEDITATION & WISDOM)
      ------------------------------------------------------------- */
   renderDhyan() {
     const dh = this.data.dhyan || {};
@@ -418,13 +504,11 @@ class DailyBriefApp {
     const thought = dh.thoughtOfTheDay || {};
     const mantra = dh.dailyMantra || {};
 
-    // Panchang badge
     const pEl = document.getElementById('panchang-badge');
     if (pEl) {
       pEl.textContent = `📅 ${panchang.tithi || 'Shukla Paksha'} • Nakshatra: ${panchang.nakshatra || 'Ashwini'} • ${panchang.vikramSamvat || 'Vikram Samvat'}`;
     }
 
-    // Gita Verse
     const vEl = document.getElementById('gita-verse-content');
     if (vEl) {
       vEl.innerHTML = `
@@ -437,7 +521,6 @@ class DailyBriefApp {
       `;
     }
 
-    // Thought of the Day
     const tEl = document.getElementById('thought-of-the-day-content');
     if (tEl) {
       tEl.innerHTML = `
@@ -448,7 +531,6 @@ class DailyBriefApp {
       `;
     }
 
-    // Daily Mantra
     const mEl = document.getElementById('daily-mantra-content');
     if (mEl) {
       mEl.innerHTML = `
@@ -464,7 +546,7 @@ class DailyBriefApp {
   /* -------------------------------------------------------------
      REUSABLE NEWS CARD GENERATOR (WITH REAL IMAGES & FALLBACKS)
      ------------------------------------------------------------- */
-  createNewsCard(item, colSpan = 'col-4', accentColor = 'var(--wp-accent)') {
+  createNewsCard(item, colSpan = 'col-4', accentColor = 'var(--wp-accent)', extraClass = '') {
     const hasImage = Boolean(item.imageUrl);
     const mediaHTML = hasImage ? `
       <div class="card-media-wrapper">
@@ -474,7 +556,7 @@ class DailyBriefApp {
     ` : '';
 
     return `
-      <article class="bento-card ${colSpan}">
+      <article class="bento-card ${colSpan} ${extraClass}">
         ${mediaHTML}
         <div class="card-meta-row">
           <span class="card-source-chip">${item.source}</span>
@@ -514,7 +596,7 @@ class DailyBriefApp {
   }
 
   /* -------------------------------------------------------------
-     10-MINUTE READING MODE PROGRESS
+     30-MINUTE DEEP DIVE READING MODE PROGRESS
      ------------------------------------------------------------- */
   initReadingMode() {
     const btn = document.getElementById('reading-mode-toggle');
@@ -525,7 +607,8 @@ class DailyBriefApp {
       btn.addEventListener('click', () => {
         this.readingModeActive = !this.readingModeActive;
         btn.classList.toggle('active', this.readingModeActive);
-        btn.innerHTML = this.readingModeActive ? `⏱️ 10-Min Mode: Active` : `📖 10-Min Mode`;
+        btn.innerHTML = this.readingModeActive ? `⏱️ 30-Min: Active` : `⏱️ 30-Min Deep Dive`;
+        this.showToast(this.readingModeActive ? '30-Minute Deep Dive Reading Mode engaged!' : 'Reading mode deactivated');
       });
     }
 
@@ -539,14 +622,222 @@ class DailyBriefApp {
       }
 
       if (timeRemainingEl && this.readingModeActive) {
-        const remainingMinutes = Math.max(1, Math.ceil((1 - (pct / 100)) * 10));
-        timeRemainingEl.textContent = `⏱️ ~${remainingMinutes} min left`;
+        const remainingMinutes = Math.max(1, Math.ceil((1 - (pct / 100)) * 30));
+        timeRemainingEl.textContent = `⏱️ ~${remainingMinutes} min read left`;
       }
     }, { passive: true });
   }
+
+  /* -------------------------------------------------------------
+     SHARE SYSTEM (WEB SHARE API + MODAL FALLBACK)
+     ------------------------------------------------------------- */
+  initShareFeature() {
+    const shareBtn = document.getElementById('share-brief-btn');
+    const footerShare = document.getElementById('footer-share-trigger');
+    const modal = document.getElementById('share-modal');
+    const closeBtn = document.getElementById('share-modal-close');
+    const copyBtn = document.getElementById('share-copy-btn');
+    const inputCopy = document.getElementById('share-input-copy');
+
+    const triggerShare = async () => {
+      const shareData = {
+        title: 'Daily Brief — 30-Minute Morning Intelligence',
+        text: 'Zero doomscrolling. Stay updated with world news, athletics, good news, wild nature facts, mind gym, and meditation by Krish Parikh:',
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+          this.showToast('Thanks for sharing Daily Brief!');
+          return;
+        } catch (err) {
+          // Fallback to modal if cancelled or unsupported
+        }
+      }
+
+      if (modal) modal.style.display = 'flex';
+    };
+
+    if (shareBtn) shareBtn.addEventListener('click', triggerShare);
+    if (footerShare) footerShare.addEventListener('click', triggerShare);
+    if (closeBtn && modal) closeBtn.addEventListener('click', () => modal.style.display = 'none');
+
+    // Click outside to close
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.style.display = 'none';
+      });
+    }
+
+    const copyToClipboard = async () => {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        this.showToast('📋 Live URL copied to clipboard!');
+      } catch (e) {
+        this.showToast('Copied: ' + window.location.href);
+      }
+    };
+
+    if (copyBtn) copyBtn.addEventListener('click', copyToClipboard);
+    if (inputCopy) inputCopy.addEventListener('click', copyToClipboard);
+  }
+
+  /* -------------------------------------------------------------
+     READER CIRCLE & AUTH / ADD PEOPLE MODAL
+     ------------------------------------------------------------- */
+  initAuthModal() {
+    const btn = document.getElementById('auth-modal-btn');
+    const modal = document.getElementById('auth-modal');
+    const closeBtn = document.getElementById('auth-modal-close');
+    const tabs = document.querySelectorAll('.modal-tab');
+    const tabContents = document.querySelectorAll('.modal-tab-content');
+    const loginKrishBtn = document.getElementById('login-as-krish-btn');
+    const addMemberForm = document.getElementById('add-member-form');
+    const signupForm = document.getElementById('signup-form');
+    const signinForm = document.getElementById('signin-form');
+
+    if (btn && modal) {
+      btn.addEventListener('click', () => modal.style.display = 'flex');
+    }
+    if (closeBtn && modal) {
+      closeBtn.addEventListener('click', () => modal.style.display = 'none');
+    }
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.style.display = 'none';
+      });
+    }
+
+    // Modal Tabs
+    tabs.forEach(t => {
+      t.addEventListener('click', () => {
+        tabs.forEach(tb => tb.classList.remove('active'));
+        t.classList.add('active');
+        const target = t.dataset.tab;
+        tabContents.forEach(tc => {
+          tc.style.display = (tc.id === `tab-${target}`) ? 'block' : 'none';
+        });
+      });
+    });
+
+    // Load initial members from localStorage
+    const savedMembers = localStorage.getItem('dailyBrief_members');
+    this.members = savedMembers ? JSON.parse(savedMembers) : [
+      { name: "Krish Parikh", email: "krishparikh25@users.noreply.github.com", college: "PDPU ICT Gandhinagar (Admin)" },
+      { name: "Aryan Sharma", email: "aryan.s@pdpu.ac.in", college: "PDPU ICT 2026" },
+      { name: "Diya Patel", email: "diya.p@pdpu.ac.in", college: "PDPU ICT 2026" }
+    ];
+    this.renderMembersList();
+
+    // Check signed in user
+    const savedUser = localStorage.getItem('dailyBrief_user');
+    if (savedUser) {
+      this.setUser(JSON.parse(savedUser));
+    }
+
+    // 1-Click Login as Krish Parikh
+    if (loginKrishBtn) {
+      loginKrishBtn.addEventListener('click', () => {
+        this.setUser({
+          name: "Krish Parikh",
+          email: "krishparikh25@users.noreply.github.com",
+          badge: "KP • PDPU ICT"
+        });
+        if (modal) modal.style.display = 'none';
+        this.showToast('👋 Welcome back, Krish Parikh (PDPU ICT)!');
+      });
+    }
+
+    // Sign in form
+    if (signinForm) {
+      signinForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('signin-email').value;
+        const name = email.split('@')[0];
+        this.setUser({ name, email, badge: "Reader" });
+        if (modal) modal.style.display = 'none';
+        this.showToast(`Signed in as ${name}!`);
+      });
+    }
+
+    // Sign up form
+    if (signupForm) {
+      signupForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('signup-name').value;
+        const email = document.getElementById('signup-email').value;
+        const college = document.getElementById('signup-college').value;
+        this.setUser({ name, email, badge: college || "PDPU ICT" });
+        this.addMemberToList(name, email, college);
+        if (modal) modal.style.display = 'none';
+        this.showToast(`Welcome to Daily Brief, ${name}!`);
+      });
+    }
+
+    // Add Member form
+    if (addMemberForm) {
+      addMemberForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('member-name').value;
+        const email = document.getElementById('member-email').value;
+        const college = document.getElementById('member-college').value;
+        this.addMemberToList(name, email, college);
+        addMemberForm.reset();
+        this.showToast(`🎉 Added ${name} to Daily Brief Reader Circle!`);
+      });
+    }
+  }
+
+  setUser(userObj) {
+    this.currentUser = userObj;
+    localStorage.setItem('dailyBrief_user', JSON.stringify(userObj));
+    const label = document.getElementById('auth-user-label');
+    const avatar = document.getElementById('auth-user-avatar');
+    if (label) label.textContent = userObj.name.split(' ')[0];
+    if (avatar) avatar.textContent = userObj.name.substring(0, 1).toUpperCase();
+  }
+
+  addMemberToList(name, email, college) {
+    this.members.push({ name, email, college: college || "PDPU ICT" });
+    localStorage.setItem('dailyBrief_members', JSON.stringify(this.members));
+    this.renderMembersList();
+  }
+
+  renderMembersList() {
+    const container = document.getElementById('members-list');
+    if (!container) return;
+    container.innerHTML = this.members.map((m, idx) => `
+      <div class="member-chip">
+        <div>
+          <strong>${m.name}</strong> • <span style="color:var(--text-muted); font-size:0.75rem;">${m.college}</span>
+        </div>
+        <span style="font-size:0.75rem; color:#10b981;">Active Reader ✓</span>
+      </div>
+    `).join('');
+  }
+
+  /* -------------------------------------------------------------
+     TOAST NOTIFICATIONS
+     ------------------------------------------------------------- */
+  showToast(message) {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+
+    const toast = document.createElement('div');
+    toast.className = 'toast-message';
+    toast.textContent = message;
+    container.appendChild(toast);
+
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(10px)';
+      toast.style.transition = 'all 0.3s ease';
+      setTimeout(() => toast.remove(), 300);
+    }, 3200);
+  }
 }
 
-// Start app on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
   new DailyBriefApp();
 });

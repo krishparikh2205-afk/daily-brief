@@ -1,81 +1,104 @@
-# 🌅 Daily Brief — The 10-Minute Morning Lens
+# 🌅 Daily Brief — The 30-Minute Morning Deep Dive
 
-> **Distraction-Free, High-Signal Morning Intelligence for College Students & Engineers**  
-> *Designed to eliminate phone scrolling by packing world geopolitics, athletics, frontier science, social trends, live seismic alerts, daily facts, cognitive engineering games, and mindful meditation into a single 10-to-15 minute daily experience.*
+> **Comprehensive, Distraction-Free Morning Intelligence for College Students & Engineers**  
+> *Curated to replace social media phone scrolling with an intentional, high-signal 30-minute daily deep dive into global geopolitics, uplifting world progress, athletics and running, frontier science, digital culture trends, live seismic alerts, wild animal intelligence, cognitive engineering training, and peaceful Vedic mindfulness.*
 
 🌐 **Live Website**: [https://krishparikh2205-afk.github.io/daily-brief/](https://krishparikh2205-afk.github.io/daily-brief/)  
-📦 **GitHub Repository**: [https://github.com/krishparikh2205-afk/daily-brief](https://github.com/krishparikh2205-afk/daily-brief)
+📦 **GitHub Repository**: [https://github.com/krishparikh2205-afk/daily-brief](https://github.com/krishparikh2205-afk/daily-brief)  
+👤 **Creator & Curator**: **Krish Parikh** • PDPU ICT, Gandhinagar • 📞 **+91 93137 75724**
 
 ---
 
 ## 🧭 Why Daily Brief Exists
 
-Modern social media feeds are engineered for infinite scroll, doom loops, and algorithmic agitation. **Daily Brief is the exact opposite**:
-1. **Definite End**: It has a dedicated **10-Minute Reading Mode** with a scroll progress bar, estimated time remaining, and an **"All Caught Up"** completion banner. When you hit the bottom, your briefing is done—close your laptop and build your day.
-2. **Autonomous Midnight IST Refresh**: The site updates automatically every single day at **12:00 AM IST (18:30 UTC)** with zero manual intervention via GitHub Actions.
-3. **Zero Tracking & Zero Ads**: No trackers, no cookies, no third-party telemetry. All game progress and theme preferences stay private in your browser's `localStorage`.
-4. **Real Article Imagery**: Displays authentic news photos extracted from publisher feeds (`og:image`, `media:content`, enclosures) with direct credit lines and graceful CSS gradient fallbacks.
+Modern algorithmic feeds are engineered for addiction, outrage, and endless scrolling. **Daily Brief is the antithesis**:
+1. **Definite 30-Minute Boundary**: It features an integrated **⏱️ 30-Minute Deep Dive Reading Mode** with dynamic reading time remaining estimation, scroll progress bar, and an empowering **"You're All Caught Up"** completion banner. When you finish, step away and build your day.
+2. **Autonomous Midnight IST Refresh**: The portal autonomously updates every day at **12:00 AM IST (18:30 UTC)** with zero manual intervention via GitHub Actions.
+3. **Zero Tracking & Privacy Respecting**: No third-party tracking cookies or ad networks. Reader preferences, streaks, and community lists stay in your browser's private `localStorage`.
+4. **Real Article Imagery**: Displays genuine photos hotlinked from publisher feeds with image attribution and graceful CSS fallbacks.
 
 ---
 
-## 🍱 Content Sections (in order)
+## 🍱 Sections & Content Architecture
 
-1. **🌍 World Pulse — Politics & Geopolitics**:
-   - Curated reporting across 8 regions: **India, USA, UK, Europe, Middle East, Russia-Ukraine, China & Asia-Pacific, Africa, and Latin America**.
-   - Regional tab filters, 2-line summaries, relative timestamps, and original article links.
+1. **🔴 Live Wire Breaking Ticker**:
+   - Streaming horizontal marquee at the top of the publication delivering real-time headline telemetry.
+2. **🌍 World Pulse — Politics & Geopolitics**:
+   - 8 Global Regions: **India, USA, UK, Europe, Middle East, Russia-Ukraine, China & Asia-Pacific, Africa, Latin America**.
    - **Ongoing Matters Tracker**: Monitors active shifts in long-term geopolitical conflicts, trade talks, and summits with a clear *"What changed since yesterday"* card.
-2. **🏆 Sports & Achievements**:
-   - Football, cricket, tennis, world athletics, record-breaking milestones.
-   - **Achievement of the Day** highlight card and live tournament/series score board.
-3. **⚡ Tech & Science**:
-   - Artificial intelligence models, space exploration missions, semiconductor hardware breakthroughs, quantum computing, and cybersecurity.
-4. **📱 Instagram & Social Trends**:
+3. **🌟 Uplifting World Progress & Good News (New!)**:
+   - Sourced from Good News Network and global progress registries: clean energy capacity milestones, cancer vaccine trials, reforestation recoveries, wildlife sanctuary expansions, and community solidarity.
+4. **🏃 Sports & Athletics (Upgraded with Running & Track)**:
+   - Dedicated coverage of **Athletics & Running** (sprinting, marathons, track & field, sub-10s splits, Diamond League, footwear kinetics) from Athletics Weekly.
+   - Cricket (ESPNcricinfo), Premier League Football, ATP Tennis, live scores ticker, and the **Athletics Feat of the Day**.
+5. **⚡ Tech & Science Frontiers**:
+   - AI systems, quantum computing, aerospace missions (NASA), semiconductor hardware, and cybersecurity from The Verge, Ars Technica, and Science Daily.
+6. **📱 Instagram & Social Trends**:
    - Platform updates, creator economy shifts, and viral moments sourced ethically from leading tech and digital culture news feeds—**without needing to open social media apps**.
-5. **🌋 Disasters & Emergencies**:
+7. **🌋 Disasters & Emergencies**:
    - **Live USGS Earthquake Telemetry**: Automatically queries the USGS GeoJSON feed for **Magnitude 5.0+** seismic events worldwide from the past 24 hours, displaying magnitude badges, depth, time in IST, and direct Google Maps coordinate links.
-   - Calm, factual weather and disaster advisories from meteorological bodies.
-6. **💡 5 Daily Facts (Guaranteed Unique & Deduplicated)**:
-   - Exactly 5 new facts per day across Science, History, Space, Human Body, and Geography.
-   - Sourced from Wikipedia REST APIs (*"On this day"*) and curated evergreen databases, deduplicated against `data/seen-facts.json` so no fact ever repeats.
-7. **🧠 Mind Gym — Daily Cognitive Training Hub**:
+   - Meteorological advisories from the World Meteorological Organization (WMO).
+8. **🦁 Wild Nature & Animal Intelligence Facts (New!)**:
+   - Mind-bending biological marvels and animal cognitive discoveries:
+     - 🐙 *Octopuses*: 3 hearts, blue blood, 9 brains (two-thirds of neurons reside in autonomous arms).
+     - 🦅 *Crows*: Lifetime facial recognition and generational grudge transmission.
+     - 🦐 *Mantis Shrimp*: Cavitation punch generating temperatures near the surface of the sun.
+     - 🪼 *Immortal Jellyfish*: Cellular transdifferentiation rebooting the life cycle indefinitely.
+     - 🐘 *Elephants*: Infrasonic ground tremor communication over 10+ kilometers.
+9. **🧠 Mind Gym — Daily Cognitive Training Hub**:
    - **Adult engineering-grade mental workout** deterministically generated from a date-based seed (`YYYYMMDD` IST):
-     - **🧩 Logic Grid**: "Who owns what" deduction matrix with clues and clickable cell states (Blank → ❌ → ✔️).
-     - **🔢 Sudoku (Medium & Hard)**: 9x9 board with pencil notes, conflict detection, and hint system.
-     - **🎯 Number Cipher / Math Target**: Countdown/KenKen arithmetic target challenge.
-     - **⚡ Mental Math Sprint**: 60-second rapid-fire math scaling with accuracy (percentages, squares, fractions, multiplication).
-     - **🧠 N-Back Memory Trainer**: Neuro-cognitive working memory test with adjustable depth ($N=1$ to $4$).
+     - **🧩 Logic Grid**: Interactive deduction matrix with clues and clickable cells (Blank → ❌ → ✔️).
+     - **🔢 Sudoku (Medium & Hard)**: 9x9 board with pencil notes, conflict detection, and hints.
+     - **🎯 Number Cipher**: Countdown/KenKen arithmetic target challenge.
+     - **⚡ Mental Math Sprint**: 60-second rapid-fire math scaling with accuracy.
+     - **🧠 N-Back Memory Trainer**: Neuro-cognitive working memory test ($N=1$ to $4$).
      - **🧬 Pattern Master**: Algorithmic sequence rule-discovery engine.
      - **🔨 Word Forge (ICT Vocabulary)**: Anagram and word ladder solver with dedicated **Engineering / ICT Mode** (DSP, Nyquist, Mutex, Sharding, Semaphore, Bandwidth).
-   - Streak tracking, daily brain score, and personal best stored in `localStorage`.
-8. **🕉️ Dhyan — 5-Minute Daily Hindu Meditation**:
-   - **Bhagavad Gita Verse of the Day**: Rotates through verses by calendar date with authentic Sanskrit Devanagari script, IAST transliteration, word meaning, and English translation.
-   - **Thought of the Day**: Practical reflections drawn from Upanishads, Patanjali Yoga Sutras, and Vedanta.
-   - **Daily Mantra**: Sacred chants (Gayatri, Mahamrityunjaya, Shanti Patha) with pronunciation and meaning.
-   - **5-Minute Pranayama Sanctuary**: Fullscreen zen mode, 4-4-6 rhythmic breathing guide (Inhale 4s, Hold 4s, Exhale 6s), and soothing **Web Audio API synthesized Om drone (136.1 Hz)** and singing bowl chime (toggleable, zero network latency).
-   - **Hindu Calendar Panchang**: Today's Tithi, Paksha, Nakshatra, and Vikram Samvat.
+10. **🕉️ Dhyan — 5-Minute Hindu Meditation**:
+    - **Bhagavad Gita Verse of the Day**: Chapter & verse in authentic Sanskrit Devanagari script, Roman transliteration, and English translation.
+    - **Thought of the Day**: Wisdom drawn from Upanishads, Patanjali Yoga Sutras, and Vedanta.
+    - **Daily Mantra**: Sacred chants (Gayatri, Mahamrityunjaya, Shanti Patha) with pronunciation and meaning.
+    - **5-Minute Pranayama Sanctuary**: Fullscreen zen mode, 4-4-6 rhythmic breathing guide, and soothing **Web Audio API synthesized Om drone (136.1 Hz)** and singing bowl chime.
+    - **Hindu Calendar Panchang**: Today's Tithi, Paksha, Nakshatra, and Vikram Samvat.
 
 ---
 
-## ⚙️ Architecture & Autonomous Automation
+## 👥 Community Reader Circle & Sharing
+
+- **👤 Reader Circle & Login**: Click "Sign In / Add" in the header to log in (1-click login as Krish Parikh or create your profile) and **add classmates or friends** by Name, Mobile, and Department (PDPU ICT Gandhinagar). Members are saved in your local circle.
+- **🔗 Multi-Channel Share**: Click "Share" to open the interactive Share Sheet with 1-click URL copying, WhatsApp, X/Twitter, LinkedIn, and Telegram sharing.
+
+---
+
+## 👨‍💻 Creator & Author Profile
+
+- **Name**: Krish Parikh
+- **Qualification**: PDPU ICT, Gandhinagar (Pandit Deendayal Energy University, Information and Communication Technology)
+- **Mobile**: [+91 93137 75724](tel:+919313775724)
+- **WhatsApp**: [Chat on WhatsApp (+91 93137 75724)](https://wa.me/919313775724?text=Hi%20Krish,%20I'm%20using%20Daily%20Brief!)
+
+---
+
+## ⚙️ Automated Architecture
 
 ```
-GitHub Actions Cron (18:30 UTC = 00:00 IST)
-                │
-                ▼
-       scripts/fetch-all.mjs
-   ┌────────────┴────────────┐
-   ▼                         ▼
-Live RSS / USGS / APIs   Fallback Cache (stale flag)
-   └────────────┬────────────┘
-                ▼
-         data/today.json
-   + data/archive/YYYY-MM-DD.json
-                │
-                ▼
-   Automated Git Commit & Push
-                │
-                ▼
- GitHub Pages Deployment (Static HTML/CSS/JS)
+GitHub Actions Cron (18:30 UTC = 00:00 IST Midnight)
+                       │
+                       ▼
+             scripts/fetch-all.mjs
+   ┌───────────────────┴───────────────────┐
+   ▼                                       ▼
+Parallel RSS / USGS / APIs         Graceful Fallback Cache
+   └───────────────────┬───────────────────┘
+                       ▼
+                data/today.json
+         + data/archive/YYYY-MM-DD.json
+                       │
+                       ▼
+          Heartbeat Keepalive Commit
+                       │
+                       ▼
+        Deploy to GitHub Pages (Static)
 ```
 
 - **Cron Schedule**: `.github/workflows/update-and-deploy.yml` triggers on `cron: '30 18 * * *'` (18:30 UTC = 12:00 AM IST Midnight).
@@ -84,24 +107,24 @@ Live RSS / USGS / APIs   Fallback Cache (stale flag)
 
 ---
 
-## 🛠️ User Guide: How to Customize
+## 🛠️ User Customization Guide
 
-### 1. How to Add or Change News Sources
+### 1. How to Add a New News Source
 Open `scripts/fetch-all.mjs`. Each section specifies its RSS endpoints in clean arrays:
 ```javascript
-// Example: Adding an India source in scripts/fetch-all.mjs
 const feeds = {
   india: ['https://www.thehindu.com/news/national/feeder/default.rss', 'The Hindu'],
   // Add your new source:
-  // newSource: ['https://example.com/rss.xml', 'Publisher Name']
+  myRegion: ['https://example.com/rss.xml', 'Publisher Name']
 };
 ```
 
-### 2. How to Edit Categories or Sports Teams
-- To modify sports categories, edit the `fetchSports` function in `scripts/fetch-all.mjs`.
-- Keyword filters can be updated under `text.includes('cricket')`, `text.includes('football')`, etc.
+### 2. How to Edit Sports & Athletics Feeds
+In `scripts/fetch-all.mjs`, navigate to `fetchSports()`:
+- Customize Athletics Weekly feeds or add marathon/sprint RSS endpoints.
+- Adjust keyword filters for cricket, football, tennis, or athletics.
 
-### 3. How to Change the Daily Update Time
+### 3. How to Change the Daily Refresh Time
 Edit `.github/workflows/update-and-deploy.yml`:
 ```yaml
 on:
@@ -116,32 +139,4 @@ on:
 1. Go to your GitHub repository: [krishparikh2205-afk/daily-brief](https://github.com/krishparikh2205-afk/daily-brief).
 2. Click the **Actions** tab at the top.
 3. Select **"Daily Brief - Fetch & Deploy to Pages"** on the left sidebar.
-4. Click the **"Run workflow"** dropdown button on the right, select branch `main`, and click **"Run workflow"**.
-5. Within ~90 seconds, the fresh data will be fetched, committed, and deployed live to GitHub Pages.
-
----
-
-## 💻 Local Development
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/krishparikh2205-afk/daily-brief.git
-cd daily-brief
-
-# 2. Install dependencies
-npm install
-
-# 3. Run the daily data ingestion pipeline locally
-node scripts/fetch-all.mjs
-
-# 4. Start the local development server
-npm run serve
-# Visit http://localhost:3000 in your browser
-```
-
----
-
-## 📜 License & Attribution
-- Content aggregated under fair-use excerpts strictly for personal morning briefing with full attribution and links to original publishers.
-- Bhagavad Gita verses and Upanishadic wisdom derived from public domain and open scholarly datasets.
-- Crafted for focus, tranquility, and lifelong learning.
+4. Click **"Run workflow"** on branch `main`. Fresh data will be fetched, committed, and deployed live to GitHub Pages within 45 seconds.

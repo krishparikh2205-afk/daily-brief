@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Daily Brief — Distraction-free, high-signal 10-minute morning dashboard for students and engineers. World pulse, sports, science, mind gym, and meditation.">
-  <title>Daily Brief — 10-Minute Morning Dashboard</title>
+  <meta name="description" content="Daily Brief — Your comprehensive 30-minute morning deep dive into world intelligence, uplifting human progress, athletics, tech frontiers, wild nature, and daily focus. By Krish Parikh, PDPU ICT.">
+  <title>Daily Brief — 30-Minute Morning Deep Dive | Global & India Edition</title>
 
   <!-- Typography: Space Grotesk, Inter, Noto Sans Devanagari -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌅</text></svg>">
@@ -21,27 +21,34 @@
     <div id="reading-progress-bar"></div>
   </div>
 
-  <!-- Sticky Frosted Header -->
+  <!-- Sticky News Masthead Header -->
   <header class="sticky-header" role="banner">
     <div class="header-container">
-      <a href="#" class="brand-section" aria-label="Daily Brief Homepage">
-        <div class="brand-logo-icon">🌅</div>
-        <div class="brand-titles">
-          <span class="brand-title">Daily Brief</span>
-          <span class="brand-subtitle">The 10-Minute Morning Lens</span>
+      <div class="header-brand-wrap">
+        <a href="#" class="brand-section" aria-label="Daily Brief Homepage">
+          <div class="brand-logo-icon">🌅</div>
+          <div class="brand-titles">
+            <span class="brand-title">Daily Brief</span>
+            <span class="brand-subtitle">The 30-Minute Morning Deep Dive</span>
+          </div>
+        </a>
+        <div class="edition-pill">
+          <span class="edition-dot"></span>
+          <span>India & Global Edition • PDPU ICT</span>
         </div>
-      </a>
+      </div>
 
       <!-- Section Navigation Pills -->
       <nav class="nav-pills" aria-label="Sections">
         <a href="#world-pulse" class="nav-pill active" data-target="world-pulse">🌍 World Pulse</a>
-        <a href="#sports" class="nav-pill" data-target="sports">🏆 Sports</a>
-        <a href="#tech-science" class="nav-pill" data-target="tech-science">⚡ Tech & Sci</a>
-        <a href="#social-trends" class="nav-pill" data-target="social-trends">📱 Trends</a>
-        <a href="#disasters" class="nav-pill" data-target="disasters">🌋 Earthquakes</a>
-        <a href="#daily-facts" class="nav-pill" data-target="daily-facts">💡 5 Facts</a>
-        <a href="#mind-gym" class="nav-pill" data-target="mind-gym">🧠 Mind Gym</a>
-        <a href="#dhyan" class="nav-pill" data-target="dhyan">🕉️ Dhyan</a>
+        <a href="#good-news" class="nav-pill pill-uplifting" data-target="good-news">🌟 Uplifting News</a>
+        <a href="#sports" class="nav-pill pill-sports" data-target="sports">🏃 Sports & Athletics</a>
+        <a href="#tech-science" class="nav-pill pill-tech" data-target="tech-science">⚡ Tech & Sci</a>
+        <a href="#social-trends" class="nav-pill pill-social" data-target="social-trends">📱 Trends</a>
+        <a href="#disasters" class="nav-pill pill-disasters" data-target="disasters">🌋 Earthquakes</a>
+        <a href="#daily-facts" class="nav-pill pill-facts" data-target="daily-facts">🦁 Wild Nature</a>
+        <a href="#mind-gym" class="nav-pill pill-mindgym" data-target="mind-gym">🧠 Mind Gym</a>
+        <a href="#dhyan" class="nav-pill pill-dhyan" data-target="dhyan">🕉️ Dhyan</a>
       </nav>
 
       <!-- Meta Badges & Controls -->
@@ -56,15 +63,39 @@
           <span id="countdown-timer">--:--:--</span>
         </div>
 
-        <button class="icon-btn btn-reading-mode" id="reading-mode-toggle" title="Toggle 10-Minute Reading Mode">
-          📖 10-Min Mode
+        <button class="icon-btn btn-reading-mode" id="reading-mode-toggle" title="Toggle 30-Minute Deep Dive Reading Mode">
+          ⏱️ 30-Min Deep Dive
         </button>
 
-        <span id="reading-time-remaining" style="font-size:0.75rem; font-weight:600; color:var(--mg-accent);"></span>
+        <span id="reading-time-remaining" style="font-size:0.75rem; font-weight:700; color:var(--mg-accent);"></span>
+
+        <!-- Share Button -->
+        <button class="icon-btn btn-share" id="share-brief-btn" title="Share Daily Brief with Friends">
+          🔗 Share
+        </button>
+
+        <!-- Reader Circle / Login Button -->
+        <button class="icon-btn btn-auth" id="auth-modal-btn" title="Sign In or Add Community Readers">
+          <span id="auth-user-avatar">👤</span>
+          <span id="auth-user-label">Sign In / Add</span>
+        </button>
 
         <button class="icon-btn" id="theme-toggle-btn" aria-label="Toggle theme">
           <span id="theme-icon">🌙</span>
         </button>
+      </div>
+    </div>
+
+    <!-- Live Breaking News Wire / Ticker -->
+    <div class="breaking-ticker-row">
+      <div class="ticker-label">
+        <span class="ticker-pulse"></span>
+        <span>LIVE WIRE</span>
+      </div>
+      <div class="ticker-track-wrapper">
+        <div class="ticker-track" id="breaking-ticker-track">
+          <span class="ticker-item">Loading today's global intelligence briefing...</span>
+        </div>
       </div>
     </div>
   </header>
@@ -78,7 +109,7 @@
         <div class="section-title-group">
           <span class="section-tag" style="background:var(--wp-glow); color:var(--wp-accent);">Section 01 • Politics & Geopolitics</span>
           <h2 id="heading-world-pulse" class="section-title">World Pulse</h2>
-          <p class="section-desc">Key ongoing geopolitical developments grouped by region. Filter or browse key shifts.</p>
+          <p class="section-desc">Key ongoing geopolitical developments grouped by region. Comprehensive reporting with real source photos.</p>
         </div>
       </div>
 
@@ -101,14 +132,38 @@
       </div>
     </section>
 
-    <!-- 2. SPORTS & ACHIEVEMENTS -->
+    <!-- 2. UPLIFTING WORLD PROGRESS & GOOD NEWS (BRAND NEW SECTION) -->
+    <section id="good-news" class="section-wrapper" aria-labelledby="heading-good-news">
+      <div class="section-header-row">
+        <div class="section-title-group">
+          <span class="section-tag" style="background:var(--gn-glow); color:var(--gn-accent);">Section 02 • Global Hope & Human Triumph</span>
+          <h2 id="heading-good-news" class="section-title">🌟 Uplifting World Progress & Good News</h2>
+          <p class="section-desc">Remarkable breakthroughs, ecological recoveries, medical triumphs, and uplifting acts of solidarity from across the globe.</p>
+        </div>
+      </div>
+
+      <div class="bento-grid" id="good-news-grid">
+        <!-- Injected via app.js -->
+      </div>
+    </section>
+
+    <!-- 3. SPORTS & ATHLETICS (UPGRADED WITH RUNNING & TRACK) -->
     <section id="sports" class="section-wrapper" aria-labelledby="heading-sports">
       <div class="section-header-row">
         <div class="section-title-group">
-          <span class="section-tag" style="background:var(--sp-glow); color:var(--sp-accent);">Section 02 • Global Athletics</span>
-          <h2 id="heading-sports" class="section-title">Sports & Achievements</h2>
-          <p class="section-desc">Cricket, football, tennis, peak athletic feats, and latest tournament standings.</p>
+          <span class="section-tag" style="background:var(--sp-glow); color:var(--sp-accent);">Section 03 • Global Athletics & Field</span>
+          <h2 id="heading-sports" class="section-title">Sports & Athletics</h2>
+          <p class="section-desc">Track & field, sprinting, marathons, cricket, football, tennis, and peak human endurance achievements.</p>
         </div>
+      </div>
+
+      <!-- Sports Category Filter Tabs -->
+      <div class="region-tabs" id="sports-filter-tabs" role="tablist">
+        <button class="sports-tab-btn active" data-sport="all" role="tab">All Athletics & Sports</button>
+        <button class="sports-tab-btn" data-sport="athletics" role="tab">🏃 Athletics & Running</button>
+        <button class="sports-tab-btn" data-sport="cricket" role="tab">🏏 Cricket</button>
+        <button class="sports-tab-btn" data-sport="football" role="tab">⚽ Football</button>
+        <button class="sports-tab-btn" data-sport="tennis" role="tab">🎾 Tennis</button>
       </div>
 
       <div class="bento-grid" id="sports-grid">
@@ -116,11 +171,11 @@
       </div>
     </section>
 
-    <!-- 3. TECH & SCIENCE -->
+    <!-- 4. TECH & SCIENCE -->
     <section id="tech-science" class="section-wrapper" aria-labelledby="heading-tech-science">
       <div class="section-header-row">
         <div class="section-title-group">
-          <span class="section-tag" style="background:var(--tc-glow); color:var(--tc-accent);">Section 03 • Frontiers</span>
+          <span class="section-tag" style="background:var(--tc-glow); color:var(--tc-accent);">Section 04 • Frontiers</span>
           <h2 id="heading-tech-science" class="section-title">Tech & Science</h2>
           <p class="section-desc">Artificial intelligence, space missions, semiconductor hardware, and breakthrough research.</p>
         </div>
@@ -131,11 +186,11 @@
       </div>
     </section>
 
-    <!-- 4. INSTAGRAM & SOCIAL TRENDS -->
+    <!-- 5. INSTAGRAM & SOCIAL TRENDS -->
     <section id="social-trends" class="section-wrapper" aria-labelledby="heading-social-trends">
       <div class="section-header-row">
         <div class="section-title-group">
-          <span class="section-tag" style="background:var(--sc-glow); color:var(--sc-accent);">Section 04 • Digital Culture</span>
+          <span class="section-tag" style="background:var(--sc-glow); color:var(--sc-accent);">Section 05 • Digital Culture</span>
           <h2 id="heading-social-trends" class="section-title">Instagram & Social Trends</h2>
           <p class="section-desc">What is trending across social networks and the creator economy, so you never need to scroll the apps.</p>
         </div>
@@ -146,11 +201,11 @@
       </div>
     </section>
 
-    <!-- 5. DISASTERS & EMERGENCIES -->
+    <!-- 6. DISASTERS & EMERGENCIES -->
     <section id="disasters" class="section-wrapper" aria-labelledby="heading-disasters">
       <div class="section-header-row">
         <div class="section-title-group">
-          <span class="section-tag" style="background:var(--ds-glow); color:var(--ds-danger);">Section 05 • Global Alerts</span>
+          <span class="section-tag" style="background:var(--ds-glow); color:var(--ds-danger);">Section 06 • Global Alerts</span>
           <h2 id="heading-disasters" class="section-title">Disasters & Emergencies</h2>
           <p class="section-desc">Factual, unsensationalized monitoring: live USGS magnitude 5.0+ seismic telemetry and climate updates.</p>
         </div>
@@ -161,13 +216,13 @@
       </div>
     </section>
 
-    <!-- 6. DAILY FACTS -->
+    <!-- 7. DAILY FACTS (MIND-BLOWING WILD NATURE & ANIMAL INTELLIGENCE) -->
     <section id="daily-facts" class="section-wrapper" aria-labelledby="heading-daily-facts">
       <div class="section-header-row">
         <div class="section-title-group">
-          <span class="section-tag" style="background:var(--fc-glow); color:var(--fc-accent);">Section 06 • Pure Knowledge</span>
-          <h2 id="heading-daily-facts" class="section-title">Daily Facts</h2>
-          <p class="section-desc">Exactly 5 genuinely new, deduplicated facts across science, space, history, biology, and geography.</p>
+          <span class="section-tag" style="background:var(--fc-glow); color:var(--fc-accent);">Section 07 • Wild Nature & Animal Wonders</span>
+          <h2 id="heading-daily-facts" class="section-title">🦁 Nature & Animal Intelligence Facts</h2>
+          <p class="section-desc">Fascinating, mind-bending biological wonders and creature intelligence that redefine our view of the natural kingdom.</p>
         </div>
       </div>
 
@@ -176,11 +231,11 @@
       </div>
     </section>
 
-    <!-- 7. MIND GYM -->
+    <!-- 8. MIND GYM -->
     <section id="mind-gym" class="section-wrapper" aria-labelledby="heading-mind-gym">
       <div class="section-header-row">
         <div class="section-title-group">
-          <span class="section-tag" style="background:var(--mg-glow); color:var(--mg-accent);">Section 07 • Cognitive Training</span>
+          <span class="section-tag" style="background:var(--mg-glow); color:var(--mg-accent);">Section 08 • Cognitive Training</span>
           <h2 id="heading-mind-gym" class="section-title">Mind Gym</h2>
           <p class="section-desc">Serious daily cognitive training for engineering minds. Deterministically seeded, renewing every midnight.</p>
         </div>
@@ -224,11 +279,11 @@
       </div>
     </section>
 
-    <!-- 8. DHYAN (HINDU 5-MINUTE MEDITATION) -->
+    <!-- 9. DHYAN (HINDU 5-MINUTE MEDITATION) -->
     <section id="dhyan" class="section-wrapper" aria-labelledby="heading-dhyan">
       <div class="section-header-row">
         <div class="section-title-group">
-          <span class="section-tag" style="background:var(--dh-glow); color:var(--dh-gold);">Section 08 • Inner Stillness & Sanatana Wisdom</span>
+          <span class="section-tag" style="background:var(--dh-glow); color:var(--dh-gold);">Section 09 • Inner Stillness & Sanatana Wisdom</span>
           <h2 id="heading-dhyan" class="section-title">Dhyan — 5-Minute Meditation</h2>
           <p class="section-desc">Ground your consciousness with timeless wisdom from the Bhagavad Gita and a 5-minute pranayama session.</p>
         </div>
@@ -283,21 +338,164 @@
       <div class="caught-up-badge">✨</div>
       <h3 class="caught-up-title">You're All Caught Up for Today!</h3>
       <p class="caught-up-sub">
-        You've absorbed today's global geopolitics, athletic achievements, technology breakthroughs, solved your Mind Gym training, and completed your Dhyan grounding.
+        You've completed your 30-minute deep dive: geopolitical shifts, uplifting human progress, athletic breakthroughs, tech frontiers, wild nature, Mind Gym training, and mindful Dhyan.
       </p>
-      <div style="display:flex; gap:1rem; margin-top:0.5rem; flex-wrap:wrap; justify-content:center;">
-        <span class="stat-pill">📱 Zero phone doomscrolling needed</span>
-        <span class="stat-pill">🎯 Focus on your craft today</span>
+      <div style="display:flex; gap:1rem; margin-top:0.75rem; flex-wrap:wrap; justify-content:center;">
+        <span class="stat-pill">📱 Zero doomscrolling needed</span>
+        <span class="stat-pill">🎯 Focus on your engineering craft</span>
         <span class="stat-pill">⏰ Next refresh at 12:00 AM IST</span>
       </div>
     </div>
 
   </main>
 
-  <footer style="text-align:center; padding:2rem 1.5rem; border-top:1px solid var(--border-subtle); font-size:0.8rem; color:var(--text-muted);">
-    <p>Daily Brief • Pure Static Architecture on GitHub Pages • Automated via GitHub Actions</p>
-    <p style="margin-top:0.25rem;">Respects privacy: zero trackers, zero ads, zero cookies. Data saved strictly in localStorage.</p>
+  <!-- CREATOR & AUTHOR CARD FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-creator-card">
+      <div class="creator-avatar-wrap">
+        <div class="creator-avatar">KP</div>
+        <div class="creator-status-badge" title="Developer & Curator">✓</div>
+      </div>
+      <div class="creator-info">
+        <div class="creator-headline">
+          <span class="creator-name">Krish Parikh</span>
+          <span class="creator-badge">Creator & Editor-in-Chief</span>
+        </div>
+        <p class="creator-qualification">🎓 Qualification: <strong>PDPU ICT, Gandhinagar</strong> (Pandit Deendayal Energy University, Information & Communication Technology)</p>
+        <p class="creator-bio">Crafted Daily Brief as an intentional, high-signal, distraction-free morning portal to replace the doomscroll loop for students and engineers worldwide.</p>
+        <div class="creator-contact-row">
+          <a href="tel:+919313775724" class="btn-creator-contact" title="Call Krish">
+            📞 <span>+91 93137 75724</span>
+          </a>
+          <a href="https://wa.me/919313775724?text=Hi%20Krish,%20I'm%20using%20Daily%20Brief!" target="_blank" rel="noopener noreferrer" class="btn-creator-contact btn-whatsapp" title="WhatsApp Krish">
+            💬 <span>WhatsApp</span>
+          </a>
+          <button class="btn-creator-contact btn-share-footer" id="footer-share-trigger">
+            🔗 <span>Share with Friends</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-line">
+      <p>Daily Brief • Built with Pure Web Standards • Automated daily at 12:00 AM IST via GitHub Actions</p>
+      <p style="margin-top:0.25rem;">Zero tracking, zero ads, zero invasive cookies. Your progress and community stays strictly in your browser.</p>
+    </div>
   </footer>
+
+  <!-- MODAL 1: COMMUNITY LOGIN & ADD READERS -->
+  <div class="modal-backdrop" id="auth-modal" style="display:none;">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div style="display:flex; align-items:center; gap:0.5rem;">
+          <span style="font-size:1.5rem;">👥</span>
+          <div>
+            <h3 class="modal-title">Daily Brief Reader Circle</h3>
+            <p class="modal-sub">Add friends, classmates, and manage your morning reading circle</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="auth-modal-close" aria-label="Close modal">×</button>
+      </div>
+
+      <div class="modal-tab-row">
+        <button class="modal-tab active" data-tab="signin">Sign In</button>
+        <button class="modal-tab" data-tab="signup">Sign Up</button>
+        <button class="modal-tab" data-tab="addpeople">➕ Add Friends / Classmates</button>
+      </div>
+
+      <!-- Tab 1: Sign In -->
+      <div class="modal-tab-content active" id="tab-signin">
+        <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:1rem;">Access your personalized morning streak, custom topic weights, and bookmarks.</p>
+        <div class="quick-login-card" id="quick-login-krish">
+          <div class="creator-avatar" style="width:40px; height:40px; font-size:1rem;">KP</div>
+          <div style="flex:1;">
+            <div style="font-weight:700; font-size:0.95rem;">Krish Parikh</div>
+            <div style="font-size:0.75rem; color:var(--text-muted);">krishparikh25@users.noreply.github.com • PDPU ICT</div>
+          </div>
+          <button class="btn-dhyan-primary" style="padding:0.4rem 1rem; font-size:0.8rem;" id="login-as-krish-btn">1-Click Sign In</button>
+        </div>
+
+        <form id="signin-form" style="margin-top:1rem; display:flex; flex-direction:column; gap:0.75rem;">
+          <input type="email" id="signin-email" placeholder="Your Email Address" class="modal-input" required />
+          <input type="password" id="signin-password" placeholder="Password" class="modal-input" required />
+          <button type="submit" class="btn-dhyan-primary" style="padding:0.75rem; width:100%;">Sign In</button>
+        </form>
+      </div>
+
+      <!-- Tab 2: Sign Up -->
+      <div class="modal-tab-content" id="tab-signup" style="display:none;">
+        <form id="signup-form" style="display:flex; flex-direction:column; gap:0.75rem;">
+          <input type="text" id="signup-name" placeholder="Full Name (e.g., Aryan Sharma)" class="modal-input" required />
+          <input type="email" id="signup-email" placeholder="Email Address" class="modal-input" required />
+          <input type="text" id="signup-college" placeholder="College / Org (e.g., PDPU ICT, Gandhinagar)" class="modal-input" value="PDPU ICT, Gandhinagar" />
+          <button type="submit" class="btn-dhyan-primary" style="padding:0.75rem; width:100%;">Create Reader Profile</button>
+        </form>
+      </div>
+
+      <!-- Tab 3: Add People -->
+      <div class="modal-tab-content" id="tab-addpeople" style="display:none;">
+        <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:0.75rem;">Invite a college friend or classmate to read Daily Brief with you every morning:</p>
+        <form id="add-member-form" style="display:flex; flex-direction:column; gap:0.75rem;">
+          <div style="display:flex; gap:0.5rem;">
+            <input type="text" id="member-name" placeholder="Friend's Name" class="modal-input" required style="flex:1;" />
+            <input type="tel" id="member-phone" placeholder="Mobile / WhatsApp" class="modal-input" style="flex:1;" />
+          </div>
+          <input type="email" id="member-email" placeholder="Email Address" class="modal-input" required />
+          <input type="text" id="member-college" placeholder="Department / Year" class="modal-input" value="PDPU ICT Gandhinagar" />
+          <button type="submit" class="btn-dhyan-primary" style="padding:0.75rem; width:100%; background:var(--sp-accent);">Add to Daily Brief Circle</button>
+        </form>
+
+        <div style="margin-top:1.25rem;">
+          <div style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.5rem;">Active Circle Members:</div>
+          <div id="members-list" class="members-pill-container">
+            <!-- Injected via app.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: INTERACTIVE SHARE SHEET -->
+  <div class="modal-backdrop" id="share-modal" style="display:none;">
+    <div class="modal-dialog" style="max-width:440px;">
+      <div class="modal-header">
+        <h3 class="modal-title">Share Daily Brief 🌅</h3>
+        <button class="modal-close-btn" id="share-modal-close" aria-label="Close modal">×</button>
+      </div>
+      <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:1rem;">Help fellow students and friends start their morning with pure signal and zero doomscrolling.</p>
+
+      <div class="share-grid">
+        <button class="share-channel-btn" id="share-copy-btn">
+          <span class="share-icon">📋</span>
+          <span>Copy Link</span>
+        </button>
+        <a href="https://wa.me/?text=Check%20out%20Daily%20Brief%20%E2%80%94%20the%20distraction-free%20morning%20briefing%20with%20world%20news,%20athletics,%20uplifting%20progress,%20mind%20gym,%20and%20meditation:%20https://krishparikh2205-afk.github.io/daily-brief/" target="_blank" rel="noopener noreferrer" class="share-channel-btn" style="color:#25D366;">
+          <span class="share-icon">💬</span>
+          <span>WhatsApp</span>
+        </a>
+        <a href="https://twitter.com/intent/tweet?text=Start%20your%20morning%20with%20Daily%20Brief%20%E2%80%94%2030-minute%20world%20intelligence,%20athletics,%20mind%20gym,%20and%20focus%20by%20@krishparikh%20https://krishparikh2205-afk.github.io/daily-brief/" target="_blank" rel="noopener noreferrer" class="share-channel-btn" style="color:#1DA1F2;">
+          <span class="share-icon">🐦</span>
+          <span>X / Twitter</span>
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://krishparikh2205-afk.github.io/daily-brief/" target="_blank" rel="noopener noreferrer" class="share-channel-btn" style="color:#0A66C2;">
+          <span class="share-icon">💼</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://t.me/share/url?url=https://krishparikh2205-afk.github.io/daily-brief/&text=Daily%20Brief%20-%20Morning%20Intelligence%20Portal" target="_blank" rel="noopener noreferrer" class="share-channel-btn" style="color:#229ED9;">
+          <span class="share-icon">✈️</span>
+          <span>Telegram</span>
+        </a>
+      </div>
+
+      <div style="margin-top:1rem; padding:0.75rem; background:var(--bg-canvas); border-radius:var(--radius-md); border:1px solid var(--border-subtle); display:flex; align-items:center; gap:0.5rem;">
+        <input type="text" readonly value="https://krishparikh2205-afk.github.io/daily-brief/" id="share-link-input" style="flex:1; background:transparent; border:none; color:var(--text-primary); font-size:0.8rem; outline:none;" />
+        <button id="share-input-copy" class="btn-dhyan-primary" style="padding:0.35rem 0.8rem; font-size:0.75rem;">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING TOAST NOTIFICATION -->
+  <div id="toast-container" class="toast-container"></div>
 
   <script type="module" src="./src/js/app.js"></script>
 </body>

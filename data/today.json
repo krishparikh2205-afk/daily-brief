@@ -1,40 +1,55 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-13T06:41:40.382Z",
-    "lastUpdatedIST": "Friday, 13 Nov 2026, 12:11 pm IST",
+    "lastUpdated": "2026-11-13T06:58:49.495Z",
+    "lastUpdatedIST": "Friday, 13 Nov 2026, 12:28 pm IST",
     "istDateStr": "2026-11-13",
     "targetMidnightIST": "2026-11-13T18:30:00.000Z",
     "title": "Daily Brief",
-    "tagline": "Your 10-minute morning lens on the world, sports, tech, mind, and spirit."
+    "tagline": "Your comprehensive 30-minute morning deep dive into world intelligence, uplifting human progress, athletics, tech frontiers, wild nature, and daily focus.",
+    "creator": {
+      "name": "Krish Parikh",
+      "qualification": "PDPU ICT, Gandhinagar",
+      "mobile": "+919313775724",
+      "mobileFormatted": "+91 93137 75724"
+    }
   },
   "worldPulse": {
     "regions": {
       "india": [
         {
-          "title": "Modi in Bengaluru: PM participates in Prashanti Kutiram celebrations, to inaugurate Namma Metro Pink Line | LIVE",
-          "summary": "PM Modi is scheduled to inaugurate the Pink Line at around 12.45 p.m. today. He will flag off the metro service and take a ride on the newly inaugurated stretch",
-          "source": "The Hindu",
-          "time": "2m ago",
-          "url": "https://www.thehindu.com/news/national/karnataka/pm-modi-karnataka-visit-namma-metro-pink-line-vande-bharat-train-inaugurations-prashanti-kutiram-celebrations-live-updates/article71696485.ece",
-          "imageUrl": "https://th-i.thgim.com/public/news/national/karnataka/57u0sc/article71696706.ece/alternates/LANDSCAPE_1200/Screenshot%202026-11-13%20112226.png",
-          "category": "india"
-        },
-        {
-          "title": "Maharashtra Minister slams police over security lapses after late-night ruckus outside his Chhatrapati Sambhajinagar home",
-          "summary": "Accused persons taken into police custody; Sanjay Shirsat, who is also the district’s Guardian Minister, said he would take up the matter with CM Fadnavis",
+          "title": "‘Bharat Vann’ project launched to boost Mysuru’s green cover",
+          "summary": "Finance Minister Nirmala Sitharaman inaugurates urban greening initiative; 45,000 saplings to be planted at K.C. Layout Park",
           "source": "The Hindu",
           "time": "7m ago",
-          "url": "https://www.thehindu.com/news/national/maharashtra/maharashtra-minister-sanjay-shirsat-slams-police-over-security-lapses-chhatrapati-sambhajinagar-home/article71696723.ece",
-          "imageUrl": "https://th-i.thgim.com/public/incoming/5htdjj/article71696791.ece/alternates/LANDSCAPE_1200/GqmbegYbcAEhrer.jpg",
+          "url": "https://www.thehindu.com/news/national/karnataka/bharat-vann-project-launched-to-boost-mysurus-green-cover/article71696792.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/hyl2c0/article71696865.ece/alternates/LANDSCAPE_1200/Tour-de-France-GQ3GJ7MJP.3.jpg.jpg",
           "category": "india"
         },
         {
-          "title": "Sonia Gandhi’s ‘Belonging’: From being shelved to the shelves",
-          "summary": "Sonia Gandhi’s memoir, “Belonging: A Journey of Love,” is set for release on November 10, with HarperCollins India handling its publication domestically.",
+          "title": "India’s ambassador to Oman visits injured Indian seafarer in hospital",
+          "summary": "“The Embassy stands firmly with the affected seafarers and their families during this difficult time and remains committed to extending all necessary assistance,” says Indian Embassy in Muscat",
+          "source": "The Hindu",
+          "time": "8m ago",
+          "url": "https://www.thehindu.com/news/national/indias-ambassador-to-oman-visits-injured-indian-seafarer-in-hospital/article71696783.ece",
+          "imageUrl": "https://th-i.thgim.com/public/news/national/6erh6u/article71696835.ece/alternates/LANDSCAPE_1200/Indian%20Ambassador%20to%20Oman.jpg",
+          "category": "india"
+        },
+        {
+          "title": "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+          "summary": "Following an alleged attack on his residence in Kalighat in south Kolkata on November 7, a visibly agitated Mr.  Banerjee had accused a section of the judiciary, among others, of turning a blind eye to threats to his security.",
+          "source": "The Hindu",
+          "time": "8m ago",
+          "url": "https://www.thehindu.com/news/national/west-bengal/let-him-give-list-of-judges-with-the-bjp-and-who-arent-calcutta-high-court-takes-exception-to-abhishek-banerjees-remarks-on-judiciary/article71696705.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/a2373j/article71696787.ece/alternates/LANDSCAPE_1200/20261105505L.jpg",
+          "category": "india"
+        },
+        {
+          "title": "Low-pressure area forms over Bay of Bengal, likely to intensify into depression by November 15",
+          "summary": "The system formed at 5:30 a.m. under the influence of an upper-air cyclonic circulation over the central Andaman Sea and adjoining Andaman and Nicobar Islands, according to the latest weather update",
           "source": "The Hindu",
           "time": "9m ago",
-          "url": "https://www.thehindu.com/books/articles-on-sonia-gandhi-book-belonging/article71450926.ece",
-          "imageUrl": "https://th-i.thgim.com/public/incoming/t0uy7v/article71677180.ece/alternates/LANDSCAPE_1200/sonia%20gandhi%20portrait%202%20web.jpg",
+          "url": "https://www.thehindu.com/news/national/low-pressure-area-forms-over-southeast-bay-of-bengal-likely-to-intensify-into-depression-by-november-15/article71696703.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/204djn/article71696728.ece/alternates/LANDSCAPE_1200/NH12Weather002.JPG",
           "category": "india"
         }
       ],
@@ -43,7 +58,7 @@
           "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
           "summary": "Huang abruptly quit on Thursday as head of one of the world's most valuable companies after revelations of alleged extramarital affairs.",
           "source": "BBC News US",
-          "time": "2h ago",
+          "time": "3h ago",
           "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f66c/live/4f0358a0-def1-11f1-bb80-c5cef03337ce.jpg",
           "category": "usa"
@@ -61,18 +76,27 @@
           "title": "'How does a building just fall?' Neighbours grieve after deadly Brooklyn building collapse",
           "summary": "The accident rattled the usually calm immigrant neighbourhood of Flatbush, New York. At least eight residents, including two children, died in the rubble.",
           "source": "BBC News US",
-          "time": "3h ago",
+          "time": "4h ago",
           "url": "https://www.bbc.co.uk/news/articles/cm4gn5qddqqxo?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5648/live/95089da0-deb6-11f1-8fb5-a771a656a227.jpg",
+          "category": "usa"
+        },
+        {
+          "title": "New York Mayor Mamdani praises 'heroism' of building collapse responders",
+          "summary": "\"People are alive today due to their heroism yesterday,\" Mamdani tells reporters at a news conference.",
+          "source": "BBC News US",
+          "time": "12h ago",
+          "url": "https://www.bbc.co.uk/news/videos/cmvg2lkv0lz9o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5f91/live/942ca140-ded1-11f1-93e1-3b657b665bcf.jpg",
           "category": "usa"
         }
       ],
       "uk": [
         {
-          "title": "Military base asylum centre near Piddington granted planning approval",
+          "title": "Asylum centre on military base near Piddington approved",
           "summary": "The Home Office's application to house up to 1,256 men at the site near Bicester was fast-tracked.",
           "source": "BBC News UK",
-          "time": "5m ago",
+          "time": "22m ago",
           "url": "https://www.bbc.co.uk/news/articles/c58j4798874go?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/62a7/live/8843d9c0-df03-11f1-93e1-3b657b665bcf.jpg",
           "category": "uk"
@@ -81,7 +105,7 @@
           "title": "Junior doctor burnout putting maternity patients at risk, says regulator",
           "summary": "Trainee doctors delivering babies are more likely to suffer from overwork and burnout than other specialties, evidence suggests.",
           "source": "BBC News UK",
-          "time": "5h ago",
+          "time": "6h ago",
           "url": "https://www.bbc.co.uk/news/articles/ckx28le8dv9wo?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e505/live/77db9650-dec1-11f1-86d5-71a9f29d1c99.png",
           "category": "uk"
@@ -93,6 +117,15 @@
           "time": "5h ago",
           "url": "https://www.bbc.co.uk/news/articles/cm2l5n07l87vo?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d0be/live/2ecff280-d2f0-11f1-8d86-83eebc838351.jpg",
+          "category": "uk"
+        },
+        {
+          "title": "Timothée Chalamet among Hollywood stars and charity heroes stepping up for BBC Children In Need",
+          "summary": "Viewers of the annual TV charity event will see the actor playing a prank on Rylan.",
+          "source": "BBC News UK",
+          "time": "6h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cqly4lnxn031o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8023/live/c0a54e10-df2c-11f1-93e1-3b657b665bcf.jpg",
           "category": "uk"
         }
       ],
@@ -123,9 +156,27 @@
           "url": "https://www.dw.com/en/can-the-eu-make-it-harder-to-trick-consumers-online/a-79933447?maca=en-rss-en-eu-2092-rdf",
           "imageUrl": "https://static.dw.com/image/68243087_6.jpg",
           "category": "europe"
+        },
+        {
+          "title": "What have the talks with Russia and the US in Abu Dhabi achieved for Ukraine?",
+          "summary": "The first trilateral talks between Ukraine, the US and Russia in nine months have ended with an agreement on exchanging prisoners. Does this mark a genuine breakthrough and a step toward peace?",
+          "source": "DW Europe",
+          "time": "14h ago",
+          "url": "https://www.dw.com/en/what-have-the-talks-with-russia-and-the-us-in-abu-dhabi-achieved-for-ukraine/a-79930613?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/79918396_6.jpg",
+          "category": "europe"
         }
       ],
       "middleEast": [
+        {
+          "title": "Australia captain Pat Cummins denies involvement in ‘Sandpapergate’ scandal",
+          "summary": "Cummins says Khawaja was '100 percent wrong' in claiming the whole team knew about the 2018 ball-tampering scandal.",
+          "source": "Al Jazeera",
+          "time": "45m ago",
+          "url": "https://www.aljazeera.com/sports/2026/11/13/pat-cummins-australia-usman-khawaja-sandpapergate-test-south-africa?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/GettyImages-2304843314-1794548577.jpg?resize=1920%2C1440",
+          "category": "middleEast"
+        },
         {
           "title": "Harry Kane breaks caps record as England reach Nations League knockouts",
           "summary": "England moved to second spot in Group A3 behind Spain, confirming their place in the Nations League last eight in March.",
@@ -163,6 +214,15 @@
           "url": "https://www.dw.com/en/eu-leaders-tussle-over-whom-to-send-to-ukraine-russia-peace-talks/a-79935468?maca=en-rss-en-eu-2092-rdf",
           "imageUrl": "https://static.dw.com/image/79677311_6.jpg",
           "category": "Russia-Ukraine"
+        },
+        {
+          "title": "What have the talks with Russia and the US in Abu Dhabi achieved for Ukraine?",
+          "summary": "The first trilateral talks between Ukraine, the US and Russia in nine months have ended with an agreement on exchanging prisoners. Does this mark a genuine breakthrough and a step toward peace?",
+          "source": "DW Europe",
+          "time": "14h ago",
+          "url": "https://www.dw.com/en/what-have-the-talks-with-russia-and-the-us-in-abu-dhabi-achieved-for-ukraine/a-79930613?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/79918396_6.jpg",
+          "category": "Russia-Ukraine"
         }
       ],
       "chinaAsiaPacific": [
@@ -170,13 +230,13 @@
           "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI",
           "summary": "More than 900 victims are thought to have fallen prey to the FaceStealer scheme in the last 18 months.",
           "source": "BBC News Asia",
-          "time": "3h ago",
+          "time": "4h ago",
           "url": "https://www.bbc.co.uk/news/articles/cqdj1ellpd70o?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c16a/live/65ee22f0-df02-11f1-b6e1-5b169363fed4.jpg",
           "category": "asia"
         },
         {
-          "title": "Can the Eurovision Song Contest succeed in Asia?",
+          "title": "Will the Eurovision Song Contest succeed in Asia?",
           "summary": "The world’s biggest and longest-running song contest is coming to Asia, with eleven countries competing in Bangkok, Thailand on Saturday.",
           "source": "BBC News Asia",
           "time": "4h ago",
@@ -191,6 +251,15 @@
           "time": "1d ago",
           "url": "https://www.bbc.co.uk/news/articles/ckvg25zmppglo?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5218/live/acdfe640-de84-11f1-93e1-3b657b665bcf.png",
+          "category": "asia"
+        },
+        {
+          "title": "Indonesia's vice-president resigns amid signs ruling alliance is fraying",
+          "summary": "The news comes at a turbulent time for President Prabowo, who faces a growing rift with his predecessor Joko Widodo.",
+          "source": "BBC News Asia",
+          "time": "22h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cmvgxgz87qqro?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ddfe/live/c33427d0-de93-11f1-9afe-1f03bfe02283.jpg",
           "category": "asia"
         }
       ],
@@ -217,9 +286,18 @@
           "title": "Oranges investigated after four girls die in suspected Uganda school poisoning",
           "summary": "The girls started vomiting after eating oranges brought in by a fellow pupil - police are travelling to the village they came from.",
           "source": "BBC News Africa",
-          "time": "22h ago",
+          "time": "23h ago",
           "url": "https://www.bbc.co.uk/news/articles/ck9d71wyn7wwo?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7574/live/b4ca5c60-de65-11f1-8771-4778a0df4e09.jpg",
+          "category": "africa"
+        },
+        {
+          "title": "Can Nigeria's president regain voters' trust after painful first term?",
+          "summary": "For Nigerians to feel meaningful improvements, reforms will need to go beyond the promises outlined, analysts say.",
+          "source": "BBC News Africa",
+          "time": "23h ago",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynyw527wdo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5293/live/110e8ed0-dd8d-11f1-a56e-d7dc6014806d.jpg",
           "category": "africa"
         }
       ],
@@ -228,7 +306,7 @@
           "title": "Eight killed in Colombian air strike targeting Gulf Clan gang",
           "summary": "A suspected gang leader considered a \"priority target\" was among those killed, the Colombian president says.",
           "source": "BBC Latin America",
-          "time": "16h ago",
+          "time": "17h ago",
           "url": "https://www.bbc.co.uk/news/articles/crgj3v3z10dno?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cf6/live/b6195780-de9a-11f1-a701-fddedf244c16.jpg",
           "category": "latinAmerica"
@@ -249,6 +327,15 @@
           "time": "1d ago",
           "url": "https://www.bbc.co.uk/news/articles/c6e3d895zne7o?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0d32/live/746c37d0-ddbe-11f1-a50f-85eebf9e50e5.jpg",
+          "category": "latinAmerica"
+        },
+        {
+          "title": "Haitian PM praises El Salvador after joint strike on alleged home of gang leader",
+          "summary": "The 400 Mawozo gang was targeted by El Salvador's military, which has deployed thousands of troops to combat Haiti's gang violence crisis.",
+          "source": "BBC Latin America",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2854/live/3f67c570-dd7a-11f1-ad5a-4712ee7e64fd.png",
           "category": "latinAmerica"
         }
       ]
@@ -281,24 +368,121 @@
     ],
     "isStale": false
   },
+  "goodNews": {
+    "items": [
+      {
+        "title": "Documentarian Helps 103-yo D-Day Survivor Recover His Lost War Medals",
+        "summary": "A 103-year-old D-Day veteran was reunited with his war medals just in time for Remembrance Day.",
+        "source": "Good News Network",
+        "time": "14h ago",
+        "url": "https://www.goodnewsnetwork.org/documentarian-helps-103-yo-d-day-survivor-recover-his-lost-war-medals-just-in-time-for-veterans-day/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Douglas-Halley-103-with-his-grandson-Luke-credit-SWNS.jpg",
+        "category": "World Progress"
+      },
+      {
+        "title": "For Centuries, Visitors Walked Right by 280 Unseen Ice Age Cave Paintings",
+        "summary": "The third-largest collection of Ice Age-era engravings ever found on Spain’s Mediterranean side was sitting in plain sight where visitors for centuries had been walking right by them.",
+        "source": "Good News Network",
+        "time": "1d ago",
+        "url": "https://www.goodnewsnetwork.org/for-centuries-visitors-walked-right-by-280-unseen-ice-age-cave-paintings/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-horse-representaion-where-cave-floor-is-used-to-represent-the-ground-credit-2026-Verges-et-al.-Antiquiry-CC-4.0.-BY-SA-e1794413594768.jpg",
+        "category": "World Progress"
+      },
+      {
+        "title": "World’s Driest Desert Erupts into Record-Breaking Bloom Boom (LOOK)",
+        "summary": "Just a few weeks ago it was the driest place on Earth.  Now it’s the most colorful.",
+        "source": "Good News Network",
+        "time": "2d ago",
+        "url": "https://www.goodnewsnetwork.org/worlds-driest-desert-erupts-into-record-breaking-bloom-boom-look/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Juan-Cortez-Estay-Unsplash.jpg",
+        "category": "World Progress"
+      },
+      {
+        "title": "She Kept His Coat for 30 Years, Then Finally Found the Boy Who Gave It to Her After Racial Attack",
+        "summary": "A coat once placed over the shoulders of a young girl whose traditional Korean uniform had been slashed in a racial incident 30 years ago has now been returned to the ‘good Samaritan’ who offered it.",
+        "source": "Good News Network",
+        "time": "4d ago",
+        "url": "https://www.goodnewsnetwork.org/she-kept-his-coat-for-30-years-then-finally-found-the-boy-who-gave-it-to-her-after-racial-attack/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Park-Chung-moon-painting-and-Norihisa-Koyama-painting-by-Park-fair-use-heavily-cropped-and-rearranged.jpeg",
+        "category": "World Progress"
+      },
+      {
+        "title": "Mayor Uses AirTag to Catch Capstone Thief who was Stealing 18th-Century Stones Across the Countryside",
+        "summary": "An English mayor-turned-detective solved the case of a thief who was looting $9,000 worth of historic capstones from a 300-year-old stone village wall—and he used a hi-tech tracker and a little trickery.",
+        "source": "Good News Network",
+        "time": "5d ago",
+        "url": "https://www.goodnewsnetwork.org/mayor-uses-airtag-to-catch-capstone-thief/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Councillor-Matt-Smith-with-GPS-AirTag-SWNS.jpeg",
+        "category": "World Progress"
+      },
+      {
+        "title": "Adventurer Finally Hugs Mom After 28-Year Walk Around the World From Home in UK",
+        "summary": "A British adventurer who has walked around the world on a 28-year hike has finally reunited with his tearful mother.",
+        "source": "Good News Network",
+        "time": "5d ago",
+        "url": "https://www.goodnewsnetwork.org/adventurer-finally-hugs-mom-after-28-year-walk-around-the-world-from-home-in-uk/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Karl-Bushby-reunites-with-mom-after-walking-around-world-–-SWNS.jpeg",
+        "category": "World Progress"
+      }
+    ],
+    "isStale": false
+  },
   "sports": {
     "achievementOfTheDay": {
-      "title": "World Record & Peak Endurance Milestone",
-      "athleteOrTeam": "Global Sports Spotlight",
-      "achievement": "Record-setting performance in international championship trials",
-      "detail": "Dominant tactical execution saw benchmark milestones shattered, showcasing extraordinary conditioning and technical precision.",
-      "source": "BBC Sport / World Athletics",
-      "url": "https://www.bbc.com/sport"
+      "title": "World Record in Sub-2:00 Marathon Pace & 100m Velocity",
+      "athleteOrTeam": "Global Athletics Spotlight",
+      "achievement": "Record-setting sprint velocities and historic endurance splits",
+      "detail": "World-class running conditioning and relentless technical pacing shatter historical athletic barriers, elevating the pinnacle of human speed and resilience.",
+      "source": "World Athletics / BBC Sport",
+      "url": "https://athleticsweekly.com/"
     },
     "categories": {
+      "athletics": [
+        {
+          "title": "Into the wild: the history of trail running",
+          "summary": "Dave Holmes explores how trail running evolved from an ancient necessity into the world’s fastest-growing discipline. It’s easy to imagine […]",
+          "source": "Athletics Weekly",
+          "time": "17h ago",
+          "url": "https://athleticsweekly.com/news/into-the-wild-the-history-of-trail-running-1040014077/",
+          "imageUrl": null,
+          "category": "Athletics & Running"
+        },
+        {
+          "title": "A lap with Alice Braham",
+          "summary": "We talk to the 50-year-old who set new marathon standards in Frankfurt. Alice Braham believes the best is yet to […]",
+          "source": "Athletics Weekly",
+          "time": "17h ago",
+          "url": "https://athleticsweekly.com/news/a-lap-with-alice-braham-1040014076/",
+          "imageUrl": null,
+          "category": "Athletics & Running"
+        },
+        {
+          "title": "Josh Griffiths handed three-month ban",
+          "summary": "The club runner who emerged from the pack to finish as top Briton at the 2017 London Marathon has been […]",
+          "source": "Athletics Weekly",
+          "time": "1d ago",
+          "url": "https://athleticsweekly.com/news/josh-griffiths-handed-three-month-ban-1040014073/",
+          "imageUrl": null,
+          "category": "Athletics & Running"
+        },
+        {
+          "title": "Los Angeles 2028 qualifying: not for the faint-hearted",
+          "summary": "Sifan Hassan’s Olympic record of 2:22:55 would not be quick enough to meet the women’s marathon standard for Los Angeles […]",
+          "source": "Athletics Weekly",
+          "time": "2d ago",
+          "url": "https://athleticsweekly.com/news/los-angeles-2028-qualifying-not-for-the-faint-hearted-1040014071/",
+          "imageUrl": null,
+          "category": "Athletics & Running"
+        }
+      ],
       "cricket": [
         {
           "title": "Beardman's six-for on debut gives Australia momentary relief from sandpapergate",
           "summary": "Hours after Cummins' extraordinary press conference on the Cape Town Test of 2018, a young fast bowler made a big splash at England's expense",
           "source": "ESPNcricinfo",
-          "time": "Just now",
+          "time": "5m ago",
           "url": "https://www.cricinfo.com/ci/content/story/1562472.html?ex_cid=OTC-RSS",
-          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425100/425162.jpg",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425100/425161.jpg",
           "category": "Cricket"
         },
         {
@@ -314,7 +498,7 @@
           "title": "Cummins: Khawaja's allegations 'complete and utter nonsense'",
           "summary": "Australia captain says Khawaja's suggestion that the entire 2018 Cape Town XI knew that sandpaper was being used on the field is '100% wrong'",
           "source": "ESPNcricinfo",
-          "time": "2h ago",
+          "time": "Just now",
           "url": "https://www.cricinfo.com/ci/content/story/1562419.html?ex_cid=OTC-RSS",
           "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425100/425147.jpg",
           "category": "Cricket"
@@ -325,7 +509,7 @@
           "title": "Kane scores winner but who else made an impression? England player ratings",
           "summary": "How did England's players fare in the Nations League match against Croatia? Senior football correspondent Sami Mokbel gives his verdict.",
           "source": "BBC Sport",
-          "time": "8h ago",
+          "time": "9h ago",
           "url": "https://www.bbc.co.uk/sport/football/articles/c64gnd7vd912o?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5fbd/live/589bbd20-dee3-11f1-93e1-3b657b665bcf.jpg",
           "category": "Football"
@@ -363,7 +547,7 @@
           "title": "Andreeva beats world number two Sabalenka to reach WTA semis",
           "summary": "Russia's Mirra Andreeva beats world number two and second seed Aryna Sabalenka 6-4 6-0 to reach the last four of the WTA Finals.",
           "source": "BBC Sport",
-          "time": "15h ago",
+          "time": "16h ago",
           "url": "https://www.bbc.co.uk/sport/tennis/videos/cqrmg2w1038ro?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f59a/live/fccab0d0-dea8-11f1-a701-fddedf244c16.jpg",
           "category": "Tennis"
@@ -392,7 +576,7 @@
           "title": "Whatever happened to the diamond that went missing in F1 crash?",
           "summary": "Whatever happened to the diamond that went missing after the Formula 1 car it was attached to crashed?",
           "source": "BBC Sport",
-          "time": "29m ago",
+          "time": "46m ago",
           "url": "https://www.bbc.co.uk/sport/formula1/articles/c60735md0jrpo?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d8b0/live/da7ae610-deaa-11f1-8253-3f203a001288.jpg",
           "category": "Sports"
@@ -400,6 +584,11 @@
       ]
     },
     "latestScores": [
+      {
+        "match": "World Athletics 100m Trials",
+        "result": "9.81s (WL) Clinical Speed Performance",
+        "status": "Completed"
+      },
       {
         "match": "India vs Australia (Series)",
         "result": "IND lead series 2-1 with clinical bowling display",
@@ -424,7 +613,7 @@
         "title": "Donald Trump really wants Tim Cook to run Nvidia",
         "summary": "Jensen Huang resigned this morning as Nvidia's CEO following reports of affairs, including one with an alleged Chinese spy.  Right now, the company is being led by its CFO on an interim basis.",
         "source": "Tech & Science",
-        "time": "5h ago",
+        "time": "6h ago",
         "url": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang",
         "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/gettyimages-2228842017.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
         "category": "AI"
@@ -442,7 +631,7 @@
         "title": "Whoop launched a social network where every user has a ‘verified heartbeat’",
         "summary": "Starting Thursday, Whoop members can share their data from its wearables on the app's new Whoop Humans social network.",
         "source": "Tech & Science",
-        "time": "6h ago",
+        "time": "7h ago",
         "url": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network",
         "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/whoop-humans-launch-screenshots-trio-2.jpeg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
         "category": "AI"
@@ -478,7 +667,7 @@
         "title": "Google’s new Gemini model is better at understanding complicated questions",
         "summary": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.",
         "source": "Tech & Science",
-        "time": "8h ago",
+        "time": "9h ago",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
         "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25290329/STK255_Google_Gemini_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
         "category": "AI"
@@ -532,6 +721,15 @@
         "url": "https://techcrunch.com/2026/11/02/snap-settles-lawsuit-accusing-platform-of-fueling-teen-depression-and-eating-disorders/",
         "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/06/snapchat-getty.jpg?w=1200",
         "category": "YouTube"
+      },
+      {
+        "title": "From restaurant guides to payments, here’s how TikTok is building a super app",
+        "summary": "TikTok may be working to become the app that people use for most of their digital activities.",
+        "source": "TechCrunch / The Verge",
+        "time": "12d ago",
+        "url": "https://techcrunch.com/2026/10/31/tiktoks-road-to-becoming-a-super-app/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2259084458.jpg?resize=1200,801",
+        "category": "TikTok"
       }
     ],
     "isStale": false
@@ -585,49 +783,49 @@
   },
   "dailyFacts": [
     {
-      "id": "wiki-1914",
-      "category": "History",
-      "emoji": "📜",
-      "title": "Historical Turning Point (1914)",
-      "fact": "Zaian War: Zaian Berber tribesmen routed French forces at the Battle of El Herri in Morocco.",
-      "source": "Wikipedia On This Day",
-      "sourceUrl": "https://en.wikipedia.org/wiki/Zaian_War"
+      "id": "fact-nature-1",
+      "category": "Regenerative Marvels",
+      "emoji": "🦎",
+      "title": "Axolotl Complete Organ Regeneration",
+      "fact": "The axolotl salamander can regrow lost limbs, crushed spines, and parts of its heart, retina, and brain without scar tissue. Transplanted organs from other axolotls are accepted without any immune rejection.",
+      "source": "Max Planck Institute for Molecular Genetics",
+      "sourceUrl": "https://www.mpg.de/en"
     },
     {
-      "id": "wiki-1809",
-      "category": "History",
-      "emoji": "📜",
-      "title": "Historical Turning Point (1809)",
-      "fact": "As part of the Persian Gulf campaign, a British flotilla arrived at and launched an amphibious assault on Ras Al Khaimah.",
-      "source": "Wikipedia On This Day",
-      "sourceUrl": "https://en.wikipedia.org/wiki/Persian_Gulf_campaign_of_1809"
+      "id": "fact-nature-2",
+      "category": "Cryogenic Survival",
+      "emoji": "🐸",
+      "title": "Alaskan Wood Frog Frozen Hibernation",
+      "fact": "The Alaskan wood frog survives sub-zero winters by freezing 70% of its body water solid. Its heart completely stops beating and brain activity ceases for months, thawed unharmed when spring arrives via high-concentration glucose antifreeze.",
+      "source": "Journal of Experimental Biology",
+      "sourceUrl": "https://journals.biologists.com/jeb"
     },
     {
-      "id": "fact-extra-3",
-      "category": "Geography",
-      "emoji": "🌍",
-      "title": "Oceanic Depths & Light",
-      "fact": "Over 90% of Earth’s habitable living space exists within the deep oceans, where sunlight completely vanishes beyond 200 meters down.",
-      "source": "NOAA Ocean Exploration",
-      "sourceUrl": "https://oceanexplorer.noaa.gov/"
+      "id": "fact-nature-3",
+      "category": "Sensory Wonders",
+      "emoji": "🐝",
+      "title": "Bumblebee Electrostatic Foraging",
+      "fact": "Bumblebees build up positive electric charges as they fly. Because flowers possess a slight negative charge, pollen grains literally jump through the air onto the bee’s body, and the altered electric field signals to arriving bees that the flower was recently visited.",
+      "source": "Science Magazine Biomechanics",
+      "sourceUrl": "https://www.science.org/"
     },
     {
-      "id": "fact-extra-4",
-      "category": "Science",
-      "emoji": "🔬",
-      "title": "Quantum Entanglement Precision",
-      "fact": "Modern atomic clocks lose less than one second every 300 million years by measuring quantum state transitions of strontium atoms.",
-      "source": "NIST Quantum Physics",
-      "sourceUrl": "https://www.nist.gov/"
+      "id": "fact-nature-4",
+      "category": "Mammalian Giants",
+      "emoji": "🐋",
+      "title": "Blue Whale Vascular Dimensions",
+      "fact": "A blue whale’s main aorta is over 9 inches in diameter—large enough for a toddler to crawl through. Its heart weighs approximately 400 pounds (the size of a small golf cart), and its heartbeat can be detected by acoustic sensors over two miles away underwater.",
+      "source": "Smithsonian Ocean Portal",
+      "sourceUrl": "https://ocean.si.edu/"
     },
     {
-      "id": "fact-extra-5",
-      "category": "Human Body",
-      "emoji": "🧠",
-      "title": "Mitochondrial Lineage",
-      "fact": "All human mitochondrial DNA is inherited almost exclusively through the maternal line, tracing back to a common ancestral maternal lineage.",
-      "source": "Nature Genetics",
-      "sourceUrl": "https://www.nature.com/"
+      "id": "fact-nature-5",
+      "category": "Animal Intelligence",
+      "emoji": "🦅",
+      "title": "Crow Facial Recognition & Grudges",
+      "fact": "Corvids (crows and ravens) remember individual human faces for decades. When a human treats a crow aggressively, the crow transmits that person’s description to the entire flock and teaches subsequent generations to identify and mob that specific human.",
+      "source": "University of Washington Ornithology",
+      "sourceUrl": "https://www.washington.edu/news/2012/09/10/crows-remember-faces-for-years/"
     }
   ],
   "mindGym": {

@@ -4,10 +4,9 @@
   "description": "Daily Brief - Distraction-free, high-signal morning dashboard for students and engineers",
   "type": "module",
   "scripts": {
+    "start": "node scripts/serve.mjs",
     "fetch-data": "node scripts/fetch-all.mjs",
-    "serve": "node scripts/serve.mjs",
-    "build": "node scripts/build.mjs",
-    "test-browser": "node scripts/test-browser.mjs"
+    "test": "node scripts/verify-structure.mjs"
   },
   "dependencies": {
     "cheerio": "^1.0.0",
