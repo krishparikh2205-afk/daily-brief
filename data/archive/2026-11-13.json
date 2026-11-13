@@ -1,0 +1,938 @@
+{
+  "meta": {
+    "lastUpdated": "2026-11-13T06:15:26.596Z",
+    "lastUpdatedIST": "Friday, 13 Nov 2026, 11:45 am IST",
+    "istDateStr": "2026-11-13",
+    "targetMidnightIST": "2026-11-13T18:30:00.000Z",
+    "title": "Daily Brief",
+    "tagline": "Your 10-minute morning lens on the world, sports, tech, mind, and spirit."
+  },
+  "worldPulse": {
+    "regions": {
+      "india": [
+        {
+          "title": "Low-pressure area forms over southeast Bay of Bengal, likely to intensify into depression by November 15",
+          "summary": "The system formed at 5:30 a.m. under the influence of an upper-air cyclonic circulation over the central Andaman Sea and adjoining Andaman and Nicobar Islands, according to the latest weather update",
+          "source": "The Hindu",
+          "time": "Just now",
+          "url": "https://www.thehindu.com/news/national/low-pressure-area-forms-over-southeast-bay-of-bengal-likely-to-intensify-into-depression-by-november-15/article71696703.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/204djn/article71696728.ece/alternates/LANDSCAPE_1200/NH12Weather002.JPG",
+          "category": "india"
+        },
+        {
+          "title": "Why Himalayan towns need a different kind of development | Explained",
+          "summary": "Do cities along the Indian Himalayan Range have adequate funds and resources to manage civic issues?",
+          "source": "The Hindu",
+          "time": "Just now",
+          "url": "https://www.thehindu.com/news/national/why-himalayan-towns-need-a-different-kind-of-development-explained/article68502845.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/srq6s5/article68502888.ece/alternates/LANDSCAPE_1200/2150_13-6-2018_15-33-2_1_MONSOONMEGHALAYA_13062018_02.JPG",
+          "category": "india"
+        },
+        {
+          "title": "Modi in Bengaluru: PM participates in Prashanti Kutiram celebrations, to inaugurate Namma Metro Pink Line | LIVE",
+          "summary": "PM Modi is scheduled to inaugurate the Pink Line at around 12.45 p.m. today. He will flag off the metro service and take a ride on the newly inaugurated stretch",
+          "source": "The Hindu",
+          "time": "Just now",
+          "url": "https://www.thehindu.com/news/national/karnataka/pm-modi-karnataka-visit-namma-metro-pink-line-vande-bharat-train-inaugurations-prashanti-kutiram-celebrations-live-updates/article71696485.ece",
+          "imageUrl": "https://th-i.thgim.com/public/news/national/karnataka/57u0sc/article71696706.ece/alternates/LANDSCAPE_1200/Screenshot%202026-11-13%20112226.png",
+          "category": "india"
+        }
+      ],
+      "usa": [
+        {
+          "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+          "summary": "Huang abruptly quit on Thursday as head of one of the world's most valuable companies after revelations of alleged extramarital affairs.",
+          "source": "BBC News US",
+          "time": "2h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f66c/live/4f0358a0-def1-11f1-bb80-c5cef03337ce.jpg",
+          "category": "usa"
+        },
+        {
+          "title": "How could the Nvidia CEO’s affair threaten US national security?",
+          "summary": "BBC's Asma Khalid explains how the Nvidia affair could threaten US national security and risk sensitive US technology getting into China.",
+          "source": "BBC News US",
+          "time": "4h ago",
+          "url": "https://www.bbc.co.uk/news/videos/cm7526d2qeg4o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3919/live/4f545cd0-df07-11f1-b441-2b33b063138f.jpg",
+          "category": "usa"
+        },
+        {
+          "title": "'How does a building just fall?' Neighbours grieve after deadly Brooklyn building collapse",
+          "summary": "The accident rattled the usually calm immigrant neighbourhood of Flatbush, New York. At least eight residents, including two children, died in the rubble.",
+          "source": "BBC News US",
+          "time": "4h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cm4gn5qddqqxo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5648/live/95089da0-deb6-11f1-8fb5-a771a656a227.jpg",
+          "category": "usa"
+        }
+      ],
+      "uk": [
+        {
+          "title": "Piddlington military base asylum plans granted planning approval",
+          "summary": "The Home Office's application to house up to 1,256 men at the site near Bicester was fast-tracked.",
+          "source": "BBC News UK",
+          "time": "4h ago",
+          "url": "https://www.bbc.co.uk/news/articles/c58j4798874go?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/62a7/live/8843d9c0-df03-11f1-93e1-3b657b665bcf.jpg",
+          "category": "uk"
+        },
+        {
+          "title": "Junior doctor burnout putting maternity patients at risk, says regulator",
+          "summary": "Trainee doctors delivering babies are more likely to suffer from overwork and burnout than other specialties, evidence suggests.",
+          "source": "BBC News UK",
+          "time": "5h ago",
+          "url": "https://www.bbc.co.uk/news/articles/ckx28le8dv9wo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e505/live/77db9650-dec1-11f1-86d5-71a9f29d1c99.png",
+          "category": "uk"
+        },
+        {
+          "title": "UK economy grows at fastest rate for more than two years",
+          "summary": "The UK economy grew by 0.7% in the three months to September, according to official figures.",
+          "source": "BBC News UK",
+          "time": "19h ago",
+          "url": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b029/live/c4ae2930-de89-11f1-b441-2b33b063138f.jpg",
+          "category": "uk"
+        }
+      ],
+      "europe": [
+        {
+          "title": "EU leaders tussle over who to send to Ukraine, Russia peace talks",
+          "summary": "A seat at the table for Europe now appears likely following comments by a US envoy who just held talks with Putin. But who will take that seat remains unclear.",
+          "source": "DW Europe",
+          "time": "8h ago",
+          "url": "https://www.dw.com/en/eu-leaders-tussle-over-who-to-send-to-ukraine-russia-peace-talks/a-79935468?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/79677311_6.jpg",
+          "category": "europe"
+        },
+        {
+          "title": "Czechia braces for massive protest as anger over government's public media reform plans boils",
+          "summary": "A fast-tracked bill on public media funding reform has sparked strikes, rallies and fears for the independence of public broadcasting in Czechia. A massive protest is due to take place in Prague on November 15.",
+          "source": "DW Europe",
+          "time": "12h ago",
+          "url": "https://www.dw.com/en/czechia-braces-for-massive-protest-as-anger-over-government-s-public-media-reform-plans-boils/a-79933533?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/77653329_6.jpg",
+          "category": "europe"
+        },
+        {
+          "title": "Can the EU make it harder to trick consumers online?",
+          "summary": "The EU wants to curb subscription traps, misleading sales tactics and features that keep people scrolling. What would the proposed Digital Fairness Act change, and does it go far enough?",
+          "source": "DW Europe",
+          "time": "13h ago",
+          "url": "https://www.dw.com/en/can-the-eu-make-it-harder-to-trick-consumers-online/a-79933447?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/68243087_6.jpg",
+          "category": "europe"
+        }
+      ],
+      "middleEast": [
+        {
+          "title": "Harry Kane breaks caps record as England reach Nations League knockouts",
+          "summary": "England moved to second spot in Group A3 behind Spain, confirming their place in the Nations League last eight in March.",
+          "source": "Al Jazeera",
+          "time": "1h ago",
+          "url": "https://www.aljazeera.com/sports/2026/11/13/harry-kane-england-appearance-record-126-croatia-nations-league-quarterfinals?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261112__D7BZ2WL__v1__HighRes__FblNationsLeagueEngCro-1794546572.jpg?resize=1920%2C1440",
+          "category": "middleEast"
+        },
+        {
+          "title": "Burkina Faso’s rival armed groups turn on each other as state loses ground",
+          "summary": "JNIM and ISIL intensify their fight for control as Burkina Faso struggles to contain the wider armed conflict.",
+          "source": "Al Jazeera",
+          "time": "1h ago",
+          "url": "https://www.aljazeera.com/news/2026/11/13/burkina-fasos-rival-armed-groups-turn-on-each-other-as-state-loses-ground?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2025/05/AFP__20221008__32KY9DR__v1__HighRes__BurkinaPoliticsCoupUnrestAttackCeremony-1747038834.jpg?resize=1920%2C1365",
+          "category": "middleEast"
+        },
+        {
+          "title": "Pope Leo meets clergy abuse survivors in Peru amid calls for justice",
+          "summary": "Pope Leo met six clergy abuse survivors in Peru, while hundreds more say they remain excluded as they seek justice.",
+          "source": "Al Jazeera",
+          "time": "1h ago",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_pope-leo-meets-clergy-abuse-survivors-in-peru-121126?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794546304.jpg?resize=1620%2C1080&quality=80",
+          "category": "middleEast"
+        }
+      ],
+      "russiaUkraine": [
+        {
+          "title": "EU leaders tussle over who to send to Ukraine, Russia peace talks",
+          "summary": "A seat at the table for Europe now appears likely following comments by a US envoy who just held talks with Putin. But who will take that seat remains unclear.",
+          "source": "DW / BBC",
+          "time": "8h ago",
+          "url": "https://www.dw.com/en/eu-leaders-tussle-over-who-to-send-to-ukraine-russia-peace-talks/a-79935468?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/79677311_6.jpg",
+          "category": "Russia-Ukraine"
+        },
+        {
+          "title": "What have the talks with Russia and the US in Abu Dhabi achieved for Ukraine?",
+          "summary": "The first trilateral talks between Ukraine, the US and Russia in nine months have ended with an agreement on exchanging prisoners. Does this mark a genuine breakthrough and a step toward peace?",
+          "source": "DW / BBC",
+          "time": "14h ago",
+          "url": "https://www.dw.com/en/what-have-the-talks-with-russia-and-the-us-in-abu-dhabi-achieved-for-ukraine/a-79930613?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/79918396_6.jpg",
+          "category": "Russia-Ukraine"
+        },
+        {
+          "title": "British counterterrorism police arrest US soldier accused of spying on behalf of Russia",
+          "summary": "A member of the US Army has been arrested near Gloucester in England. Police said he was suspected of espionage activity in connection with Russia. Investigators from the US and UK are involved in the probe.",
+          "source": "DW / BBC",
+          "time": "2d ago",
+          "url": "https://www.dw.com/en/british-counterterrorism-police-arrest-us-soldier-accused-of-spying-on-behalf-of-russia/a-79913240?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/79447749_6.jpg",
+          "category": "Russia-Ukraine"
+        }
+      ],
+      "chinaAsiaPacific": [
+        {
+          "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI",
+          "summary": "More than 900 victims are thought to have fallen prey to the FaceStealer scheme in the last 18 months.",
+          "source": "BBC News Asia",
+          "time": "3h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cqdj1ellpd70o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c16a/live/65ee22f0-df02-11f1-b6e1-5b169363fed4.jpg",
+          "category": "asia"
+        },
+        {
+          "title": "Can the Eurovision Song Contest succeed in Asia?",
+          "summary": "The world’s biggest and longest-running song contest is coming to Asia, with eleven countries competing in Bangkok, Thailand on Saturday.",
+          "source": "BBC News Asia",
+          "time": "4h ago",
+          "url": "https://www.bbc.co.uk/news/videos/cxvg23n59y1ro?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1f20/live/af01cfe0-df08-11f1-a701-fddedf244c16.jpg",
+          "category": "asia"
+        },
+        {
+          "title": "Australian teen missing in bush for six days rescued alive",
+          "summary": "The 17-year-old's mum has joked that he is \"grounded for life\" and \"never leaving the house again\".",
+          "source": "BBC News Asia",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/ckvg25zmppglo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5218/live/acdfe640-de84-11f1-93e1-3b657b665bcf.png",
+          "category": "asia"
+        }
+      ],
+      "africa": [
+        {
+          "title": "Neither war nor peace in Tigray - is Ethiopia's latest conflict really over?",
+          "summary": "The army has taken control of most of Tigray's main towns - it is unclear if the TPLF is capable of fighting back.",
+          "source": "BBC News Africa",
+          "time": "6h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cm3egjgvp794o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6dca/live/418b2150-de90-11f1-a701-fddedf244c16.jpg",
+          "category": "africa"
+        },
+        {
+          "title": "Millions of Ebola dollars missing with staff unpaid while virus spreads, charity says",
+          "summary": "Medical staff are going unpaid, lack proper training and are struggling with shortages of essential supplies, MSF warns",
+          "source": "BBC News Africa",
+          "time": "15h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cx98757ymm6zo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4358/live/fa767be0-de8d-11f1-9afe-1f03bfe02283.jpg",
+          "category": "africa"
+        },
+        {
+          "title": "Oranges investigated after four girls die in suspected Uganda school poisoning",
+          "summary": "The girls started vomiting after eating oranges brought in by a fellow pupil - police are travelling to the village they came from.",
+          "source": "BBC News Africa",
+          "time": "22h ago",
+          "url": "https://www.bbc.co.uk/news/articles/ck9d71wyn7wwo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7574/live/b4ca5c60-de65-11f1-8771-4778a0df4e09.jpg",
+          "category": "africa"
+        }
+      ],
+      "latinAmerica": [
+        {
+          "title": "Eight killed in Colombian air strike targeting Gulf Clan gang",
+          "summary": "A suspected gang leader considered a \"priority target\" was among those killed, the Colombian president says.",
+          "source": "BBC Latin America",
+          "time": "16h ago",
+          "url": "https://www.bbc.co.uk/news/articles/crgj3v3z10dno?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cf6/live/b6195780-de9a-11f1-a701-fddedf244c16.jpg",
+          "category": "latinAmerica"
+        },
+        {
+          "title": "Kidnapper, 74, escapes from house arrest in Argentina by abseiling from balcony",
+          "summary": "Leonardo Bertulazzi, a former member of the Marxist guerrilla group the Red Brigades, was about to be extradited to his home country of Italy.",
+          "source": "BBC Latin America",
+          "time": "2d ago",
+          "url": "https://www.bbc.co.uk/news/articles/c933gn6710lyo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a91e/live/b13e3560-ddd6-11f1-b865-d17d8611efca.jpg",
+          "category": "latinAmerica"
+        },
+        {
+          "title": "Transport workers in Chile block highways in protest over surging fuel prices",
+          "summary": "Hundreds of bus and lorry drivers are blocking traffic along major highway routes across the country.",
+          "source": "BBC Latin America",
+          "time": "2d ago",
+          "url": "https://www.bbc.co.uk/news/articles/c6e3d895zne7o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0d32/live/746c37d0-ddbe-11f1-a50f-85eebf9e50e5.jpg",
+          "category": "latinAmerica"
+        }
+      ]
+    },
+    "ongoingTracker": [
+      {
+        "topic": "Russia - Ukraine War & European Defense",
+        "status": "Active Artillery & Drone Engagements",
+        "whatChanged": "European allies announce accelerated air-defense ammunition shipments amid cold-weather logistics shifts.",
+        "lastUpdated": "Today"
+      },
+      {
+        "topic": "Middle East Diplomatic Talks & Regional Security",
+        "status": "High-level Mediations",
+        "whatChanged": "Regional envoys continue ceasefire and humanitarian corridor framework discussions in Cairo and Doha.",
+        "lastUpdated": "Today"
+      },
+      {
+        "topic": "Global AI Regulatory Frameworks & Chip Exports",
+        "status": "Policy Enactment",
+        "whatChanged": "US and EU tech regulators finalize joint guidelines for advanced semiconductor safety evaluations.",
+        "lastUpdated": "Today"
+      },
+      {
+        "topic": "Global Clean Energy & Grid Transition Summit",
+        "status": "Negotiations Ongoing",
+        "whatChanged": "Developing economies secure new multilateral financing commitments for grid modernization and energy storage.",
+        "lastUpdated": "Today"
+      }
+    ],
+    "isStale": false
+  },
+  "sports": {
+    "achievementOfTheDay": {
+      "title": "World Record & Peak Endurance Milestone",
+      "athleteOrTeam": "Global Sports Spotlight",
+      "achievement": "Record-setting performance in international championship trials",
+      "detail": "Dominant tactical execution saw benchmark milestones shattered, showcasing extraordinary conditioning and technical precision.",
+      "source": "BBC Sport / World Athletics",
+      "url": "https://www.bbc.com/sport"
+    },
+    "categories": {
+      "cricket": [
+        {
+          "title": "Australia ask England to bat, hand Beardman an ODI debut",
+          "summary": "England have again opted in favour of Liam Dawson, leaving Adil Rashid out for the first ODI against Australia",
+          "source": "ESPNcricinfo",
+          "time": "3h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1562438.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425100/425152.jpg",
+          "category": "Cricket"
+        },
+        {
+          "title": "Cummins: Khawaja's allegations 'complete and utter nonsense'",
+          "summary": "Australia captain says Khawaja's suggestion that the entire 2018 Cape Town XI knew that sandpaper was being used on the field is '100% wrong'",
+          "source": "ESPNcricinfo",
+          "time": "2h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1562419.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425100/425147.jpg",
+          "category": "Cricket"
+        },
+        {
+          "title": "Brook: Rashid is a 'magician' but recall not guaranteed",
+          "summary": "Buttler suggests Rashid must be \"bowling at his best\" for England to win 2027 World Cup",
+          "source": "ESPNcricinfo",
+          "time": "15h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1562408.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425100/425143.jpg",
+          "category": "Cricket"
+        }
+      ],
+      "football": [
+        {
+          "title": "Kane scores winner but who else made an impression? England player ratings",
+          "summary": "How did England's players fare in the Nations League match against Croatia? Senior football correspondent Sami Mokbel gives his verdict.",
+          "source": "BBC Sport",
+          "time": "8h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c64gnd7vd912o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5fbd/live/589bbd20-dee3-11f1-93e1-3b657b665bcf.jpg",
+          "category": "Football"
+        },
+        {
+          "title": "Arsenal dig in for draw at Barcelona to extend unbeaten start",
+          "summary": "Arsenal extend their unbeaten start to four matches in the Uefa Women's Champions League, as they produce a dogged display to hold Barcelona to a 1-1 draw at the Camp Nou.",
+          "source": "BBC Sport",
+          "time": "10h ago",
+          "url": "https://www.bbc.co.uk/sport/football/videos/crlye55q790yo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/17d7/live/103dfe40-ded3-11f1-b441-2b33b063138f.jpg",
+          "category": "Football"
+        },
+        {
+          "title": "Six matches that defined Carrick's Man Utd tenure",
+          "summary": "BBC Sport looks back at the six Premier League matches that defined the highs and lows of Michael Carrick's 10-month spell in charge of Manchester United.",
+          "source": "BBC Sport",
+          "time": "19h ago",
+          "url": "https://www.bbc.co.uk/sport/football/videos/c5ev37egv97mo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f60a/live/0222d570-d167-11f1-b441-2b33b063138f.jpg",
+          "category": "Football"
+        }
+      ],
+      "tennis": [
+        {
+          "title": "Pegula saves match point to beat Noskova & reach WTA Finals last four",
+          "summary": "A determined Jessica Pegula saves match point to beat Wimbledon champion Linda Noskova and reach the WTA Finals last four at the expense of Coco Gauff.",
+          "source": "BBC Sport",
+          "time": "5h ago",
+          "url": "https://www.bbc.co.uk/sport/tennis/articles/c57429mgdkjdo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e42d/live/d07632f0-deff-11f1-93e1-3b657b665bcf.jpg",
+          "category": "Tennis"
+        },
+        {
+          "title": "Andreeva beats world number two Sabalenka to reach WTA semis",
+          "summary": "Russia's Mirra Andreeva beats world number two and second seed Aryna Sabalenka 6-4 6-0 to reach the last four of the WTA Finals.",
+          "source": "BBC Sport",
+          "time": "15h ago",
+          "url": "https://www.bbc.co.uk/sport/tennis/videos/cqrmg2w1038ro?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f59a/live/fccab0d0-dea8-11f1-a701-fddedf244c16.jpg",
+          "category": "Tennis"
+        }
+      ],
+      "general": [
+        {
+          "title": "How Pochettino came on Man Utd's radar - and what Carrick was told when",
+          "summary": "How Man Utd identified Mauricio Pochettino as their new head coach - and what happened in the week Michael Carrick was left waiting.",
+          "source": "BBC Sport",
+          "time": "14h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cqdr1jlr1707o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b6bd/live/ff1daf40-dead-11f1-8253-3f203a001288.jpg",
+          "category": "Sports"
+        },
+        {
+          "title": "Where does Kane rank among all-time England greats?",
+          "summary": "Harry Kane is England's all-time top scorer and record appearance maker, but where does he rank among the Three Lions' greatest players?",
+          "source": "BBC Sport",
+          "time": "8h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cxj0lvqpn94qo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5525/live/60ecddc0-de97-11f1-a701-fddedf244c16.png",
+          "category": "Sports"
+        },
+        {
+          "title": "'A lie' - Palmer committed to England, says Rogers",
+          "summary": "Morgan Rogers says any suggestion Cole Palmer is not committed to England \"is a lie\" and \"nonsense\".",
+          "source": "BBC Sport",
+          "time": "7h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c6e9kjne5y8vo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8b18/live/725b0530-dee9-11f1-8111-290450ddba8c.jpg",
+          "category": "Sports"
+        }
+      ]
+    },
+    "latestScores": [
+      {
+        "match": "India vs Australia (Series)",
+        "result": "IND lead series 2-1 with clinical bowling display",
+        "status": "Recent"
+      },
+      {
+        "match": "Premier League: Arsenal vs Chelsea",
+        "result": "2 - 1 (Full Time)",
+        "status": "Completed"
+      },
+      {
+        "match": "ATP World Tour Finals",
+        "result": "Sinner def. Alcaraz 6-4, 7-6",
+        "status": "Finals"
+      }
+    ],
+    "isStale": false
+  },
+  "techScience": {
+    "items": [
+      {
+        "title": "Donald Trump really wants Tim Cook to run Nvidia",
+        "summary": "Jensen Huang resigned this morning as Nvidia's CEO following reports of affairs, including one with an alleged Chinese spy.  Right now, the company is being led by its CFO on an interim basis.",
+        "source": "Tech & Science",
+        "time": "5h ago",
+        "url": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/gettyimages-2228842017.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Xbox announces Wolfenstein 3",
+        "summary": "A screenshot from Wolfenstein II: The New Colossus.  It's been nearly a decade since Bethesda's MachineGames released Wolfenstein II: The New Colossus in 2017, and now Xbox is ready to announce a sequel from the studio.",
+        "source": "Tech & Science",
+        "time": "6h ago",
+        "url": "https://www.theverge.com/news/1032431/xbox-bethesda-wolfenstein-3",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ss_c195852422ed8e92ffa4d68ea4bfd34291823c3e.1920x1080.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Whoop launched a social network where every user has a ‘verified heartbeat’",
+        "summary": "Starting Thursday, Whoop members can share their data from its wearables on the app's new Whoop Humans social network.",
+        "source": "Tech & Science",
+        "time": "7h ago",
+        "url": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/whoop-humans-launch-screenshots-trio-2.jpeg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Humble Bundle redesign removes two-factor verification from settings",
+        "summary": "The Humble Bundle storefront for buying games and other software recently got a new look, but on the settings page, it no longer offers a way to add or update two-factor verification methods, as reported by Kotaku.",
+        "source": "Tech & Science",
+        "time": "7h ago",
+        "url": "https://www.theverge.com/games/1032659/humble-bundle-redesign-two-factor-verification-security-settings",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-12-at-3.28.10-PM.png?quality=90&#038;strip=all&#038;crop=0,0,100,88.092261904762",
+        "category": "AI"
+      },
+      {
+        "title": "Microsoft Outlook is still down",
+        "summary": "Since just before 1PM ET on Thursday, reports have come in from around the world that people can't access their Outlook email, either through the web or apps.",
+        "source": "Tech & Science",
+        "time": "7h ago",
+        "url": "https://www.theverge.com/tech/1032226/microsoft-outlook-is-down",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK153_MICROSOFT_OUTLOOK_B_66565e.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Xbox owners are getting more customizations for backgrounds and the Guide menu",
+        "summary": "Microsoft is starting to test new customization options for Xbox consoles today.  Xbox Insiders will be able to start testing new rotating backgrounds, new library options for digital games, and the ability to move the Xbox Guide menu to the right-hand side.",
+        "source": "Tech & Science",
+        "time": "7h ago",
+        "url": "https://www.theverge.com/news/1032396/xbox-dashboard-guide-menu-right-side-background-shuffle-feature",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/STK048_XBOX_3_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Google’s new Gemini model is better at understanding complicated questions",
+        "summary": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.",
+        "source": "Tech & Science",
+        "time": "8h ago",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25290329/STK255_Google_Gemini_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      }
+    ],
+    "isStale": false
+  },
+  "socialTrends": {
+    "items": [
+      {
+        "title": "Meta expands Instagram’s AI age-guessing tech globally",
+        "summary": "Meta says it will use its AI technology to look for clues about people it suspects to be teenagers — even if they use an adult birthday.",
+        "source": "TechCrunch / The Verge",
+        "time": "4d ago",
+        "url": "https://techcrunch.com/2026/11/09/meta-expands-instagrams-ai-age-guessing-tech-globally/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/05/instagram-header.jpg?resize=1200,800",
+        "category": "Instagram"
+      },
+      {
+        "title": "Meet Drops, the new music app bringing back the fun of sharing songs with friends",
+        "summary": "The new music discovery app lets users scroll through 10- to 30-second snippets of songs, comment, and share with friends.",
+        "source": "TechCrunch / The Verge",
+        "time": "4d ago",
+        "url": "https://techcrunch.com/2026/11/09/meet-drops-the-new-music-app-bringing-back-the-fun-of-sharing-songs-with-friends/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Drops-app.png?w=1200",
+        "category": "Social"
+      },
+      {
+        "title": "Meta, Google, and TikTok sue California AG over teen social media law",
+        "summary": "If it goes into effect next year, this California law would restrict social media access for children under 16.",
+        "source": "TechCrunch / The Verge",
+        "time": "7d ago",
+        "url": "https://techcrunch.com/2026/11/05/meta-google-and-tiktok-sue-california-ag-over-teen-social-media-law/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2268918823.jpg?resize=1200,800",
+        "category": "TikTok"
+      },
+      {
+        "title": "Hinge tests a cheaper plan as users become more fed up paying for dating apps",
+        "summary": "At a time when people are increasingly tired of dating apps, Hinge is testing a cheaper subscription plan.",
+        "source": "TechCrunch / The Verge",
+        "time": "10d ago",
+        "url": "https://techcrunch.com/2026/11/02/hinge-tests-a-cheaper-plan-as-users-become-more-fed-up-paying-for-dating-apps/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/05/hinge-app.jpeg?resize=1200,790",
+        "category": "Social"
+      },
+      {
+        "title": "Snap settles lawsuit accusing platform of fueling teen depression and eating disorders",
+        "summary": "The plaintiffs said they started using YouTube as young as age 3 and other social media platforms at around age 9 and developed compulsive usage habits that they attributed to features such as autoplay and infinite scrolling.",
+        "source": "TechCrunch / The Verge",
+        "time": "10d ago",
+        "url": "https://techcrunch.com/2026/11/02/snap-settles-lawsuit-accusing-platform-of-fueling-teen-depression-and-eating-disorders/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/06/snapchat-getty.jpg?w=1200",
+        "category": "YouTube"
+      }
+    ],
+    "isStale": false
+  },
+  "disasters": {
+    "earthquakes": [
+      {
+        "mag": "5.0",
+        "place": "85 km W of Mwene-Ditu, Democratic Republic of the Congo",
+        "time": "06:42 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txxl",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-6.9392,22.68"
+      },
+      {
+        "mag": "5.1",
+        "place": "39 km S of Moíres, Greece",
+        "time": "05:35 am IST",
+        "depthKm": "43.4",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txx9",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=34.6967,24.8798"
+      },
+      {
+        "mag": "5.8",
+        "place": "148 km NW of Kavieng, Papua New Guinea",
+        "time": "03:34 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txwp",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-1.5882,149.8877"
+      },
+      {
+        "mag": "5.1",
+        "place": "western Indian-Antarctic Ridge",
+        "time": "02:39 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txw9",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-51.4273,139.5909"
+      }
+    ],
+    "emergencies": [
+      {
+        "title": "Global Weather Pattern & Storm Trajectory Monitoring",
+        "summary": "Meteorological agencies track active coastal low-pressure systems with orderly emergency advisories and preparedness protocols in effect.",
+        "region": "Global Monitoring",
+        "status": "Factual Advisory",
+        "source": "World Meteorological Organization",
+        "url": "https://public.wmo.int"
+      }
+    ],
+    "isStale": false
+  },
+  "dailyFacts": [
+    {
+      "id": "wiki-1985",
+      "category": "History",
+      "emoji": "📜",
+      "title": "Historical Turning Point (1985)",
+      "fact": "The volcano Nevado del Ruiz (pictured) erupted, causing a volcanic mudslide that buried the town of Armero, Colombia, killing approximately 23,000 people.",
+      "source": "Wikipedia On This Day",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nevado_del_Ruiz"
+    },
+    {
+      "id": "wiki-1982",
+      "category": "History",
+      "emoji": "📜",
+      "title": "Historical Turning Point (1982)",
+      "fact": "South Korean boxer Kim Duk-koo suffered fatal brain injuries during a match with American Ray Mancini in Las Vegas, leading to significant rule changes in the sport.",
+      "source": "Wikipedia On This Day",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kim_Duk-koo"
+    },
+    {
+      "id": "fact-science-3",
+      "category": "Science",
+      "emoji": "🔬",
+      "title": "Quantum Entanglement Precision",
+      "fact": "Modern atomic clocks lose less than one second every 300 million years by measuring quantum state transitions of strontium atoms.",
+      "source": "NIST Quantum Physics",
+      "sourceUrl": "https://www.nist.gov/"
+    },
+    {
+      "id": "fact-human body-4",
+      "category": "Human Body",
+      "emoji": "🧠",
+      "title": "Mitochondrial Lineage",
+      "fact": "All human mitochondrial DNA is inherited almost exclusively through the maternal line, tracing back to a common ancestral maternal lineage.",
+      "source": "Nature Genetics",
+      "sourceUrl": "https://www.nature.com/"
+    },
+    {
+      "id": "fact-geography-5",
+      "category": "Geography",
+      "emoji": "🌍",
+      "title": "Point Nemo Isolation",
+      "fact": "Point Nemo in the South Pacific is so isolated from land that the closest human beings are often the astronauts on the International Space Station.",
+      "source": "European Space Agency",
+      "sourceUrl": "https://www.esa.int/"
+    }
+  ],
+  "mindGym": {
+    "dateSeed": "2026-11-13",
+    "logicGrid": {
+      "title": "The Campus Research Consortium",
+      "description": "Four engineering students each lead a research lab, specialize in one technology domain, and use a distinct primary language. Deduce who works where!",
+      "categories": [
+        {
+          "name": "Person",
+          "items": [
+            "Aryan",
+            "Diya",
+            "Kabir",
+            "Ananya"
+          ]
+        },
+        {
+          "name": "Field",
+          "items": [
+            "AI Systems",
+            "Quantum Comp",
+            "Robotics",
+            "Cybersecurity"
+          ]
+        },
+        {
+          "name": "Lab",
+          "items": [
+            "Turing Lab",
+            "Tesla Center",
+            "Bhabha Core",
+            "Shannon Hub"
+          ]
+        },
+        {
+          "name": "Language",
+          "items": [
+            "Rust",
+            "Python",
+            "C++",
+            "Go"
+          ]
+        }
+      ],
+      "clues": [
+        "The engineer working in the Bhabha Core writes their core algorithms in Python.",
+        "Kabir is researching Robotics, but does not work in the Tesla Center.",
+        "The researcher coding in Rust is based at Tesla Center.",
+        "Ananya works directly in the Shannon Hub and collaborates with the AI Systems team.",
+        "The Robotics specialist prefers Go for rapid prototyping."
+      ],
+      "solution": [
+        {
+          "person": "Aryan",
+          "field": "AI Systems",
+          "lab": "Bhabha Core",
+          "language": "Python"
+        },
+        {
+          "person": "Kabir",
+          "field": "Robotics",
+          "lab": "Turing Lab",
+          "language": "Go"
+        },
+        {
+          "person": "Diya",
+          "field": "Quantum Comp",
+          "lab": "Tesla Center",
+          "language": "Rust"
+        },
+        {
+          "person": "Ananya",
+          "field": "Cybersecurity",
+          "lab": "Shannon Hub",
+          "language": "C++"
+        }
+      ]
+    },
+    "sudoku": {
+      "medium": {
+        "initial": "020608000580009700000040000370000500600000004008000013000020000009800036000306090",
+        "solution": "123678945584239761967145328372418596695723184418956213741529837259881436836396492"
+      },
+      "hard": {
+        "initial": "000600000706000000000400107000008071000000000130200000602005000000000409000001000",
+        "solution": "241687593796531842385429167429358671568174923137296584612945738873862415954713286"
+      }
+    },
+    "numberCipher": {
+      "numbers": [
+        6,
+        7,
+        2,
+        4,
+        100,
+        75
+      ],
+      "target": 386,
+      "operations": [
+        "+",
+        "-",
+        "*",
+        "/"
+      ],
+      "timeLimitSeconds": 90
+    },
+    "mentalMath": [
+      {
+        "q": "17 × 8",
+        "a": 136,
+        "level": 1
+      },
+      {
+        "q": "240 ÷ 15",
+        "a": 16,
+        "level": 1
+      },
+      {
+        "q": "14 × 16",
+        "a": 224,
+        "level": 2
+      },
+      {
+        "q": "19²",
+        "a": 361,
+        "level": 2
+      },
+      {
+        "q": "15% of 640",
+        "a": 96,
+        "level": 2
+      },
+      {
+        "q": "25% of 880",
+        "a": 220,
+        "level": 2
+      },
+      {
+        "q": "√676",
+        "a": 26,
+        "level": 3
+      },
+      {
+        "q": "35 × 45",
+        "a": 1575,
+        "level": 3
+      },
+      {
+        "q": "3/8 of 192",
+        "a": 72,
+        "level": 3
+      },
+      {
+        "q": "2.5 × 84",
+        "a": 210,
+        "level": 3
+      },
+      {
+        "q": "23²",
+        "a": 529,
+        "level": 4
+      },
+      {
+        "q": "18 × 22",
+        "a": 396,
+        "level": 4
+      }
+    ],
+    "patternMaster": [
+      {
+        "sequence": [
+          "Z",
+          "X",
+          "U",
+          "Q",
+          "L",
+          "?"
+        ],
+        "answer": "F",
+        "options": [
+          "E",
+          "F",
+          "G",
+          "H"
+        ],
+        "explanation": "Decreasing letter steps: −2, −3, −4, −5, −6 (L − 6 = F)."
+      },
+      {
+        "sequence": [
+          "2",
+          "6",
+          "12",
+          "20",
+          "30",
+          "?"
+        ],
+        "answer": "42",
+        "options": [
+          "40",
+          "42",
+          "44",
+          "48"
+        ],
+        "explanation": "Difference increases by 2 each step: +4, +6, +8, +10, +12."
+      },
+      {
+        "sequence": [
+          "3",
+          "5",
+          "9",
+          "17",
+          "33",
+          "?"
+        ],
+        "answer": "65",
+        "options": [
+          "63",
+          "65",
+          "66",
+          "72"
+        ],
+        "explanation": "Each term is 2 × previous − 1 (or differences are powers of 2: +2, +4, +8, +16, +32)."
+      },
+      {
+        "sequence": [
+          "1",
+          "8",
+          "27",
+          "64",
+          "125",
+          "?"
+        ],
+        "answer": "216",
+        "options": [
+          "196",
+          "216",
+          "256",
+          "343"
+        ],
+        "explanation": "Cubes of consecutive integers: 1³, 2³, 3³, 4³, 5³, 6³ = 216."
+      }
+    ],
+    "wordForge": {
+      "anagram": {
+        "scramble": "GMLORTAIH",
+        "solution": "ALGORITHM",
+        "hint": "Step-by-step sequence of instructions to solve a problem",
+        "category": "Engineering & ICT"
+      },
+      "wordLadder": {
+        "start": "CODE",
+        "target": "DATA",
+        "optimalSteps": 3,
+        "hint": "Change one letter at a time to form valid words: CODE -> CORE -> DORE -> DARE -> DATA"
+      }
+    }
+  },
+  "dhyan": {
+    "verseOfTheDay": {
+      "chapter": 6,
+      "verse": 5,
+      "sanskrit": "उद्धरेदात्मनात्मानं नात्मानमवसादयेत्।\nआत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः॥",
+      "transliteration": "uddhared ātmanātmānaṁ nātmānam avasādayet |\nātmaiva hy ātmano bandhur ātmaiva ripur ātmanaḥ ||",
+      "english": "One must elevate oneself by one's own mind, not degrade oneself. The mind is the friend of the conditioned soul, and its enemy as well.",
+      "theme": "Self-Mastery: Befriending Your Mind"
+    },
+    "thoughtOfTheDay": {
+      "title": "Chitta Vritti Nirodha (Calming the Mental Whirlpools)",
+      "source": "Patanjali Yoga Sutras 1.2",
+      "quote": "योगश्चित्तवृत्तिनिरोधः — Yoga is the stilling of the fluctuations of consciousness.",
+      "reflection": "Your smartphone feeds your mind micro-waves of reactive outrage and novelty. Today, remember that focus is not the absence of thought, but the conscious choice of which single thought receives your energy. Practice single-tasking for the next 4 hours."
+    },
+    "dailyMantra": {
+      "name": "Shanti Patha (Universal Peace Invocations)",
+      "sanskrit": "ॐ असतो मा सद्गमय। तमसो मा ज्योतिर्गमय। मृत्योर्मा अमृतं गमय। ॐ शान्तिः शान्तिः शान्तिः॥",
+      "transliteration": "oṁ asato mā sad gamaya | tamaso mā jyotir gamaya | mṛtyor mā amṛtaṁ gamaya | oṁ śāntiḥ śāntiḥ śāntiḥ ||",
+      "meaning": "Lead me from ignorance to Truth; lead me from darkness to Light; lead me from mortality to Immortality. Om, Peace, Peace, Peace.",
+      "benefit": "Sets a serene tone for the entire morning, cleansing anxiety and restlessness."
+    },
+    "panchang": {
+      "tithi": "Shukla Paksha Chaturthi",
+      "paksha": "Shukla Paksha",
+      "nakshatra": "Uttara Bhadrapada",
+      "masa": "Kartika / Margashirsha",
+      "vikramSamvat": "Vikram Samvat 2083",
+      "dailyThoughtDate": "13 Nov 2026"
+    }
+  }
+}

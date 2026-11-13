@@ -1,0 +1,20 @@
+{
+  "name": "daily-brief",
+  "version": "1.0.0",
+  "description": "Daily Brief - Distraction-free, high-signal morning dashboard for students and engineers",
+  "type": "module",
+  "scripts": {
+    "fetch-data": "node scripts/fetch-all.mjs",
+    "serve": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test-browser": "node scripts/test-browser.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "rss-parser": "^3.13.0"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
