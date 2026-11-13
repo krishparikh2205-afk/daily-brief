@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-13T06:35:21.585Z",
+    "lastUpdated": "2026-11-13T06:35:45.764Z",
     "lastUpdatedIST": "Friday, 13 Nov 2026, 12:05 pm IST",
     "istDateStr": "2026-11-13",
     "targetMidnightIST": "2026-11-13T18:30:00.000Z",
@@ -23,7 +23,7 @@
           "title": "Modi in Bengaluru: PM participates in Prashanti Kutiram celebrations, to inaugurate Namma Metro Pink Line | LIVE",
           "summary": "PM Modi is scheduled to inaugurate the Pink Line at around 12.45 p.m. today. He will flag off the metro service and take a ride on the newly inaugurated stretch",
           "source": "The Hindu",
-          "time": "11m ago",
+          "time": "12m ago",
           "url": "https://www.thehindu.com/news/national/karnataka/pm-modi-karnataka-visit-namma-metro-pink-line-vande-bharat-train-inaugurations-prashanti-kutiram-celebrations-live-updates/article71696485.ece",
           "imageUrl": "https://th-i.thgim.com/public/news/national/karnataka/57u0sc/article71696706.ece/alternates/LANDSCAPE_1200/Screenshot%202026-11-13%20112226.png",
           "category": "india"
@@ -32,7 +32,7 @@
           "title": "Agricultural growth tops 4% for first decade since Independence; Centre absorbed ₹43 of diesel hike: PM Modi",
           "summary": "Calling agriculture \"our culture, our tradition and the basis of our social life\", the Prime Minister said a developed India was not possible without making farming \"smarter\" and farmers \"self-reliant\"",
           "source": "The Hindu",
-          "time": "15m ago",
+          "time": "16m ago",
           "url": "https://www.thehindu.com/news/national/agricultural-growth-tops-4-for-first-decade-since-independence-centre-absorbed-43-of-diesel-hike-pm-modi/article71696695.ece",
           "imageUrl": "https://th-i.thgim.com/public/incoming/1hn1pz/article71692896.ece/alternates/LANDSCAPE_1200/PTI11_12_2026_000060B.jpg",
           "category": "india"
@@ -121,7 +121,7 @@
           "source": "DW Europe",
           "time": "13h ago",
           "url": "https://www.dw.com/en/can-the-eu-make-it-harder-to-trick-consumers-online/a-79933447?maca=en-rss-en-eu-2092-rdf",
-          "imageUrl": "https://static.dw.com/image/68243087_6.jpg",
+          "imageUrl": null,
           "category": "europe"
         }
       ],
@@ -132,14 +132,14 @@
           "source": "Al Jazeera",
           "time": "22m ago",
           "url": "https://www.aljazeera.com/sports/2026/11/13/pat-cummins-australia-usman-khawaja-sandpapergate-test-south-africa?traffic_source=rss",
-          "imageUrl": null,
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/GettyImages-2304843314-1794548577.jpg?resize=1920%2C1440",
           "category": "middleEast"
         },
         {
           "title": "Harry Kane breaks caps record as England reach Nations League knockouts",
           "summary": "England moved to second spot in Group A3 behind Spain, confirming their place in the Nations League last eight in March.",
           "source": "Al Jazeera",
-          "time": "56m ago",
+          "time": "57m ago",
           "url": "https://www.aljazeera.com/sports/2026/11/13/harry-kane-england-appearance-record-126-croatia-nations-league-quarterfinals?traffic_source=rss",
           "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261112__D7BZ2WL__v1__HighRes__FblNationsLeagueEngCro-1794546572.jpg?resize=1920%2C1440",
           "category": "middleEast"
@@ -585,22 +585,22 @@
   },
   "dailyFacts": [
     {
-      "id": "wiki-1963",
+      "id": "wiki-1940",
       "category": "History",
       "emoji": "📜",
-      "title": "Historical Turning Point (1963)",
-      "fact": "A man wielding a dagger was subdued as he was about to attack Sanzō Nosaka, the chairman of the Japanese Communist Party.",
+      "title": "Historical Turning Point (1940)",
+      "fact": "Walt Disney's Fantasia, the first commercial film shown with stereophonic sound, premiered at the Broadway Theatre in New York City.",
       "source": "Wikipedia On This Day",
-      "sourceUrl": "https://en.wikipedia.org/wiki/Sanz%C5%8D_Nosaka"
+      "sourceUrl": "https://en.wikipedia.org/wiki/Walt_Disney"
     },
     {
-      "id": "wiki-1945",
+      "id": "wiki-1927",
       "category": "History",
       "emoji": "📜",
-      "title": "Historical Turning Point (1945)",
-      "fact": "FC Dynamo Moscow opened their exhibition tour of the United Kingdom with a 3–3 draw against Chelsea, breaking the attendance record for a British club football match.",
+      "title": "Historical Turning Point (1927)",
+      "fact": "The Holland Tunnel opened, connecting Manhattan with Jersey City under the Hudson River.",
       "source": "Wikipedia On This Day",
-      "sourceUrl": "https://en.wikipedia.org/wiki/FC_Dynamo_Moscow"
+      "sourceUrl": "https://en.wikipedia.org/wiki/Holland_Tunnel"
     },
     {
       "id": "fact-extra-3",
