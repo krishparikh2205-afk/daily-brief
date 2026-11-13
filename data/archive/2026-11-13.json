@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-13T06:15:26.596Z",
-    "lastUpdatedIST": "Friday, 13 Nov 2026, 11:45 am IST",
+    "lastUpdated": "2026-11-13T06:30:15.921Z",
+    "lastUpdatedIST": "Friday, 13 Nov 2026, 12:00 pm IST",
     "istDateStr": "2026-11-13",
     "targetMidnightIST": "2026-11-13T18:30:00.000Z",
     "title": "Daily Brief",
@@ -11,30 +11,30 @@
     "regions": {
       "india": [
         {
-          "title": "Low-pressure area forms over southeast Bay of Bengal, likely to intensify into depression by November 15",
-          "summary": "The system formed at 5:30 a.m. under the influence of an upper-air cyclonic circulation over the central Andaman Sea and adjoining Andaman and Nicobar Islands, according to the latest weather update",
+          "title": "Maharashtra Minister slams police over security lapses after late-night ruckus outside his Chhatrapati Sambhajinagar home",
+          "summary": "Accused persons taken into police custody; Sanjay Shirsat, who is also the district’s Guardian Minister, said he would take up the matter with CM Fadnavis",
           "source": "The Hindu",
-          "time": "Just now",
-          "url": "https://www.thehindu.com/news/national/low-pressure-area-forms-over-southeast-bay-of-bengal-likely-to-intensify-into-depression-by-november-15/article71696703.ece",
-          "imageUrl": "https://th-i.thgim.com/public/incoming/204djn/article71696728.ece/alternates/LANDSCAPE_1200/NH12Weather002.JPG",
-          "category": "india"
-        },
-        {
-          "title": "Why Himalayan towns need a different kind of development | Explained",
-          "summary": "Do cities along the Indian Himalayan Range have adequate funds and resources to manage civic issues?",
-          "source": "The Hindu",
-          "time": "Just now",
-          "url": "https://www.thehindu.com/news/national/why-himalayan-towns-need-a-different-kind-of-development-explained/article68502845.ece",
-          "imageUrl": "https://th-i.thgim.com/public/incoming/srq6s5/article68502888.ece/alternates/LANDSCAPE_1200/2150_13-6-2018_15-33-2_1_MONSOONMEGHALAYA_13062018_02.JPG",
+          "time": "3m ago",
+          "url": "https://www.thehindu.com/news/national/maharashtra/maharashtra-minister-sanjay-shirsat-slams-police-over-security-lapses-chhatrapati-sambhajinagar-home/article71696723.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/a55mpm/article71696791.ece/alternates/LANDSCAPE_1200/GqmbegYbcAEhrer.jpg",
           "category": "india"
         },
         {
           "title": "Modi in Bengaluru: PM participates in Prashanti Kutiram celebrations, to inaugurate Namma Metro Pink Line | LIVE",
           "summary": "PM Modi is scheduled to inaugurate the Pink Line at around 12.45 p.m. today. He will flag off the metro service and take a ride on the newly inaugurated stretch",
           "source": "The Hindu",
-          "time": "Just now",
+          "time": "6m ago",
           "url": "https://www.thehindu.com/news/national/karnataka/pm-modi-karnataka-visit-namma-metro-pink-line-vande-bharat-train-inaugurations-prashanti-kutiram-celebrations-live-updates/article71696485.ece",
           "imageUrl": "https://th-i.thgim.com/public/news/national/karnataka/57u0sc/article71696706.ece/alternates/LANDSCAPE_1200/Screenshot%202026-11-13%20112226.png",
+          "category": "india"
+        },
+        {
+          "title": "Agricultural growth tops 4% for first decade since Independence; Centre absorbed ₹43 of diesel hike: PM Modi",
+          "summary": "Calling agriculture \"our culture, our tradition and the basis of our social life\", the Prime Minister said a developed India was not possible without making farming \"smarter\" and farmers \"self-reliant\"",
+          "source": "The Hindu",
+          "time": "10m ago",
+          "url": "https://www.thehindu.com/news/national/agricultural-growth-tops-4-for-first-decade-since-independence-centre-absorbed-43-of-diesel-hike-pm-modi/article71696695.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/1hn1pz/article71692896.ece/alternates/LANDSCAPE_1200/PTI11_12_2026_000060B.jpg",
           "category": "india"
         }
       ],
@@ -61,7 +61,7 @@
           "title": "'How does a building just fall?' Neighbours grieve after deadly Brooklyn building collapse",
           "summary": "The accident rattled the usually calm immigrant neighbourhood of Flatbush, New York. At least eight residents, including two children, died in the rubble.",
           "source": "BBC News US",
-          "time": "4h ago",
+          "time": "3h ago",
           "url": "https://www.bbc.co.uk/news/articles/cm4gn5qddqqxo?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5648/live/95089da0-deb6-11f1-8fb5-a771a656a227.jpg",
           "category": "usa"
@@ -69,10 +69,10 @@
       ],
       "uk": [
         {
-          "title": "Piddlington military base asylum plans granted planning approval",
+          "title": "Military base asylum centre near Piddington granted planning approval",
           "summary": "The Home Office's application to house up to 1,256 men at the site near Bicester was fast-tracked.",
           "source": "BBC News UK",
-          "time": "4h ago",
+          "time": "3h ago",
           "url": "https://www.bbc.co.uk/news/articles/c58j4798874go?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/62a7/live/8843d9c0-df03-11f1-93e1-3b657b665bcf.jpg",
           "category": "uk"
@@ -87,22 +87,22 @@
           "category": "uk"
         },
         {
-          "title": "UK economy grows at fastest rate for more than two years",
-          "summary": "The UK economy grew by 0.7% in the three months to September, according to official figures.",
+          "title": "Timothée Chalamet among Hollywood stars and charity heroes stepping up for BBC Children In Need",
+          "summary": "Viewers of the annual TV charity event will see the actor playing a prank on Rylan.",
           "source": "BBC News UK",
-          "time": "19h ago",
-          "url": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o?at_medium=RSS&at_campaign=rss",
-          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b029/live/c4ae2930-de89-11f1-b441-2b33b063138f.jpg",
+          "time": "5h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cqly4lnxn031o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3471/live/c65f7fb0-deaa-11f1-8253-3f203a001288.png",
           "category": "uk"
         }
       ],
       "europe": [
         {
-          "title": "EU leaders tussle over who to send to Ukraine, Russia peace talks",
+          "title": "EU leaders tussle over whom to send to Ukraine, Russia peace talks",
           "summary": "A seat at the table for Europe now appears likely following comments by a US envoy who just held talks with Putin. But who will take that seat remains unclear.",
           "source": "DW Europe",
           "time": "8h ago",
-          "url": "https://www.dw.com/en/eu-leaders-tussle-over-who-to-send-to-ukraine-russia-peace-talks/a-79935468?maca=en-rss-en-eu-2092-rdf",
+          "url": "https://www.dw.com/en/eu-leaders-tussle-over-whom-to-send-to-ukraine-russia-peace-talks/a-79935468?maca=en-rss-en-eu-2092-rdf",
           "imageUrl": "https://static.dw.com/image/79677311_6.jpg",
           "category": "europe"
         },
@@ -112,7 +112,7 @@
           "source": "DW Europe",
           "time": "12h ago",
           "url": "https://www.dw.com/en/czechia-braces-for-massive-protest-as-anger-over-government-s-public-media-reform-plans-boils/a-79933533?maca=en-rss-en-eu-2092-rdf",
-          "imageUrl": "https://static.dw.com/image/77653329_6.jpg",
+          "imageUrl": null,
           "category": "europe"
         },
         {
@@ -127,10 +127,19 @@
       ],
       "middleEast": [
         {
+          "title": "Australia captain Pat Cummins denies involvement in ‘Sandpapergate’ scandal",
+          "summary": "Cummins says Khawaja was '100 percent wrong' in claiming the whole team knew about the 2018 ball-tampering scandal.",
+          "source": "Al Jazeera",
+          "time": "17m ago",
+          "url": "https://www.aljazeera.com/sports/2026/11/13/pat-cummins-australia-usman-khawaja-sandpapergate-test-south-africa?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/GettyImages-2304843314-1794548577.jpg?resize=1920%2C1440",
+          "category": "middleEast"
+        },
+        {
           "title": "Harry Kane breaks caps record as England reach Nations League knockouts",
           "summary": "England moved to second spot in Group A3 behind Spain, confirming their place in the Nations League last eight in March.",
           "source": "Al Jazeera",
-          "time": "1h ago",
+          "time": "51m ago",
           "url": "https://www.aljazeera.com/sports/2026/11/13/harry-kane-england-appearance-record-126-croatia-nations-league-quarterfinals?traffic_source=rss",
           "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261112__D7BZ2WL__v1__HighRes__FblNationsLeagueEngCro-1794546572.jpg?resize=1920%2C1440",
           "category": "middleEast"
@@ -143,43 +152,16 @@
           "url": "https://www.aljazeera.com/news/2026/11/13/burkina-fasos-rival-armed-groups-turn-on-each-other-as-state-loses-ground?traffic_source=rss",
           "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2025/05/AFP__20221008__32KY9DR__v1__HighRes__BurkinaPoliticsCoupUnrestAttackCeremony-1747038834.jpg?resize=1920%2C1365",
           "category": "middleEast"
-        },
-        {
-          "title": "Pope Leo meets clergy abuse survivors in Peru amid calls for justice",
-          "summary": "Pope Leo met six clergy abuse survivors in Peru, while hundreds more say they remain excluded as they seek justice.",
-          "source": "Al Jazeera",
-          "time": "1h ago",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_pope-leo-meets-clergy-abuse-survivors-in-peru-121126?traffic_source=rss",
-          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794546304.jpg?resize=1620%2C1080&quality=80",
-          "category": "middleEast"
         }
       ],
       "russiaUkraine": [
         {
-          "title": "EU leaders tussle over who to send to Ukraine, Russia peace talks",
+          "title": "EU leaders tussle over whom to send to Ukraine, Russia peace talks",
           "summary": "A seat at the table for Europe now appears likely following comments by a US envoy who just held talks with Putin. But who will take that seat remains unclear.",
-          "source": "DW / BBC",
+          "source": "DW Europe",
           "time": "8h ago",
-          "url": "https://www.dw.com/en/eu-leaders-tussle-over-who-to-send-to-ukraine-russia-peace-talks/a-79935468?maca=en-rss-en-eu-2092-rdf",
+          "url": "https://www.dw.com/en/eu-leaders-tussle-over-whom-to-send-to-ukraine-russia-peace-talks/a-79935468?maca=en-rss-en-eu-2092-rdf",
           "imageUrl": "https://static.dw.com/image/79677311_6.jpg",
-          "category": "Russia-Ukraine"
-        },
-        {
-          "title": "What have the talks with Russia and the US in Abu Dhabi achieved for Ukraine?",
-          "summary": "The first trilateral talks between Ukraine, the US and Russia in nine months have ended with an agreement on exchanging prisoners. Does this mark a genuine breakthrough and a step toward peace?",
-          "source": "DW / BBC",
-          "time": "14h ago",
-          "url": "https://www.dw.com/en/what-have-the-talks-with-russia-and-the-us-in-abu-dhabi-achieved-for-ukraine/a-79930613?maca=en-rss-en-eu-2092-rdf",
-          "imageUrl": "https://static.dw.com/image/79918396_6.jpg",
-          "category": "Russia-Ukraine"
-        },
-        {
-          "title": "British counterterrorism police arrest US soldier accused of spying on behalf of Russia",
-          "summary": "A member of the US Army has been arrested near Gloucester in England. Police said he was suspected of espionage activity in connection with Russia. Investigators from the US and UK are involved in the probe.",
-          "source": "DW / BBC",
-          "time": "2d ago",
-          "url": "https://www.dw.com/en/british-counterterrorism-police-arrest-us-soldier-accused-of-spying-on-behalf-of-russia/a-79913240?maca=en-rss-en-eu-2092-rdf",
-          "imageUrl": "https://static.dw.com/image/79447749_6.jpg",
           "category": "Russia-Ukraine"
         }
       ],
@@ -255,7 +237,7 @@
           "title": "Kidnapper, 74, escapes from house arrest in Argentina by abseiling from balcony",
           "summary": "Leonardo Bertulazzi, a former member of the Marxist guerrilla group the Red Brigades, was about to be extradited to his home country of Italy.",
           "source": "BBC Latin America",
-          "time": "2d ago",
+          "time": "1d ago",
           "url": "https://www.bbc.co.uk/news/articles/c933gn6710lyo?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a91e/live/b13e3560-ddd6-11f1-b865-d17d8611efca.jpg",
           "category": "latinAmerica"
@@ -264,7 +246,7 @@
           "title": "Transport workers in Chile block highways in protest over surging fuel prices",
           "summary": "Hundreds of bus and lorry drivers are blocking traffic along major highway routes across the country.",
           "source": "BBC Latin America",
-          "time": "2d ago",
+          "time": "1d ago",
           "url": "https://www.bbc.co.uk/news/articles/c6e3d895zne7o?at_medium=RSS&at_campaign=rss",
           "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0d32/live/746c37d0-ddbe-11f1-a50f-85eebf9e50e5.jpg",
           "category": "latinAmerica"
@@ -332,7 +314,7 @@
           "title": "Brook: Rashid is a 'magician' but recall not guaranteed",
           "summary": "Buttler suggests Rashid must be \"bowling at his best\" for England to win 2027 World Cup",
           "source": "ESPNcricinfo",
-          "time": "15h ago",
+          "time": "14h ago",
           "url": "https://www.cricinfo.com/ci/content/story/1562408.html?ex_cid=OTC-RSS",
           "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425100/425143.jpg",
           "category": "Cricket"
@@ -407,12 +389,12 @@
           "category": "Sports"
         },
         {
-          "title": "'A lie' - Palmer committed to England, says Rogers",
-          "summary": "Morgan Rogers says any suggestion Cole Palmer is not committed to England \"is a lie\" and \"nonsense\".",
+          "title": "Whatever happened to the diamond that went missing in F1 crash?",
+          "summary": "Whatever happened to the diamond that went missing after the Formula 1 car it was attached to crashed?",
           "source": "BBC Sport",
-          "time": "7h ago",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c6e9kjne5y8vo?at_medium=RSS&at_campaign=rss",
-          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8b18/live/725b0530-dee9-11f1-8111-290450ddba8c.jpg",
+          "time": "17m ago",
+          "url": "https://www.bbc.co.uk/sport/formula1/articles/c60735md0jrpo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d8b0/live/da7ae610-deaa-11f1-8253-3f203a001288.jpg",
           "category": "Sports"
         }
       ]
@@ -460,7 +442,7 @@
         "title": "Whoop launched a social network where every user has a ‘verified heartbeat’",
         "summary": "Starting Thursday, Whoop members can share their data from its wearables on the app's new Whoop Humans social network.",
         "source": "Tech & Science",
-        "time": "7h ago",
+        "time": "6h ago",
         "url": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network",
         "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/whoop-humans-launch-screenshots-trio-2.jpeg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
         "category": "AI"
@@ -469,7 +451,7 @@
         "title": "Humble Bundle redesign removes two-factor verification from settings",
         "summary": "The Humble Bundle storefront for buying games and other software recently got a new look, but on the settings page, it no longer offers a way to add or update two-factor verification methods, as reported by Kotaku.",
         "source": "Tech & Science",
-        "time": "7h ago",
+        "time": "6h ago",
         "url": "https://www.theverge.com/games/1032659/humble-bundle-redesign-two-factor-verification-security-settings",
         "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-12-at-3.28.10-PM.png?quality=90&#038;strip=all&#038;crop=0,0,100,88.092261904762",
         "category": "AI"
@@ -510,7 +492,7 @@
         "title": "Meta expands Instagram’s AI age-guessing tech globally",
         "summary": "Meta says it will use its AI technology to look for clues about people it suspects to be teenagers — even if they use an adult birthday.",
         "source": "TechCrunch / The Verge",
-        "time": "4d ago",
+        "time": "3d ago",
         "url": "https://techcrunch.com/2026/11/09/meta-expands-instagrams-ai-age-guessing-tech-globally/",
         "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/05/instagram-header.jpg?resize=1200,800",
         "category": "Instagram"
@@ -519,7 +501,7 @@
         "title": "Meet Drops, the new music app bringing back the fun of sharing songs with friends",
         "summary": "The new music discovery app lets users scroll through 10- to 30-second snippets of songs, comment, and share with friends.",
         "source": "TechCrunch / The Verge",
-        "time": "4d ago",
+        "time": "3d ago",
         "url": "https://techcrunch.com/2026/11/09/meet-drops-the-new-music-app-bringing-back-the-fun-of-sharing-songs-with-friends/",
         "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Drops-app.png?w=1200",
         "category": "Social"
@@ -603,25 +585,34 @@
   },
   "dailyFacts": [
     {
-      "id": "wiki-1985",
+      "id": "wiki-1974",
       "category": "History",
       "emoji": "📜",
-      "title": "Historical Turning Point (1985)",
-      "fact": "The volcano Nevado del Ruiz (pictured) erupted, causing a volcanic mudslide that buried the town of Armero, Colombia, killing approximately 23,000 people.",
+      "title": "Historical Turning Point (1974)",
+      "fact": "Six members of the DeFeo family were murdered in their home (house pictured) in Amityville, New York, events that later inspired the book The Amityville Horror and a subsequent media franchise.",
       "source": "Wikipedia On This Day",
-      "sourceUrl": "https://en.wikipedia.org/wiki/Nevado_del_Ruiz"
+      "sourceUrl": "https://en.wikipedia.org/wiki/Amityville_murders"
     },
     {
-      "id": "wiki-1982",
+      "id": "wiki-1966",
       "category": "History",
       "emoji": "📜",
-      "title": "Historical Turning Point (1982)",
-      "fact": "South Korean boxer Kim Duk-koo suffered fatal brain injuries during a match with American Ray Mancini in Las Vegas, leading to significant rule changes in the sport.",
+      "title": "Historical Turning Point (1966)",
+      "fact": "Arab–Israeli conflict: In response to a Fatah landmine incident, the Israeli military conducted a large cross-border assault on the Jordanian-controlled West Bank village of Samu.",
       "source": "Wikipedia On This Day",
-      "sourceUrl": "https://en.wikipedia.org/wiki/Kim_Duk-koo"
+      "sourceUrl": "https://en.wikipedia.org/wiki/Arab%E2%80%93Israeli_conflict"
     },
     {
-      "id": "fact-science-3",
+      "id": "fact-extra-3",
+      "category": "Geography",
+      "emoji": "🌍",
+      "title": "Oceanic Depths & Light",
+      "fact": "Over 90% of Earth’s habitable living space exists within the deep oceans, where sunlight completely vanishes beyond 200 meters down.",
+      "source": "NOAA Ocean Exploration",
+      "sourceUrl": "https://oceanexplorer.noaa.gov/"
+    },
+    {
+      "id": "fact-extra-4",
       "category": "Science",
       "emoji": "🔬",
       "title": "Quantum Entanglement Precision",
@@ -630,22 +621,13 @@
       "sourceUrl": "https://www.nist.gov/"
     },
     {
-      "id": "fact-human body-4",
+      "id": "fact-extra-5",
       "category": "Human Body",
       "emoji": "🧠",
       "title": "Mitochondrial Lineage",
       "fact": "All human mitochondrial DNA is inherited almost exclusively through the maternal line, tracing back to a common ancestral maternal lineage.",
       "source": "Nature Genetics",
       "sourceUrl": "https://www.nature.com/"
-    },
-    {
-      "id": "fact-geography-5",
-      "category": "Geography",
-      "emoji": "🌍",
-      "title": "Point Nemo Isolation",
-      "fact": "Point Nemo in the South Pacific is so isolated from land that the closest human beings are often the astronauts on the International Space Station.",
-      "source": "European Space Agency",
-      "sourceUrl": "https://www.esa.int/"
     }
   ],
   "mindGym": {

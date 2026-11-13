@@ -53,39 +53,23 @@ async function main() {
     console.warn('[WARN] Could not load dhyan-source.json:', e.message);
   }
 
-  // 1. Fetch World Pulse
-  console.log('[PIPELINE] 1. Fetching World Pulse feeds...');
-  const worldPulse = await fetchWorldPulse(previousData?.worldPulse);
+  // Run all independent pipeline fetchers concurrently!
+  console.log('[PIPELINE] Running all 8 sections concurrently...');
+  const [worldPulse, sports, techScience, socialTrends, disasters, dailyFacts] = await Promise.all([
+    fetchWorldPulse(previousData?.worldPulse),
+    fetchSports(previousData?.sports),
+    fetchTechScience(previousData?.techScience),
+    fetchSocialTrends(previousData?.socialTrends),
+    fetchDisasters(previousData?.disasters),
+    fetchDailyFacts(seenFacts, dateInfo.istDateStr)
+  ]);
 
-  // 2. Fetch Sports & Achievements
-  console.log('[PIPELINE] 2. Fetching Sports & Achievements...');
-  const sports = await fetchSports(previousData?.sports);
-
-  // 3. Fetch Tech & Science
-  console.log('[PIPELINE] 3. Fetching Tech & Science...');
-  const techScience = await fetchTechScience(previousData?.techScience);
-
-  // 4. Fetch Social & Instagram Trends
-  console.log('[PIPELINE] 4. Fetching Social Trends...');
-  const socialTrends = await fetchSocialTrends(previousData?.socialTrends);
-
-  // 5. Fetch Disasters & Emergencies
-  console.log('[PIPELINE] 5. Fetching Disasters & Emergencies...');
-  const disasters = await fetchDisasters(previousData?.disasters);
-
-  // 6. Generate 5 Daily Facts
-  console.log('[PIPELINE] 6. Generating 5 Daily Facts...');
-  const dailyFacts = await fetchDailyFacts(seenFacts, dateInfo.istDateStr);
   // Update seen facts
   dailyFacts.forEach(f => seenFacts.add(f.fact));
   await fs.writeFile(seenFactsPath, JSON.stringify([...seenFacts], null, 2), 'utf-8');
 
-  // 7. Generate Mind Gym
-  console.log('[PIPELINE] 7. Generating Mind Gym...');
+  // Generate Mind Gym & Dhyan
   const mindGym = generateDailyMindGym(dateInfo.istDateStr);
-
-  // 8. Generate Dhyan
-  console.log('[PIPELINE] 8. Generating Dhyan...');
   const dhyan = generateDhyan(dhyanSource, dateInfo.istDateStr);
 
   // Assemble full payload
@@ -127,7 +111,7 @@ async function main() {
 async function processItem(item, sourceName, defaultCategory = '') {
   let imageUrl = extractFeedImage(item);
   if (!imageUrl && item.link) {
-    imageUrl = await fetchOgImage(item.link);
+    imageUrl = await fetchOgImage(item.link, 1500);
   }
 
   return {
@@ -142,19 +126,19 @@ async function processItem(item, sourceName, defaultCategory = '') {
 }
 
 /**
- * WORLD PULSE FETCHER
+ * WORLD PULSE FETCHER (Concurrent)
  */
 async function fetchWorldPulse(previous) {
   try {
     const feeds = {
       india: ['https://www.thehindu.com/news/national/feeder/default.rss', 'The Hindu'],
-      usa: ['http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml', 'BBC News US'],
-      uk: ['http://feeds.bbci.co.uk/news/uk/rss.xml', 'BBC News UK'],
+      usa: ['https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml', 'BBC News US'],
+      uk: ['https://feeds.bbci.co.uk/news/uk/rss.xml', 'BBC News UK'],
       europe: ['https://rss.dw.com/rdf/rss-en-eu', 'DW Europe'],
       middleEast: ['https://www.aljazeera.com/xml/rss/all.xml', 'Al Jazeera'],
-      asia: ['http://feeds.bbci.co.uk/news/world/asia/rss.xml', 'BBC News Asia'],
-      africa: ['http://feeds.bbci.co.uk/news/world/africa/rss.xml', 'BBC News Africa'],
-      latinAmerica: ['http://feeds.bbci.co.uk/news/world/latin_america/rss.xml', 'BBC Latin America']
+      asia: ['https://feeds.bbci.co.uk/news/world/asia/rss.xml', 'BBC News Asia'],
+      africa: ['https://feeds.bbci.co.uk/news/world/africa/rss.xml', 'BBC News Africa'],
+      latinAmerica: ['https://feeds.bbci.co.uk/news/world/latin_america/rss.xml', 'BBC Latin America']
     };
 
     const resultsByRegion = {
@@ -169,35 +153,25 @@ async function fetchWorldPulse(previous) {
       latinAmerica: []
     };
 
-    // Fetch each region
-    for (const [key, [url, source]] of Object.entries(feeds)) {
-      const feed = await safeParseFeed(url);
+    // Fetch all regions concurrently
+    await Promise.all(Object.entries(feeds).map(async ([key, [url, source]]) => {
+      const feed = await safeParseFeed(url, 4000);
       const items = feed.items || [];
-      const regionItems = [];
-
-      for (let i = 0; i < Math.min(items.length, 5); i++) {
-        const processed = await processItem(items[i], source, key);
-        regionItems.push(processed);
-        if (regionItems.length >= 3) break;
-      }
-
+      const slice = items.slice(0, 3);
+      const processed = await Promise.all(slice.map(it => processItem(it, source, key)));
       if (key === 'asia') {
-        resultsByRegion.chinaAsiaPacific = regionItems;
+        resultsByRegion.chinaAsiaPacific = processed;
       } else {
-        resultsByRegion[key] = regionItems;
+        resultsByRegion[key] = processed;
       }
-    }
+    }));
 
-    // Russia-Ukraine filter from Europe or general world items
-    const dwEurope = await safeParseFeed('https://rss.dw.com/rdf/rss-en-eu');
-    const bbcEurope = await safeParseFeed('http://feeds.bbci.co.uk/news/world/europe/rss.xml');
-    const combinedEurope = [...(dwEurope.items || []), ...(bbcEurope.items || [])];
-    
-    for (const item of combinedEurope) {
-      const text = `${item.title} ${item.contentSnippet || ''}`.toLowerCase();
+    // Russia-Ukraine items from Europe
+    const europeItems = resultsByRegion.europe || [];
+    for (const item of europeItems) {
+      const text = `${item.title} ${item.summary}`.toLowerCase();
       if (text.includes('ukraine') || text.includes('russia') || text.includes('kyiv') || text.includes('moscow')) {
-        const processed = await processItem(item, 'DW / BBC', 'Russia-Ukraine');
-        resultsByRegion.russiaUkraine.push(processed);
+        resultsByRegion.russiaUkraine.push({ ...item, category: 'Russia-Ukraine' });
         if (resultsByRegion.russiaUkraine.length >= 3) break;
       }
     }
@@ -252,10 +226,8 @@ async function fetchWorldPulse(previous) {
     };
   } catch (e) {
     console.error('[ERROR] World pulse fetch failed:', e);
-    if (previous) {
-      return { ...previous, isStale: true };
-    }
-    throw e;
+    if (previous) return { ...previous, isStale: true };
+    return { regions: {}, ongoingTracker: [], isStale: true };
   }
 }
 
@@ -264,13 +236,14 @@ async function fetchWorldPulse(previous) {
  */
 async function fetchSports(previous) {
   try {
-    const bbcSport = await safeParseFeed('http://feeds.bbci.co.uk/sport/rss.xml');
-    const cricinfo = await safeParseFeed('https://www.espncricinfo.com/rss/content/story/feeds/0.xml');
+    const [bbcSport, cricinfo] = await Promise.all([
+      safeParseFeed('https://feeds.bbci.co.uk/sport/rss.xml', 4000),
+      safeParseFeed('https://www.espncricinfo.com/rss/content/story/feeds/0.xml', 4000)
+    ]);
 
-    const cricketItems = [];
-    for (let i = 0; i < Math.min(cricinfo.items.length, 3); i++) {
-      cricketItems.push(await processItem(cricinfo.items[i], 'ESPNcricinfo', 'Cricket'));
-    }
+    const cricketItems = await Promise.all(
+      (cricinfo.items || []).slice(0, 3).map(it => processItem(it, 'ESPNcricinfo', 'Cricket'))
+    );
 
     const footballItems = [];
     const tennisItems = [];
@@ -287,7 +260,6 @@ async function fetchSports(previous) {
       }
     }
 
-    // Achievement of the Day Highlight
     const achievementOfTheDay = {
       title: "World Record & Peak Endurance Milestone",
       athleteOrTeam: "Global Sports Spotlight",
@@ -315,7 +287,7 @@ async function fetchSports(previous) {
   } catch (e) {
     console.error('[ERROR] Sports fetch failed:', e);
     if (previous) return { ...previous, isStale: true };
-    throw e;
+    return { achievementOfTheDay: {}, categories: {}, latestScores: [], isStale: true };
   }
 }
 
@@ -324,9 +296,11 @@ async function fetchSports(previous) {
  */
 async function fetchTechScience(previous) {
   try {
-    const verge = await safeParseFeed('https://www.theverge.com/rss/index.xml');
-    const ars = await safeParseFeed('https://feeds.arstechnica.com/arstechnica/index');
-    const science = await safeParseFeed('https://www.sciencedaily.com/rss/top/science.xml');
+    const [verge, ars, science] = await Promise.all([
+      safeParseFeed('https://www.theverge.com/rss/index.xml', 4000),
+      safeParseFeed('https://feeds.arstechnica.com/arstechnica/index', 4000),
+      safeParseFeed('https://www.sciencedaily.com/rss/top/science.xml', 4000)
+    ]);
 
     const combined = [...(verge.items || []), ...(ars.items || []), ...(science.items || [])];
     const items = [];
@@ -342,7 +316,6 @@ async function fetchTechScience(previous) {
       else if (text.includes('quantum') || text.includes('physics') || text.includes('gene') || text.includes('cell')) cat = 'Science';
 
       const processed = await processItem(raw, 'Tech & Science', cat);
-      // deduplicate
       if (!items.some(it => it.title === processed.title)) {
         items.push(processed);
       }
@@ -355,7 +328,7 @@ async function fetchTechScience(previous) {
   } catch (e) {
     console.error('[ERROR] Tech & Science fetch failed:', e);
     if (previous) return { ...previous, isStale: true };
-    throw e;
+    return { items: [], isStale: true };
   }
 }
 
@@ -364,8 +337,10 @@ async function fetchTechScience(previous) {
  */
 async function fetchSocialTrends(previous) {
   try {
-    const tcSocial = await safeParseFeed('https://techcrunch.com/category/social/feed/');
-    const verge = await safeParseFeed('https://www.theverge.com/rss/index.xml');
+    const [tcSocial, verge] = await Promise.all([
+      safeParseFeed('https://techcrunch.com/category/social/feed/', 4000),
+      safeParseFeed('https://www.theverge.com/rss/index.xml', 4000)
+    ]);
 
     const items = [];
     const pool = [...(tcSocial.items || []), ...(verge.items || [])];
@@ -387,7 +362,6 @@ async function fetchSocialTrends(previous) {
       }
     }
 
-    // Fallback if low matches
     if (items.length < 3) {
       items.push({
         title: "Creator Economy Adapts to Algorithmic Feed Re-ranking",
@@ -407,20 +381,23 @@ async function fetchSocialTrends(previous) {
   } catch (e) {
     console.error('[ERROR] Social trends fetch failed:', e);
     if (previous) return { ...previous, isStale: true };
-    throw e;
+    return { items: [], isStale: true };
   }
 }
 
 /**
- * DISASTERS & EMERGENCIES FETCHER (USGS GeoJSON M5.0+ and News)
+ * DISASTERS & EMERGENCIES FETCHER
  */
 async function fetchDisasters(previous) {
   try {
-    // USGS 4.5+ earthquakes for the past day
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 4000);
     const usgsRes = await fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson', {
+      signal: controller.signal,
       headers: { 'User-Agent': 'DailyBrief/1.0' }
     });
-    
+    clearTimeout(timer);
+
     const earthquakes = [];
     if (usgsRes.ok) {
       const usgsData = await usgsRes.json();
@@ -428,7 +405,6 @@ async function fetchDisasters(previous) {
       for (const feat of features) {
         const props = feat.properties;
         const coords = feat.geometry?.coordinates || [0, 0, 0];
-        // Only magnitude 5.0+
         if (props.mag >= 5.0) {
           const mapUrl = `https://www.google.com/maps/search/?api=1&query=${coords[1]},${coords[0]}`;
           earthquakes.push({
@@ -443,7 +419,6 @@ async function fetchDisasters(previous) {
       }
     }
 
-    // Calm emergencies from feeds
     const emergencies = [
       {
         title: "Global Weather Pattern & Storm Trajectory Monitoring",
@@ -463,16 +438,15 @@ async function fetchDisasters(previous) {
   } catch (e) {
     console.error('[ERROR] Disasters fetch failed:', e);
     if (previous) return { ...previous, isStale: true };
-    throw e;
+    return { earthquakes: [], emergencies: [], isStale: true };
   }
 }
 
 /**
- * 5 DAILY FACTS GENERATOR (Guaranteed 5 unique, deduplicated facts)
+ * 5 DAILY FACTS GENERATOR
  */
 async function fetchDailyFacts(seenFactsSet, istDateStr) {
   const facts = [];
-  const categories = ['Science', 'History', 'Space', 'Human Body', 'Geography'];
   const emojis = {
     'Science': '🔬',
     'History': '📜',
@@ -481,13 +455,17 @@ async function fetchDailyFacts(seenFactsSet, istDateStr) {
     'Geography': '🌍'
   };
 
-  // Try Wikipedia On This Day
   try {
     const [year, month, day] = istDateStr.split('-');
     const wikiUrl = `https://en.wikipedia.org/api/rest_v1/feed/onthisday/selected/${month}/${day}`;
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 3500);
     const res = await fetch(wikiUrl, {
+      signal: controller.signal,
       headers: { 'User-Agent': 'DailyBriefBot/1.0 (krishparikh25@users.noreply.github.com)' }
     });
+    clearTimeout(timer);
+
     if (res.ok) {
       const data = await res.json();
       const selected = data.selected || [];
@@ -509,7 +487,6 @@ async function fetchDailyFacts(seenFactsSet, istDateStr) {
     console.warn('[WARN] Wikipedia facts fetch error:', e.message);
   }
 
-  // Curated reservoir of fascinating evergreen facts across remaining categories
   const evergreenFacts = [
     {
       category: 'Space',
@@ -555,7 +532,6 @@ async function fetchDailyFacts(seenFactsSet, istDateStr) {
     }
   ];
 
-  // Pick unique facts until we have exactly 5
   for (const item of evergreenFacts) {
     if (facts.length >= 5) break;
     if (!seenFactsSet.has(item.fact) && !facts.some(f => f.category === item.category)) {
@@ -571,7 +547,6 @@ async function fetchDailyFacts(seenFactsSet, istDateStr) {
     }
   }
 
-  // Ensure exactly 5 items
   while (facts.length < 5) {
     const fallbackItem = evergreenFacts[facts.length % evergreenFacts.length];
     facts.push({
@@ -589,12 +564,10 @@ async function fetchDailyFacts(seenFactsSet, istDateStr) {
 }
 
 /**
- * DHYAN GENERATOR (Bhagavad Gita verse rotator, Panchang, thought, mantra)
+ * DHYAN GENERATOR
  */
 function generateDhyan(dhyanSource, istDateStr) {
   const panchang = calculatePanchang(new Date());
-
-  // Date-based index for rotating through verses
   const dateHash = istDateStr.split('-').reduce((acc, part) => acc + parseInt(part, 10), 0);
   
   const gitaVerses = dhyanSource.gitaVerses || [];

@@ -2,7 +2,6 @@ import Parser from 'rss-parser';
 import * as cheerio from 'cheerio';
 
 const parser = new Parser({
-  timeout: 8000,
   headers: {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 DailyBrief/1.0'
   },
@@ -54,6 +53,8 @@ export function cleanSummary(rawText, maxLen = 220) {
  * Extract image URL from feed item
  */
 export function extractFeedImage(item) {
+  if (!item) return null;
+
   // 1. Enclosure
   if (item.enclosure && item.enclosure.url && /\.(jpg|jpeg|png|webp|avif)/i.test(item.enclosure.url)) {
     return item.enclosure.url;
@@ -62,14 +63,14 @@ export function extractFeedImage(item) {
   if (item.mediaContent && item.mediaContent.length > 0) {
     for (const mc of item.mediaContent) {
       const url = mc?.['$']?.url || mc?.url;
-      if (url && typeof url === 'string') return url;
+      if (url && typeof url === 'string' && url.startsWith('http')) return url;
     }
   }
   // 3. Media Thumbnail
   if (item.mediaThumbnail && item.mediaThumbnail.length > 0) {
     for (const mt of item.mediaThumbnail) {
       const url = mt?.['$']?.url || mt?.url;
-      if (url && typeof url === 'string') return url;
+      if (url && typeof url === 'string' && url.startsWith('http')) return url;
     }
   }
   // 4. HTML img in content or description
@@ -86,47 +87,52 @@ export function extractFeedImage(item) {
 }
 
 /**
- * Fetch og:image from article URL with a fast timeout (3.5s)
+ * Fetch og:image from article URL with a strict 2-second timeout
  */
-export async function fetchOgImage(articleUrl) {
+export async function fetchOgImage(articleUrl, timeoutMs = 2000) {
   if (!articleUrl || !articleUrl.startsWith('http')) return null;
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 3500);
 
   try {
-    const res = await fetch(articleUrl, {
-      signal: controller.signal,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    const timeoutPromise = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('fetchOgImage timeout')), timeoutMs)
+    );
+
+    const fetchPromise = (async () => {
+      const res = await fetch(articleUrl, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+        }
+      });
+      if (!res.ok) return null;
+      const html = await res.text();
+      const $ = cheerio.load(html);
+      const og = $('meta[property="og:image"]').attr('content') ||
+                 $('meta[property="og:image:url"]').attr('content') ||
+                 $('meta[name="twitter:image"]').attr('content') ||
+                 $('meta[name="twitter:image:src"]').attr('content');
+      if (og && og.startsWith('http')) {
+        return og;
       }
-    });
-    clearTimeout(timer);
-    if (!res.ok) return null;
-    const html = await res.text();
-    const $ = cheerio.load(html);
-    const og = $('meta[property="og:image"]').attr('content') ||
-               $('meta[property="og:image:url"]').attr('content') ||
-               $('meta[name="twitter:image"]').attr('content') ||
-               $('meta[name="twitter:image:src"]').attr('content');
-    if (og && og.startsWith('http')) {
-      return og;
-    }
+      return null;
+    })();
+
+    return await Promise.race([fetchPromise, timeoutPromise]);
   } catch (e) {
-    // Timeout or network error - gracefully return null
-  } finally {
-    clearTimeout(timer);
+    return null;
   }
-  return null;
 }
 
 /**
- * Parse an RSS feed safely
+ * Parse an RSS feed safely with strict 5-second hard timeout
  */
-export async function safeParseFeed(url) {
+export async function safeParseFeed(url, timeoutMs = 5000) {
   try {
-    return await parser.parseURL(url);
+    const timeoutPromise = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error(`Feed timeout: ${url}`)), timeoutMs)
+    );
+    return await Promise.race([parser.parseURL(url), timeoutPromise]);
   } catch (e) {
-    console.warn(`[WARN] Failed to parse feed ${url}: ${e.message}`);
+    console.warn(`[WARN] Feed bypassed (${url}): ${e.message}`);
     return { items: [] };
   }
 }
@@ -141,54 +147,57 @@ export function getISTDateInfo() {
   const istTime = new Date(now.getTime() + istOffset);
 
   // Next midnight IST
-  // In UTC terms: next 18:30 UTC
   const targetMidnight = new Date();
-  // Find upcoming midnight in IST
   const istYear = istTime.getUTCFullYear();
   const istMonth = istTime.getUTCMonth();
   const istDate = istTime.getUTCDate();
-  
-  // Midnight IST tomorrow in UTC is: tomorrow 00:00:00 IST = today 18:30:00 UTC
-  const nextMidnightIST = new Date(Date.UTC(istYear, istMonth, istDate + 1, -5, -30, 0));
-  // If nextMidnightIST is in the past, add another day
-  while (nextMidnightIST.getTime() <= now.getTime()) {
-    nextMidnightIST.setTime(nextMidnightIST.getTime() + 24 * 3600 * 1000);
-  }
 
-  const dateStr = istTime.toISOString().split('T')[0];
-  
+  // Next midnight IST = next day 00:00 IST = 18:30 UTC of current day
+  const nextMidnightUtc = new Date(Date.UTC(istYear, istMonth, istDate + 1, -5, -30, 0));
+
   const options = {
     weekday: 'long',
-    year: 'numeric',
-    month: 'short',
     day: 'numeric',
+    month: 'short',
+    year: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
     hour12: true,
     timeZone: 'Asia/Kolkata'
   };
+
   const formattedIST = new Intl.DateTimeFormat('en-IN', options).format(now) + ' IST';
+  const istDateStr = `${istYear}-${String(istMonth + 1).padStart(2, '0')}-${String(istDate).padStart(2, '0')}`;
 
   return {
     nowIso: now.toISOString(),
-    istDateStr: dateStr,
     formattedIST,
-    nextMidnightUtcIso: nextMidnightIST.toISOString()
+    istDateStr,
+    nextMidnightUtcIso: nextMidnightUtc.toISOString()
   };
 }
 
 /**
- * Relative time helper (e.g. "2h ago")
+ * Get human-readable relative time string
  */
-export function getRelativeTime(pubDate) {
-  if (!pubDate) return 'Today';
-  const now = Date.now();
-  const itemTime = new Date(pubDate).getTime();
-  if (isNaN(itemTime)) return 'Today';
-  const diffHours = Math.round((now - itemTime) / (1000 * 60 * 60));
-  if (diffHours <= 0) return 'Just now';
-  if (diffHours === 1) return '1h ago';
-  if (diffHours < 24) return `${diffHours}h ago`;
-  const diffDays = Math.round(diffHours / 24);
-  return `${diffDays}d ago`;
+export function getRelativeTime(pubDateStr) {
+  if (!pubDateStr) return 'Recent';
+  try {
+    const pub = new Date(pubDateStr);
+    const now = new Date();
+    const diffMs = now - pub;
+    const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+    const diffMins = Math.floor(diffMs / (1000 * 60));
+
+    if (diffMins < 60) {
+      return diffMins <= 1 ? 'Just now' : `${diffMins}m ago`;
+    } else if (diffHours < 24) {
+      return `${diffHours}h ago`;
+    } else {
+      const days = Math.floor(diffHours / 24);
+      return `${days}d ago`;
+    }
+  } catch (e) {
+    return 'Today';
+  }
 }
