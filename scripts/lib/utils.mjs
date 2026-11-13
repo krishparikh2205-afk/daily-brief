@@ -93,9 +93,11 @@ export async function fetchOgImage(articleUrl, timeoutMs = 2000) {
   if (!articleUrl || !articleUrl.startsWith('http')) return null;
 
   try {
-    const timeoutPromise = new Promise((_, reject) =>
-      setTimeout(() => reject(new Error('fetchOgImage timeout')), timeoutMs)
-    );
+    let timer;
+    const timeoutPromise = new Promise((_, reject) => {
+      timer = setTimeout(() => reject(new Error('fetchOgImage timeout')), timeoutMs);
+      if (timer.unref) timer.unref();
+    });
 
     const fetchPromise = (async () => {
       const res = await fetch(articleUrl, {
@@ -116,7 +118,9 @@ export async function fetchOgImage(articleUrl, timeoutMs = 2000) {
       return null;
     })();
 
-    return await Promise.race([fetchPromise, timeoutPromise]);
+    const result = await Promise.race([fetchPromise, timeoutPromise]);
+    if (timer) clearTimeout(timer);
+    return result;
   } catch (e) {
     return null;
   }
@@ -127,10 +131,14 @@ export async function fetchOgImage(articleUrl, timeoutMs = 2000) {
  */
 export async function safeParseFeed(url, timeoutMs = 5000) {
   try {
-    const timeoutPromise = new Promise((_, reject) =>
-      setTimeout(() => reject(new Error(`Feed timeout: ${url}`)), timeoutMs)
-    );
-    return await Promise.race([parser.parseURL(url), timeoutPromise]);
+    let timer;
+    const timeoutPromise = new Promise((_, reject) => {
+      timer = setTimeout(() => reject(new Error(`Feed timeout: ${url}`)), timeoutMs);
+      if (timer.unref) timer.unref();
+    });
+    const result = await Promise.race([parser.parseURL(url), timeoutPromise]);
+    if (timer) clearTimeout(timer);
+    return result;
   } catch (e) {
     console.warn(`[WARN] Feed bypassed (${url}): ${e.message}`);
     return { items: [] };

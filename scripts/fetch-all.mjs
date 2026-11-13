@@ -103,6 +103,7 @@ async function main() {
   console.log(`[SUCCESS] Archived snapshot to ${archivePath}`);
 
   console.log('=== DAILY BRIEF DATA PIPELINE COMPLETE ===');
+  process.exit(0);
 }
 
 /**
