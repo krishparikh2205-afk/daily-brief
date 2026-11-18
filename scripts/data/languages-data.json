@@ -1,0 +1,167 @@
+{
+  "french": {
+    "name": "French",
+    "nativeName": "Français",
+    "flag": "🇫🇷",
+    "speechCode": "fr-FR",
+    "level": "Level 0 • Foundation to Speaking",
+    "phrases": [
+      {
+        "id": "fr-1",
+        "native": "Bonjour ! Comment allez-vous ?",
+        "phonetic": "bon-zhoor, koh-mahn tah-lay voo",
+        "english": "Hello! How are you? (Polite)",
+        "hindi": "नमस्ते! आप कैसे हैं? (आदरसूचक)",
+        "context": "Standard polite greeting used throughout the morning and afternoon."
+      },
+      {
+        "id": "fr-2",
+        "native": "Je m'appelle Krish. Enchanté !",
+        "phonetic": "zhuh mah-pel Krish. ahn-shahn-tay",
+        "english": "My name is Krish. Pleased to meet you!",
+        "hindi": "मेरा नाम क्रिश है। आपसे मिलकर खुशी हुई!",
+        "context": "Introducing yourself to new acquaintances."
+      },
+      {
+        "id": "fr-3",
+        "native": "S'il vous plaît et merci beaucoup.",
+        "phonetic": "seel voo pleh ay mair-see boh-koo",
+        "english": "Please and thank you very much.",
+        "hindi": "कृपया और बहुत-बहुत धन्यवाद।",
+        "context": "Essential daily courtesy in shops, cafes, and meetings."
+      },
+      {
+        "id": "fr-4",
+        "native": "Où sont les toilettes, s'il vous plaît ?",
+        "phonetic": "oo sohn lay twah-let, seel voo pleh",
+        "english": "Where is the restroom, please?",
+        "hindi": "शौचालय / वॉशरूम कहाँ है, कृपया बताएं?",
+        "context": "Crucial travel phrase for navigating stations, airports, and restaurants."
+      },
+      {
+        "id": "fr-5",
+        "native": "Combien ça coûte ?",
+        "phonetic": "kohm-byan sah koot",
+        "english": "How much does this cost?",
+        "hindi": "इसकी कीमत कितनी है?",
+        "context": "Asking prices while shopping or dining out."
+      }
+    ],
+    "quiz": {
+      "question": "How do you say 'Thank you very much' in French?",
+      "options": ["De rien", "Merci beaucoup", "Au revoir", "S'il vous plaît"],
+      "correct": 1,
+      "explanation": "'Merci beaucoup' literally translates to 'Thank you very much'."
+    }
+  },
+  "spanish": {
+    "name": "Spanish",
+    "nativeName": "Español",
+    "flag": "🇪🇸",
+    "speechCode": "es-ES",
+    "level": "Level 0 • Foundation to Speaking",
+    "phrases": [
+      {
+        "id": "es-1",
+        "native": "¡Hola! ¿Cómo estás?",
+        "phonetic": "oh-lah, koh-moh ess-tahs",
+        "english": "Hello! How are you?",
+        "hindi": "नमस्ते! तुम कैसे हो / आप कैसे हैं?",
+        "context": "Warm, universal greeting used everywhere across the Spanish-speaking world."
+      },
+      {
+        "id": "es-2",
+        "native": "Mucho gusto, mi nombre es Krish.",
+        "phonetic": "moo-choh goos-toh, mee nohm-bray ess Krish",
+        "english": "Nice to meet you, my name is Krish.",
+        "hindi": "आपसे मिलकर अच्छा लगा, मेरा नाम क्रिश है।",
+        "context": "Handshakes and first introductions."
+      },
+      {
+        "id": "es-3",
+        "native": "Por favor y muchas gracias.",
+        "phonetic": "por fah-vor ee moo-chahs grah-syahs",
+        "english": "Please and thank you very much.",
+        "hindi": "कृपया और बहुत-बहुत धन्यवाद।",
+        "context": "Everyday polite interactions."
+      },
+      {
+        "id": "es-4",
+        "native": "¿Dónde está la estación de tren?",
+        "phonetic": "dohn-day ess-tah lah ess-tah-syohn day tren",
+        "english": "Where is the train station?",
+        "hindi": "रेलवे स्टेशन कहाँ है?",
+        "context": "Navigating public transit and directions."
+      },
+      {
+        "id": "es-5",
+        "native": "¿Cuánto cuesta esto?",
+        "phonetic": "kwahn-toh kwess-tah ess-toh",
+        "english": "How much does this cost?",
+        "hindi": "यह कितने का है?",
+        "context": "Inquiring about prices in markets and stores."
+      }
+    ],
+    "quiz": {
+      "question": "What does 'Muchas gracias' mean?",
+      "options": ["Good morning", "Excuse me", "Thank you very much", "See you later"],
+      "correct": 2,
+      "explanation": "'Muchas gracias' means 'Thank you very much'."
+    }
+  },
+  "german": {
+    "name": "German",
+    "nativeName": "Deutsch",
+    "flag": "🇩🇪",
+    "speechCode": "de-DE",
+    "level": "Level 0 • Foundation to Speaking",
+    "phrases": [
+      {
+        "id": "de-1",
+        "native": "Guten Tag! Wie geht es Ihnen?",
+        "phonetic": "goo-ten tahk! vee gayt es ee-nen",
+        "english": "Good day! How are you? (Polite)",
+        "hindi": "नमस्ते / शुभ दिन! आप कैसे हैं? (आदरसूचक)",
+        "context": "Standard formal German greeting."
+      },
+      {
+        "id": "de-2",
+        "native": "Freut mich, ich heiße Krish.",
+        "phonetic": "froy-t mikh, ikh high-suh Krish",
+        "english": "Pleased to meet you, my name is Krish.",
+        "hindi": "आपसे मिलकर खुशी हुई, मेरा नाम क्रिश है।",
+        "context": "Introducing yourself in Germany, Austria, or Switzerland."
+      },
+      {
+        "id": "de-3",
+        "native": "Bitte und vielen Dank.",
+        "phonetic": "bit-tuh oont fee-len dahnk",
+        "english": "Please and thank you very much.",
+        "hindi": "कृपया और आपका बहुत धन्यवाद।",
+        "context": "Essential polite expression."
+      },
+      {
+        "id": "de-4",
+        "native": "Entschuldigung, wo ist der Bahnhof?",
+        "phonetic": "ent-shool-dee-goong, voh ist dair bahn-hohf",
+        "english": "Excuse me, where is the main station?",
+        "hindi": "माफ़ कीजिए, स्टेशन कहाँ है?",
+        "context": "Asking for transit directions."
+      },
+      {
+        "id": "de-5",
+        "native": "Wie viel kostet das?",
+        "phonetic": "vee feel kohs-tet dahs",
+        "english": "How much does that cost?",
+        "hindi": "इसकी कीमत कितनी है?",
+        "context": "Asking the price in restaurants and stores."
+      }
+    ],
+    "quiz": {
+      "question": "What does 'Guten Tag' mean in German?",
+      "options": ["Good night", "Good day / Hello", "Goodbye", "Please"],
+      "correct": 1,
+      "explanation": "'Guten Tag' is the German greeting for 'Good day' or 'Hello'."
+    }
+  }
+}

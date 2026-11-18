@@ -1,0 +1,719 @@
+{
+  "meta": {
+    "lastUpdated": "2026-11-14T06:34:58.083Z",
+    "lastUpdatedIST": "Saturday, 14 Nov 2026, 12:04 pm IST",
+    "istDateStr": "2026-11-14",
+    "next12HourUtcIso": "2026-11-14T18:30:00.000Z",
+    "title": "Worldly Affairs At Your Comfort News",
+    "tagline": "Quality-curated essential world intelligence in simple words — zero clutter, maximum clarity.",
+    "refreshCycle": "Every 12 hours (12:00 PM & 12:00 AM IST)",
+    "creator": {
+      "name": "Krish Parikh",
+      "mobile": "+919313775724",
+      "mobileFormatted": "+91 93137 75724"
+    }
+  },
+  "newsByLanguage": {
+    "english": [
+      {
+        "id": "item-7riv35h87",
+        "title": "What we know about the longest ground stop since 9/11",
+        "summary": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack or a Microsoft outage.",
+        "source": "BBC World News",
+        "time": "2h ago",
+        "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/14ef/live/f4aae840-dfd7-11f1-b441-2b33b063138f.jpg",
+        "category": "Global Affairs"
+      },
+      {
+        "id": "item-lwibfp4br",
+        "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+        "summary": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for.",
+        "source": "BBC World News",
+        "time": "6h ago",
+        "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0a5e/live/65a2f270-dfad-11f1-be1f-9dae57fabf82.jpg",
+        "category": "Global Affairs"
+      },
+      {
+        "id": "item-hhct5zfmi",
+        "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+        "summary": "Trump will discuss the \"reduction of nuclear weapons\" during the rare talks, a spokeswoman says.",
+        "source": "BBC World News",
+        "time": "42m ago",
+        "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/172e/live/be162960-dfc9-11f1-81be-1f9bcd2a4214.jpg",
+        "category": "Global Affairs"
+      },
+      {
+        "id": "item-zxplohh9h",
+        "title": "Microsoft 'deeply sorry' for global outage as it reports broad recovery",
+        "summary": "Experts say the event is a \"stark reminder\" of how heavily the world relies on a small group of big tech providers.",
+        "source": "BBC World News",
+        "time": "9h ago",
+        "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5f18/live/9b3a5370-df98-11f1-a9ad-6774a3284d10.jpg",
+        "category": "Global Affairs"
+      },
+      {
+        "id": "item-ucbfltvv6",
+        "title": "Police fully empowered to curb drugs and substance abuse in the city: Kerala High Court",
+        "summary": "The court clarified that the directions issued by the Single Bench would not stand in the way of the police maintaining “requisite vigil and attention” to all activities...",
+        "source": "The Hindu",
+        "time": "7m ago",
+        "url": "https://www.thehindu.com/news/national/kerala/police-fully-empowered-to-curb-drugs-and-substance-abuse-in-the-city-kerala-high-court/article71699531.ece",
+        "imageUrl": "https://th-i.thgim.com/public/incoming/2v89eq/article71701035.ece/alternates/LANDSCAPE_1200/Kumbh-Mela-fameGCFGAL12A.3.jpg.jpg",
+        "category": "India & South Asia"
+      },
+      {
+        "id": "item-05ukdms4x",
+        "title": "Mahadev betting app case: CBI searches in 6 States lead to recovery of digital devices, key documents",
+        "summary": "The searches, carried out over the past few days, targeted premises in Delhi, Mumbai, Nagpur, Amritsar, Bhopal and Raipur, among others, linked to the betting platform's panel operators, they said.",
+        "source": "The Hindu",
+        "time": "11m ago",
+        "url": "https://www.thehindu.com/news/national/mahadev-betting-app-case-cbi-searches-in-6-states-lead-to-recovery-of-digital-devices-key-documents/article71701007.ece",
+        "imageUrl": "https://th-i.thgim.com/public/incoming/htqe6j/article71701020.ece/alternates/LANDSCAPE_1200/Untitled%20design%202.jpg",
+        "category": "India & South Asia"
+      },
+      {
+        "id": "item-qkd0tg986",
+        "title": "HYDRAA to take up stepwell restorations to help water conservation measures in Hyderabad",
+        "summary": "Earlier, Akarma Foundation mounted an exhibition of stepwells that showed the legacy of Telangana with water and its conservation",
+        "source": "The Hindu",
+        "time": "11m ago",
+        "url": "https://www.thehindu.com/news/national/telangana/hydraa-to-take-up-stepwell-restorations-to-help-water-conservation-measures-in-hyderabad/article71701018.ece",
+        "imageUrl": "https://th-i.thgim.com/public/news/national/telangana/xpgpn5/article71701017.ece/alternates/LANDSCAPE_1200/water.jpg",
+        "category": "India & South Asia"
+      },
+      {
+        "id": "item-pxmb3n85h",
+        "title": "Kerala HC directs Excise Commissioner to disclose steps taken to implement prohibitory measures to curb underage alcohol consumption",
+        "summary": "It was high time that the legislature considered appropriate amendments to the law to reduce the age of minority for juveniles and children in conflict with the law (CCL)...",
+        "source": "The Hindu",
+        "time": "18m ago",
+        "url": "https://www.thehindu.com/news/national/kerala/kerala-hc-directs-excise-commissioner-to-disclose-steps-taken-to-implement-prohibitory-measures-to-curb-underage-alcohol-consumption/article71699601.ece",
+        "imageUrl": "https://th-i.thgim.com/public/incoming/fk3lpt/article71701024.ece/alternates/LANDSCAPE_1200/iStock-1778903639.jpg",
+        "category": "India & South Asia"
+      }
+    ],
+    "hindi": [
+      {
+        "id": "hi-l03sb945y",
+        "title": "अर्जुन राजपूत: छोले-कुलचे की रेहड़ी से इंडिया अंडर-19 तक पहुंचने की कहानी",
+        "summary": "भारत और पाकिस्तान अंडर-19 एशिया कप के फ़ाइनल में शनिवार को आमने-सामने हैं. अर्जुन उस भारतीय टीम का हिस्सा हैं. लेकिन काफ़ी संघर्षों के बाद अर्जुन का क्रिकेट करियर शुरू हुई.",
+        "source": "BBC News हिंदी",
+        "time": "17m ago",
+        "url": "https://www.bbc.com/hindi/articles/c6ge3yxrr7gpo?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1c73/live/5b6632a0-dff2-11f1-8d38-cd4feb7399f9.jpg",
+        "category": "प्रमुख समाचार"
+      },
+      {
+        "id": "hi-3sndhuiti",
+        "title": "नेहरू की जयंती पर पीएम मोदी और राहुल गांधी ने क्या कहा",
+        "summary": "राहुल गांधी ने कहा कि नेहरू के लिए आज़ादी मंज़िल नहीं, बल्कि देश के नए सफ़र की शुरुआत थी.",
+        "source": "BBC News हिंदी",
+        "time": "Recent",
+        "url": "https://www.bbc.co.uk/hindi/live/cqkgrnxekg9et?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b19b/live/1247b370-dff0-11f1-9e5b-c7f1deae06c9.jpg",
+        "category": "प्रमुख समाचार"
+      },
+      {
+        "id": "hi-jmlt2jat7",
+        "title": "ईरान बार-बार बनाता है बहरीन को निशाना, ये छोटा देश अमेरिका के लिए क्यों है अहम",
+        "summary": "ईरान ने बहरीन में एक अमेरिकी रडार को नष्ट करने का दावा किया है. हालांकि अमेरिकी सेना ने आईआरजीसी के दावों का खंडन किया है.",
+        "source": "BBC News हिंदी",
+        "time": "2h ago",
+        "url": "https://www.bbc.com/hindi/articles/cx24e36e2ne6o?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/9dc0/live/4c8de830-df67-11f1-a8af-15d7a25dc0d1.jpg",
+        "category": "प्रमुख समाचार"
+      },
+      {
+        "id": "hi-0mpoow7dw",
+        "title": "अमेरिका में उड़ानों पर लगी रोक हटी लेकिन आशंकाएं बरकरार, एयर इंडिया ने दी ये सलाह",
+        "summary": "इससे पहले यूरोप से आने वाली सभी उड़ानों पर रोक लगा दी गई थी. कनाडा और ऑस्ट्रेलिया ने भी अमेरिका के लिए अपनी सेवाएं रोकने की घोषणा की थी.",
+        "source": "BBC News हिंदी",
+        "time": "34m ago",
+        "url": "https://www.bbc.com/hindi/articles/c6x20kz84x45o?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/bf3c/live/115da190-dff0-11f1-9e5b-c7f1deae06c9.jpg",
+        "category": "प्रमुख समाचार"
+      },
+      {
+        "id": "hi-19wo6wi53",
+        "title": "चरखा, किताबें और कसरत: नेहरू के जेल में बिताए 3,259 दिनों के क़िस्से",
+        "summary": "जवाहरलाल नेहरू ने देश की आज़ादी से पहले अपने जीवन के करीब 9 वर्ष अंग्रेज़ों की जेलों में बिताए. इस दौरान नेहरू को कई मुश्किलों को सामना करना पड़ा.",
+        "source": "BBC News हिंदी",
+        "time": "1h ago",
+        "url": "https://www.bbc.com/hindi/articles/c628l65dj39o?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1d65/live/a10e5820-dfe6-11f1-8665-a792f52bea81.jpg",
+        "category": "प्रमुख समाचार"
+      },
+      {
+        "id": "hi-78x6xmaun",
+        "title": "पाकिस्तान के कराची की सड़कों से कैसे ग़ायब हुए हिंदू नाम",
+        "summary": "पाकिस्तान के कराची शहर में कभी कई गलियों, चौराहों और पार्कों के नाम हिंदू हस्तियों पर रखे गए थे.  अब इन जगहों को किन नामों से जाना जाता है और इनका क्या हाल है?",
+        "source": "BBC News हिंदी",
+        "time": "3h ago",
+        "url": "https://www.bbc.com/hindi/articles/ckregdgxjqe2o?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/3a69/live/53cc0b00-df43-11f1-a48c-75dd2efdacb5.jpg",
+        "category": "प्रमुख समाचार"
+      },
+      {
+        "id": "hi-8oyc8scbf",
+        "title": "वैश्विक आउटेज के बाद माइक्रोसॉफ़्ट ने मांफ़ी मांगी, बताया तकनीकी दिक्क़त ख़त्म करने की कोशिश कहां तक पहुंची",
+        "summary": "माइक्रोसॉफ्ट ने बताया कि यह समस्या \"नेटवर्क क्षमता को अपग्रेड करने\" के दौरान आई तकनीकी गड़बड़ी के कारण हुई.  इस आउटेज का असर 70 से अधिक देशों में देखने को मिला.",
+        "source": "BBC News हिंदी",
+        "time": "2h ago",
+        "url": "https://www.bbc.com/hindi/articles/cmlyd67n33xwo?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/39b2/live/72e5d4a0-dfdc-11f1-8ea6-5f65580d7027.jpg",
+        "category": "प्रमुख समाचार"
+      },
+      {
+        "id": "hi-rd0q6sb5e",
+        "title": "छठ को क्यों कहते हैं लोक आस्था का पर्व, जानिए इस त्योहार से जुड़ी अहम बातें",
+        "summary": "छठ एक कठिन व्रत का त्योहार है. मूल रूप से यह बिहार का सबसे बड़ा त्योहार है. छठ उत्तर प्रदेश, झारखंड, और कई अन्य राज्यों में मनाया जाता है. इसे लोक आस्था का बड़ा पर्व माना जाता है.",
+        "source": "BBC News हिंदी",
+        "time": "21h ago",
+        "url": "https://www.bbc.com/hindi/articles/cmx28e83vpevo?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1a92/live/0182b870-de9a-11f1-9afe-1f03bfe02283.jpg",
+        "category": "प्रमुख समाचार"
+      }
+    ],
+    "gujarati": [
+      {
+        "id": "gu-uji8b3onf",
+        "title": "રેટિંયો, પુસ્તકો અને વ્યાયામ : નહેરુના જેલમાં વિતાવેલા 3,259 દિવસોની કહાણી",
+        "summary": "ડિસેમ્બર 1921થી માંડીને 15 જૂન, 1945 સુધી જવાહરલાલ નહેરુએ તેમના જીવનના કુલ 3,262 દિવસ એટલે કે લગભગ 9 વર્ષ જેલમાં વીતાવ્યાં હતાં.",
+        "source": "BBC News ગુજરાતી",
+        "time": "32m ago",
+        "url": "https://www.bbc.com/gujarati/articles/cly3l27p8zno?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/af7d/live/1ee475f0-dff0-11f1-b441-2b33b063138f.jpg",
+        "category": "મુખ્ય સમાચાર"
+      },
+      {
+        "id": "gu-pkjwq2br2",
+        "title": "હની ટ્રૅપ : જ્યારે પ્રેમ અને સંબંધો જાસૂસી માટેનાં હથિયાર બની જાય છે",
+        "summary": "વિશ્વાસ, અંતરંગ સંબંધ અને આત્મીયતા. એવું લાગે કે બસ આ જ પ્રેમ છે. પરંતુ ગુપ્તચર એજન્સીઓ અને રાજ્યકારભારની દુનિયામાં પ્રેમ પણ એક હથિયાર બની શકે છે. આ હથિયારનું નામ છે હની ટ્રૅપ.",
+        "source": "BBC News ગુજરાતી",
+        "time": "14m ago",
+        "url": "https://www.bbc.com/gujarati/articles/cm36g19elj1ro?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/8da5/live/0716f1f0-dfcd-11f1-93e1-3b657b665bcf.jpg",
+        "category": "મુખ્ય સમાચાર"
+      },
+      {
+        "id": "gu-j8avilw9t",
+        "title": "બંગાળની ખાડીમાં વધુ એક વાવાઝોડું બનવાની આશંકા, હવામાન વિભાગે શું જણાવ્યું? - ન્યૂઝ અપડેટ",
+        "summary": "ગુજરાત સહિત દેશદુનિયાના તમામ મહત્ત્વના સમાચાર માટે બીબીસી ગુજરાતી સાથે જોડાયેલા રહો.",
+        "source": "BBC News ગુજરાતી",
+        "time": "1h ago",
+        "url": "https://www.bbc.com/gujarati/articles/cw808rz5759ro?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/3006/live/ef0cb470-dfe8-11f1-93e1-3b657b665bcf.jpg",
+        "category": "મુખ્ય સમાચાર"
+      },
+      {
+        "id": "gu-e3lmfq7pf",
+        "title": "'વેંતિયાઓનો દેશ' અને 'માનવજાતનું વિકૃત સ્વરૂપ' - 300 વર્ષ જૂની 'ગુલિવર્સ ટ્રાવેલ્સ' વિશે કેમ પ્રવર્તે છે આટલી મોટી ગેરસમજ?",
+        "summary": "1726માં પહેલી વાર પ્રકાશિત થયેલી જૉનાથન સ્વિફ્ટની સાહસકથા અનેક વાર કાપકૂપ, ફેરફારો અને રૂપાંતરણોમાંથી પસાર થઈ છે.  શું આ માનવજાતની કડક ટીકા કરતી વ્યંગકથા છે કે પછી કલ્પનાની દુનિયામાં લઈ જતી બાળવાર્તા?",
+        "source": "BBC News ગુજરાતી",
+        "time": "1h ago",
+        "url": "https://www.bbc.com/gujarati/articles/cm3eleknv7k2o?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/ca28/live/63767750-dd01-11f1-b441-2b33b063138f.jpg",
+        "category": "મુખ્ય સમાચાર"
+      },
+      {
+        "id": "gu-ervvcr27e",
+        "title": "છઠ પૂજા નિમિતે બનતી ખાસ વાનગી 'ઠેકુઆ' કેવી રીતે બને છે?",
+        "summary": "છઠ્ઠી પૂજામાં પ્રસાદ તરીકે ખવાતો ઠેકુઆ લોકોને ખૂબ પસંદ આવે છે. બિહારના પટનામાં આવી અનેક દુકાનો છે, જ્યાં દાયકાઓથી ઠેકુઆ બનાવવામાં આવે છે.",
+        "source": "BBC News ગુજરાતી",
+        "time": "3h ago",
+        "url": "https://www.bbc.com/gujarati/watch/c9m2j815v6lvo?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/d036/live/a9c24580-dfd7-11f1-b441-2b33b063138f.jpg",
+        "category": "મુખ્ય સમાચાર"
+      },
+      {
+        "id": "gu-tmat9nh84",
+        "title": "'પેટીમાંથી આવતો હતો રડવાનો અવાજ અને...', પિતાએ દાટેલું 11 મહિનાનું ગુમ થયેલું બાળક જીવતું મળી આવ્યું",
+        "summary": "અમેરિકાના સાઉથ કૅરોલિના રાજ્યમાં 11 મહિનાના એક બાળકને જીવતો દાટી દેવામાં આવ્યો હતો.  સત્તાવાળાઓએ જણાવ્યા મુજબ તેના પિતાએ તેને એક બૉક્સમાં પૂરીને જમીનમાં દાટી દીધો હતો.",
+        "source": "BBC News ગુજરાતી",
+        "time": "2h ago",
+        "url": "https://www.bbc.com/gujarati/articles/c65y1w8lkjp0o?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/0be2/live/d19883b0-df7f-11f1-93e1-3b657b665bcf.jpg",
+        "category": "મુખ્ય સમાચાર"
+      },
+      {
+        "id": "gu-h1t5vwijz",
+        "title": "અમેરિકા : હવાઈ સેવા ચાર કલાક સુધી ઠપ રહ્યા બાદ ફરી શરૂ, 9/11 બાદ હવાઈ સેવાઓ પર સૌથી મોટી અસર",
+        "summary": "અમેરિકામાં લગભગ ચાર કલાક સુધી વિમાન સેવાઓ ઠપ રહ્યા બાદ હવે ફરીથી ફ્લાઇટ શરૂ થઈ ગઈ છે.  જોકે, અધિકારીઓનું કહેવું છે કે ફ્લાઇટ પર લગાવવામાં આવેલી રોકની અસર કેટલાક દિવસો સુધી રહી શકે છે.",
+        "source": "BBC News ગુજરાતી",
+        "time": "3h ago",
+        "url": "https://www.bbc.com/gujarati/articles/c6grey85yr8lo?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/6068/live/1172ceb0-dfd9-11f1-93e1-3b657b665bcf.jpg",
+        "category": "મુખ્ય સમાચાર"
+      },
+      {
+        "id": "gu-wtql4qa7h",
+        "title": "ભારતમાં આશરો લેનારા આ શરણાર્થીઓ હવે પરત કેમ જવા માગતા નથી?",
+        "summary": "2011થી અત્યાર સુધીમાં 10 હજારથી વધુ લોકો પરત ફર્યા છે અને તેમની સ્થિતિ કેવી છે, તેઓ શું કહે છે તથા ભારતમાં વસતા આ લોકો શું માને છે, તેમની સ્થિતિ અંગે વિશેષ અહેવાલ.",
+        "source": "BBC News ગુજરાતી",
+        "time": "14h ago",
+        "url": "https://www.bbc.com/gujarati/articles/cm0ev159p0jeo?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/897f/live/8aee86f0-df7d-11f1-b441-2b33b063138f.png",
+        "category": "મુખ્ય સમાચાર"
+      }
+    ]
+  },
+  "unNews": [
+    {
+      "id": "un-1",
+      "title": "UN General Assembly Passes Clean Energy & Water Security Initiative",
+      "summary": "United Nations delegates agreed on a global pact to expand clean drinking water infrastructure and accelerate renewable power adoption in developing nations.",
+      "source": "UN General Assembly",
+      "time": "4h ago",
+      "url": "https://www.un.org",
+      "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80",
+      "category": "United Nations"
+    },
+    {
+      "id": "un-2",
+      "title": "UN Security Council Convenes Session on Global Maritime Route Safety",
+      "summary": "The Security Council discussed coordinated naval monitoring to protect international commercial shipping lanes and stabilize essential food and fertilizer trade.",
+      "source": "UN Security Council",
+      "time": "7h ago",
+      "url": "https://www.un.org",
+      "imageUrl": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=800&q=80",
+      "category": "Security Council"
+    },
+    {
+      "id": "un-3",
+      "title": "UN Climate Agency Highlights Global Reforestation Milestone",
+      "summary": "A new UN environment report shows that community-driven replanting programs in Asia and South America restored over 2 million hectares of native tree canopy this year.",
+      "source": "UN Environment (UNEP)",
+      "time": "12h ago",
+      "url": "https://www.un.org",
+      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
+      "category": "Climate & SDGs"
+    }
+  ],
+  "goodNews": [
+    {
+      "id": "item-naniipvhv",
+      "title": "Dr. King’s Lost Draft of ‘I Have a Dream’ Emerges from a Desk Drawer",
+      "summary": "Dr.",
+      "source": "Good News Network",
+      "time": "11h ago",
+      "url": "https://www.goodnewsnetwork.org/dr-kings-lost-draft-of-i-have-a-dream-emerges-from-a-desk-drawer/",
+      "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Christies-released-1.jpg",
+      "category": "World Progress"
+    },
+    {
+      "id": "item-syxu742s0",
+      "title": "Man Rescues Trapped Neighbors from ‘Biblical’ Florida Flooding",
+      "summary": "A man put his life on the line to rescue his vulnerable neighbors during a flood in Florida he he described as “biblical.",
+      "source": "Good News Network",
+      "time": "14h ago",
+      "url": "https://www.goodnewsnetwork.org/update-stories-of-daring-rescues-continue-to-surface-from-flooded-florida-communities/",
+      "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-@rickaddante-via-X.jpg",
+      "category": "World Progress"
+    },
+    {
+      "id": "item-9olqx84ir",
+      "title": "Infant Goes from 110 Seizures a Day to Seizure-Free with Experimental Treatment",
+      "summary": "From the first day of his life, little infant Adnan has suffered a seizure roughly every 13 minutes.",
+      "source": "Good News Network",
+      "time": "16h ago",
+      "url": "https://www.goodnewsnetwork.org/infant-goes-from-110-seizures-a-day-to-seizure-free-after-rare-treatment/",
+      "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/NICU-infant-ward-unsplash.jpg",
+      "category": "World Progress"
+    },
+    {
+      "id": "item-l4h733nik",
+      "title": "WWII Tryst at the Center of 80+Year Mystery That’s Now United Two Families",
+      "summary": "An 81-year-old Englishman grew up wondering who his real father was.  What he didn’t know was that an entire family tree in Canada was wondering who and where he was.",
+      "source": "Good News Network",
+      "time": "18h ago",
+      "url": "https://www.goodnewsnetwork.org/canadian-family-finally-identifies-grandfathers-long-lost-wwii-baby-in-england-after-80-years/",
+      "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Left-Charles-Blackney-holding-his-Canadian-daughter-in-1942-right-Yvonne-Anderson-holding-Rodney-in-1945-credits-Dawn-Anderson.jpg",
+      "category": "World Progress"
+    }
+  ],
+  "sports": {
+    "athletics": [
+      {
+        "id": "item-33a34v2vx",
+        "title": "Chasing personal bests: how the RAK Half became the epicentre of road racing",
+        "summary": "Geoffrey Kamworor won here as a rising talent in 2013. This February, after a motorbike accident and years of injury, […]",
+        "source": "Athletics Weekly",
+        "time": "14h ago",
+        "url": "https://athleticsweekly.com/aw-promotion/chasing-personal-bests-how-the-rak-half-became-the-epicentre-of-road-racing-1040014086/",
+        "imageUrl": null,
+        "category": "Athletics & Running"
+      },
+      {
+        "id": "item-tjpkp4jyn",
+        "title": "WATCH: England Athletics and AW club of the month – Chichester Runners & AC",
+        "summary": "Through the voices of athletes, coaches and those who work behind the scenes, get exclusive insight into AW's and England […]",
+        "source": "Athletics Weekly",
+        "time": "14h ago",
+        "url": "https://athleticsweekly.com/news/videos/watch-england-athletics-and-aw-club-of-the-month-chichester-runners-ac-1040014084/",
+        "imageUrl": null,
+        "category": "Athletics & Running"
+      },
+      {
+        "id": "item-a91gjuznk",
+        "title": "Auriana Lazraq-Khlass banned for 22 months by AIU",
+        "summary": "The 2024 European silver medallist in the heptathlon received the ban after three whereabouts failures within a 12-month period. Auriana […]",
+        "source": "Athletics Weekly",
+        "time": "17h ago",
+        "url": "https://athleticsweekly.com/news/auriana-lazraq-khlass-banned-for-22-months-by-aiu-1040014080/",
+        "imageUrl": null,
+        "category": "Athletics & Running"
+      },
+      {
+        "id": "item-07xx55dhs",
+        "title": "Greatness without the glare: the stars who never got their full share of the spotlight",
+        "summary": "Stripped of his Olympic titles and not named sole champion until 2022, Jim Thorpe is one of 20 athletes, past […]",
+        "source": "Athletics Weekly",
+        "time": "19h ago",
+        "url": "https://athleticsweekly.com/news/greatness-without-the-glare-the-stars-who-never-got-their-full-share-of-the-spotlight-1040014078/",
+        "imageUrl": null,
+        "category": "Athletics & Running"
+      }
+    ],
+    "cricket": [
+      {
+        "id": "item-bs6d83nft",
+        "title": "England need quick response after Beardman shock",
+        "summary": "While controversy swirls around Australian cricket, the men's ODI side made short work of England in the first game",
+        "source": "ESPNcricinfo",
+        "time": "16m ago",
+        "url": "https://www.cricinfo.com/ci/content/story/1562578.html?ex_cid=OTC-RSS",
+        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425100/425189.jpg",
+        "category": "Cricket"
+      },
+      {
+        "id": "item-nompzhj5q",
+        "title": "Sooryavanshi becomes youngest captain in men's T20 history",
+        "summary": "Vaibhav Sooryavanshi broke the record held by Croatia's Zach Vukusic, who captained his national team when he was 17 years and 311 days old",
+        "source": "ESPNcricinfo",
+        "time": "30m ago",
+        "url": "https://www.cricinfo.com/ci/content/story/1562583.html?ex_cid=OTC-RSS",
+        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/424300/424358.jpg",
+        "category": "Cricket"
+      },
+      {
+        "id": "item-8ga5rcjct",
+        "title": "Will Young makes ODI World Cup case but won't be 'looking over the shoulder'",
+        "summary": "There's no certainty about New Zealand's 2027 ODI World Cup squad, but Will Young, their most-used batter in the top three since his debut, wants to put his \"best foot fo...",
+        "source": "ESPNcricinfo",
+        "time": "43m ago",
+        "url": "https://www.cricinfo.com/ci/content/story/1562577.html?ex_cid=OTC-RSS",
+        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425100/425165.jpg",
+        "category": "Cricket"
+      }
+    ],
+    "general": [
+      {
+        "id": "item-y71ps6vdl",
+        "title": "Fitness obsessed & 'control freak' - what can Man Utd expect from Pochettino?",
+        "summary": "What can Manchester United fans expect from their new manager Mauricio Pochettino? BBC Sport gets an insight from Toby Alderweireld, who played under him at Spurs.",
+        "source": "BBC Sport",
+        "time": "7h ago",
+        "url": "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8125/live/1aaff900-dfb9-11f1-b154-657b8bcda5ea.jpg",
+        "category": "Global Sports"
+      },
+      {
+        "id": "item-1q4ikri44",
+        "title": "France hold nerve to edge past South Africa in thriller",
+        "summary": "France hold on to end their five-match losing run against South Africa at Stade de France with an enthralling 21-19 victory in Paris.",
+        "source": "BBC Sport",
+        "time": "7h ago",
+        "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cqm2j810r2m2o?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/63fc/live/fe60f040-dfb0-11f1-be1f-9dae57fabf82.jpg",
+        "category": "Global Sports"
+      },
+      {
+        "id": "item-c5ip2vkhx",
+        "title": "Goalkeeper involved in fatal collision gets 12-game ban",
+        "summary": "Jesus Owono is given a 12-match suspension by the Spanish football federation's disciplinary committee after his challenge which resulted in the death of Jesus de Miguel.",
+        "source": "BBC Sport",
+        "time": "7h ago",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cm98xy2j8k1ko?at_medium=RSS&at_campaign=rss",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e32e/live/2f147b80-dfa7-11f1-a701-fddedf244c16.jpg",
+        "category": "Global Sports"
+      }
+    ],
+    "latestScores": [
+      {
+        "match": "World Athletics 100m Trials",
+        "result": "9.81s (WL) Clinical Speed Performance"
+      },
+      {
+        "match": "India vs Australia (Series)",
+        "result": "IND lead series 2-1 with clinical bowling"
+      },
+      {
+        "match": "Premier League: Arsenal vs Chelsea",
+        "result": "2 - 1 (Full Time)"
+      }
+    ]
+  },
+  "dailyFacts": [
+    {
+      "id": "fact-1",
+      "category": "Regenerative Marvels",
+      "emoji": "🦎",
+      "title": "Axolotl Complete Organ Regeneration",
+      "fact": "The axolotl salamander can regrow lost limbs, crushed spines, and parts of its heart, retina, and brain without scar tissue. Transplanted organs from other axolotls are accepted without any immune rejection.",
+      "source": "Max Planck Institute for Molecular Genetics",
+      "sourceUrl": "https://www.mpg.de/en"
+    },
+    {
+      "id": "fact-2",
+      "category": "Cryogenic Survival",
+      "emoji": "🐸",
+      "title": "Alaskan Wood Frog Frozen Hibernation",
+      "fact": "The Alaskan wood frog survives sub-zero winters by freezing 70% of its body water solid. Its heart completely stops beating and brain activity ceases for months, thawed unharmed when spring arrives via high-concentration glucose antifreeze.",
+      "source": "Journal of Experimental Biology",
+      "sourceUrl": "https://journals.biologists.com/jeb"
+    },
+    {
+      "id": "fact-3",
+      "category": "Sensory Wonders",
+      "emoji": "🐝",
+      "title": "Bumblebee Electrostatic Foraging",
+      "fact": "Bumblebees build up positive electric charges as they fly. Because flowers possess a slight negative charge, pollen grains literally jump through the air onto the bee’s body, and the altered electric field signals to arriving bees that the flower was recently visited.",
+      "source": "Science Magazine Biomechanics",
+      "sourceUrl": "https://www.science.org/"
+    },
+    {
+      "id": "fact-4",
+      "category": "Animal Intelligence",
+      "emoji": "🦅",
+      "title": "Crow Facial Recognition & Grudges",
+      "fact": "Corvids (crows and ravens) remember individual human faces for decades. When a human treats a crow aggressively, the crow transmits that person’s description to the entire flock and teaches subsequent generations to identify and mob that specific human.",
+      "source": "University of Washington Ornithology",
+      "sourceUrl": "https://www.washington.edu/news/2012/09/10/crows-remember-faces-for-years/"
+    },
+    {
+      "id": "fact-5",
+      "category": "Wildlife Communication",
+      "emoji": "🐘",
+      "title": "Elephant Seismic Foot Telemetry",
+      "fact": "Elephants communicate across distances exceeding 10 kilometers through deep infrasonic rumbles traveling as seismic vibrations through the ground. Specialized mechanoreceptors in their foot pads and trunk tips detect and triangulate these signals before airborne sound arrives.",
+      "source": "Stanford University Bioacoustics",
+      "sourceUrl": "https://news.stanford.edu/"
+    }
+  ],
+  "languages": {
+    "french": {
+      "name": "French",
+      "nativeName": "Français",
+      "flag": "🇫🇷",
+      "speechCode": "fr-FR",
+      "level": "Level 0 • Foundation to Speaking",
+      "phrases": [
+        {
+          "id": "fr-1",
+          "native": "Bonjour ! Comment allez-vous ?",
+          "phonetic": "bon-zhoor, koh-mahn tah-lay voo",
+          "english": "Hello! How are you? (Polite)",
+          "hindi": "नमस्ते! आप कैसे हैं? (आदरसूचक)",
+          "context": "Standard polite greeting used throughout the morning and afternoon."
+        },
+        {
+          "id": "fr-2",
+          "native": "Je m'appelle Krish. Enchanté !",
+          "phonetic": "zhuh mah-pel Krish. ahn-shahn-tay",
+          "english": "My name is Krish. Pleased to meet you!",
+          "hindi": "मेरा नाम क्रिश है। आपसे मिलकर खुशी हुई!",
+          "context": "Introducing yourself to new acquaintances."
+        },
+        {
+          "id": "fr-3",
+          "native": "S'il vous plaît et merci beaucoup.",
+          "phonetic": "seel voo pleh ay mair-see boh-koo",
+          "english": "Please and thank you very much.",
+          "hindi": "कृपया और बहुत-बहुत धन्यवाद।",
+          "context": "Essential daily courtesy in shops, cafes, and meetings."
+        },
+        {
+          "id": "fr-4",
+          "native": "Où sont les toilettes, s'il vous plaît ?",
+          "phonetic": "oo sohn lay twah-let, seel voo pleh",
+          "english": "Where is the restroom, please?",
+          "hindi": "शौचालय / वॉशरूम कहाँ है, कृपया बताएं?",
+          "context": "Crucial travel phrase for navigating stations, airports, and restaurants."
+        },
+        {
+          "id": "fr-5",
+          "native": "Combien ça coûte ?",
+          "phonetic": "kohm-byan sah koot",
+          "english": "How much does this cost?",
+          "hindi": "इसकी कीमत कितनी है?",
+          "context": "Asking prices while shopping or dining out."
+        }
+      ],
+      "quiz": {
+        "question": "How do you say 'Thank you very much' in French?",
+        "options": [
+          "De rien",
+          "Merci beaucoup",
+          "Au revoir",
+          "S'il vous plaît"
+        ],
+        "correct": 1,
+        "explanation": "'Merci beaucoup' literally translates to 'Thank you very much'."
+      }
+    },
+    "spanish": {
+      "name": "Spanish",
+      "nativeName": "Español",
+      "flag": "🇪🇸",
+      "speechCode": "es-ES",
+      "level": "Level 0 • Foundation to Speaking",
+      "phrases": [
+        {
+          "id": "es-1",
+          "native": "¡Hola! ¿Cómo estás?",
+          "phonetic": "oh-lah, koh-moh ess-tahs",
+          "english": "Hello! How are you?",
+          "hindi": "नमस्ते! तुम कैसे हो / आप कैसे हैं?",
+          "context": "Warm, universal greeting used everywhere across the Spanish-speaking world."
+        },
+        {
+          "id": "es-2",
+          "native": "Mucho gusto, mi nombre es Krish.",
+          "phonetic": "moo-choh goos-toh, mee nohm-bray ess Krish",
+          "english": "Nice to meet you, my name is Krish.",
+          "hindi": "आपसे मिलकर अच्छा लगा, मेरा नाम क्रिश है।",
+          "context": "Handshakes and first introductions."
+        },
+        {
+          "id": "es-3",
+          "native": "Por favor y muchas gracias.",
+          "phonetic": "por fah-vor ee moo-chahs grah-syahs",
+          "english": "Please and thank you very much.",
+          "hindi": "कृपया और बहुत-बहुत धन्यवाद।",
+          "context": "Everyday polite interactions."
+        },
+        {
+          "id": "es-4",
+          "native": "¿Dónde está la estación de tren?",
+          "phonetic": "dohn-day ess-tah lah ess-tah-syohn day tren",
+          "english": "Where is the train station?",
+          "hindi": "रेलवे स्टेशन कहाँ है?",
+          "context": "Navigating public transit and directions."
+        },
+        {
+          "id": "es-5",
+          "native": "¿Cuánto cuesta esto?",
+          "phonetic": "kwahn-toh kwess-tah ess-toh",
+          "english": "How much does this cost?",
+          "hindi": "यह कितने का है?",
+          "context": "Inquiring about prices in markets and stores."
+        }
+      ],
+      "quiz": {
+        "question": "What does 'Muchas gracias' mean?",
+        "options": [
+          "Good morning",
+          "Excuse me",
+          "Thank you very much",
+          "See you later"
+        ],
+        "correct": 2,
+        "explanation": "'Muchas gracias' means 'Thank you very much'."
+      }
+    },
+    "german": {
+      "name": "German",
+      "nativeName": "Deutsch",
+      "flag": "🇩🇪",
+      "speechCode": "de-DE",
+      "level": "Level 0 • Foundation to Speaking",
+      "phrases": [
+        {
+          "id": "de-1",
+          "native": "Guten Tag! Wie geht es Ihnen?",
+          "phonetic": "goo-ten tahk! vee gayt es ee-nen",
+          "english": "Good day! How are you? (Polite)",
+          "hindi": "नमस्ते / शुभ दिन! आप कैसे हैं? (आदरसूचक)",
+          "context": "Standard formal German greeting."
+        },
+        {
+          "id": "de-2",
+          "native": "Freut mich, ich heiße Krish.",
+          "phonetic": "froy-t mikh, ikh high-suh Krish",
+          "english": "Pleased to meet you, my name is Krish.",
+          "hindi": "आपसे मिलकर खुशी हुई, मेरा नाम क्रिश है।",
+          "context": "Introducing yourself in Germany, Austria, or Switzerland."
+        },
+        {
+          "id": "de-3",
+          "native": "Bitte und vielen Dank.",
+          "phonetic": "bit-tuh oont fee-len dahnk",
+          "english": "Please and thank you very much.",
+          "hindi": "कृपया और आपका बहुत धन्यवाद।",
+          "context": "Essential polite expression."
+        },
+        {
+          "id": "de-4",
+          "native": "Entschuldigung, wo ist der Bahnhof?",
+          "phonetic": "ent-shool-dee-goong, voh ist dair bahn-hohf",
+          "english": "Excuse me, where is the main station?",
+          "hindi": "माफ़ कीजिए, स्टेशन कहाँ है?",
+          "context": "Asking for transit directions."
+        },
+        {
+          "id": "de-5",
+          "native": "Wie viel kostet das?",
+          "phonetic": "vee feel kohs-tet dahs",
+          "english": "How much does that cost?",
+          "hindi": "इसकी कीमत कितनी है?",
+          "context": "Asking the price in restaurants and stores."
+        }
+      ],
+      "quiz": {
+        "question": "What does 'Guten Tag' mean in German?",
+        "options": [
+          "Good night",
+          "Good day / Hello",
+          "Goodbye",
+          "Please"
+        ],
+        "correct": 1,
+        "explanation": "'Guten Tag' is the German greeting for 'Good day' or 'Hello'."
+      }
+    }
+  },
+  "dhyan": {
+    "verseOfTheDay": {
+      "chapter": 2,
+      "verse": 47,
+      "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+      "hindiTitle": "कर्म करो, परिणाम की चिंता छोड़ो",
+      "hindiMeaning": "तुम्हारा अधिकार केवल अपने कर्म (कर्तव्य) को करने में है, उसके फलों में कभी नहीं। इसलिए कर्म के फल के कारण मत बनो और न ही अकर्मण्यता (आलस्य) में तुम्हारी आसक्ति हो।",
+      "hindiLifeLesson": "आज की सीख: जब भी पढ़ाई या कोई बड़ा प्रोजेक्ट करो, तो ध्यान 'क्या परिणाम मिलेगा' पर मत भटकाओ। अपनी पूरी ऊर्जा सिर्फ काम की गुणवत्ता पर लगाओ। चिंता खत्म होगी और काम बेहतरीन होगा।",
+      "theme": "Focus on Action, Release Result Anxiety"
+    },
+    "thoughtOfTheDay": {
+      "source": "वेदांत दर्शन",
+      "thought": "सत्यमेव जयते नानृतम् — सत्य और सत्यनिष्ठा की ही विजय होती है, असत्य या दिखावे की नहीं।",
+      "reflection": "अपने काम और आदतों के प्रति सच्चे रहें। दिखावे के बजाय ठोस परिणामों पर ध्यान दें।"
+    },
+    "omNamahShivaya": {
+      "name": "ॐ नमः शिवाय (पंचाक्षर महामंत्र)",
+      "targetCount": 18,
+      "hindiMeaning": "मैं उस परम चेतना और शिव तत्व को नमन करता हूँ जो असीम शांति, कल्याण, सत्य और आंतरिक आनंद का स्रोत है।",
+      "instructions": "आँखें बंद करें, रीढ़ सीधी रखें। प्रत्येक श्वास के साथ मंत्र का ध्यान करें। 18 बार के इस जप से मन की चंचलता समाप्त होगी।"
+    },
+    "panchang": {
+      "tithi": "Shukla Paksha Panchami",
+      "paksha": "Shukla Paksha",
+      "nakshatra": "Revati",
+      "masa": "Kartika / Margashirsha",
+      "vikramSamvat": "Vikram Samvat 2083",
+      "dailyThoughtDate": "14 Nov 2026"
+    }
+  }
+}

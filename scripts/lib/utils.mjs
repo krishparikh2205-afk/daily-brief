@@ -18,7 +18,7 @@ const parser = new Parser({
 /**
  * Clean text from HTML, excess whitespace, and trim to ~2 punchy sentences
  */
-export function cleanSummary(rawText, maxLen = 220) {
+export function cleanSummary(rawText, maxLen = 200) {
   if (!rawText) return '';
   // Strip HTML
   let text = rawText.replace(/<[^>]+>/g, ' ');
@@ -45,6 +45,40 @@ export function cleanSummary(rawText, maxLen = 220) {
     } else {
       text = text.substring(0, maxLen).trim() + '...';
     }
+  }
+  return text;
+}
+
+/**
+ * Simplify complex English words into plain, conversational, easily readable sentences
+ */
+export function simplifyEnglishText(rawText, maxLen = 170) {
+  if (!rawText) return '';
+  let text = cleanSummary(rawText, maxLen);
+  const wordMap = {
+    'exacerbated': 'worsened',
+    'unprecedented': 'rare',
+    'promulgated': 'announced',
+    'subsequently': 'later',
+    'approximately': 'about',
+    'endeavour': 'effort',
+    'concomitant': 'related',
+    'ameliorate': 'improve',
+    'demonstrated': 'showed',
+    'commenced': 'started',
+    'terminate': 'end',
+    'utilize': 'use',
+    'utilization': 'use',
+    'substantiate': 'prove',
+    'infrastructure': 'basic facilities',
+    'repercussions': 'effects',
+    'belligerents': 'fighting sides',
+    'bilateral': 'two-country',
+    'multilateral': 'multi-nation'
+  };
+  for (const [complex, simple] of Object.entries(wordMap)) {
+    const reg = new RegExp(`\\b${complex}\\b`, 'gi');
+    text = text.replace(reg, simple);
   }
   return text;
 }
@@ -154,14 +188,24 @@ export function getISTDateInfo() {
   const istOffset = 5.5 * 60 * 60 * 1000;
   const istTime = new Date(now.getTime() + istOffset);
 
-  // Next midnight IST
-  const targetMidnight = new Date();
   const istYear = istTime.getUTCFullYear();
   const istMonth = istTime.getUTCMonth();
   const istDate = istTime.getUTCDate();
+  const istHours = istTime.getUTCHours();
 
-  // Next midnight IST = next day 00:00 IST = 18:30 UTC of current day
-  const nextMidnightUtc = new Date(Date.UTC(istYear, istMonth, istDate + 1, -5, -30, 0));
+  // Next 12-hour cycle boundary in IST (runs every 12h at 12:00 PM and 12:00 AM IST)
+  let targetYear = istYear;
+  let targetMonth = istMonth;
+  let targetDate = istDate;
+  let targetHour = 12; // 12:00 PM IST
+
+  if (istHours >= 12) {
+    targetDate = istDate + 1;
+    targetHour = 0; // 12:00 AM IST next day
+  }
+
+  // Convert target IST timestamp back to UTC
+  const next12HourUtc = new Date(Date.UTC(targetYear, targetMonth, targetDate, targetHour, 0, 0) - istOffset);
 
   const options = {
     weekday: 'long',
@@ -181,7 +225,7 @@ export function getISTDateInfo() {
     nowIso: now.toISOString(),
     formattedIST,
     istDateStr,
-    nextMidnightUtcIso: nextMidnightUtc.toISOString()
+    next12HourUtcIso: next12HourUtc.toISOString()
   };
 }
 
