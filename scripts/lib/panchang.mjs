@@ -78,6 +78,7 @@ export function calculatePanchang(date = new Date()) {
     nakshatra,
     masa,
     vikramSamvat: `Vikram Samvat ${vikramSamvat}`,
+    formatted: `${paksha} ${tithiName} • ${nakshatra} Nakshatra • ${masa} • Vikram Samvat ${vikramSamvat}`,
     dailyThoughtDate: d.toLocaleDateString('en-IN', { month: 'short', day: 'numeric', year: 'numeric' })
   };
 }

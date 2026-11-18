@@ -191,21 +191,10 @@ export function getISTDateInfo() {
   const istYear = istTime.getUTCFullYear();
   const istMonth = istTime.getUTCMonth();
   const istDate = istTime.getUTCDate();
-  const istHours = istTime.getUTCHours();
 
-  // Next 12-hour cycle boundary in IST (runs every 12h at 12:00 PM and 12:00 AM IST)
-  let targetYear = istYear;
-  let targetMonth = istMonth;
-  let targetDate = istDate;
-  let targetHour = 12; // 12:00 PM IST
-
-  if (istHours >= 12) {
-    targetDate = istDate + 1;
-    targetHour = 0; // 12:00 AM IST next day
-  }
-
-  // Convert target IST timestamp back to UTC
-  const next12HourUtc = new Date(Date.UTC(targetYear, targetMonth, targetDate, targetHour, 0, 0) - istOffset);
+  // Next midnight IST is tomorrow 00:00:00 IST
+  // Midnight IST = 18:30 UTC of previous day
+  const nextMidnightUtc = new Date(Date.UTC(istYear, istMonth, istDate + 1, 0, 0, 0) - istOffset);
 
   const options = {
     weekday: 'long',
@@ -225,7 +214,7 @@ export function getISTDateInfo() {
     nowIso: now.toISOString(),
     formattedIST,
     istDateStr,
-    next12HourUtcIso: next12HourUtc.toISOString()
+    nextMidnightUtcIso: nextMidnightUtc.toISOString()
   };
 }
 

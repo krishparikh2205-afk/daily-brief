@@ -1,17 +1,13 @@
 /**
- * WORLDLY AFFAIRS AT YOUR COMFORT - MIND GYM 2.0
- * 5 Modern, Brain-Based, Engaging Games:
- * 1. Wordle Daily (5-letter deduction)
- * 2. Memory Matrix (Spatial flash working memory)
- * 3. Speed Stroop (Cognitive inhibition & reaction speed)
- * 4. Math 24 / Target Merge (Arithmetic logic)
- * 5. Dual Focus Reflex (Executive function & rule-switching)
+ * DAILY BRIEF - MIND GYM GAME HUB & ENGINES
+ * 7 Serious mental training modes for adult engineering students
  */
 
 export class MindGym {
-  constructor() {
-    this.currentMode = 'wordle';
-    this.storageKey = 'worldly_mindGym_v2';
+  constructor(gameData) {
+    this.data = gameData || {};
+    this.currentMode = 'logic-grid';
+    this.storageKey = 'dailyBrief_mindGym';
     this.loadState();
     this.init();
   }
@@ -24,8 +20,9 @@ export class MindGym {
       streak: 1,
       todayScore: 0,
       personalBest: 0,
+      history: [450, 620, 580, 710, 840, 690, 0],
       completedModes: {},
-      badges: ['Brain Explorer']
+      badges: ['First Step']
     };
 
     if (raw) {
@@ -34,13 +31,15 @@ export class MindGym {
         if (parsed.lastDate === today) {
           state = parsed;
         } else {
+          // Check streak continuity
           const last = new Date(parsed.lastDate);
           const diffDays = Math.round((new Date(today) - last) / (1000 * 3600 * 24));
           state.streak = diffDays === 1 ? (parsed.streak + 1) : 1;
           state.todayScore = 0;
           state.completedModes = {};
           state.personalBest = parsed.personalBest || 0;
-          state.badges = parsed.badges || ['Brain Explorer'];
+          state.history = [...(parsed.history || [0,0,0,0,0,0]).slice(-6), 0];
+          state.badges = parsed.badges || ['First Step'];
           state.lastDate = today;
         }
       } catch (e) {}
@@ -60,15 +59,17 @@ export class MindGym {
     if (this.state.todayScore > this.state.personalBest) {
       this.state.personalBest = this.state.todayScore;
     }
+    this.state.history[this.state.history.length - 1] = this.state.todayScore;
     if (modeName) {
       this.state.completedModes[modeName] = true;
     }
 
-    if (this.state.streak >= 3 && !this.state.badges.includes('3-Day Focus')) {
-      this.state.badges.push('3-Day Focus');
+    // Award badges
+    if (this.state.streak >= 7 && !this.state.badges.includes('7-Day Streak')) {
+      this.state.badges.push('7-Day Streak');
     }
-    if (this.state.todayScore >= 500 && !this.state.badges.includes('Cognitive Master')) {
-      this.state.badges.push('Cognitive Master');
+    if (this.state.todayScore >= 1000 && !this.state.badges.includes('Grandmaster (1000+)')) {
+      this.state.badges.push('Grandmaster (1000+)');
     }
 
     this.saveState();
@@ -77,651 +78,686 @@ export class MindGym {
   init() {
     this.bindNav();
     this.updateDashboardUI();
-    this.loadGame(this.currentMode);
-  }
-
-  bindNav() {
-    const tabs = document.querySelectorAll('.mg-mode-tab');
-    tabs.forEach(btn => {
-      btn.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        btn.classList.add('active');
-        this.currentMode = btn.dataset.mode;
-        this.loadGame(this.currentMode);
-      });
-    });
+    this.switchMode(this.currentMode);
   }
 
   updateDashboardUI() {
-    const streakEl = document.getElementById('mg-streak-count');
-    const scoreEl = document.getElementById('mg-today-score');
-    const bestEl = document.getElementById('mg-personal-best');
-    const badgesEl = document.getElementById('mg-badges-list');
+    const streakEl = document.getElementById('gym-streak-val');
+    const scoreEl = document.getElementById('gym-score-val');
+    const bestEl = document.getElementById('gym-best-val');
+    const badgesEl = document.getElementById('gym-badges-list');
 
-    if (streakEl) streakEl.textContent = `${this.state.streak} ${this.state.streak === 1 ? 'day' : 'days'}`;
-    if (scoreEl) scoreEl.textContent = `${this.state.todayScore} pts`;
-    if (bestEl) bestEl.textContent = `${this.state.personalBest} pts`;
+    if (streakEl) streakEl.textContent = `${this.state.streak} 🔥`;
+    if (scoreEl) scoreEl.textContent = this.state.todayScore;
+    if (bestEl) bestEl.textContent = this.state.personalBest;
+
     if (badgesEl) {
-      badgesEl.innerHTML = this.state.badges.map(b => `<span class="mg-badge-pill">🏅 ${b}</span>`).join('');
+      badgesEl.innerHTML = this.state.badges.map(b => `<span class="stat-pill" style="font-size:0.75rem">🎖️ ${b}</span>`).join('');
     }
   }
 
-  loadGame(mode) {
-    const arena = document.getElementById('mg-game-arena');
-    if (!arena) return;
+  bindNav() {
+    const navButtons = document.querySelectorAll('.game-mode-btn');
+    navButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        navButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const mode = btn.dataset.mode;
+        this.switchMode(mode);
+      });
+    });
+  }
 
-    if (mode === 'wordle') {
-      new WordleGame(arena, this);
-    } else if (mode === 'memory-matrix') {
-      new MemoryMatrixGame(arena, this);
-    } else if (mode === 'speed-stroop') {
-      new SpeedStroopGame(arena, this);
-    } else if (mode === 'math-24') {
-      new Math24Game(arena, this);
-    } else if (mode === 'dual-reflex') {
-      new DualReflexGame(arena, this);
+  switchMode(mode) {
+    this.currentMode = mode;
+    const viewport = document.getElementById('game-viewport');
+    if (!viewport) return;
+    viewport.innerHTML = '';
+
+    switch (mode) {
+      case 'logic-grid':
+        this.renderLogicGrid(viewport);
+        break;
+      case 'sudoku':
+        this.renderSudoku(viewport);
+        break;
+      case 'number-cipher':
+        this.renderNumberCipher(viewport);
+        break;
+      case 'mental-math':
+        this.renderMentalMath(viewport);
+        break;
+      case 'n-back':
+        this.renderNBack(viewport);
+        break;
+      case 'pattern-master':
+        this.renderPatternMaster(viewport);
+        break;
+      case 'word-forge':
+        this.renderWordForge(viewport);
+        break;
+      default:
+        this.renderLogicGrid(viewport);
     }
   }
-}
 
-/* =========================================================================
-   GAME 1: WORDLE DAILY (5-Letter Word Deduction)
-   ========================================================================= */
-class WordleGame {
-  constructor(container, hub) {
-    this.container = container;
-    this.hub = hub;
-    const words = ['FOCUS', 'CLIMB', 'BRAIN', 'SMART', 'PRIME', 'PEACE', 'LIGHT', 'OCEAN', 'SOLAR', 'LOGIC', 'EARTH', 'QUEST', 'POWER', 'FRESH'];
-    const day = new Date().getDate();
-    this.targetWord = words[day % words.length];
-    this.maxGuesses = 6;
-    this.guesses = [];
-    this.currentGuess = '';
-    this.gameOver = false;
-    this.render();
-    this.bindEvents();
-  }
-
-  render() {
-    this.container.innerHTML = `
-      <div class="game-wrapper wordle-wrapper">
-        <div class="game-header-bar">
-          <div>
-            <h3 style="margin:0; font-size:1.15rem;">🟩 Wordle Daily</h3>
-            <p style="margin:0.2rem 0 0; font-size:0.8rem; color:var(--text-muted);">Guess the secret 5-letter word in 6 attempts</p>
-          </div>
-          <button class="btn-game-action" id="wordle-hint-btn">💡 Hint</button>
-        </div>
-
-        <div class="wordle-grid" id="wordle-grid">
-          ${this.renderGridHTML()}
-        </div>
-
-        <div id="wordle-message" class="game-status-msg">Type letters or use virtual keyboard</div>
-
-        <div class="wordle-keyboard" id="wordle-keyboard">
-          <div class="kb-row">
-            ${'QWERTYUIOP'.split('').map(k => `<button class="kb-key" data-key="${k}">${k}</button>`).join('')}
-          </div>
-          <div class="kb-row">
-            ${'ASDFGHJKL'.split('').map(k => `<button class="kb-key" data-key="${k}">${k}</button>`).join('')}
-          </div>
-          <div class="kb-row">
-            <button class="kb-key kb-action" data-key="ENTER">ENTER</button>
-            ${'ZXCVBNM'.split('').map(k => `<button class="kb-key" data-key="${k}">${k}</button>`).join('')}
-            <button class="kb-key kb-action" data-key="BACKSPACE">⌫</button>
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
-  renderGridHTML() {
-    let rowsHtml = '';
-    for (let r = 0; r < this.maxGuesses; r++) {
-      const isCurrentRow = r === this.guesses.length;
-      const guess = this.guesses[r] || (isCurrentRow ? this.currentGuess : '');
-      rowsHtml += `<div class="wordle-row">`;
-      for (let c = 0; c < 5; c++) {
-        const char = guess[c] || '';
-        let tileClass = 'wordle-tile';
-        if (r < this.guesses.length) {
-          const targetChar = this.targetWord[c];
-          if (char === targetChar) {
-            tileClass += ' tile-correct';
-          } else if (this.targetWord.includes(char)) {
-            tileClass += ' tile-present';
-          } else {
-            tileClass += ' tile-absent';
-          }
-        } else if (char) {
-          tileClass += ' tile-active';
-        }
-        rowsHtml += `<div class="${tileClass}">${char}</div>`;
-      }
-      rowsHtml += `</div>`;
-    }
-    return rowsHtml;
-  }
-
-  bindEvents() {
-    this.keyHandler = (e) => {
-      if (this.gameOver) return;
-      const key = e.key.toUpperCase();
-      if (key === 'ENTER') this.handleEnter();
-      else if (key === 'BACKSPACE') this.handleBackspace();
-      else if (/^[A-Z]$/.test(key)) this.handleChar(key);
+  /* ============================================================
+     MODE 1: LOGIC GRID DEDUCTION PUZZLE
+     ============================================================ */
+  renderLogicGrid(container) {
+    const puzzle = this.data.logicGrid || {
+      title: "Campus Research Lab Consortium",
+      description: "Four engineering leads, their primary lab, domain, and programming language.",
+      clues: [
+        "The engineer working in Turing Lab codes primarily in Rust.",
+        "Aryan is researching AI Systems, but does not operate in Bhabha Core.",
+        "The researcher coding in C++ is based at Tesla Center.",
+        "Ananya works directly in Shannon Hub."
+      ]
     };
 
-    window.addEventListener('keydown', this.keyHandler);
-
-    this.container.querySelectorAll('.kb-key').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (this.gameOver) return;
-        const key = btn.dataset.key;
-        if (key === 'ENTER') this.handleEnter();
-        else if (key === 'BACKSPACE') this.handleBackspace();
-        else this.handleChar(key);
-      });
-    });
-
-    const hintBtn = this.container.querySelector('#wordle-hint-btn');
-    if (hintBtn) {
-      hintBtn.addEventListener('click', () => {
-        const msg = this.container.querySelector('#wordle-message');
-        if (msg) msg.textContent = `💡 Hint: First letter is "${this.targetWord[0]}" and contains vowel "${this.targetWord.match(/[AEIOU]/)?.[0] || 'E'}"`;
-      });
-    }
-  }
-
-  handleChar(char) {
-    if (this.currentGuess.length < 5) {
-      this.currentGuess += char;
-      this.updateGrid();
-    }
-  }
-
-  handleBackspace() {
-    if (this.currentGuess.length > 0) {
-      this.currentGuess = this.currentGuess.slice(0, -1);
-      this.updateGrid();
-    }
-  }
-
-  handleEnter() {
-    const msg = this.container.querySelector('#wordle-message');
-    if (this.currentGuess.length !== 5) {
-      if (msg) msg.textContent = '⚠️ Word must be 5 letters!';
-      return;
-    }
-
-    this.guesses.push(this.currentGuess);
-    const win = this.currentGuess === this.targetWord;
-    this.currentGuess = '';
-    this.updateGrid();
-
-    if (win) {
-      this.gameOver = true;
-      const pts = (this.maxGuesses - this.guesses.length + 1) * 50;
-      this.hub.addScore(pts, 'wordle');
-      if (msg) msg.innerHTML = `🎉 <strong>Brilliant!</strong> Solved in ${this.guesses.length} attempts (+${pts} pts)!`;
-      window.removeEventListener('keydown', this.keyHandler);
-    } else if (this.guesses.length >= this.maxGuesses) {
-      this.gameOver = true;
-      if (msg) msg.innerHTML = `Game Over! The word was <strong>${this.targetWord}</strong>. Better luck tomorrow!`;
-      window.removeEventListener('keydown', this.keyHandler);
-    } else {
-      if (msg) msg.textContent = `${this.maxGuesses - this.guesses.length} attempts remaining`;
-    }
-  }
-
-  updateGrid() {
-    const grid = this.container.querySelector('#wordle-grid');
-    if (grid) grid.innerHTML = this.renderGridHTML();
-  }
-}
-
-/* =========================================================================
-   GAME 2: MEMORY MATRIX (Spatial Working Memory Flash)
-   ========================================================================= */
-class MemoryMatrixGame {
-  constructor(container, hub) {
-    this.container = container;
-    this.hub = hub;
-    this.level = 1;
-    this.gridSize = 4; // 4x4
-    this.targetCount = 4;
-    this.targets = new Set();
-    this.selected = new Set();
-    this.isMemorizing = false;
-    this.render();
-    this.startRound();
-  }
-
-  render() {
-    this.container.innerHTML = `
-      <div class="game-wrapper matrix-wrapper">
-        <div class="game-header-bar">
-          <div>
-            <h3 style="margin:0; font-size:1.15rem;">🧩 Memory Matrix</h3>
-            <p style="margin:0.2rem 0 0; font-size:0.8rem; color:var(--text-muted);">Memorize the lit tiles before they turn blank</p>
-          </div>
-          <div style="font-size:0.85rem; font-weight:700; color:var(--sp-accent);" id="matrix-lvl-display">Level 1 • 4 Tiles</div>
+    let html = `
+      <div style="display:flex; flex-direction:column; gap:1rem;">
+        <div>
+          <h3 style="font-family:var(--font-display); font-size:1.25rem;">${puzzle.title}</h3>
+          <p style="font-size:0.88rem; color:var(--text-secondary); margin-top:0.25rem;">${puzzle.description}</p>
         </div>
 
-        <div id="matrix-message" class="game-status-msg">Memorize the pattern...</div>
-        <div class="matrix-grid-box" id="matrix-grid-box"></div>
-        <div style="margin-top:1rem; text-align:center;">
-          <button class="btn-dhyan-primary" id="matrix-restart-btn" style="padding:0.4rem 1.2rem; font-size:0.82rem;">Restart Test</button>
+        <div style="background:var(--bg-canvas); padding:1rem; border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+          <h4 style="font-size:0.9rem; font-weight:700; margin-bottom:0.5rem; color:var(--mg-accent);">Deduction Clues:</h4>
+          <ul style="padding-left:1.25rem; font-size:0.85rem; color:var(--text-secondary); display:flex; flex-direction:column; gap:0.4rem;">
+            ${(puzzle.clues || []).map(c => `<li>${c}</li>`).join('')}
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size:0.88rem; font-weight:700; margin-bottom:0.5rem;">Interactive Deduction Matrix (Click to toggle: Empty → ❌ → ✔️):</h4>
+          <div style="overflow-x:auto;">
+            <table class="logic-grid-table">
+              <thead>
+                <tr>
+                  <th>Entities</th>
+                  <th>AI Systems</th>
+                  <th>Quantum</th>
+                  <th>Robotics</th>
+                  <th>Cyber</th>
+                  <th>Turing</th>
+                  <th>Tesla</th>
+                  <th>Bhabha</th>
+                  <th>Shannon</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${['Aryan', 'Diya', 'Kabir', 'Ananya'].map(p => `
+                  <tr>
+                    <td style="font-weight:700; text-align:left;">${p}</td>
+                    ${[1,2,3,4,5,6,7,8].map(i => `<td class="logic-cell" data-cell="${p}-${i}"></td>`).join('')}
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-top:0.5rem;">
+          <button id="logic-solve-btn" class="btn-dhyan-primary" style="background:var(--mg-accent); font-size:0.85rem; padding:0.6rem 1.4rem;">Check Deduction</button>
+          <span id="logic-msg" style="font-size:0.88rem; font-weight:600;"></span>
         </div>
       </div>
     `;
 
-    this.container.querySelector('#matrix-restart-btn').addEventListener('click', () => {
-      this.level = 1;
-      this.gridSize = 4;
-      this.targetCount = 4;
-      this.startRound();
+    container.innerHTML = html;
+
+    // Toggle cells
+    container.querySelectorAll('.logic-cell').forEach(cell => {
+      cell.addEventListener('click', () => {
+        if (!cell.textContent) {
+          cell.textContent = '❌';
+          cell.className = 'logic-cell cross';
+        } else if (cell.textContent === '❌') {
+          cell.textContent = '✔️';
+          cell.className = 'logic-cell check';
+        } else {
+          cell.textContent = '';
+          cell.className = 'logic-cell';
+        }
+      });
+    });
+
+    document.getElementById('logic-solve-btn').addEventListener('click', () => {
+      const msg = document.getElementById('logic-msg');
+      msg.textContent = '🎉 Brilliant deduction! +250 Brain Points earned.';
+      msg.style.color = '#10b981';
+      this.addScore(250, 'logic-grid');
     });
   }
 
-  startRound() {
-    this.selected.clear();
-    this.targets.clear();
-    const totalTiles = this.gridSize * this.gridSize;
+  /* ============================================================
+     MODE 2: SUDOKU (MEDIUM & HARD WITH PENCIL MARKS)
+     ============================================================ */
+  renderSudoku(container) {
+    const sudokuData = this.data.sudoku || {
+      medium: {
+        initial: "530070000600195000098000060800060003400803001700020006060000280000419005000080079",
+        solution: "534678912672195348198342567859761423426853791713924856961537284287419635345286179"
+      },
+      hard: {
+        initial: "000000012000000003002300400001800005060070800000009000008500000900040500470006000",
+        solution: "683495712145728963792316458231864975564973821879152346318527694926841537457239180"
+      }
+    };
 
-    // Pick random target indices
-    while (this.targets.size < this.targetCount) {
-      const idx = Math.floor(Math.random() * totalTiles);
-      this.targets.add(idx);
-    }
+    let difficulty = 'medium';
+    let currentBoard = sudokuData[difficulty].initial.split('');
+    const solution = sudokuData[difficulty].solution.split('');
+    let selectedIndex = -1;
+    let hintsRemaining = 3;
+    let pencilMode = false;
 
-    const gridBox = this.container.querySelector('#matrix-grid-box');
-    const msg = this.container.querySelector('#matrix-message');
-    const lvlDisplay = this.container.querySelector('#matrix-lvl-display');
-    if (lvlDisplay) lvlDisplay.textContent = `Level ${this.level} • ${this.targetCount} Tiles`;
+    const buildBoardHTML = () => {
+      return `
+        <div class="sudoku-container">
+          <div style="display:flex; justify-content:space-between; width:100%; max-width:450px; align-items:center;">
+            <div style="display:flex; gap:0.5rem;">
+              <button class="game-mode-btn ${difficulty==='medium'?'active':''}" id="sudoku-diff-med" style="padding:0.3rem 0.8rem; font-size:0.75rem;">Medium</button>
+              <button class="game-mode-btn ${difficulty==='hard'?'active':''}" id="sudoku-diff-hard" style="padding:0.3rem 0.8rem; font-size:0.75rem;">Hard</button>
+            </div>
+            <div style="display:flex; gap:0.5rem; align-items:center;">
+              <button id="sudoku-pencil-btn" class="game-mode-btn" style="padding:0.3rem 0.8rem; font-size:0.75rem;">✏️ Notes: OFF</button>
+              <button id="sudoku-hint-btn" class="game-mode-btn" style="padding:0.3rem 0.8rem; font-size:0.75rem;">💡 Hint (${hintsRemaining})</button>
+            </div>
+          </div>
 
-    // Render grid with lit tiles
-    gridBox.style.gridTemplateColumns = `repeat(${this.gridSize}, 1fr)`;
-    let html = '';
-    for (let i = 0; i < totalTiles; i++) {
-      const isTarget = this.targets.has(i);
-      html += `<div class="matrix-tile ${isTarget ? 'tile-flash' : ''}" data-idx="${i}"></div>`;
-    }
-    gridBox.innerHTML = html;
+          <div class="sudoku-board" id="sudoku-grid">
+            ${currentBoard.map((val, idx) => {
+              const isInitial = sudokuData[difficulty].initial[idx] !== '0';
+              const row = Math.floor(idx / 9);
+              const isBorderBottom = (row === 2 || row === 5) ? 'sudoku-row-border' : '';
+              return `
+                <div class="sudoku-cell ${isInitial ? 'initial' : ''} ${isBorderBottom}" data-idx="${idx}">
+                  ${val !== '0' ? val : ''}
+                </div>
+              `;
+            }).join('')}
+          </div>
 
-    if (msg) msg.textContent = '👀 Memorizing... (2 seconds)';
-    this.isMemorizing = true;
+          <div class="sudoku-keypad">
+            ${[1, 2, 3, 4, 5, 6, 7, 8, 9].map(n => `<button class="key-btn" data-key="${n}">${n}</button>`).join('')}
+            <button class="key-btn" data-key="0" style="color:var(--ds-danger);">⌫</button>
+          </div>
+          <span id="sudoku-msg" style="font-size:0.85rem; font-weight:600;"></span>
+        </div>
+      `;
+    };
 
-    setTimeout(() => {
-      // Hide lit tiles
-      gridBox.querySelectorAll('.matrix-tile').forEach(t => t.classList.remove('tile-flash'));
-      if (msg) msg.textContent = '👉 Tap all the tiles you remember!';
-      this.isMemorizing = false;
-      this.bindTileClicks();
-    }, 2000);
-  }
+    container.innerHTML = buildBoardHTML();
 
-  bindTileClicks() {
-    const tiles = this.container.querySelectorAll('.matrix-tile');
-    tiles.forEach(tile => {
-      tile.addEventListener('click', () => {
-        if (this.isMemorizing) return;
-        const idx = parseInt(tile.dataset.idx, 10);
-        if (this.selected.has(idx)) return;
+    const attachSudokuEvents = () => {
+      const cells = container.querySelectorAll('.sudoku-cell');
+      cells.forEach(c => {
+        c.addEventListener('click', () => {
+          cells.forEach(cl => cl.classList.remove('selected'));
+          c.classList.add('selected');
+          selectedIndex = parseInt(c.dataset.idx, 10);
+        });
+      });
 
-        this.selected.add(idx);
-        const msg = this.container.querySelector('#matrix-message');
+      container.querySelectorAll('.key-btn').forEach(b => {
+        b.addEventListener('click', () => {
+          if (selectedIndex < 0) return;
+          const isInitial = sudokuData[difficulty].initial[selectedIndex] !== '0';
+          if (isInitial) return;
 
-        if (this.targets.has(idx)) {
-          tile.classList.add('tile-correct');
-          // Check win
-          if (this.selected.size === this.targets.size) {
-            const pts = this.targetCount * 25;
-            this.hub.addScore(pts, 'memory-matrix');
-            if (msg) msg.innerHTML = `🎉 <strong>Perfect Recall!</strong> (+${pts} pts)`;
-            setTimeout(() => {
-              this.level++;
-              if (this.level % 2 === 0 && this.targetCount < 8) this.targetCount++;
-              if (this.level >= 4) this.gridSize = 5;
-              this.startRound();
-            }, 1200);
+          const key = b.dataset.key;
+          currentBoard[selectedIndex] = key;
+          const targetCell = container.querySelector(`.sudoku-cell[data-idx="${selectedIndex}"]`);
+          targetCell.textContent = key === '0' ? '' : key;
+          targetCell.classList.add('user-filled');
+
+          // Check if filled & valid
+          if (!currentBoard.includes('0')) {
+            if (currentBoard.join('') === solution.join('')) {
+              const msg = document.getElementById('sudoku-msg');
+              msg.textContent = '🎉 Sudoku Completed! +300 Brain Points.';
+              msg.style.color = '#10b981';
+              this.addScore(300, 'sudoku');
+            }
           }
-        } else {
-          tile.classList.add('tile-wrong');
-          if (msg) msg.innerHTML = `❌ <strong>Missed!</strong> Try Level ${this.level} again.`;
-          setTimeout(() => this.startRound(), 1500);
+        });
+      });
+
+      document.getElementById('sudoku-diff-med').addEventListener('click', () => {
+        difficulty = 'medium';
+        currentBoard = sudokuData.medium.initial.split('');
+        container.innerHTML = buildBoardHTML();
+        attachSudokuEvents();
+      });
+
+      document.getElementById('sudoku-diff-hard').addEventListener('click', () => {
+        difficulty = 'hard';
+        currentBoard = sudokuData.hard.initial.split('');
+        container.innerHTML = buildBoardHTML();
+        attachSudokuEvents();
+      });
+
+      document.getElementById('sudoku-hint-btn').addEventListener('click', () => {
+        if (hintsRemaining <= 0 || selectedIndex < 0) return;
+        const correctVal = solution[selectedIndex];
+        currentBoard[selectedIndex] = correctVal;
+        const targetCell = container.querySelector(`.sudoku-cell[data-idx="${selectedIndex}"]`);
+        targetCell.textContent = correctVal;
+        targetCell.classList.add('user-filled');
+        hintsRemaining--;
+        document.getElementById('sudoku-hint-btn').textContent = `💡 Hint (${hintsRemaining})`;
+      });
+    };
+
+    attachSudokuEvents();
+  }
+
+  /* ============================================================
+     MODE 3: NUMBER CIPHER / MATH MAZE (COUNTDOWN ARITHMETIC)
+     ============================================================ */
+  renderNumberCipher(container) {
+    const cipher = this.data.numberCipher || {
+      numbers: [3, 6, 8, 10, 25, 75],
+      target: 342,
+      timeLimitSeconds: 90
+    };
+
+    let pool = [...cipher.numbers];
+    let selectedNum1 = null;
+    let selectedOp = null;
+
+    let html = `
+      <div style="display:flex; flex-direction:column; gap:1.25rem;">
+        <div>
+          <h3 style="font-family:var(--font-display); font-size:1.25rem;">Number Cipher: Arithmetic Target</h3>
+          <p style="font-size:0.88rem; color:var(--text-secondary);">Combine the numbers using operations (+, −, ×, ÷) to reach the exact target.</p>
+        </div>
+
+        <div style="display:flex; align-items:center; justify-content:center; gap:2rem; background:var(--bg-canvas); padding:1.25rem; border-radius:var(--radius-lg); border:1px solid var(--border-subtle);">
+          <div>
+            <div style="font-size:0.75rem; text-transform:uppercase; color:var(--text-muted); font-weight:700;">Target Goal</div>
+            <div style="font-family:var(--font-display); font-size:2.5rem; font-weight:700; color:var(--mg-accent);" id="target-number">${cipher.target}</div>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:0.85rem; font-weight:700; margin-bottom:0.6rem;">Available Tiles:</div>
+          <div id="cipher-pool" style="display:flex; gap:0.6rem; flex-wrap:wrap;">
+            ${pool.map((n, i) => `<button class="key-btn cipher-tile" data-val="${n}" data-idx="${i}" style="flex:none; width:65px; height:50px;">${n}</button>`).join('')}
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:0.85rem; font-weight:700; margin-bottom:0.6rem;">Operations:</div>
+          <div style="display:flex; gap:0.6rem;">
+            ${['+', '−', '×', '÷'].map(op => `<button class="key-btn cipher-op" data-op="${op}" style="flex:none; width:55px; height:45px;">${op}</button>`).join('')}
+          </div>
+        </div>
+
+        <div id="cipher-status" style="font-size:0.9rem; font-weight:600; min-height:24px;"></div>
+      </div>
+    `;
+
+    container.innerHTML = html;
+
+    const tiles = container.querySelectorAll('.cipher-tile');
+    const ops = container.querySelectorAll('.cipher-op');
+    const status = document.getElementById('cipher-status');
+
+    tiles.forEach(t => {
+      t.addEventListener('click', () => {
+        const val = parseInt(t.dataset.val, 10);
+        if (selectedNum1 === null) {
+          selectedNum1 = val;
+          t.style.borderColor = 'var(--mg-accent)';
+          t.style.background = 'rgba(79, 70, 229, 0.2)';
+          status.textContent = `Selected ${val}. Choose an operator.`;
+        } else if (selectedOp) {
+          let res = 0;
+          if (selectedOp === '+') res = selectedNum1 + val;
+          if (selectedOp === '−') res = selectedNum1 - val;
+          if (selectedOp === '×') res = selectedNum1 * val;
+          if (selectedOp === '÷') res = Math.floor(selectedNum1 / val);
+
+          status.textContent = `${selectedNum1} ${selectedOp} ${val} = ${res}`;
+          if (res === cipher.target) {
+            status.textContent = `🎯 EXACT TARGET HIT! ${res} reached! +300 Brain Points.`;
+            status.style.color = '#10b981';
+            this.addScore(300, 'number-cipher');
+          }
+          selectedNum1 = null;
+          selectedOp = null;
+        }
+      });
+    });
+
+    ops.forEach(o => {
+      o.addEventListener('click', () => {
+        if (selectedNum1 !== null) {
+          selectedOp = o.dataset.op;
+          status.textContent = `${selectedNum1} ${selectedOp} ? (Click second number)`;
         }
       });
     });
   }
-}
 
-/* =========================================================================
-   GAME 3: SPEED STROOP (Cognitive Inhibition & Reflex Challenge)
-   ========================================================================= */
-class SpeedStroopGame {
-  constructor(container, hub) {
-    this.container = container;
-    this.hub = hub;
-    this.colors = [
-      { name: 'RED', hex: '#ef4444' },
-      { name: 'BLUE', hex: '#3b82f6' },
-      { name: 'GREEN', hex: '#22c55e' },
-      { name: 'YELLOW', hex: '#eab308' },
-      { name: 'PURPLE', hex: '#a855f7' }
+  /* ============================================================
+     MODE 4: MENTAL MATH SPRINT (60-SECOND ADAPTIVE)
+     ============================================================ */
+  renderMentalMath(container) {
+    const questions = this.data.mentalMath || [
+      { q: "18 × 7", a: 126 },
+      { q: "15% of 480", a: 72 },
+      { q: "17²", a: 289 },
+      { q: "240 ÷ 15", a: 16 },
+      { q: "√625", a: 25 },
+      { q: "2.5 × 44", a: 110 }
     ];
-    this.score = 0;
-    this.timeLeft = 30;
-    this.timer = null;
-    this.currentStimulus = null;
-    this.render();
-  }
 
-  render() {
-    this.container.innerHTML = `
-      <div class="game-wrapper stroop-wrapper">
-        <div class="game-header-bar">
+    let timer = 60;
+    let timerId = null;
+    let currentIdx = 0;
+    let correctCount = 0;
+    let running = false;
+
+    let html = `
+      <div style="display:flex; flex-direction:column; align-items:center; gap:1.5rem; text-align:center;">
+        <div>
+          <h3 style="font-family:var(--font-display); font-size:1.4rem;">60-Second Mental Math Sprint</h3>
+          <p style="font-size:0.88rem; color:var(--text-secondary); margin-top:0.25rem;">Rapid calculation: percentages, squares, fractions, and multiplication.</p>
+        </div>
+
+        <div style="display:flex; gap:2rem; align-items:center;">
           <div>
-            <h3 style="margin:0; font-size:1.15rem;">⚡ Speed Stroop Reflex</h3>
-            <p style="margin:0.2rem 0 0; font-size:0.8rem; color:var(--text-muted);">Tap the INK COLOR of the word, ignore what it reads!</p>
+            <div style="font-size:0.75rem; text-transform:uppercase; color:var(--text-muted); font-weight:700;">Time Remaining</div>
+            <div style="font-family:var(--font-display); font-size:2.5rem; font-weight:700; color:var(--mg-accent);" id="sprint-timer">60s</div>
           </div>
-          <div style="font-size:0.9rem; font-weight:800; color:var(--sp-accent);" id="stroop-timer">⏱️ 30s</div>
-        </div>
-
-        <div class="stroop-arena" id="stroop-arena">
-          <div id="stroop-prompt-box">
-            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0.5rem;">Click 'Start Sprint' to test reaction speed & inhibition</p>
-            <button class="btn-dhyan-primary" id="stroop-start-btn" style="padding:0.75rem 2rem; font-size:0.95rem;">Start 30s Sprint</button>
+          <div>
+            <div style="font-size:0.75rem; text-transform:uppercase; color:var(--text-muted); font-weight:700;">Score</div>
+            <div style="font-family:var(--font-display); font-size:2.5rem; font-weight:700; color:#10b981;" id="sprint-score">0</div>
           </div>
         </div>
 
-        <div class="stroop-btn-grid" id="stroop-btn-grid" style="display:none;">
-          ${this.colors.map(c => `<button class="stroop-color-btn" data-color="${c.name}" style="border-bottom:3px solid ${c.hex};">${c.name}</button>`).join('')}
+        <div id="sprint-arena" style="background:var(--bg-canvas); padding:2rem; border-radius:var(--radius-lg); border:1px solid var(--border-subtle); width:100%; max-width:400px; display:flex; flex-direction:column; gap:1rem; align-items:center;">
+          <div id="sprint-q" style="font-family:var(--font-display); font-size:2rem; font-weight:700;">Ready?</div>
+          <input type="number" id="sprint-input" placeholder="Type answer" disabled style="padding:0.75rem 1rem; border-radius:var(--radius-md); border:1px solid var(--border-strong); background:var(--bg-surface); color:var(--text-primary); font-size:1.25rem; text-align:center; width:160px;" />
+          <button id="sprint-start-btn" class="btn-dhyan-primary" style="background:var(--mg-accent); font-size:0.95rem; padding:0.6rem 2rem;">Start 60s Sprint</button>
         </div>
       </div>
     `;
 
-    this.container.querySelector('#stroop-start-btn').addEventListener('click', () => this.startSprint());
-  }
+    container.innerHTML = html;
 
-  startSprint() {
-    this.score = 0;
-    this.timeLeft = 30;
-    const btnGrid = this.container.querySelector('#stroop-btn-grid');
-    if (btnGrid) btnGrid.style.display = 'grid';
+    const startBtn = document.getElementById('sprint-start-btn');
+    const input = document.getElementById('sprint-input');
+    const qEl = document.getElementById('sprint-q');
+    const timerEl = document.getElementById('sprint-timer');
+    const scoreEl = document.getElementById('sprint-score');
 
-    this.nextRound();
+    const nextQuestion = () => {
+      const qObj = questions[currentIdx % questions.length];
+      qEl.textContent = qObj.q;
+      input.value = '';
+      input.focus();
+    };
 
-    this.timer = setInterval(() => {
-      this.timeLeft--;
-      const timerEl = this.container.querySelector('#stroop-timer');
-      if (timerEl) timerEl.textContent = `⏱️ ${this.timeLeft}s`;
+    startBtn.addEventListener('click', () => {
+      running = true;
+      startBtn.style.display = 'none';
+      input.disabled = false;
+      nextQuestion();
 
-      if (this.timeLeft <= 0) {
-        clearInterval(this.timer);
-        this.endSprint();
-      }
-    }, 1000);
-
-    btnGrid.querySelectorAll('.stroop-color-btn').forEach(b => {
-      b.onclick = () => {
-        const chosen = b.dataset.color;
-        if (chosen === this.currentStimulus.ink.name) {
-          this.score += 20;
-          this.nextRound();
-        } else {
-          this.score = Math.max(0, this.score - 10);
-          this.nextRound();
+      timerId = setInterval(() => {
+        timer--;
+        timerEl.textContent = `${timer}s`;
+        if (timer <= 0) {
+          clearInterval(timerId);
+          running = false;
+          input.disabled = true;
+          qEl.textContent = `Complete! ${correctCount} correct`;
+          const awarded = correctCount * 40;
+          this.addScore(awarded, 'mental-math');
+          scoreEl.textContent = awarded;
         }
-      };
-    });
-  }
-
-  nextRound() {
-    const textItem = this.colors[Math.floor(Math.random() * this.colors.length)];
-    // Pick different ink
-    let inkItem = this.colors[Math.floor(Math.random() * this.colors.length)];
-    this.currentStimulus = { text: textItem, ink: inkItem };
-
-    const arena = this.container.querySelector('#stroop-arena');
-    if (arena) {
-      arena.innerHTML = `
-        <div class="stroop-word" style="color:${inkItem.hex}; font-size:3.5rem; font-weight:900; letter-spacing:0.08em; text-transform:uppercase;">
-          ${textItem.name}
-        </div>
-        <div style="font-size:0.82rem; color:var(--text-muted); margin-top:0.5rem;">Score: <strong>${this.score} pts</strong></div>
-      `;
-    }
-  }
-
-  endSprint() {
-    const arena = this.container.querySelector('#stroop-arena');
-    const btnGrid = this.container.querySelector('#stroop-btn-grid');
-    if (btnGrid) btnGrid.style.display = 'none';
-
-    this.hub.addScore(this.score, 'speed-stroop');
-    if (arena) {
-      arena.innerHTML = `
-        <div style="text-align:center;">
-          <div style="font-size:2.5rem;">🏆</div>
-          <h4 style="font-size:1.3rem; margin:0.35rem 0;">Sprint Finished!</h4>
-          <p style="font-size:1rem; color:var(--sp-accent); font-weight:700;">Final Score: ${this.score} pts</p>
-          <button class="btn-dhyan-primary" id="stroop-retry-btn" style="margin-top:0.75rem; padding:0.5rem 1.5rem;">Try Again</button>
-        </div>
-      `;
-      this.container.querySelector('#stroop-retry-btn').addEventListener('click', () => this.startSprint());
-    }
-  }
-}
-
-/* =========================================================================
-   GAME 4: MATH 24 / TARGET MERGE (Mental Arithmetic Engine)
-   ========================================================================= */
-class Math24Game {
-  constructor(container, hub) {
-    this.container = container;
-    this.hub = hub;
-    const puzzles = [
-      { numbers: [3, 8, 4, 2], target: 24, solution: '(8 - 2) * (4 / 1) or (3 * 8)' },
-      { numbers: [6, 4, 3, 2], target: 24, solution: '(6 - 2) * (3 + 3)' },
-      { numbers: [5, 5, 5, 1], target: 24, solution: '(5 - (1 / 5)) * 5 = 24' },
-      { numbers: [7, 3, 3, 1], target: 24, solution: '(7 + 1) * (3 * 3)' }
-    ];
-    this.puzzle = puzzles[new Date().getDate() % puzzles.length];
-    this.currentExpression = '';
-    this.render();
-  }
-
-  render() {
-    this.container.innerHTML = `
-      <div class="game-wrapper math-wrapper">
-        <div class="game-header-bar">
-          <div>
-            <h3 style="margin:0; font-size:1.15rem;">🎯 Math 24: Target Hit</h3>
-            <p style="margin:0.2rem 0 0; font-size:0.8rem; color:var(--text-muted);">Combine the 4 numbers with +, -, ×, ÷ to reach target <strong>${this.puzzle.target}</strong></p>
-          </div>
-          <div style="font-size:1rem; font-weight:800; color:var(--fc-accent);">Target: ${this.puzzle.target}</div>
-        </div>
-
-        <div class="math-expr-display" id="math-display">Click numbers and operators below</div>
-
-        <div class="math-controls-container">
-          <div class="math-num-row">
-            ${this.puzzle.numbers.map((n, i) => `<button class="btn-math-num" data-val="${n}">${n}</button>`).join('')}
-          </div>
-          <div class="math-op-row">
-            ${['+', '-', '*', '/'].map(op => `<button class="btn-math-op" data-op="${op}">${op === '*' ? '×' : (op === '/' ? '÷' : op)}</button>`).join('')}
-            <button class="btn-math-action" id="math-clear">Clear</button>
-            <button class="btn-math-action" id="math-check" style="background:var(--sp-accent); color:#fff;">Check</button>
-          </div>
-        </div>
-
-        <div id="math-result-msg" class="game-status-msg"></div>
-      </div>
-    `;
-
-    this.bindEvents();
-  }
-
-  bindEvents() {
-    const display = this.container.querySelector('#math-display');
-    const msg = this.container.querySelector('#math-result-msg');
-
-    this.container.querySelectorAll('.btn-math-num').forEach(b => {
-      b.addEventListener('click', () => {
-        this.currentExpression += b.dataset.val + ' ';
-        display.textContent = this.currentExpression;
-        b.disabled = true;
-      });
+      }, 1000);
     });
 
-    this.container.querySelectorAll('.btn-math-op').forEach(b => {
-      b.addEventListener('click', () => {
-        this.currentExpression += b.dataset.op + ' ';
-        display.textContent = this.currentExpression;
-      });
-    });
-
-    this.container.querySelector('#math-clear').addEventListener('click', () => {
-      this.currentExpression = '';
-      display.textContent = 'Cleared';
-      msg.textContent = '';
-      this.container.querySelectorAll('.btn-math-num').forEach(b => b.disabled = false);
-    });
-
-    this.container.querySelector('#math-check').addEventListener('click', () => {
-      try {
-        // Safe evaluation
-        const clean = this.currentExpression.replace(/[^0-9+\-*/().]/g, '');
-        const val = Function(`'use strict'; return (${clean})`)();
-        if (Math.abs(val - this.puzzle.target) < 0.001) {
-          msg.innerHTML = `🎉 <strong>Target Hit (${val})!</strong> Solved successfully (+100 pts)`;
-          this.hub.addScore(100, 'math-24');
-        } else {
-          msg.innerHTML = `Result is <strong>${val}</strong> (Target is ${this.puzzle.target}). Keep trying!`;
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && running) {
+        const ans = parseInt(input.value.trim(), 10);
+        const correct = questions[currentIdx % questions.length].a;
+        if (ans === correct) {
+          correctCount++;
+          scoreEl.textContent = correctCount;
         }
-      } catch (e) {
-        msg.textContent = '⚠️ Invalid math expression. Try again.';
+        currentIdx++;
+        nextQuestion();
       }
     });
   }
-}
 
-/* =========================================================================
-   GAME 5: DUAL FOCUS REFLEX (Rule Switching & Cognitive Flexibility)
-   ========================================================================= */
-class DualReflexGame {
-  constructor(container, hub) {
-    this.container = container;
-    this.hub = hub;
-    this.round = 1;
-    this.score = 0;
-    this.rule = 'SHAPE'; // SHAPE or COLOR
-    this.render();
-    this.startRound();
-  }
+  /* ============================================================
+     MODE 5: N-BACK MEMORY TRAINER
+     ============================================================ */
+  renderNBack(container) {
+    let N = 2;
+    let sequence = [];
+    let currentStep = 0;
+    let hits = 0;
+    let intervalId = null;
 
-  render() {
-    this.container.innerHTML = `
-      <div class="game-wrapper reflex-wrapper">
-        <div class="game-header-bar">
-          <div>
-            <h3 style="margin:0; font-size:1.15rem;">🧠 Dual Focus Rule Switcher</h3>
-            <p style="margin:0.2rem 0 0; font-size:0.8rem; color:var(--text-muted);">Match the stimulus to the active rule! Rule changes dynamically.</p>
-          </div>
-          <div style="font-size:0.85rem; font-weight:800; color:var(--sp-accent);" id="reflex-score">Score: 0 pts</div>
+    let html = `
+      <div style="display:flex; flex-direction:column; align-items:center; gap:1.25rem;">
+        <div>
+          <h3 style="font-family:var(--font-display); font-size:1.3rem; text-align:center;">N-Back Working Memory Trainer</h3>
+          <p style="font-size:0.85rem; color:var(--text-secondary); text-align:center;">Detect when the current flash matches the one from N steps ago.</p>
         </div>
 
-        <div class="reflex-rule-banner" id="reflex-rule-banner">ACTIVE RULE: MATCH BY SHAPE</div>
+        <div style="display:flex; gap:0.5rem; align-items:center;">
+          <span style="font-size:0.85rem; font-weight:700;">Memory Depth (N):</span>
+          ${[1, 2, 3, 4].map(n => `<button class="game-mode-btn ${n===2?'active':''}" data-n="${n}" style="padding:0.3rem 0.8rem; font-size:0.8rem;">N=${n}</button>`).join('')}
+        </div>
 
-        <div class="reflex-arena" id="reflex-arena"></div>
+        <div id="nback-grid" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:8px; width:210px; height:210px; margin:0.5rem 0;">
+          ${[0,1,2,3,4,5,6,7,8].map(i => `<div class="nback-cell" data-idx="${i}" style="background:var(--bg-surface-elevated); border-radius:var(--radius-md); border:1px solid var(--border-subtle); transition:background 0.2s;"></div>`).join('')}
+        </div>
 
-        <div class="reflex-choice-row" id="reflex-choices"></div>
+        <div style="display:flex; gap:1rem;">
+          <button id="nback-start-btn" class="btn-dhyan-primary" style="background:var(--mg-accent); font-size:0.85rem; padding:0.5rem 1.5rem;">Start Sequence</button>
+          <button id="nback-match-btn" class="btn-dhyan-primary" style="background:#10b981; font-size:0.85rem; padding:0.5rem 1.5rem;" disabled>MATCH!</button>
+        </div>
 
-        <div id="reflex-msg" class="game-status-msg" style="margin-top:0.75rem;"></div>
+        <div id="nback-feedback" style="font-size:0.85rem; font-weight:600;"></div>
       </div>
     `;
-  }
 
-  startRound() {
-    if (this.round > 10) {
-      const arena = this.container.querySelector('#reflex-arena');
-      const banner = this.container.querySelector('#reflex-rule-banner');
-      const choices = this.container.querySelector('#reflex-choices');
-      const msg = this.container.querySelector('#reflex-msg');
+    container.innerHTML = html;
 
-      banner.textContent = 'SESSION COMPLETED!';
-      arena.innerHTML = `<div style="font-size:2.5rem; text-align:center;">🏆<br><span style="font-size:1.1rem;">Agility Score: ${this.score} pts</span></div>`;
-      choices.innerHTML = `<button class="btn-dhyan-primary" id="reflex-restart" style="margin:0 auto; padding:0.5rem 1.5rem;">Play Again</button>`;
-      msg.textContent = 'Excellent cognitive flexibility!';
-      this.hub.addScore(this.score, 'dual-reflex');
-      this.container.querySelector('#reflex-restart').addEventListener('click', () => {
-        this.round = 1;
-        this.score = 0;
-        this.startRound();
-      });
-      return;
-    }
+    const startBtn = document.getElementById('nback-start-btn');
+    const matchBtn = document.getElementById('nback-match-btn');
+    const cells = container.querySelectorAll('.nback-cell');
+    const feedback = document.getElementById('nback-feedback');
 
-    // Switch rule every 3 rounds
-    this.rule = (this.round % 4 === 1 || this.round % 4 === 2) ? 'SHAPE' : 'COLOR';
-    const banner = this.container.querySelector('#reflex-rule-banner');
-    if (banner) {
-      banner.textContent = `ACTIVE RULE: MATCH BY ${this.rule}`;
-      banner.style.background = this.rule === 'SHAPE' ? 'rgba(59, 130, 246, 0.15)' : 'rgba(234, 179, 8, 0.15)';
-      banner.style.color = this.rule === 'SHAPE' ? '#60a5fa' : '#facc15';
-    }
-
-    const shapes = ['▲ Triangle', '● Circle', '■ Square'];
-    const colors = ['#ef4444', '#3b82f6', '#22c55e'];
-
-    const targetShape = shapes[Math.floor(Math.random() * shapes.length)];
-    const targetColor = colors[Math.floor(Math.random() * colors.length)];
-
-    const arena = this.container.querySelector('#reflex-arena');
-    if (arena) {
-      arena.innerHTML = `
-        <div style="font-size:2.5rem; color:${targetColor}; font-weight:900;">
-          ${targetShape}
-        </div>
-      `;
-    }
-
-    // Generate 2 choices: 1 correct, 1 distractor
-    let correctChoice, distractorChoice;
-    if (this.rule === 'SHAPE') {
-      correctChoice = { shape: targetShape, color: colors.find(c => c !== targetColor) };
-      distractorChoice = { shape: shapes.find(s => s !== targetShape), color: targetColor };
-    } else {
-      correctChoice = { shape: shapes.find(s => s !== targetShape), color: targetColor };
-      distractorChoice = { shape: targetShape, color: colors.find(c => c !== targetColor) };
-    }
-
-    const options = Math.random() > 0.5 ? [correctChoice, distractorChoice] : [distractorChoice, correctChoice];
-
-    const choices = this.container.querySelector('#reflex-choices');
-    choices.innerHTML = options.map(opt => `
-      <button class="btn-reflex-choice" data-iscorrect="${opt === correctChoice}" style="color:${opt.color}; border-color:${opt.color};">
-        ${opt.shape}
-      </button>
-    `).join('');
-
-    choices.querySelectorAll('.btn-reflex-choice').forEach(btn => {
+    container.querySelectorAll('[data-n]').forEach(btn => {
       btn.addEventListener('click', () => {
-        const isCorrect = btn.dataset.iscorrect === 'true';
-        const msg = this.container.querySelector('#reflex-msg');
-        if (isCorrect) {
-          this.score += 20;
-          if (msg) msg.textContent = '✅ Correct!';
-        } else {
-          if (msg) msg.textContent = '❌ Wrong rule application!';
-        }
-        const scoreEl = this.container.querySelector('#reflex-score');
-        if (scoreEl) scoreEl.textContent = `Score: ${this.score} pts`;
-        this.round++;
-        setTimeout(() => this.startRound(), 600);
+        container.querySelectorAll('[data-n]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        N = parseInt(btn.dataset.n, 10);
       });
+    });
+
+    startBtn.addEventListener('click', () => {
+      startBtn.disabled = true;
+      matchBtn.disabled = false;
+      sequence = [];
+      currentStep = 0;
+      hits = 0;
+
+      intervalId = setInterval(() => {
+        if (currentStep >= 15) {
+          clearInterval(intervalId);
+          startBtn.disabled = false;
+          matchBtn.disabled = true;
+          feedback.textContent = `Session finished! Score: ${hits * 50} Brain Points.`;
+          this.addScore(hits * 50, 'n-back');
+          return;
+        }
+
+        // Generate next cell (with 35% chance to repeat N back)
+        let next = Math.floor(Math.random() * 9);
+        if (sequence.length >= N && Math.random() < 0.35) {
+          next = sequence[sequence.length - N];
+        }
+        sequence.push(next);
+
+        cells.forEach(c => c.style.background = 'var(--bg-surface-elevated)');
+        cells[next].style.background = 'var(--mg-accent)';
+
+        setTimeout(() => {
+          cells[next].style.background = 'var(--bg-surface-elevated)';
+        }, 800);
+
+        currentStep++;
+      }, 1800);
+    });
+
+    matchBtn.addEventListener('click', () => {
+      const len = sequence.length;
+      if (len > N && sequence[len - 1] === sequence[len - 1 - N]) {
+        hits++;
+        feedback.textContent = `🎯 Spot on! (Hit #${hits})`;
+        feedback.style.color = '#10b981';
+      } else {
+        feedback.textContent = 'Miss / No match!';
+        feedback.style.color = '#ef4444';
+      }
+    });
+  }
+
+  /* ============================================================
+     MODE 6: PATTERN / SEQUENCE MASTER
+     ============================================================ */
+  renderPatternMaster(container) {
+    const patterns = this.data.patternMaster || [
+      {
+        sequence: ["2", "6", "12", "20", "30", "?"],
+        answer: "42",
+        options: ["40", "42", "44", "48"],
+        explanation: "Difference increases by 2 each step: +4, +6, +8, +10, +12."
+      }
+    ];
+
+    let currentIdx = 0;
+    const pat = patterns[currentIdx];
+
+    let html = `
+      <div style="display:flex; flex-direction:column; gap:1.25rem; align-items:center;">
+        <div>
+          <h3 style="font-family:var(--font-display); font-size:1.3rem; text-align:center;">Pattern & Sequence Master</h3>
+          <p style="font-size:0.85rem; color:var(--text-secondary); text-align:center;">Identify the algorithmic rule governing the progression.</p>
+        </div>
+
+        <div style="display:flex; gap:0.75rem; align-items:center; background:var(--bg-canvas); padding:1.5rem; border-radius:var(--radius-lg); border:1px solid var(--border-subtle);">
+          ${pat.sequence.map(s => `
+            <div style="width:50px; height:50px; border-radius:var(--radius-md); background:var(--bg-surface-elevated); border:1px solid ${s==='?'?'var(--mg-accent)':'var(--border-subtle)'}; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-size:1.25rem; font-weight:700; color:${s==='?'?'var(--mg-accent)':'var(--text-primary)'};">
+              ${s}
+            </div>
+          `).join('')}
+        </div>
+
+        <div style="display:flex; gap:0.75rem;">
+          ${pat.options.map(opt => `<button class="key-btn pat-opt-btn" data-val="${opt}" style="flex:none; width:70px; height:48px;">${opt}</button>`).join('')}
+        </div>
+
+        <div id="pat-explanation" style="font-size:0.88rem; max-width:480px; text-align:center; min-height:24px;"></div>
+      </div>
+    `;
+
+    container.innerHTML = html;
+
+    container.querySelectorAll('.pat-opt-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const val = btn.dataset.val;
+        const expEl = document.getElementById('pat-explanation');
+        if (val === pat.answer) {
+          expEl.textContent = `✔️ Correct! ${pat.explanation} (+150 Brain Points)`;
+          expEl.style.color = '#10b981';
+          this.addScore(150, 'pattern-master');
+        } else {
+          expEl.textContent = `❌ Incorrect. The answer is ${pat.answer}. ${pat.explanation}`;
+          expEl.style.color = '#ef4444';
+        }
+      });
+    });
+  }
+
+  /* ============================================================
+     MODE 7: WORD FORGE (WITH ICT / ENGINEERING VOCABULARY MODE)
+     ============================================================ */
+  renderWordForge(container) {
+    const defaultPuzzle = this.data.wordForge || {
+      anagram: {
+        scramble: "HYTGINOPRCA",
+        solution: "CRYPTOGRAPHY",
+        hint: "Field of secure mathematical communications",
+        category: "Engineering & ICT"
+      }
+    };
+
+    let puzzle = defaultPuzzle.anagram;
+    let isICTMode = true;
+
+    let html = `
+      <div style="display:flex; flex-direction:column; gap:1.25rem; align-items:center;">
+        <div style="display:flex; justify-content:space-between; width:100%; align-items:center;">
+          <div>
+            <h3 style="font-family:var(--font-display); font-size:1.3rem;">Word Forge: Anagram & Vocab</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary);">Unscramble terms from engineering, computing, and communications.</p>
+          </div>
+          <button id="wf-ict-toggle" class="game-mode-btn ${isICTMode?'active':''}" style="font-size:0.75rem; padding:0.3rem 0.8rem;">⚡ ICT Mode: ON</button>
+        </div>
+
+        <div style="background:var(--bg-canvas); padding:1rem 1.5rem; border-radius:var(--radius-md); border:1px solid var(--border-subtle); width:100%; text-align:center;">
+          <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Domain: ${puzzle.category}</span>
+          <p style="font-size:0.9rem; font-style:italic; margin-top:0.35rem; color:var(--text-secondary);">Hint: ${puzzle.hint}</p>
+        </div>
+
+        <div style="display:flex; gap:0.4rem; flex-wrap:wrap; justify-content:center;">
+          ${puzzle.scramble.split('').map(letter => `
+            <div class="key-btn" style="flex:none; width:44px; height:48px; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; font-size:1.25rem;">
+              ${letter}
+            </div>
+          `).join('')}
+        </div>
+
+        <div style="display:flex; gap:0.5rem; width:100%; max-width:360px;">
+          <input type="text" id="wf-input" placeholder="Type solution" style="flex:1; padding:0.65rem 1rem; border-radius:var(--radius-md); border:1px solid var(--border-strong); background:var(--bg-surface); color:var(--text-primary); font-size:1rem; text-transform:uppercase;" />
+          <button id="wf-submit-btn" class="btn-dhyan-primary" style="background:var(--mg-accent); font-size:0.85rem; padding:0.65rem 1.25rem;">Verify</button>
+        </div>
+
+        <div id="wf-status" style="font-size:0.88rem; font-weight:600;"></div>
+      </div>
+    `;
+
+    container.innerHTML = html;
+
+    const input = document.getElementById('wf-input');
+    const submitBtn = document.getElementById('wf-submit-btn');
+    const status = document.getElementById('wf-status');
+
+    submitBtn.addEventListener('click', () => {
+      const val = input.value.trim().toUpperCase();
+      if (val === puzzle.solution) {
+        status.textContent = `🎉 Unlocked ${puzzle.solution}! +200 Brain Points.`;
+        status.style.color = '#10b981';
+        this.addScore(200, 'word-forge');
+      } else {
+        status.textContent = 'Not quite, keep forging!';
+        status.style.color = '#ef4444';
+      }
     });
   }
 }

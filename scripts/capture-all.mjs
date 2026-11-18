@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const LOCAL_SCREENSHOTS = path.join(ROOT_DIR, 'screenshots');
-const ARTIFACT_SCREENSHOTS = 'C:\\Users\\krish\\.gemini\\antigravity\\brain\\63ce7fe5-feb0-4a3a-bcc8-48d3d6e9f33b\\screenshots';
+const ARTIFACT_SCREENSHOTS = 'C:\\Users\\krish\\.gemini\\antigravity\\brain\\32b7ad83-83f3-4a56-9839-89e0ee50c33e\\screenshots';
 
 const CHROME_PATH = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 

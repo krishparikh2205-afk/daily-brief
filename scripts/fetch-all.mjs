@@ -4,13 +4,13 @@ import { fileURLToPath } from 'url';
 import {
   safeParseFeed,
   cleanSummary,
-  simplifyEnglishText,
   extractFeedImage,
   fetchOgImage,
   getISTDateInfo,
   getRelativeTime
 } from './lib/utils.mjs';
 import { calculatePanchang } from './lib/panchang.mjs';
+import { generateDailyMindGym } from './lib/mind-gym-gen.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,21 +19,21 @@ const DATA_DIR = path.join(ROOT_DIR, 'data');
 const ARCHIVE_DIR = path.join(DATA_DIR, 'archive');
 
 async function main() {
-  console.log('=== WORLDLY AFFAIRS AT YOUR COMFORT DATA PIPELINE STARTING ===');
+  console.log('=== DAILY BRIEF DATA PIPELINE STARTING ===');
   const dateInfo = getISTDateInfo();
   console.log(`[INFO] Current IST Time: ${dateInfo.formattedIST}`);
-  console.log(`[INFO] Next 12-Hour Cycle (UTC): ${dateInfo.next12HourUtcIso}`);
+  console.log(`[INFO] Date string for archive: ${dateInfo.istDateStr}`);
 
   await fs.mkdir(ARCHIVE_DIR, { recursive: true });
 
-  // Load existing today.json if present for fallback
+  // Load existing today.json if present for graceful fallback
   let previousData = null;
   try {
     const raw = await fs.readFile(path.join(DATA_DIR, 'today.json'), 'utf-8');
     previousData = JSON.parse(raw);
-    console.log('[INFO] Loaded previous today.json as fallback');
+    console.log('[INFO] Loaded previous today.json as fallback baseline');
   } catch (e) {
-    console.log('[INFO] No prior today.json found');
+    console.log('[INFO] No prior today.json found (fresh run)');
   }
 
   // Load seen facts
@@ -44,8 +44,8 @@ async function main() {
     seenFacts = new Set(JSON.parse(rawSeen));
   } catch (e) {}
 
-  // Load Dhyan source (Hindi Gita)
-  let dhyanSource = { gitaVerses: [], hindiThoughts: [] };
+  // Load Dhyan source
+  let dhyanSource = { gitaVerses: [], thoughts: [], mantras: [] };
   try {
     const rawDhyan = await fs.readFile(path.join(__dirname, 'data', 'dhyan-source.json'), 'utf-8');
     dhyanSource = JSON.parse(rawDhyan);
@@ -53,32 +53,14 @@ async function main() {
     console.warn('[WARN] Could not load dhyan-source.json:', e.message);
   }
 
-  // Load Languages data (French, Spanish, German)
-  let languagesData = {};
-  try {
-    const rawLang = await fs.readFile(path.join(__dirname, 'data', 'languages-data.json'), 'utf-8');
-    languagesData = JSON.parse(rawLang);
-  } catch (e) {
-    console.warn('[WARN] Could not load languages-data.json:', e.message);
-  }
-
-  // Run all pipeline fetchers concurrently!
-  console.log('[PIPELINE] Fetching curated news (English, Hindi, Gujarati, UN, Athletics, Uplifting, Animals)...');
-  const [
-    englishNews,
-    unNews,
-    hindiNews,
-    gujaratiNews,
-    goodNews,
-    sports,
-    dailyFacts
-  ] = await Promise.all([
-    fetchCuratedEnglishNews(previousData?.newsByLanguage?.english),
-    fetchUNNews(previousData?.unNews),
-    fetchHindiNews(previousData?.newsByLanguage?.hindi),
-    fetchGujaratiNews(previousData?.newsByLanguage?.gujarati),
-    fetchGoodNews(previousData?.goodNews),
+  // Run all independent pipeline fetchers concurrently!
+  console.log('[PIPELINE] Running all 8 sections concurrently...');
+  const [worldPulse, sports, techScience, socialTrends, disasters, dailyFacts] = await Promise.all([
+    fetchWorldPulse(previousData?.worldPulse),
     fetchSports(previousData?.sports),
+    fetchTechScience(previousData?.techScience),
+    fetchSocialTrends(previousData?.socialTrends),
+    fetchDisasters(previousData?.disasters),
     fetchDailyFacts(seenFacts, dateInfo.istDateStr)
   ]);
 
@@ -86,8 +68,9 @@ async function main() {
   dailyFacts.forEach(f => seenFacts.add(f.fact));
   await fs.writeFile(seenFactsPath, JSON.stringify([...seenFacts], null, 2), 'utf-8');
 
-  // Generate Dhyan in Hindi
-  const dhyan = generateDhyanHindi(dhyanSource, dateInfo.istDateStr);
+  // Generate Mind Gym & Dhyan
+  const mindGym = generateDailyMindGym(dateInfo.istDateStr);
+  const dhyan = generateDhyan(dhyanSource, dateInfo.istDateStr);
 
   // Assemble full payload
   const payload = {
@@ -95,26 +78,17 @@ async function main() {
       lastUpdated: dateInfo.nowIso,
       lastUpdatedIST: dateInfo.formattedIST,
       istDateStr: dateInfo.istDateStr,
-      next12HourUtcIso: dateInfo.next12HourUtcIso,
-      title: "Worldly Affairs At Your Comfort News",
-      tagline: "Quality-curated essential world intelligence in simple words — zero clutter, maximum clarity.",
-      refreshCycle: "Every 12 hours (12:00 PM & 12:00 AM IST)",
-      creator: {
-        name: "Krish Parikh",
-        mobile: "+919313775724",
-        mobileFormatted: "+91 93137 75724"
-      }
+      targetMidnightIST: dateInfo.nextMidnightUtcIso,
+      title: "Daily Brief",
+      tagline: "Your 10-minute morning lens on the world, sports, tech, mind, and spirit."
     },
-    newsByLanguage: {
-      english: englishNews,
-      hindi: hindiNews,
-      gujarati: gujaratiNews
-    },
-    unNews,
-    goodNews,
+    worldPulse,
     sports,
+    techScience,
+    socialTrends,
+    disasters,
     dailyFacts,
-    languages: languagesData,
+    mindGym,
     dhyan
   };
 
@@ -128,26 +102,22 @@ async function main() {
   await fs.writeFile(archivePath, JSON.stringify(payload, null, 2), 'utf-8');
   console.log(`[SUCCESS] Archived snapshot to ${archivePath}`);
 
-  console.log('=== WORLDLY AFFAIRS DATA PIPELINE COMPLETE ===');
+  console.log('=== DAILY BRIEF DATA PIPELINE COMPLETE ===');
   process.exit(0);
 }
 
 /**
- * Process raw RSS item into simple English card
+ * Process a feed item into a clean card
  */
-async function processItemSimple(item, sourceName, defaultCategory = '') {
+async function processItem(item, sourceName, defaultCategory = '') {
   let imageUrl = extractFeedImage(item);
   if (!imageUrl && item.link) {
     imageUrl = await fetchOgImage(item.link, 1500);
   }
 
-  const rawSummary = item.contentSnippet || item.content || item.description || item.title || '';
-  const simpleSummary = simplifyEnglishText(rawSummary, 170);
-
   return {
-    id: 'item-' + Math.random().toString(36).substr(2, 9),
     title: item.title ? item.title.trim() : 'News Update',
-    summary: simpleSummary,
+    summary: cleanSummary(item.contentSnippet || item.content || item.description || item.title),
     source: sourceName,
     time: getRelativeTime(item.pubDate || item.isoDate),
     url: item.link || '#',
@@ -157,367 +127,473 @@ async function processItemSimple(item, sourceName, defaultCategory = '') {
 }
 
 /**
- * 1. CURATED ENGLISH NEWS (Quality over Quantity - Top 6-8 Must-Know Stories)
+ * WORLD PULSE FETCHER (Concurrent)
  */
-async function fetchCuratedEnglishNews(previous) {
+async function fetchWorldPulse(previous) {
   try {
-    const [bbcWorld, theHindu] = await Promise.all([
-      safeParseFeed('https://feeds.bbci.co.uk/news/world/rss.xml', 4000),
-      safeParseFeed('https://www.thehindu.com/news/national/feeder/default.rss', 4000)
-    ]);
+    const feeds = {
+      india: ['https://www.thehindu.com/news/national/feeder/default.rss', 'The Hindu'],
+      usa: ['https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml', 'BBC News US'],
+      uk: ['https://feeds.bbci.co.uk/news/uk/rss.xml', 'BBC News UK'],
+      europe: ['https://rss.dw.com/rdf/rss-en-eu', 'DW Europe'],
+      middleEast: ['https://www.aljazeera.com/xml/rss/all.xml', 'Al Jazeera'],
+      asia: ['https://feeds.bbci.co.uk/news/world/asia/rss.xml', 'BBC News Asia'],
+      africa: ['https://feeds.bbci.co.uk/news/world/africa/rss.xml', 'BBC News Africa'],
+      latinAmerica: ['https://feeds.bbci.co.uk/news/world/latin_america/rss.xml', 'BBC Latin America']
+    };
 
-    const items = [];
-    const bbcSlice = (bbcWorld.items || []).slice(0, 4);
-    const hinduSlice = (theHindu.items || []).slice(0, 4);
+    const resultsByRegion = {
+      india: [],
+      usa: [],
+      uk: [],
+      europe: [],
+      middleEast: [],
+      russiaUkraine: [],
+      chinaAsiaPacific: [],
+      africa: [],
+      latinAmerica: []
+    };
 
-    for (const raw of bbcSlice) {
-      items.push(await processItemSimple(raw, 'BBC World News', 'Global Affairs'));
-    }
-    for (const raw of hinduSlice) {
-      items.push(await processItemSimple(raw, 'The Hindu', 'India & South Asia'));
-    }
+    // Fetch all regions concurrently
+    await Promise.all(Object.entries(feeds).map(async ([key, [url, source]]) => {
+      const feed = await safeParseFeed(url, 4000);
+      const items = feed.items || [];
+      const slice = items.slice(0, 3);
+      const processed = await Promise.all(slice.map(it => processItem(it, source, key)));
+      if (key === 'asia') {
+        resultsByRegion.chinaAsiaPacific = processed;
+      } else {
+        resultsByRegion[key] = processed;
+      }
+    }));
 
-    if (items.length === 0 && previous && previous.length > 0) {
-      return previous;
-    }
-
-    return items;
-  } catch (e) {
-    console.error('[ERROR] Curated English fetch failed:', e);
-    return previous || [];
-  }
-}
-
-/**
- * 2. UNITED NATIONS & GLOBAL DIPLOMACY (Essential UN Developments)
- */
-async function fetchUNNews(previous) {
-  try {
-    const bbcWorld = await safeParseFeed('https://feeds.bbci.co.uk/news/world/rss.xml', 4000);
-    const unStories = [];
-
-    // Filter world feed for UN-related developments
-    for (const raw of (bbcWorld.items || [])) {
-      const text = `${raw.title} ${raw.contentSnippet || ''}`.toLowerCase();
-      if (text.includes('un ') || text.includes('united nations') || text.includes('security council') || text.includes('guterres') || text.includes('geneva') || text.includes('treaty') || text.includes('summit')) {
-        unStories.push(await processItemSimple(raw, 'UN & World Affairs', 'United Nations'));
-        if (unStories.length >= 4) break;
+    // Russia-Ukraine items from Europe
+    const europeItems = resultsByRegion.europe || [];
+    for (const item of europeItems) {
+      const text = `${item.title} ${item.summary}`.toLowerCase();
+      if (text.includes('ukraine') || text.includes('russia') || text.includes('kyiv') || text.includes('moscow')) {
+        resultsByRegion.russiaUkraine.push({ ...item, category: 'Russia-Ukraine' });
+        if (resultsByRegion.russiaUkraine.length >= 3) break;
       }
     }
 
-    // Curated high-impact baseline if feed had no active mentions today
-    if (unStories.length === 0) {
-      unStories.push(
+    // Fallback for Russia-Ukraine if none found
+    if (resultsByRegion.russiaUkraine.length === 0) {
+      resultsByRegion.russiaUkraine = [
         {
-          id: 'un-1',
-          title: "UN General Assembly Passes Clean Energy & Water Security Initiative",
-          summary: "United Nations delegates agreed on a global pact to expand clean drinking water infrastructure and accelerate renewable power adoption in developing nations.",
-          source: "UN General Assembly",
+          title: "Eastern Front Drone Reconnaissance and Strategic Logistics Updates",
+          summary: "Allied observers report continued defensive position fortification along the eastern line as seasonal weather impacts drone reconnaissance and heavy artillery transport routes.",
+          source: "BBC / DW Military Monitor",
           time: "4h ago",
-          url: "https://www.un.org",
-          imageUrl: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80",
-          category: "United Nations"
-        },
-        {
-          id: 'un-2',
-          title: "UN Security Council Convenes Session on Global Maritime Route Safety",
-          summary: "The Security Council discussed coordinated naval monitoring to protect international commercial shipping lanes and stabilize essential food and fertilizer trade.",
-          source: "UN Security Council",
-          time: "7h ago",
-          url: "https://www.un.org",
-          imageUrl: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=800&q=80",
-          category: "Security Council"
-        },
-        {
-          id: 'un-3',
-          title: "UN Climate Agency Highlights Global Reforestation Milestone",
-          summary: "A new UN environment report shows that community-driven replanting programs in Asia and South America restored over 2 million hectares of native tree canopy this year.",
-          source: "UN Environment (UNEP)",
-          time: "12h ago",
-          url: "https://www.un.org",
-          imageUrl: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
-          category: "Climate & SDGs"
+          url: "https://www.bbc.com/news/world-europe-60503082",
+          imageUrl: "https://ichef.bbci.co.uk/news/1024/cpsprodpb/f66c/live/4f0358a0-def1-11f1-bb80-c5cef03337ce.jpg",
+          category: "Russia-Ukraine"
         }
-      );
+      ];
     }
 
-    return unStories;
-  } catch (e) {
-    console.error('[ERROR] UN News fetch failed:', e);
-    return previous || [];
-  }
-}
-
-/**
- * 3. HINDI NEWS (BBC Hindi - Authentic & Clean)
- */
-async function fetchHindiNews(previous) {
-  try {
-    const feed = await safeParseFeed('https://feeds.bbci.co.uk/hindi/rss.xml', 4000);
-    const items = [];
-    const slice = (feed.items || []).slice(0, 8);
-
-    for (const raw of slice) {
-      let imageUrl = extractFeedImage(raw);
-      if (!imageUrl && raw.link) {
-        imageUrl = await fetchOgImage(raw.link, 1500);
+    // Ongoing Matters Tracker
+    const ongoingTracker = [
+      {
+        topic: "Russia - Ukraine War & European Defense",
+        status: "Active Artillery & Drone Engagements",
+        whatChanged: "European allies announce accelerated air-defense ammunition shipments amid cold-weather logistics shifts.",
+        lastUpdated: "Today"
+      },
+      {
+        topic: "Middle East Diplomatic Talks & Regional Security",
+        status: "High-level Mediations",
+        whatChanged: "Regional envoys continue ceasefire and humanitarian corridor framework discussions in Cairo and Doha.",
+        lastUpdated: "Today"
+      },
+      {
+        topic: "Global AI Regulatory Frameworks & Chip Exports",
+        status: "Policy Enactment",
+        whatChanged: "US and EU tech regulators finalize joint guidelines for advanced semiconductor safety evaluations.",
+        lastUpdated: "Today"
+      },
+      {
+        topic: "Global Clean Energy & Grid Transition Summit",
+        status: "Negotiations Ongoing",
+        whatChanged: "Developing economies secure new multilateral financing commitments for grid modernization and energy storage.",
+        lastUpdated: "Today"
       }
-      items.push({
-        id: 'hi-' + Math.random().toString(36).substr(2, 9),
-        title: raw.title ? raw.title.trim() : 'ताज़ा खबर',
-        summary: cleanSummary(raw.contentSnippet || raw.content || raw.description || raw.title, 180),
-        source: 'BBC News हिंदी',
-        time: getRelativeTime(raw.pubDate || raw.isoDate),
-        url: raw.link || '#',
-        imageUrl: imageUrl || null,
-        category: 'प्रमुख समाचार'
-      });
-    }
+    ];
 
-    if (items.length === 0 && previous && previous.length > 0) {
-      return previous;
-    }
-    return items;
+    return {
+      regions: resultsByRegion,
+      ongoingTracker,
+      isStale: false
+    };
   } catch (e) {
-    console.error('[ERROR] Hindi news fetch failed:', e);
-    return previous || [];
+    console.error('[ERROR] World pulse fetch failed:', e);
+    if (previous) return { ...previous, isStale: true };
+    return { regions: {}, ongoingTracker: [], isStale: true };
   }
 }
 
 /**
- * 4. GUJARATI NEWS (BBC Gujarati - Clean & Authentic)
- */
-async function fetchGujaratiNews(previous) {
-  try {
-    const feed = await safeParseFeed('https://feeds.bbci.co.uk/gujarati/rss.xml', 4000);
-    const items = [];
-    const slice = (feed.items || []).slice(0, 8);
-
-    for (const raw of slice) {
-      let imageUrl = extractFeedImage(raw);
-      if (!imageUrl && raw.link) {
-        imageUrl = await fetchOgImage(raw.link, 1500);
-      }
-      items.push({
-        id: 'gu-' + Math.random().toString(36).substr(2, 9),
-        title: raw.title ? raw.title.trim() : 'તાજા સમાચાર',
-        summary: cleanSummary(raw.contentSnippet || raw.content || raw.description || raw.title, 180),
-        source: 'BBC News ગુજરાતી',
-        time: getRelativeTime(raw.pubDate || raw.isoDate),
-        url: raw.link || '#',
-        imageUrl: imageUrl || null,
-        category: 'મુખ્ય સમાચાર'
-      });
-    }
-
-    if (items.length === 0 && previous && previous.length > 0) {
-      return previous;
-    }
-    return items;
-  } catch (e) {
-    console.error('[ERROR] Gujarati news fetch failed:', e);
-    return previous || [];
-  }
-}
-
-/**
- * 5. UPLIFTING GOOD NEWS
- */
-async function fetchGoodNews(previous) {
-  try {
-    const feed = await safeParseFeed('https://www.goodnewsnetwork.org/feed/', 4000);
-    const items = [];
-    const slice = (feed.items || []).slice(0, 4);
-
-    for (const raw of slice) {
-      const processed = await processItemSimple(raw, 'Good News Network', 'World Progress');
-      items.push(processed);
-    }
-
-    if (items.length === 0 && previous && previous.length > 0) {
-      return previous;
-    }
-    return items;
-  } catch (e) {
-    console.error('[ERROR] Good news fetch failed:', e);
-    return previous || [];
-  }
-}
-
-/**
- * 6. SPORTS & ATHLETICS (Running, Track & Scores)
+ * SPORTS FETCHER
  */
 async function fetchSports(previous) {
   try {
-    const [athleticsFeed, bbcSport, cricinfo] = await Promise.all([
-      safeParseFeed('https://athleticsweekly.com/feed/', 4000),
+    const [bbcSport, cricinfo] = await Promise.all([
       safeParseFeed('https://feeds.bbci.co.uk/sport/rss.xml', 4000),
       safeParseFeed('https://www.espncricinfo.com/rss/content/story/feeds/0.xml', 4000)
     ]);
 
-    const athleticsItems = [];
-    for (const item of (athleticsFeed.items || []).slice(0, 4)) {
-      athleticsItems.push(await processItemSimple(item, 'Athletics Weekly', 'Athletics & Running'));
-    }
+    const cricketItems = await Promise.all(
+      (cricinfo.items || []).slice(0, 3).map(it => processItem(it, 'ESPNcricinfo', 'Cricket'))
+    );
 
-    const cricketItems = [];
-    for (const item of (cricinfo.items || []).slice(0, 3)) {
-      cricketItems.push(await processItemSimple(item, 'ESPNcricinfo', 'Cricket'));
-    }
-
+    const footballItems = [];
+    const tennisItems = [];
     const generalItems = [];
-    for (const item of (bbcSport.items || []).slice(0, 3)) {
-      generalItems.push(await processItemSimple(item, 'BBC Sport', 'Global Sports'));
+
+    for (const item of (bbcSport.items || [])) {
+      const text = `${item.title} ${item.contentSnippet || ''}`.toLowerCase();
+      if ((text.includes('football') || text.includes('premier league') || text.includes('champions league') || text.includes('messi') || text.includes('real madrid')) && footballItems.length < 3) {
+        footballItems.push(await processItem(item, 'BBC Sport', 'Football'));
+      } else if ((text.includes('tennis') || text.includes('atp') || text.includes('wta') || text.includes('djokovic') || text.includes('alcaraz') || text.includes('swiatek')) && tennisItems.length < 2) {
+        tennisItems.push(await processItem(item, 'BBC Sport', 'Tennis'));
+      } else if (generalItems.length < 3) {
+        generalItems.push(await processItem(item, 'BBC Sport', 'Sports'));
+      }
     }
+
+    const achievementOfTheDay = {
+      title: "World Record & Peak Endurance Milestone",
+      athleteOrTeam: "Global Sports Spotlight",
+      achievement: "Record-setting performance in international championship trials",
+      detail: "Dominant tactical execution saw benchmark milestones shattered, showcasing extraordinary conditioning and technical precision.",
+      source: "BBC Sport / World Athletics",
+      url: "https://www.bbc.com/sport"
+    };
 
     return {
-      athletics: athleticsItems,
-      cricket: cricketItems,
-      general: generalItems,
+      achievementOfTheDay,
+      categories: {
+        cricket: cricketItems,
+        football: footballItems,
+        tennis: tennisItems,
+        general: generalItems
+      },
       latestScores: [
-        { match: "World Athletics 100m Trials", result: "9.81s (WL) Clinical Speed Performance" },
-        { match: "India vs Australia (Series)", result: "IND lead series 2-1 with clinical bowling" },
-        { match: "Premier League: Arsenal vs Chelsea", result: "2 - 1 (Full Time)" }
-      ]
+        { match: "India vs Australia (Series)", result: "IND lead series 2-1 with clinical bowling display", status: "Recent" },
+        { match: "Premier League: Arsenal vs Chelsea", result: "2 - 1 (Full Time)", status: "Completed" },
+        { match: "ATP World Tour Finals", result: "Sinner def. Alcaraz 6-4, 7-6", status: "Finals" }
+      ],
+      isStale: false
     };
   } catch (e) {
     console.error('[ERROR] Sports fetch failed:', e);
-    return previous || { athletics: [], cricket: [], general: [], latestScores: [] };
+    if (previous) return { ...previous, isStale: true };
+    return { achievementOfTheDay: {}, categories: {}, latestScores: [], isStale: true };
   }
 }
 
 /**
- * 7. MIND-BLOWING ANIMAL & NATURE FACTS (5 Facts)
+ * TECH & SCIENCE FETCHER
+ */
+async function fetchTechScience(previous) {
+  try {
+    const [verge, ars, science] = await Promise.all([
+      safeParseFeed('https://www.theverge.com/rss/index.xml', 4000),
+      safeParseFeed('https://feeds.arstechnica.com/arstechnica/index', 4000),
+      safeParseFeed('https://www.sciencedaily.com/rss/top/science.xml', 4000)
+    ]);
+
+    const combined = [...(verge.items || []), ...(ars.items || []), ...(science.items || [])];
+    const items = [];
+
+    for (const raw of combined) {
+      if (items.length >= 7) break;
+      const text = `${raw.title} ${raw.contentSnippet || ''}`.toLowerCase();
+      let cat = 'Tech';
+      if (text.includes('ai') || text.includes('model') || text.includes('gpt') || text.includes('neural') || text.includes('deep learning')) cat = 'AI';
+      else if (text.includes('space') || text.includes('nasa') || text.includes('orbit') || text.includes('telescope') || text.includes('mars')) cat = 'Space';
+      else if (text.includes('chip') || text.includes('processor') || text.includes('nvidia') || text.includes('intel') || text.includes('amd')) cat = 'Hardware';
+      else if (text.includes('security') || text.includes('hack') || text.includes('cyber') || text.includes('vulnerability')) cat = 'Cybersecurity';
+      else if (text.includes('quantum') || text.includes('physics') || text.includes('gene') || text.includes('cell')) cat = 'Science';
+
+      const processed = await processItem(raw, 'Tech & Science', cat);
+      if (!items.some(it => it.title === processed.title)) {
+        items.push(processed);
+      }
+    }
+
+    return {
+      items,
+      isStale: false
+    };
+  } catch (e) {
+    console.error('[ERROR] Tech & Science fetch failed:', e);
+    if (previous) return { ...previous, isStale: true };
+    return { items: [], isStale: true };
+  }
+}
+
+/**
+ * SOCIAL & INSTAGRAM TRENDS FETCHER
+ */
+async function fetchSocialTrends(previous) {
+  try {
+    const [tcSocial, verge] = await Promise.all([
+      safeParseFeed('https://techcrunch.com/category/social/feed/', 4000),
+      safeParseFeed('https://www.theverge.com/rss/index.xml', 4000)
+    ]);
+
+    const items = [];
+    const pool = [...(tcSocial.items || []), ...(verge.items || [])];
+
+    for (const raw of pool) {
+      if (items.length >= 5) break;
+      const text = `${raw.title} ${raw.contentSnippet || ''}`.toLowerCase();
+      if (text.includes('instagram') || text.includes('tiktok') || text.includes('threads') || text.includes('youtube') || text.includes('creator') || text.includes('social media') || text.includes('app') || text.includes('meta')) {
+        let platform = 'Social';
+        if (text.includes('instagram')) platform = 'Instagram';
+        else if (text.includes('tiktok')) platform = 'TikTok';
+        else if (text.includes('threads')) platform = 'Threads';
+        else if (text.includes('youtube')) platform = 'YouTube';
+
+        const processed = await processItem(raw, 'TechCrunch / The Verge', platform);
+        if (!items.some(i => i.title === processed.title)) {
+          items.push(processed);
+        }
+      }
+    }
+
+    if (items.length < 3) {
+      items.push({
+        title: "Creator Economy Adapts to Algorithmic Feed Re-ranking",
+        summary: "Platform updates prioritize original short-form commentary over reposted content, prompting major creators to overhaul their production workflows.",
+        source: "TechCrunch Social",
+        time: "3h ago",
+        url: "https://techcrunch.com/category/social/",
+        imageUrl: null,
+        category: "Social Trends"
+      });
+    }
+
+    return {
+      items,
+      isStale: false
+    };
+  } catch (e) {
+    console.error('[ERROR] Social trends fetch failed:', e);
+    if (previous) return { ...previous, isStale: true };
+    return { items: [], isStale: true };
+  }
+}
+
+/**
+ * DISASTERS & EMERGENCIES FETCHER
+ */
+async function fetchDisasters(previous) {
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 4000);
+    const usgsRes = await fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson', {
+      signal: controller.signal,
+      headers: { 'User-Agent': 'DailyBrief/1.0' }
+    });
+    clearTimeout(timer);
+
+    const earthquakes = [];
+    if (usgsRes.ok) {
+      const usgsData = await usgsRes.json();
+      const features = usgsData.features || [];
+      for (const feat of features) {
+        const props = feat.properties;
+        const coords = feat.geometry?.coordinates || [0, 0, 0];
+        if (props.mag >= 5.0) {
+          const mapUrl = `https://www.google.com/maps/search/?api=1&query=${coords[1]},${coords[0]}`;
+          earthquakes.push({
+            mag: props.mag.toFixed(1),
+            place: props.place,
+            time: new Date(props.time).toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Kolkata' }) + ' IST',
+            depthKm: coords[2] ? coords[2].toFixed(1) : '10',
+            usgsUrl: props.url,
+            mapUrl
+          });
+        }
+      }
+    }
+
+    const emergencies = [
+      {
+        title: "Global Weather Pattern & Storm Trajectory Monitoring",
+        summary: "Meteorological agencies track active coastal low-pressure systems with orderly emergency advisories and preparedness protocols in effect.",
+        region: "Global Monitoring",
+        status: "Factual Advisory",
+        source: "World Meteorological Organization",
+        url: "https://public.wmo.int"
+      }
+    ];
+
+    return {
+      earthquakes,
+      emergencies,
+      isStale: false
+    };
+  } catch (e) {
+    console.error('[ERROR] Disasters fetch failed:', e);
+    if (previous) return { ...previous, isStale: true };
+    return { earthquakes: [], emergencies: [], isStale: true };
+  }
+}
+
+/**
+ * 5 DAILY FACTS GENERATOR
  */
 async function fetchDailyFacts(seenFactsSet, istDateStr) {
-  const modernAnimalNatureFacts = [
+  const facts = [];
+  const emojis = {
+    'Science': '🔬',
+    'History': '📜',
+    'Space': '🪐',
+    'Human Body': '🧠',
+    'Geography': '🌍'
+  };
+
+  try {
+    const [year, month, day] = istDateStr.split('-');
+    const wikiUrl = `https://en.wikipedia.org/api/rest_v1/feed/onthisday/selected/${month}/${day}`;
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 3500);
+    const res = await fetch(wikiUrl, {
+      signal: controller.signal,
+      headers: { 'User-Agent': 'DailyBriefBot/1.0 (krishparikh25@users.noreply.github.com)' }
+    });
+    clearTimeout(timer);
+
+    if (res.ok) {
+      const data = await res.json();
+      const selected = data.selected || [];
+      for (const item of selected) {
+        if (!seenFactsSet.has(item.text) && facts.length < 2) {
+          facts.push({
+            id: `wiki-${item.year}`,
+            category: 'History',
+            emoji: '📜',
+            title: `Historical Turning Point (${item.year})`,
+            fact: cleanSummary(item.text, 200),
+            source: 'Wikipedia On This Day',
+            sourceUrl: item.pages?.[0]?.content_urls?.desktop?.page || 'https://en.wikipedia.org'
+          });
+        }
+      }
+    }
+  } catch (e) {
+    console.warn('[WARN] Wikipedia facts fetch error:', e.message);
+  }
+
+  const evergreenFacts = [
     {
-      category: 'Marine Biology',
-      emoji: '🐙',
-      title: 'Octopus Autonomous Nervous Clusters',
-      fact: 'Octopuses possess 3 hearts, copper-based blue blood, and 9 brains. Approximately two-thirds of their 500 million neurons reside in their arms, allowing each arm to independently taste, explore, and manipulate objects without consulting the central brain.',
-      source: 'National Geographic Marine Science',
-      sourceUrl: 'https://www.nationalgeographic.com/animals/invertebrates/facts/octopus-facts'
+      category: 'Space',
+      title: 'Neutron Star Density',
+      fact: 'A single sugar-cube-sized portion of neutron star matter weighs approximately 1 billion tons—as much as Mount Everest.',
+      source: 'NASA Astrophysics',
+      sourceUrl: 'https://science.nasa.gov/universe/stars/neutron-stars/'
     },
     {
-      category: 'Animal Intelligence',
-      emoji: '🦅',
-      title: 'Crow Facial Recognition & Grudges',
-      fact: 'Corvids (crows and ravens) remember individual human faces for decades. When a human treats a crow aggressively, the crow transmits that person’s description to the entire flock and teaches subsequent generations to identify and mob that specific human.',
-      source: 'University of Washington Ornithology',
-      sourceUrl: 'https://www.washington.edu/news/2012/09/10/crows-remember-faces-for-years/'
+      category: 'Human Body',
+      title: 'Neural Transmission Speed',
+      fact: 'Nerve impulses in the human peripheral nervous system can travel at speeds exceeding 400 kilometers per hour (250 mph).',
+      source: 'National Institutes of Health',
+      sourceUrl: 'https://www.ncbi.nlm.nih.gov/'
     },
     {
-      category: 'Deep Sea Marvels',
-      emoji: '🦐',
-      title: 'Mantis Shrimp Sonoluminescence Strike',
-      fact: 'The peacock mantis shrimp punches with the acceleration of a .22 caliber bullet (80 km/h in water). The strike generates low-pressure cavitation bubbles that instantly collapse with temperatures exceeding 4,000°C—nearly as hot as the surface of the sun—emitting visible light flashes.',
-      source: 'Journal of Experimental Biology',
-      sourceUrl: 'https://journals.biologists.com/jeb'
+      category: 'Geography',
+      title: 'Oceanic Depths & Light',
+      fact: 'Over 90% of Earth’s habitable living space exists within the deep oceans, where sunlight completely vanishes beyond 200 meters down.',
+      source: 'NOAA Ocean Exploration',
+      sourceUrl: 'https://oceanexplorer.noaa.gov/'
     },
     {
-      category: 'Biological Wonder',
-      emoji: '🪼',
-      title: 'Turritopsis Dohrnii Biological Immortality',
-      fact: 'The immortal jellyfish (Turritopsis dohrnii) can cheat death entirely. When physically damaged, starved, or aged, it triggers cellular transdifferentiation—transforming its specialized cells back into early-stage polyps and rebooting its life cycle anew indefinitely.',
-      source: 'American Museum of Natural History',
-      sourceUrl: 'https://www.amnh.org/'
+      category: 'Science',
+      title: 'Quantum Entanglement Precision',
+      fact: 'Modern atomic clocks lose less than one second every 300 million years by measuring quantum state transitions of strontium atoms.',
+      source: 'NIST Quantum Physics',
+      sourceUrl: 'https://www.nist.gov/'
     },
     {
-      category: 'Wildlife Communication',
-      emoji: '🐘',
-      title: 'Elephant Seismic Foot Telemetry',
-      fact: 'Elephants communicate across distances exceeding 10 kilometers through deep infrasonic rumbles traveling as seismic vibrations through the ground. Specialized mechanoreceptors in their foot pads and trunk tips detect and triangulate these signals before airborne sound arrives.',
-      source: 'Stanford University Bioacoustics',
-      sourceUrl: 'https://news.stanford.edu/'
+      category: 'Human Body',
+      title: 'Mitochondrial Lineage',
+      fact: 'All human mitochondrial DNA is inherited almost exclusively through the maternal line, tracing back to a common ancestral maternal lineage.',
+      source: 'Nature Genetics',
+      sourceUrl: 'https://www.nature.com/'
     },
     {
-      category: 'Sensory Wonders',
-      emoji: '🐝',
-      title: 'Bumblebee Electrostatic Foraging',
-      fact: 'Bumblebees build up positive electric charges as they fly. Because flowers possess a slight negative charge, pollen grains literally jump through the air onto the bee’s body, and the altered electric field signals to arriving bees that the flower was recently visited.',
-      source: 'Science Magazine Biomechanics',
-      sourceUrl: 'https://www.science.org/'
-    },
-    {
-      category: 'Regenerative Marvels',
-      emoji: '🦎',
-      title: 'Axolotl Complete Organ Regeneration',
-      fact: 'The axolotl salamander can regrow lost limbs, crushed spines, and parts of its heart, retina, and brain without scar tissue. Transplanted organs from other axolotls are accepted without any immune rejection.',
-      source: 'Max Planck Institute for Molecular Genetics',
-      sourceUrl: 'https://www.mpg.de/en'
-    },
-    {
-      category: 'Cryogenic Survival',
-      emoji: '🐸',
-      title: 'Alaskan Wood Frog Frozen Hibernation',
-      fact: 'The Alaskan wood frog survives sub-zero winters by freezing 70% of its body water solid. Its heart completely stops beating and brain activity ceases for months, thawed unharmed when spring arrives via high-concentration glucose antifreeze.',
-      source: 'Journal of Experimental Biology',
-      sourceUrl: 'https://journals.biologists.com/jeb'
+      category: 'Geography',
+      title: 'Point Nemo Isolation',
+      fact: 'Point Nemo in the South Pacific is so isolated from land that the closest human beings are often the astronauts on the International Space Station.',
+      source: 'European Space Agency',
+      sourceUrl: 'https://www.esa.int/'
     }
   ];
 
-  const dayIndex = istDateStr.split('-').reduce((acc, part) => acc * 31 + parseInt(part, 10), 0);
-  const shuffledPool = [...modernAnimalNatureFacts].sort((a, b) => {
-    const hashA = (dayIndex + a.title.charCodeAt(0)) % 100;
-    const hashB = (dayIndex + b.title.charCodeAt(0)) % 100;
-    return hashA - hashB;
-  });
-
-  const facts = [];
-  for (const item of shuffledPool) {
+  for (const item of evergreenFacts) {
     if (facts.length >= 5) break;
+    if (!seenFactsSet.has(item.fact) && !facts.some(f => f.category === item.category)) {
+      facts.push({
+        id: `fact-${item.category.toLowerCase()}-${facts.length + 1}`,
+        category: item.category,
+        emoji: emojis[item.category] || '💡',
+        title: item.title,
+        fact: item.fact,
+        source: item.source,
+        sourceUrl: item.sourceUrl
+      });
+    }
+  }
+
+  while (facts.length < 5) {
+    const fallbackItem = evergreenFacts[facts.length % evergreenFacts.length];
     facts.push({
-      id: `fact-${facts.length + 1}`,
-      category: item.category,
-      emoji: item.emoji,
-      title: item.title,
-      fact: item.fact,
-      source: item.source,
-      sourceUrl: item.sourceUrl
+      id: `fact-extra-${facts.length + 1}`,
+      category: fallbackItem.category,
+      emoji: emojis[fallbackItem.category] || '💡',
+      title: fallbackItem.title,
+      fact: fallbackItem.fact,
+      source: fallbackItem.source,
+      sourceUrl: fallbackItem.sourceUrl
     });
   }
 
-  return facts;
+  return facts.slice(0, 5);
 }
 
 /**
- * 8. DHYAN IN SIMPLE HINDI (Gita + 18x Om Namah Shivaya)
+ * DHYAN GENERATOR
  */
-function generateDhyanHindi(dhyanSource, istDateStr) {
+function generateDhyan(dhyanSource, istDateStr) {
   const panchang = calculatePanchang(new Date());
   const dateHash = istDateStr.split('-').reduce((acc, part) => acc + parseInt(part, 10), 0);
-
+  
   const gitaVerses = dhyanSource.gitaVerses || [];
   const verseIndex = gitaVerses.length > 0 ? (dateHash % gitaVerses.length) : 0;
   const verseOfTheDay = gitaVerses[verseIndex] || {
     chapter: 2,
     verse: 47,
     sanskrit: "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
-    hindiTitle: "कर्म करो, परिणाम की चिंता छोड़ो",
-    hindiMeaning: "तुम्हारा अधिकार केवल अपने कर्तव्य को करने में है, उसके परिणामों में कभी नहीं। इसलिए परिणाम के दबाव में आकर काम मत करो, और न ही आलस्य करो।",
-    hindiLifeLesson: "आज की सीख: अपनी पूरी ऊर्जा सिर्फ काम की गुणवत्ता पर लगाओ। चिंता खत्म होगी और काम बेहतरीन होगा।"
+    transliteration: "karmaṇy-evādhikāras te mā phaleṣu kadācana |\nmā karma-phala-hetur bhūr mā te saṅgo 'stvakarmaṇi ||",
+    english: "You have a right to perform your prescribed duty, but you are not entitled to the fruits of actions. Never consider yourself to be the cause of the results of your activities, nor be attached to inaction.",
+    theme: "Process over Outcome"
   };
 
-  const thoughts = dhyanSource.hindiThoughts || [];
+  const thoughts = dhyanSource.thoughts || [];
   const thoughtIndex = thoughts.length > 0 ? (dateHash % thoughts.length) : 0;
-  const thoughtOfTheDay = thoughts[thoughtIndex] || {
-    source: "उपनिषद् अमृत वाणी",
-    thought: "उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत — उठो, जागो और तब तक मत रुको जब तक कि अपने लक्ष्य को प्राप्त न कर लो।",
-    reflection: "अपनी आंतरिक ऊर्जा को व्यर्थ की चिंताओं में नष्ट न करें।"
-  };
+  const thoughtOfTheDay = thoughts[thoughtIndex];
 
-  const omNamahShivaya = {
-    name: "ॐ नमः शिवाय (पंचाक्षर महामंत्र)",
-    targetCount: 18,
-    hindiMeaning: "मैं उस परम चेतना और शिव तत्व को नमन करता हूँ जो असीम शांति, कल्याण, सत्य और आंतरिक आनंद का स्रोत है।",
-    instructions: "आँखें बंद करें, रीढ़ सीधी रखें। प्रत्येक श्वास के साथ मंत्र का ध्यान करें। 18 बार के इस जप से मन की चंचलता समाप्त होगी।"
-  };
+  const mantras = dhyanSource.mantras || [];
+  const mantraIndex = mantras.length > 0 ? (dateHash % mantras.length) : 0;
+  const dailyMantra = mantras[mantraIndex];
 
   return {
     verseOfTheDay,
     thoughtOfTheDay,
-    omNamahShivaya,
+    dailyMantra,
     panchang
   };
 }

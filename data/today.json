@@ -1,711 +1,951 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-18T16:08:32.383Z",
-    "lastUpdatedIST": "Wednesday, 18 Nov 2026, 09:38 pm IST",
+    "lastUpdated": "2026-11-18T16:28:32.582Z",
+    "lastUpdatedIST": "Wednesday, 18 Nov 2026, 09:58 pm IST",
     "istDateStr": "2026-11-18",
-    "next12HourUtcIso": "2026-11-18T18:30:00.000Z",
-    "title": "Worldly Affairs At Your Comfort News",
-    "tagline": "Quality-curated essential world intelligence in simple words — zero clutter, maximum clarity.",
-    "refreshCycle": "Every 12 hours (12:00 PM & 12:00 AM IST)",
-    "creator": {
-      "name": "Krish Parikh",
-      "mobile": "+919313775724",
-      "mobileFormatted": "+91 93137 75724"
-    }
+    "targetMidnightIST": "2026-11-18T18:30:00.000Z",
+    "title": "Daily Brief",
+    "tagline": "Your 10-minute morning lens on the world, sports, tech, mind, and spirit."
   },
-  "newsByLanguage": {
-    "english": [
+  "worldPulse": {
+    "regions": {
+      "india": [
+        {
+          "title": "Two sentenced for misappropriating ₹13.57 lakh government funds",
+          "summary": "The Principal District and Sessions Court in Yadgir also imposes fine on the two accused Devanagouda and Siddappa",
+          "source": "The Hindu",
+          "time": "8m ago",
+          "url": "https://www.thehindu.com/news/national/karnataka/two-sentenced-for-misappropriating-1357-lakh-government-funds/article71716576.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/chyt/article71716892.ece/alternates/LANDSCAPE_1200/YDRKN_3_7_2026_16_52_56_1_IMG_20260703_WA0100.JPG",
+          "category": "india"
+        },
+        {
+          "title": "Padmaja Venugopal poised to quit BJP; Congress return on the cards",
+          "summary": "Karunakaran’s daughter reportedly unhappy over lack of recognition and key positions; may submit resignation on November 19",
+          "source": "The Hindu",
+          "time": "8m ago",
+          "url": "https://www.thehindu.com/news/national/kerala/padmaja-venugopal-poised-to-quit-bjp-congress-return-on-the-cards/article71716278.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/xg9ink/article71716864.ece/alternates/LANDSCAPE_1200/IMG_Padmaja_Venugopal_jo_2_1_M6CGOEJS.jpg",
+          "category": "india"
+        },
+        {
+          "title": "Keralam CM admits to differences of opinion in the Cabinet, terms them part of arriving at consensus",
+          "summary": "V.D. Satheesan says no unilateral decisions are ever taken in the UDF Cabinet. Reorganisation of PSC with five new members approved by the Cabinet",
+          "source": "The Hindu",
+          "time": "9m ago",
+          "url": "https://www.thehindu.com/news/national/kerala/keralam-cm-admits-to-differences-of-opinion-in-the-cabinet-terms-them-part-of-arriving-at-consensus/article71716467.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/bzn4oo/article71716879.ece/alternates/LANDSCAPE_1200/Six-months-of-KGSEGQFPSE.3.jpg.jpg",
+          "category": "india"
+        }
+      ],
+      "usa": [
+        {
+          "title": "Democrats nominate Hakeem Jeffries to be US Speaker of the House",
+          "summary": "The nomination sets him on the path to become the first black lawmaker to lead the chamber when Democrats take control of the House in January.",
+          "source": "BBC News US",
+          "time": "23m ago",
+          "url": "https://www.bbc.co.uk/news/articles/cmy49873dn95o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/128f/live/04ac0df0-e366-11f1-9f51-4bfc31543510.jpg",
+          "category": "usa"
+        },
+        {
+          "title": "Rubio says US not 'under systemic attack' after series of tech outages",
+          "summary": "Secretary of State Marco Rubio said there was \"zero evidence\" supporting theories online that recent disruptions affecting Microsoft, banks and flights are connected.",
+          "source": "BBC News US",
+          "time": "11h ago",
+          "url": "https://www.bbc.co.uk/news/articles/crkgvxxwpwz2o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c7e9/live/0b2ef0e0-e35f-11f1-99a1-253766e7ad8b.jpg",
+          "category": "usa"
+        },
+        {
+          "title": "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal",
+          "summary": "China worries the scandal could ramp up pressure on the US to further restrict the sale of advanced chips.",
+          "source": "BBC News US",
+          "time": "17h ago",
+          "url": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ec0d/live/1061d030-dea2-11f1-b441-2b33b063138f.jpg",
+          "category": "usa"
+        }
+      ],
+      "uk": [
+        {
+          "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
+          "summary": "Energy bills are expected to jump by 26% a year for a typical household as UK inflation hits its highest rate for a year.",
+          "source": "BBC News UK",
+          "time": "3h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a59/live/128bd8c0-e35b-11f1-99b6-a35a62fa4264.jpg",
+          "category": "uk"
+        },
+        {
+          "title": "Burnham promises to 'move quickly' on Neets report",
+          "summary": "The prime minister tells the BBC he wants to get \"stuck in\" after the Milburn report proposes wide-ranging changes to help unemployed young people.",
+          "source": "BBC News UK",
+          "time": "3h ago",
+          "url": "https://www.bbc.co.uk/news/articles/c8n50457edd4o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c6d5/live/68b519f0-e31a-11f1-a094-5fdc692f3e33.jpg",
+          "category": "uk"
+        },
+        {
+          "title": "Home secretary plans to tackle 'corrosive' perception of two-tier policing",
+          "summary": "Shabana Mahmood announces stronger guidance on police impartiality in a speech to police chiefs.",
+          "source": "BBC News UK",
+          "time": "3h ago",
+          "url": "https://www.bbc.co.uk/news/articles/c3vg24wpg040o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4035/live/d90bfb90-e2c2-11f1-a9da-01a195e70ea0.jpg",
+          "category": "uk"
+        }
+      ],
+      "europe": [
+        {
+          "title": "Hashim Thaci's second conviction in The Hague reignites debate in Kosovo about justice and the Kosovo Specialist Chambers",
+          "summary": "Former President Hashim Thaci has been convicted of trying to influence witnesses in his war crimes trial.  The conviction has reignited debate in Kosovo about the Kosovo Specialist Chambers, the court that convicted him.",
+          "source": "DW Europe",
+          "time": "19h ago",
+          "url": "https://www.dw.com/en/hashim-thaci-s-second-conviction-in-the-hague-reignites-debate-in-kosovo-about-justice-and-the-kosovo-specialist-chambers/a-79975227?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": null,
+          "category": "europe"
+        },
+        {
+          "title": "Back to 1997: Russia wants NATO to roll back its eastern expansion",
+          "summary": "The Kremlin is reportedly calling on NATO to withdraw from large parts of Eastern Europe. What this would mean for the security of millions of Europeans — and what lies behind Russia's plan.",
+          "source": "DW Europe",
+          "time": "1d ago",
+          "url": "https://www.dw.com/en/back-to-1997-russia-wants-nato-to-roll-back-its-eastern-expansion/a-79970289?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/77599997_6.jpg",
+          "category": "europe"
+        },
+        {
+          "title": "Rights court rules Turkey must release jailed lawmaker Atalay",
+          "summary": "The European Court of Human Rights has called for the release of imprisoned elected lawmaker Can Atalay.  Atalay has been in prison for almost five years despite rulings from the Turkish Constitutional Court.",
+          "source": "DW Europe",
+          "time": "1d ago",
+          "url": "https://www.dw.com/en/rights-court-rules-turkey-must-release-jailed-lawmaker-atalay/a-79972462?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/65838479_6.jpg",
+          "category": "europe"
+        }
+      ],
+      "middleEast": [
+        {
+          "title": "Five EU nations to deport migrants to Rwanda",
+          "summary": "Five European countries are looking to Rwanda to host rejected asylum seekers.",
+          "source": "Al Jazeera",
+          "time": "22m ago",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/five-eu-nations-to-deport-migrants-to-rwanda?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795017927.jpg?resize=1920%2C1080&quality=80",
+          "category": "middleEast"
+        },
+        {
+          "title": "Largest US egg producer to cull 1.8 million birds after bird flu outbreak",
+          "summary": "Cal-Maine reports avian influenza at Florida site, with 2.7 percent of its total flock affected.",
+          "source": "Al Jazeera",
+          "time": "30m ago",
+          "url": "https://www.aljazeera.com/economy/2026/11/18/largest-us-egg-producer-to-cull-1-8-million-birds-after-bird-flu-outbreak?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-08-26T202217Z_1189427204_RC2I6NATVLUV_RTRMADP_3_USA-ECONOMY-1795013978.jpg?resize=1920%2C1440",
+          "category": "middleEast"
+        },
+        {
+          "title": "Pax Silica is the new face of US imperialism in the Philippines",
+          "summary": "Behind promises of jobs and investment lie threats to ancestral lands, water security and national sovereignty.",
+          "source": "Al Jazeera",
+          "time": "31m ago",
+          "url": "https://www.aljazeera.com/opinions/2026/11/18/pax-silica-is-the-new-face-of-us-imperialism-in-the-philippines?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afdcababad2-1795017402.jpg?resize=1920%2C1440",
+          "category": "middleEast"
+        }
+      ],
+      "russiaUkraine": [
+        {
+          "title": "Back to 1997: Russia wants NATO to roll back its eastern expansion",
+          "summary": "The Kremlin is reportedly calling on NATO to withdraw from large parts of Eastern Europe. What this would mean for the security of millions of Europeans — and what lies behind Russia's plan.",
+          "source": "DW Europe",
+          "time": "1d ago",
+          "url": "https://www.dw.com/en/back-to-1997-russia-wants-nato-to-roll-back-its-eastern-expansion/a-79970289?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/77599997_6.jpg",
+          "category": "Russia-Ukraine"
+        }
+      ],
+      "chinaAsiaPacific": [
+        {
+          "title": "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal",
+          "summary": "China worries the scandal could ramp up pressure on the US to further restrict the sale of advanced chips.",
+          "source": "BBC News Asia",
+          "time": "17h ago",
+          "url": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ec0d/live/1061d030-dea2-11f1-b441-2b33b063138f.jpg",
+          "category": "asia"
+        },
+        {
+          "title": "How new US chip restrictions on South East Asia will hit China",
+          "summary": "The new rules restrict chip exports and also access to their computing power, which China relies on heavily.",
+          "source": "BBC News Asia",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bfea/live/8fbafe20-e225-11f1-ae7e-97d0d3a43181.jpg",
+          "category": "asia"
+        },
+        {
+          "title": "Will President Trump meet Kim Jong Un?",
+          "summary": "President Trump says he would be keen to meet the North Korea leader in China.",
+          "source": "BBC News Asia",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/videos/c6grew79p7qdo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4583/live/99273800-e263-11f1-a094-5fdc692f3e33.jpg",
+          "category": "asia"
+        }
+      ],
+      "africa": [
+        {
+          "title": "Ghana's new $60m presidential jet sparks public outrage",
+          "summary": "The purchase has sparked outrage over its cost as many Ghanaians struggle with rising cost of living.",
+          "source": "BBC News Africa",
+          "time": "7h ago",
+          "url": "https://www.bbc.co.uk/news/articles/ck792dez8dp3o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/377e/live/9eb7bde0-e31b-11f1-81d5-99b8785f3e51.jpg",
+          "category": "africa"
+        },
+        {
+          "title": "Can a US-backed mineral highway bring peace and prosperity to DR Congo?",
+          "summary": "The Lobito Corridor is at the centre of a US-backed effort to secure access to Africa's critical minerals.",
+          "source": "BBC News Africa",
+          "time": "11h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cx053jrv9rz9o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7de4/live/f39e1920-e1b9-11f1-a094-5fdc692f3e33.jpg",
+          "category": "africa"
+        },
+        {
+          "title": "Nigeria approves law allowing states to run their own police",
+          "summary": "The push for state police comes amid persistent security crises across the country.",
+          "source": "BBC News Africa",
+          "time": "8h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cr20vpq58093o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/36f7/live/b66d0950-e31a-11f1-81d5-99b8785f3e51.jpg",
+          "category": "africa"
+        }
+      ],
+      "latinAmerica": [
+        {
+          "title": "Venezuelan ex-world boxing champion Linares in ICE detention",
+          "summary": "Former three-weight world champion Jorge Linares remains in the custody of US immigration authorities in Texas and is facing deportation.",
+          "source": "BBC Latin America",
+          "time": "8h ago",
+          "url": "https://www.bbc.co.uk/sport/boxing/articles/cknv4q197dymo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9c8d/live/ae4ea630-e31e-11f1-baab-4b3b35d174b7.jpg",
+          "category": "latinAmerica"
+        },
+        {
+          "title": "Gunmen kill Costa Rican journalist who reported on drugs trade",
+          "summary": "Rodríguez had denounced alleged links between criminal organisations and powerful figures in Costa Rica.",
+          "source": "BBC Latin America",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/c6ly7g5lx7gyo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1bb5/live/140763d0-e26c-11f1-b19c-7b42f37bea48.jpg",
+          "category": "latinAmerica"
+        },
+        {
+          "title": "Ashes of exiled Nobel Laureate Miguel Ángel Asturias returned to Guatemala",
+          "summary": "The poet, writer and diplomat died in Europe in 1974 having been forced to leave his native country.",
+          "source": "BBC Latin America",
+          "time": "2d ago",
+          "url": "https://www.bbc.co.uk/news/articles/cvde1klewg88o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/da54/live/f1263820-e1b5-11f1-9a3f-99aca912798e.jpg",
+          "category": "latinAmerica"
+        }
+      ]
+    },
+    "ongoingTracker": [
       {
-        "id": "item-kuwdkz4m5",
-        "title": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
-        "summary": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
-        "source": "BBC World News",
-        "time": "3h ago",
-        "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a9fb/live/b2707bf0-e349-11f1-99aa-0f40b013ad11.jpg",
-        "category": "Global Affairs"
+        "topic": "Russia - Ukraine War & European Defense",
+        "status": "Active Artillery & Drone Engagements",
+        "whatChanged": "European allies announce accelerated air-defense ammunition shipments amid cold-weather logistics shifts.",
+        "lastUpdated": "Today"
       },
       {
-        "id": "item-lf5zl4ubn",
-        "title": "William and Kate meet Indian Prime Minister Modi in New Delhi",
-        "summary": "The meeting in New Delhi was a late addition to the royal couple's India visit, which has also included their appearance at the annual Earthshot Prize",
-        "source": "BBC World News",
-        "time": "1h ago",
-        "url": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/efe9/live/814a0670-e35a-11f1-a8cd-2ff5ed84046e.jpg",
-        "category": "Global Affairs"
+        "topic": "Middle East Diplomatic Talks & Regional Security",
+        "status": "High-level Mediations",
+        "whatChanged": "Regional envoys continue ceasefire and humanitarian corridor framework discussions in Cairo and Doha.",
+        "lastUpdated": "Today"
       },
       {
-        "id": "item-i2r1j4jjo",
-        "title": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
-        "summary": "Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday.",
-        "source": "BBC World News",
-        "time": "3h ago",
-        "url": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/492e/live/f37939a0-e346-11f1-99aa-0f40b013ad11.jpg",
-        "category": "Global Affairs"
+        "topic": "Global AI Regulatory Frameworks & Chip Exports",
+        "status": "Policy Enactment",
+        "whatChanged": "US and EU tech regulators finalize joint guidelines for advanced semiconductor safety evaluations.",
+        "lastUpdated": "Today"
       },
       {
-        "id": "item-lk9mskh2a",
-        "title": "Ghana's new $60m presidential jet sparks public outrage",
-        "summary": "The purchase has sparked outrage over its cost as many Ghanaians struggle with rising cost of living.",
-        "source": "BBC World News",
-        "time": "6h ago",
-        "url": "https://www.bbc.co.uk/news/articles/ck792dez8dp3o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/377e/live/9eb7bde0-e31b-11f1-81d5-99b8785f3e51.jpg",
-        "category": "Global Affairs"
-      },
-      {
-        "id": "item-u6i74yora",
-        "title": "Majority of the posts removed from social media had communal content: Ramesh Chennithala",
-        "summary": "He said that no posts or graphics targeting political figures have been removed",
-        "source": "The Hindu",
-        "time": "2m ago",
-        "url": "https://www.thehindu.com/news/national/kerala/majority-of-the-posts-removed-from-social-media-had-communal-content-ramesh-chennithala/article71716874.ece",
-        "imageUrl": "https://th-i.thgim.com/public/incoming/x3js3j/article71717084.ece/alternates/LANDSCAPE_1200/Keralam-CM-SathG89GPSGBI.4.jpg.jpg",
-        "category": "India & South Asia"
-      },
-      {
-        "id": "item-zr4jrnkob",
-        "title": "PM Modi calls for sustained government drive against drug trade, stresses financial prudence",
-        "summary": "At a review meeting with his Council of Ministers, the Prime Minister also assessed progress in poverty reduction and the elimination of left-wing extremism",
-        "source": "The Hindu",
-        "time": "3m ago",
-        "url": "https://www.thehindu.com/news/national/pm-modi-calls-for-sustained-government-drive-against-drug-trade-stresses-financial-prudence/article71716138.ece",
-        "imageUrl": "https://th-i.thgim.com/public/incoming/te9dxu/article71717134.ece/alternates/LANDSCAPE_1200/PTI11_18_2026_000260B.jpg",
-        "category": "India & South Asia"
-      },
-      {
-        "id": "item-x42g8do4e",
-        "title": "Cabinet to consider withdrawal of cases against farmers, Kannada activists",
-        "summary": "Cabinet to consider withdrawal of cases against farmers, Kannada activists",
-        "source": "The Hindu",
-        "time": "Just now",
-        "url": "https://www.thehindu.com/news/national/karnataka/karnataka-cm-responds-positively-to-request-for-withdrawal-of-cases-against-farmers-and-kannada-activists/article71717090.ece",
-        "imageUrl": "https://th-i.thgim.com/public/incoming/hsusmo/article71717135.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-18%20at%2014.39.25.JPEG",
-        "category": "India & South Asia"
-      },
-      {
-        "id": "item-q7d97y93r",
-        "title": "Captain dies after Army vehicle plunges into Itam River in Imphal East",
-        "summary": "Three soldiers were injured when a military vehicle carrying troops of the 8th Bihar Regiment fell into the river",
-        "source": "The Hindu",
-        "time": "4m ago",
-        "url": "https://www.thehindu.com/news/national/manipur/captain-dies-after-army-vehicle-plunges-into-itam-river-in-imphal-east/article71715979.ece",
-        "imageUrl": "https://www.thehindu.com/theme/images/og-image.png",
-        "category": "India & South Asia"
+        "topic": "Global Clean Energy & Grid Transition Summit",
+        "status": "Negotiations Ongoing",
+        "whatChanged": "Developing economies secure new multilateral financing commitments for grid modernization and energy storage.",
+        "lastUpdated": "Today"
       }
     ],
-    "hindi": [
-      {
-        "id": "hi-ewytxye1l",
-        "title": "जिनपिंग और ट्रंप के साथ ऐतिहासिक बातचीत पुतिन के लिए क्यों एक बड़ी जीत",
-        "summary": "गुरुवार को अमेरिका, चीन और रूस के नेताओं की मुलाक़ात से व्लादिमीर पुतिन को दुनिया के सामने अपनी ताक़त दिखाने का बड़ा मंच मिलेगा.  लेकिन क्या इससे यूक्रेन के ख़िलाफ़ युद्ध जीतने की उनकी संभावनाओं पर असर पड़ेगा?",
-        "source": "BBC News हिंदी",
-        "time": "21m ago",
-        "url": "https://www.bbc.com/hindi/articles/cr1ewz3v833wo?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/4032/live/de8abe40-e366-11f1-9f51-4bfc31543510.jpg",
-        "category": "प्रमुख समाचार"
-      },
-      {
-        "id": "hi-zuywpyt03",
-        "title": "विदेशी नागरिकों पर जुर्माना लगाएगा ईरान, संसद में इस प्रस्ताव को मिली मंज़ूरी",
-        "summary": "ईरानी संसद ने देश के सुरक्षा हितों का उल्लंघन करने वाले विदेशी नागरिकों पर 5,000 से 10,000 यूरो तक जुर्माना लगाने के प्रस्ताव को मंज़ूरी दी.",
-        "source": "BBC News हिंदी",
-        "time": "Recent",
-        "url": "https://www.bbc.co.uk/hindi/live/c3ly7ee8l8xpt?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7d73/live/95a49ae0-e369-11f1-9f51-4bfc31543510.jpg",
-        "category": "प्रमुख समाचार"
-      },
-      {
-        "id": "hi-yclg1jv4u",
-        "title": "फ़लस्तीनी फ़ुटबॉलर ने भारतीय कप्तान के साथ ऐसा क्या किया कि लगा नस्लभेद का आरोप",
-        "summary": "भारत ने यह मुक़ाबला 4-1 से जीता, लेकिन मैच में रेड कार्ड और नस्लभेदी इशारे के आरोप ने विवाद खड़ा कर दिया. भारतीय फ़ुटबॉल महासंघ ने इसे लेकर शिकायत दर्ज कराई है.",
-        "source": "BBC News हिंदी",
-        "time": "2h ago",
-        "url": "https://www.bbc.com/hindi/articles/cmlyde1dwlp9o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/6c5c/live/8e1c3c60-e350-11f1-99aa-0f40b013ad11.jpg",
-        "category": "प्रमुख समाचार"
-      },
-      {
-        "id": "hi-9itw6jse9",
-        "title": "नर्मदा के किनारे बच्चों को क्या मिला जिसका इतिहास हो सकता है लाखों साल पुराना?",
-        "summary": "वैज्ञानिकों का मानना है कि पतई घाट पर मिला यह फॉसिल अकेली खोज नहीं हो सकता. इसके आसपास का पूरा इलाका प्राचीन जीवों के अध्ययन के लिहाज से महत्वपूर्ण है.",
-        "source": "BBC News हिंदी",
-        "time": "1h ago",
-        "url": "https://www.bbc.com/hindi/articles/c6reg8379y0zo?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/30a8/live/bb6aefc0-e35c-11f1-a094-5fdc692f3e33.jpg",
-        "category": "प्रमुख समाचार"
-      },
-      {
-        "id": "hi-csth6dhss",
-        "title": "कुलगाम मुठभेड़ में मारा गया लतीफ़ बट, जो कभी था कारपेंटर फिर बना कश्मीर का 'मोस्ट वॉन्टेड'",
-        "summary": "21 साल का लतीफ़ बट चरमपंथी बनने से पहले कारपेंटर और कांच लगाने का काम करता था. कुलगाम में मुठभेड़ में मारे गए इस चरमपंथी की कहानी क्या है?",
-        "source": "BBC News हिंदी",
-        "time": "3h ago",
-        "url": "https://www.bbc.com/hindi/articles/cknv4q7l810qo?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/226/cpsprodpb/9a6f/live/1fe17b10-e347-11f1-99aa-0f40b013ad11.jpg",
-        "category": "प्रमुख समाचार"
-      },
-      {
-        "id": "hi-4ckg2bxlc",
-        "title": "धोनी के आईपीएल से रिटायरमेंट पर क्या बोले पाकिस्तानी और दूसरे विदेशी क्रिकेटर",
-        "summary": "बतौर क्रिकेटर आईपीएल से संन्यास लेने के बाद अब एम एस धोनी प्रतियोगी क्रिकेट के सभी फ़ॉर्मेट से पूरी तरह रिटायर हो गए हैं.  उनके क्रिकेटिंग सफ़र पर पाकिस्तान समेत दुनिया भर के क्रिकेटरों की प्रतिक्रिया आ रही है.",
-        "source": "BBC News हिंदी",
-        "time": "5h ago",
-        "url": "https://www.bbc.com/hindi/articles/crwy8p6z5zp5o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/3626/live/f902f3b0-e338-11f1-9479-d17d3e98c29d.jpg",
-        "category": "प्रमुख समाचार"
-      },
-      {
-        "id": "hi-ib6xbdzyn",
-        "title": "जिस बेटे को मरा समझा, 42 साल बाद उसी का आया ईमेल",
-        "summary": "यह ईमेल एक ऐसे शख्स ने भेजा था, जिसने अपने जन्म का साल और उस अस्पताल का नाम बताया था, जहां उसका जन्म हुआ था. इसके बाद उसने कुछ ऐसा लिखा, जिसने डायने की ज़िंदगी बदल दी.",
-        "source": "BBC News हिंदी",
-        "time": "6h ago",
-        "url": "https://www.bbc.com/hindi/articles/cm1dv3dv5l12o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/a8aa/live/0157d700-dd1d-11f1-b441-2b33b063138f.jpg",
-        "category": "प्रमुख समाचार"
-      },
-      {
-        "id": "hi-sxeuixdrz",
-        "title": "बेटी की शादी में चार लाख मेहमानों के आने का दावा करने वाले अनंत सिंह के पास कितनी संपत्ति है?",
-        "summary": "बिहार के मोकामा से विधायक अनंत सिंह का दावा है कि उनकी बेटी की शादी में चार लाख मेहमान आएंगे.  शादी में घुड़दौड़ प्रतियोगिता भी होगी, जिसके विजेता को थार गाड़ी दी जाएगी.",
-        "source": "BBC News हिंदी",
-        "time": "11h ago",
-        "url": "https://www.bbc.com/hindi/articles/c6q8lq8wgjewo?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/a06a/live/760598e0-e316-11f1-99a1-253766e7ad8b.jpg",
-        "category": "प्रमुख समाचार"
-      }
-    ],
-    "gujarati": [
-      {
-        "id": "gu-nej2181a6",
-        "title": "ગુજરાતના દુષ્કાળ વખતે ગાંધીજીના પૌત્ર ગોપાલકૃષ્ણ ગાંધીએ જ્યારે વેશ બદલીને ગામડાં ખૂંદ્યાં અને રાહતકામ કર્યું",
-        "summary": "ગાંધીજીના પૌત્ર ગોપાલકૃષ્ણ ગાંધીએ 2000ની સાલમાં ગુજરાતમાં પડેલા દુકાળ સમયે બનાસકાંઠાની મુલાકાત લીધી હતી.  તેઓ બનાસકાંઠાના કુંડાળિયા ગામે ચાર દિવસ રોકાયા હતા.",
-        "source": "BBC News ગુજરાતી",
-        "time": "1h ago",
-        "url": "https://www.bbc.com/gujarati/articles/ckjrwxlxe403o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/7d98/live/9e59a770-e35f-11f1-a898-e7da1c1ebbf0.jpg",
-        "category": "મુખ્ય સમાચાર"
-      },
-      {
-        "id": "gu-z0vwian6j",
-        "title": "પાટીદાર આંદોલન બાદ એવું શું થયું કે આનંદીબહેન પટેલે સીએમપદેથી રાજીનામું આપવું પડ્યું?",
-        "summary": "પાટીદાર અનામત આંદોલન સમિતિના નેતા દિનેશ બાંભણિયાના માફીના નિવેદન બાદ,ગુજરાતના રાજકારણનું 10 વર્ષ જૂનું પ્રકરણ ફરી તાજું થયું છે.  દિનેશ બાંભણિયાની માફી વચ્ચે જાણો આનંદીબહેન પટેલે સીએમપદેથી કેમ રાજીનામું આપ્યું હતું?",
-        "source": "BBC News ગુજરાતી",
-        "time": "4h ago",
-        "url": "https://www.bbc.com/gujarati/articles/c6rrg07r057ro?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/3a3f/live/62b9cba0-e323-11f1-99b6-a35a62fa4264.jpg",
-        "category": "મુખ્ય સમાચાર"
-      },
-      {
-        "id": "gu-3a60l1ntn",
-        "title": "શી જિનપિંગની હાજરીમાં પુતિન અને ટ્રમ્પની ઉષ્માભરી મુલાકાત, આવતીકાલે યોજાશે ત્રિપક્ષીય બેઠક – ન્યૂઝ અપડેટ",
-        "summary": "ગુજરાત સહિત દેશ અને દુનિયાના મહત્ત્વપૂર્ણ સમાચારો જાણવા માટે જોડાયેલા રહો બીબીસી ગુજરાતીના આ પેજ સાથે.",
-        "source": "BBC News ગુજરાતી",
-        "time": "3h ago",
-        "url": "https://www.bbc.com/gujarati/articles/cw1md5nnvpeno?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/c722/live/eaa31080-e350-11f1-99b6-a35a62fa4264.jpg",
-        "category": "મુખ્ય સમાચાર"
-      },
-      {
-        "id": "gu-ocyqjca0e",
-        "title": "રાજકોટ : 'ફોઈના ભાઈ સાથે અનૈતિક સંબધોની શંકા રાખી હત્યા કરનાર' આરોપી સગી બહેનો કેવી રીતે પકડાઈ?",
-        "summary": "થોડા દિવસ પહેલાં 40 વર્ષીય ફોઈ હકુબહેનની હત્યા કરી રાજકોટના જેતપુરના નવગઢ રોડ પર ફેંકી દેવાના આરોપમાં બે સગી બહેનો સહિત કુલ ચારની પોલીસે ધરપકડ કરી છે. શું થયું હતું?",
-        "source": "BBC News ગુજરાતી",
-        "time": "4h ago",
-        "url": "https://www.bbc.com/gujarati/articles/cq98x378nl67o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/b013/live/201d01a0-e340-11f1-a094-5fdc692f3e33.png",
-        "category": "મુખ્ય સમાચાર"
-      },
-      {
-        "id": "gu-9a2xbz2s4",
-        "title": "ત્રણ અઠવાડિયાંમાં ત્રણ ભયંકર વાવાઝોડાં : બંગાળની ખાડીમાં આટલાં બધાં વાવાઝોડાં કેમ આવી રહ્યાં છે?",
-        "summary": "ભારત હવામાન વિભાગ (IMD) દ્વારા 18 નવેમ્બરના રોજ સવારે 5:30 વાગ્યે જાહેર કરાયેલા અહેવાલ અનુસાર, દક્ષિણ-મધ્ય બંગાળની ખાડી અને તેની આસપાસના પશ્ચિમ-મધ્ય બંગાળની ખાડી વિસ્તારમાં સ્થિત વાવાઝોડું 'અક્વાન' છેલ્લા 6 કલાકમાં પ્રતિ કલાક 3 કિમીની ગતિએ ઉત્તર-ઉત્તરપશ્ચિમ દિશામાં ખૂબ ધીમે આગળ વધ્યું છે અને વધુ તીવ્ર બનીને અત્યંત ગંભીર ચક્રવાતી તોફાનમાં પરિવર્તિત થયું છે.",
-        "source": "BBC News ગુજરાતી",
-        "time": "3h ago",
-        "url": "https://www.bbc.com/gujarati/articles/c699ey4kpkn4o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/d01a/live/a810bbb0-e34a-11f1-99b6-a35a62fa4264.jpg",
-        "category": "મુખ્ય સમાચાર"
-      },
-      {
-        "id": "gu-g7bhz9iqy",
-        "title": "વંદે ભારત સ્લીપર ટ્રેનની ખાસિયતો : સામાન્ય ટ્રેનો કરતાં કેટલી અલગ છે આ નવી ટ્રેન? જુઓ અંદરની તસવીરો",
-        "summary": "વંદે ભારત સ્લીપર ટ્રેનમાં શું છે ખાસ? તેમાં સુવિધાઓ કેવી છે અને આ ટ્રેન અંદરથી કેવી દેખાય છે?",
-        "source": "BBC News ગુજરાતી",
-        "time": "4h ago",
-        "url": "https://www.bbc.com/gujarati/articles/cvj6l5x580ypo?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/dd57/live/a6c9dd70-e342-11f1-99a1-253766e7ad8b.jpg",
-        "category": "મુખ્ય સમાચાર"
-      },
-      {
-        "id": "gu-l5hvfgv40",
-        "title": "પાકિસ્તાનના સિંધમાં મોટા પ્રમાણમાં પુરુષોની નસબંધી કેમ થઈ રહી છે?",
-        "summary": "પાકિસ્તાનમાં પરિવાર નિયોજનની પદ્ધતિ તરીકે પુરુષ નસબંધી અંગે હજુ પણ પ્રમાણમાં ઓછી ચર્ચા થાય છે, પરંતુ સિંધ પ્રાંતમાં તેની લોકપ્રિયતા ધીમે ધીમે વધી રહી છે, શું છે કારણ?",
-        "source": "BBC News ગુજરાતી",
-        "time": "4h ago",
-        "url": "https://www.bbc.com/gujarati/articles/cwp9dndvz3pko?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/5622/live/ba5d80c0-e343-11f1-99a1-253766e7ad8b.jpg",
-        "category": "મુખ્ય સમાચાર"
-      },
-      {
-        "id": "gu-sf495ok4p",
-        "title": "ગુજરાતે નર્મદાનું વધારે પાણી મેળવવા માટે બીજાં રાજ્યોને પૈસા ચૂકવવા પડશે? શું છે મામલો",
-        "summary": "નર્મદા ડૅમના ખર્ચનો 30 વર્ષ જૂનો વિવાદ શું છે, ગુજરાતે નર્મદાના પાણી માટે શા માટે નાણાં ચૂકવવા પડશે, તેના બદલામાં અસરગ્રસ્ત રાજ્યોને શું મળશે, આ બધું કેવી રીતે નક્કી થશે, તેના વિશે જાણો.",
-        "source": "BBC News ગુજરાતી",
-        "time": "11h ago",
-        "url": "https://www.bbc.com/gujarati/articles/cvze7n92y71xo?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1f61/live/21f69c20-e25a-11f1-99a1-253766e7ad8b.jpg",
-        "category": "મુખ્ય સમાચાર"
-      }
-    ]
+    "isStale": false
   },
-  "unNews": [
-    {
-      "id": "item-1es1sm5qb",
-      "title": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
-      "summary": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
-      "source": "UN & World Affairs",
-      "time": "3h ago",
-      "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a9fb/live/b2707bf0-e349-11f1-99aa-0f40b013ad11.jpg",
-      "category": "United Nations"
-    },
-    {
-      "id": "item-q2ftwasol",
-      "title": "Inside the Chinese 'AI wonderland' where Xi will host Trump",
-      "summary": "The meeting will take place as Trump attends the Asia-Pacific Economic Co-operation (Apec) summit in the southern city of Shenzhen.",
-      "source": "UN & World Affairs",
-      "time": "1d ago",
-      "url": "https://www.bbc.co.uk/news/videos/ckjwjl6ywgn9o?at_medium=RSS&at_campaign=rss",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2905/live/37886bc0-e1df-11f1-99a1-253766e7ad8b.jpg",
-      "category": "United Nations"
-    },
-    {
-      "id": "item-g9aiospyv",
-      "title": "Street cricket with a legend then metro ride as William and Kate begin India visit",
-      "summary": "The Prince and Princess of Wales are visiting Mumbai for the Earthshot Prize this week, but started their trip with some fun outings.",
-      "source": "UN & World Affairs",
-      "time": "2d ago",
-      "url": "https://www.bbc.co.uk/news/videos/crkgvnl51w1vo?at_medium=RSS&at_campaign=rss",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/890e/live/2da1ec70-e1db-11f1-a094-5fdc692f3e33.jpg",
-      "category": "United Nations"
-    }
-  ],
-  "goodNews": [
-    {
-      "id": "item-j8gqi3fyw",
-      "title": "This Blue Whale Population Grew 1,000% Since the End of Antarctic Whaling",
-      "summary": "Antarctic blue whales have increased in number 1,000% since 1973 when the harpoons were finally hung up for good.  Growing from just 418 whales to 4,018, the superb recovery has averaged 4.",
-      "source": "Good News Network",
-      "time": "2h ago",
-      "url": "https://www.goodnewsnetwork.org/this-blue-whale-population-grew-1000-since-the-end-of-whaling/",
-      "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2023/06/blue-whale-NOAA-pubdomain.jpg",
-      "category": "World Progress"
-    },
-    {
-      "id": "item-qmzqtq8ww",
-      "title": "Scientists ‘Cure’ Deadly Brain Tumors in Every Mouse Tested with New Cancer Therapy",
-      "summary": "In experiments involving mice, scientists successfully eliminated an aggressive childhood brain cancer while also providing lasting protection.",
-      "source": "Good News Network",
-      "time": "3h ago",
-      "url": "https://www.goodnewsnetwork.org/scientists-cure-deadly-brain-tumors-in-every-mouse-tested-with-new-cancer-therapy/",
-      "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Laboratory-mouse-credit-NIH-pub-domain-e1794992945692.jpg",
-      "category": "World Progress"
-    },
-    {
-      "id": "item-ms4cickw5",
-      "title": "Good News in History, November 18",
-      "summary": "75 years ago today, the pioneering newsmagazine series, See It Now, was first broadcast.  Running for seven years on CBS, it was created by iconic newsman Edward R.",
-      "source": "Good News Network",
-      "time": "8h ago",
-      "url": "https://www.goodnewsnetwork.org/events061118/",
-      "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/11/Edward-R-Murrow-and-Fred-Friendly.jpg",
-      "category": "World Progress"
-    },
-    {
-      "id": "item-rufhunxo7",
-      "title": "West Coast’s First Ever Sea Turtle Hatchlings Released into the Pacific (LOOK)",
-      "summary": "Olive ridley sea turtle hatchlings saved from an approaching storm in California were released into the wild over the weekend.",
-      "source": "Good News Network",
-      "time": "20h ago",
-      "url": "https://www.goodnewsnetwork.org/west-coasts-first-ever-sea-turtle-hatchlings-released-into-the-pacific-look/",
-      "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Turtle-hatchlings-rush-for-the-sea-on-Seal-Beach-credit-Robin-Riggs-Aquarium-of-the-Pacific-©.jpg",
-      "category": "World Progress"
-    }
-  ],
   "sports": {
-    "athletics": [
-      {
-        "id": "item-1pzwn5oj1",
-        "title": "Final push to save Willesden’s indoor track",
-        "summary": "Plans to turn their winter training home into a gym are on hold, but hundreds of young athletes have until […]",
-        "source": "Athletics Weekly",
-        "time": "27m ago",
-        "url": "https://athleticsweekly.com/news/final-push-to-save-willesdens-indoor-track-1040014146/",
-        "imageUrl": null,
-        "category": "Athletics & Running"
-      },
-      {
-        "id": "item-uqx9b1uqj",
-        "title": "Wakefield and Davies on top at Brampton to Carlisle",
-        "summary": "Harry Wakefield, usually at his best in relays, ran his fastest 10 miles by some three minutes to beat two […]",
-        "source": "Athletics Weekly",
-        "time": "1d ago",
-        "url": "https://athleticsweekly.com/news/wakefield-and-davies-on-top-at-brampton-to-carlisle-1040014141/",
-        "imageUrl": null,
-        "category": "Athletics & Running"
-      },
-      {
-        "id": "item-s1chpzvv5",
-        "title": "Student power on show in cross-country league action",
-        "summary": "Holly Weedall led Birmingham University to team victory at the Midland Women's League, while Oxford University runners filled the first […]",
-        "source": "Athletics Weekly",
-        "time": "1d ago",
-        "url": "https://athleticsweekly.com/news/student-power-on-show-in-cross-country-league-action-1040014137/",
-        "imageUrl": null,
-        "category": "Athletics & Running"
-      },
-      {
-        "id": "item-u5inowub3",
-        "title": "Destination Doha: Racing on the fast Doha Corniche",
-        "summary": "Olympic champion Tamirat Tola returned to winning ways on the waterfront in January 2026. Now the Doha Marathon by Ooredoo […]",
-        "source": "Athletics Weekly",
-        "time": "2d ago",
-        "url": "https://athleticsweekly.com/aw-promotion/destination-doha-racing-on-the-fast-doha-corniche-1040014124/",
-        "imageUrl": null,
-        "category": "Athletics & Running"
-      }
-    ],
-    "cricket": [
-      {
-        "id": "item-l63rp1yzh",
-        "title": "Bad light stops play early with Bangladesh under the pump",
-        "summary": "Bangladesh still trail by 57 runs with only five wickets in hand, as South Africa look to wrap up the win on the final day",
-        "source": "ESPNcricinfo",
-        "time": "8m ago",
-        "url": "https://www.cricinfo.com/ci/content/story/1563091.html?ex_cid=OTC-RSS",
-        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425400/425439.jpg",
-        "category": "Cricket"
-      },
-      {
-        "id": "item-ps7e6ebms",
-        "title": "The key takeaways from Cameron Bancroft's revelations about sandpapergate",
-        "summary": "Who knew what? Who objected? And had Australia done it before they were caught?",
-        "source": "ESPNcricinfo",
-        "time": "1h ago",
-        "url": "https://www.cricinfo.com/ci/content/story/1563115.html?ex_cid=OTC-RSS",
-        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/274400/274458.jpg",
-        "category": "Cricket"
-      },
-      {
-        "id": "item-ssoe4jmq2",
-        "title": "Ghori, bowlers put Pakistan in command despite Kumara five-for",
-        "summary": "Pakistan took a 227-run first-innings lead before seamers tightened the grip on second day",
-        "source": "ESPNcricinfo",
-        "time": "2h ago",
-        "url": "https://www.cricinfo.com/ci/content/story/1563048.html?ex_cid=OTC-RSS",
-        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425400/425418.jpg",
-        "category": "Cricket"
-      }
-    ],
-    "general": [
-      {
-        "id": "item-hnm9wn478",
-        "title": "Explosive Bancroft sandpaper claims heap pressure on Cummins",
-        "summary": "Cameron Bancroft claims the whole Australia team knew about the 2018 sandpaper plot in explosive revelations that will heap pressure on current captain Pat Cummins.",
-        "source": "BBC Sport",
-        "time": "4h ago",
-        "url": "https://www.bbc.co.uk/sport/cricket/articles/cmqlqdevgl9ro?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fb1d/live/c5d2fbf0-e330-11f1-9c56-6ffaf0e1e706.jpg",
-        "category": "Global Sports"
-      },
-      {
-        "id": "item-0przf4shp",
-        "title": "Divide and conquer - how maverick Springboks coach Erasmus split the rugby world",
-        "summary": "Rassie Erasmus is a serial offender when it comes to criticising officials, but he retains huge support in South Africa.",
-        "source": "BBC Sport",
-        "time": "1h ago",
-        "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cmvg28v20xy0o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2423/live/8de02db0-e364-11f1-9f51-4bfc31543510.jpg",
-        "category": "Global Sports"
-      },
-      {
-        "id": "item-0oi0iczyp",
-        "title": "Joint-record six referee errors in last Premier League weekend",
-        "summary": "The Premier League's Key Match Incidents Panel rules there were six on-field errors in the last round of games - the joint-highest in one weekend.",
-        "source": "BBC Sport",
-        "time": "3h ago",
-        "url": "https://www.bbc.co.uk/sport/football/articles/c69q8jy924y4o?at_medium=RSS&at_campaign=rss",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d44c/live/1634e590-e345-11f1-99aa-0f40b013ad11.jpg",
-        "category": "Global Sports"
-      }
-    ],
+    "achievementOfTheDay": {
+      "title": "World Record & Peak Endurance Milestone",
+      "athleteOrTeam": "Global Sports Spotlight",
+      "achievement": "Record-setting performance in international championship trials",
+      "detail": "Dominant tactical execution saw benchmark milestones shattered, showcasing extraordinary conditioning and technical precision.",
+      "source": "BBC Sport / World Athletics",
+      "url": "https://www.bbc.com/sport"
+    },
+    "categories": {
+      "cricket": [
+        {
+          "title": "Bad light stops play early with Bangladesh under the pump",
+          "summary": "Bangladesh still trail by 57 runs with only five wickets in hand, as South Africa look to wrap up the win on the final day",
+          "source": "ESPNcricinfo",
+          "time": "28m ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1563091.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425400/425439.jpg",
+          "category": "Cricket"
+        },
+        {
+          "title": "The key takeaways from Cameron Bancroft's revelations about sandpapergate",
+          "summary": "Who knew what? Who objected? And had Australia done it before they were caught?",
+          "source": "ESPNcricinfo",
+          "time": "2h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1563115.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/274400/274458.jpg",
+          "category": "Cricket"
+        },
+        {
+          "title": "Ghori, bowlers put Pakistan in command despite Kumara five-for",
+          "summary": "Pakistan took a 227-run first-innings lead before seamers tightened the grip on second day",
+          "source": "ESPNcricinfo",
+          "time": "2h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1563048.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425400/425418.jpg",
+          "category": "Cricket"
+        }
+      ],
+      "football": [
+        {
+          "title": "The tightest survival scrap for years? Why it's not too early to worry",
+          "summary": "The Premier League resumes on Saturday with Crystal Palace, Sunderland and Man Utd in the relegation zone. But is it too early to be worried?",
+          "source": "BBC Sport",
+          "time": "18m ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cj3vgp36z063o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5f51/live/09641460-e33d-11f1-a094-5fdc692f3e33.png",
+          "category": "Football"
+        },
+        {
+          "title": "Joint-record six referee errors in last Premier League weekend",
+          "summary": "The Premier League's Key Match Incidents Panel rules there were six on-field errors in the last round of games - the joint-highest in one weekend.",
+          "source": "BBC Sport",
+          "time": "3h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c69q8jy924y4o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d44c/live/1634e590-e345-11f1-99aa-0f40b013ad11.jpg",
+          "category": "Football"
+        },
+        {
+          "title": "The 3pm football blackout: Outdated or still relevant in 2026?",
+          "summary": "After 60 years, is time finally running out on the 3pm blackout in football?",
+          "source": "BBC Sport",
+          "time": "10h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cwvg2mxkd4x8o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1959/live/65173c80-e287-11f1-b166-176de21e2352.jpg",
+          "category": "Football"
+        }
+      ],
+      "tennis": [
+        {
+          "title": "Alcaraz continues winning run despite injury concern",
+          "summary": "Carlos Alcaraz continues his sensational late-season form as he outclasses world number five Daniil Medvedev to all but confirm his progress at the ATP Finals.",
+          "source": "BBC Sport",
+          "time": "26m ago",
+          "url": "https://www.bbc.co.uk/sport/tennis/articles/cmdx1erlpqkxo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9a7c/live/1b8e03d0-e365-11f1-9f51-4bfc31543510.jpg",
+          "category": "Tennis"
+        }
+      ],
+      "general": [
+        {
+          "title": "The sandpaper plot - who was there, who said what?",
+          "summary": "As Cameron Bancroft's explosive allegations raise more questions about the sandpaper scandal, BBC Sport looks at who was there and what they have said since.",
+          "source": "BBC Sport",
+          "time": "15m ago",
+          "url": "https://www.bbc.co.uk/sport/cricket/articles/cqwy41w3zydgo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f5ea/live/792a2740-e35f-11f1-a898-e7da1c1ebbf0.jpg",
+          "category": "Sports"
+        },
+        {
+          "title": "Divide and conquer - how maverick Springboks coach Erasmus split the rugby world",
+          "summary": "Rassie Erasmus is a serial offender when it comes to criticising officials, but he retains huge support in South Africa.",
+          "source": "BBC Sport",
+          "time": "1h ago",
+          "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cmvg28v20xy0o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2423/live/8de02db0-e364-11f1-9f51-4bfc31543510.jpg",
+          "category": "Sports"
+        },
+        {
+          "title": "Duckett ton & impressive bowlers give England series win",
+          "summary": "England confidently sweep aside Australia in the third one-day international in Hobart to seal a statement series win.",
+          "source": "BBC Sport",
+          "time": "5h ago",
+          "url": "https://www.bbc.co.uk/sport/cricket/articles/c6vg28end00xo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4340/live/03972910-e346-11f1-99aa-0f40b013ad11.jpg",
+          "category": "Sports"
+        }
+      ]
+    },
     "latestScores": [
       {
-        "match": "World Athletics 100m Trials",
-        "result": "9.81s (WL) Clinical Speed Performance"
-      },
-      {
         "match": "India vs Australia (Series)",
-        "result": "IND lead series 2-1 with clinical bowling"
+        "result": "IND lead series 2-1 with clinical bowling display",
+        "status": "Recent"
       },
       {
         "match": "Premier League: Arsenal vs Chelsea",
-        "result": "2 - 1 (Full Time)"
+        "result": "2 - 1 (Full Time)",
+        "status": "Completed"
+      },
+      {
+        "match": "ATP World Tour Finals",
+        "result": "Sinner def. Alcaraz 6-4, 7-6",
+        "status": "Finals"
       }
-    ]
+    ],
+    "isStale": false
+  },
+  "techScience": {
+    "items": [
+      {
+        "title": "Shelly’s new smart valve shuts off your home’s water before a leak becomes a flood",
+        "summary": "After releasing a $28 leak sensor earlier this year that conveniently runs off a battery for two years, Shelly is announcing an accompanying smart valve you can install on your home's main water line to automatically turn off the flow when one of those sensors detects a problem.",
+        "source": "Tech & Science",
+        "time": "28m ago",
+        "url": "https://www.theverge.com/tech/1036494/shelly-neo-smart-home-water-valve-sensor-shut-off",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/shelly1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "8BitDo’s new gamepad modernizes the Nintendo GameCube’s WaveBird",
+        "summary": "The 8BitDo 64 was a loose remake of the Nintendo 64's unusual triple-grip controller that did away with that gamepad's centered analog stick.",
+        "source": "Tech & Science",
+        "time": "28m ago",
+        "url": "https://www.theverge.com/tech/1036578/8bitdo-gb-bluetooth-gamepad-wireless-controller-nintendo-gamecube-wavebird",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/8bitdogc1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Remember the frontier AI pause? Chip companies don’t either",
+        "summary": "Nvidia began shipping its most advanced AI computing system, the Vera Rubin NVL72, calling it the “fastest product ramp in the company’s history.",
+        "source": "Tech & Science",
+        "time": "44m ago",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Vera-Rubin-NVL72.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "The Verge’s 2026 holiday gift guide for travelers",
+        "summary": "Everyone has that traveler in their life.  That person who feels more at home on a 14-hour train ride than a quiet Sunday on the couch.",
+        "source": "Tech & Science",
+        "time": "1h ago",
+        "url": "https://www.theverge.com/gadgets/1021917/best-gifts-for-travelers-2026",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_UNDER_25_CVirginia_TRAVEL.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Instagram’s ‘school safety’ push was also a way to get more teens on the app",
+        "summary": "Meta's initiative to make Instagram safer for schools stemmed from efforts to increase user \"acquisition,\" \"friending,\" and \"invites,\" according to a report from NPR.",
+        "source": "Tech & Science",
+        "time": "1h ago",
+        "url": "https://www.theverge.com/tech/1036517/instagram-school-safety-program-project-gryffindor",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23904518/VRG_Illo_K_Radtke_STK070_Instagram_1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Rivian spinoff Also pauses e-bike deliveries over battery and software bugs",
+        "summary": "Also, the mobility startup that spun out of Rivian last year, has run into another speed bump.",
+        "source": "Tech & Science",
+        "time": "1h ago",
+        "url": "https://www.theverge.com/transportation/1036460/also-rivian-spinoff-tm-b-ebike-delivery-delay-software-battery-issues",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_ALSO_TMB_09-1.webp?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "How The Verge is picking which Black Friday deals to share",
+        "summary": "For the past month, we’ve been inundated with Black Friday deals, signaling what’s to come on the biggest shopping day of the year in the US.",
+        "source": "Tech & Science",
+        "time": "2h ago",
+        "url": "https://www.theverge.com/gadgets/1034715/how-the-verge-finds-deals",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/258010_Black_friday_cyber_monday_CVirginia_PRICE2.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      }
+    ],
+    "isStale": false
+  },
+  "socialTrends": {
+    "items": [
+      {
+        "title": "Meta launches Direct, a stand-alone messaging app for Instagram",
+        "summary": "Direct is launching in Turkey and Thailand, and can be used with or without an Instagram account.",
+        "source": "TechCrunch / The Verge",
+        "time": "1d ago",
+        "url": "https://techcrunch.com/2026/11/17/meta-launches-direct-a-standalone-messaging-app-for-instagram/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-17-at-9.43.05-AM.png?resize=1200,657",
+        "category": "Instagram"
+      },
+      {
+        "title": "Instagram’s new tool for creators targets unauthorized reposts and AI-modified videos",
+        "summary": "The announcement likely comes in response to creators' concerns over how easily original content can be copied and redistributed across social media platforms, especially considering how generative AI has made it easier to manipulate existing videos.",
+        "source": "TechCrunch / The Verge",
+        "time": "1d ago",
+        "url": "https://techcrunch.com/2026/11/17/instagrams-new-tool-for-creators-targets-unauthorized-reposts-and-ai-modified-videos/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2268477082.jpg?resize=1200,800",
+        "category": "Instagram"
+      },
+      {
+        "title": "Instagram now lets creators add Amazon affiliate links in reels and feed posts",
+        "summary": "While creators have long shared Amazon affiliate links through stories, DMs, and their bios, the new integration brings them to new parts of the app.",
+        "source": "TechCrunch / The Verge",
+        "time": "1d ago",
+        "url": "https://techcrunch.com/2026/11/16/instagram-now-lets-creators-add-amazon-affiliate-links-in-reels-and-feed-posts/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/hero-image-1420x746-1.webp?resize=1200,630",
+        "category": "Instagram"
+      },
+      {
+        "title": "Meta expands Instagram’s AI age-guessing tech globally",
+        "summary": "Meta says it will use its AI technology to look for clues about people it suspects to be teenagers — even if they use an adult birthday.",
+        "source": "TechCrunch / The Verge",
+        "time": "9d ago",
+        "url": "https://techcrunch.com/2026/11/09/meta-expands-instagrams-ai-age-guessing-tech-globally/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/05/instagram-header.jpg?resize=1200,800",
+        "category": "Instagram"
+      },
+      {
+        "title": "Meet Drops, the new music app bringing back the fun of sharing songs with friends",
+        "summary": "The new music discovery app lets users scroll through 10- to 30-second snippets of songs, comment, and share with friends.",
+        "source": "TechCrunch / The Verge",
+        "time": "9d ago",
+        "url": "https://techcrunch.com/2026/11/09/meet-drops-the-new-music-app-bringing-back-the-fun-of-sharing-songs-with-friends/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Drops-app.png?w=1200",
+        "category": "Social"
+      }
+    ],
+    "isStale": false
+  },
+  "disasters": {
+    "earthquakes": [
+      {
+        "mag": "5.3",
+        "place": "149 km SSW of Merizo Village, Guam",
+        "time": "09:36 pm IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz1a",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=12.0918,143.9927"
+      },
+      {
+        "mag": "5.2",
+        "place": "86 km NW of Ryōtsu-minato, Japan",
+        "time": "03:07 pm IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyyw",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=38.7192,137.8725"
+      },
+      {
+        "mag": "5.9",
+        "place": "85 km WNW of San Juan, Peru",
+        "time": "11:37 am IST",
+        "depthKm": "21.9",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyy8",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-15.1438,-75.9238"
+      },
+      {
+        "mag": "5.2",
+        "place": "Galapagos Triple Junction region",
+        "time": "10:55 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyxz",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=0.4346,-103.0838"
+      },
+      {
+        "mag": "5.8",
+        "place": "40 km N of Ruteng, Indonesia",
+        "time": "10:11 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyxi",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-8.2501,120.5285"
+      },
+      {
+        "mag": "5.2",
+        "place": "54 km NNE of Ruteng, Indonesia",
+        "time": "09:51 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyxc",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-8.151,120.6489"
+      },
+      {
+        "mag": "5.8",
+        "place": "99 km ESE of Madang, Papua New Guinea",
+        "time": "09:12 am IST",
+        "depthKm": "52.3",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyx2",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-5.7009,146.5479"
+      },
+      {
+        "mag": "5.8",
+        "place": "150 km SW of Merizo Village, Guam",
+        "time": "07:52 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tywi",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=12.1387,143.8866"
+      },
+      {
+        "mag": "5.3",
+        "place": "16 km ESE of Comandău, Romania",
+        "time": "06:18 am IST",
+        "depthKm": "130.3",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyw8",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=45.6863,26.452"
+      },
+      {
+        "mag": "5.3",
+        "place": "7 km SE of Karakenja, Tajikistan",
+        "time": "06:16 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyw6",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=39.1912,71.5875"
+      }
+    ],
+    "emergencies": [
+      {
+        "title": "Global Weather Pattern & Storm Trajectory Monitoring",
+        "summary": "Meteorological agencies track active coastal low-pressure systems with orderly emergency advisories and preparedness protocols in effect.",
+        "region": "Global Monitoring",
+        "status": "Factual Advisory",
+        "source": "World Meteorological Organization",
+        "url": "https://public.wmo.int"
+      }
+    ],
+    "isStale": false
   },
   "dailyFacts": [
     {
-      "id": "fact-1",
-      "category": "Regenerative Marvels",
-      "emoji": "🦎",
-      "title": "Axolotl Complete Organ Regeneration",
-      "fact": "The axolotl salamander can regrow lost limbs, crushed spines, and parts of its heart, retina, and brain without scar tissue. Transplanted organs from other axolotls are accepted without any immune rejection.",
-      "source": "Max Planck Institute for Molecular Genetics",
-      "sourceUrl": "https://www.mpg.de/en"
+      "id": "wiki-2011",
+      "category": "History",
+      "emoji": "📜",
+      "title": "Historical Turning Point (2011)",
+      "fact": "The sandbox video game Minecraft exited beta with the official release of version 1.0.",
+      "source": "Wikipedia On This Day",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Minecraft"
     },
     {
-      "id": "fact-2",
-      "category": "Cryogenic Survival",
-      "emoji": "🐸",
-      "title": "Alaskan Wood Frog Frozen Hibernation",
-      "fact": "The Alaskan wood frog survives sub-zero winters by freezing 70% of its body water solid. Its heart completely stops beating and brain activity ceases for months, thawed unharmed when spring arrives via high-concentration glucose antifreeze.",
-      "source": "Journal of Experimental Biology",
-      "sourceUrl": "https://journals.biologists.com/jeb"
+      "id": "wiki-2003",
+      "category": "History",
+      "emoji": "📜",
+      "title": "Historical Turning Point (2003)",
+      "fact": "With its ruling in Goodridge v. Department of Public Health, the Massachusetts Supreme Judicial Court made the state the first in the U.S. to legalize same-sex marriage.",
+      "source": "Wikipedia On This Day",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Goodridge_v._Department_of_Public_Health"
     },
     {
-      "id": "fact-3",
-      "category": "Sensory Wonders",
-      "emoji": "🐝",
-      "title": "Bumblebee Electrostatic Foraging",
-      "fact": "Bumblebees build up positive electric charges as they fly. Because flowers possess a slight negative charge, pollen grains literally jump through the air onto the bee’s body, and the altered electric field signals to arriving bees that the flower was recently visited.",
-      "source": "Science Magazine Biomechanics",
-      "sourceUrl": "https://www.science.org/"
+      "id": "fact-extra-3",
+      "category": "Geography",
+      "emoji": "🌍",
+      "title": "Oceanic Depths & Light",
+      "fact": "Over 90% of Earth’s habitable living space exists within the deep oceans, where sunlight completely vanishes beyond 200 meters down.",
+      "source": "NOAA Ocean Exploration",
+      "sourceUrl": "https://oceanexplorer.noaa.gov/"
     },
     {
-      "id": "fact-4",
-      "category": "Animal Intelligence",
-      "emoji": "🦅",
-      "title": "Crow Facial Recognition & Grudges",
-      "fact": "Corvids (crows and ravens) remember individual human faces for decades. When a human treats a crow aggressively, the crow transmits that person’s description to the entire flock and teaches subsequent generations to identify and mob that specific human.",
-      "source": "University of Washington Ornithology",
-      "sourceUrl": "https://www.washington.edu/news/2012/09/10/crows-remember-faces-for-years/"
+      "id": "fact-extra-4",
+      "category": "Science",
+      "emoji": "🔬",
+      "title": "Quantum Entanglement Precision",
+      "fact": "Modern atomic clocks lose less than one second every 300 million years by measuring quantum state transitions of strontium atoms.",
+      "source": "NIST Quantum Physics",
+      "sourceUrl": "https://www.nist.gov/"
     },
     {
-      "id": "fact-5",
-      "category": "Wildlife Communication",
-      "emoji": "🐘",
-      "title": "Elephant Seismic Foot Telemetry",
-      "fact": "Elephants communicate across distances exceeding 10 kilometers through deep infrasonic rumbles traveling as seismic vibrations through the ground. Specialized mechanoreceptors in their foot pads and trunk tips detect and triangulate these signals before airborne sound arrives.",
-      "source": "Stanford University Bioacoustics",
-      "sourceUrl": "https://news.stanford.edu/"
+      "id": "fact-extra-5",
+      "category": "Human Body",
+      "emoji": "🧠",
+      "title": "Mitochondrial Lineage",
+      "fact": "All human mitochondrial DNA is inherited almost exclusively through the maternal line, tracing back to a common ancestral maternal lineage.",
+      "source": "Nature Genetics",
+      "sourceUrl": "https://www.nature.com/"
     }
   ],
-  "languages": {
-    "french": {
-      "name": "French",
-      "nativeName": "Français",
-      "flag": "🇫🇷",
-      "speechCode": "fr-FR",
-      "level": "Level 0 • Foundation to Speaking",
-      "phrases": [
+  "mindGym": {
+    "dateSeed": "2026-11-18",
+    "logicGrid": {
+      "title": "The Campus Research Consortium",
+      "description": "Four engineering students each lead a research lab, specialize in one technology domain, and use a distinct primary language. Deduce who works where!",
+      "categories": [
         {
-          "id": "fr-1",
-          "native": "Bonjour ! Comment allez-vous ?",
-          "phonetic": "bon-zhoor, koh-mahn tah-lay voo",
-          "english": "Hello! How are you? (Polite)",
-          "hindi": "नमस्ते! आप कैसे हैं? (आदरसूचक)",
-          "context": "Standard polite greeting used throughout the morning and afternoon."
+          "name": "Person",
+          "items": [
+            "Aryan",
+            "Diya",
+            "Kabir",
+            "Ananya"
+          ]
         },
         {
-          "id": "fr-2",
-          "native": "Je m'appelle Krish. Enchanté !",
-          "phonetic": "zhuh mah-pel Krish. ahn-shahn-tay",
-          "english": "My name is Krish. Pleased to meet you!",
-          "hindi": "मेरा नाम क्रिश है। आपसे मिलकर खुशी हुई!",
-          "context": "Introducing yourself to new acquaintances."
+          "name": "Field",
+          "items": [
+            "AI Systems",
+            "Quantum Comp",
+            "Robotics",
+            "Cybersecurity"
+          ]
         },
         {
-          "id": "fr-3",
-          "native": "S'il vous plaît et merci beaucoup.",
-          "phonetic": "seel voo pleh ay mair-see boh-koo",
-          "english": "Please and thank you very much.",
-          "hindi": "कृपया और बहुत-बहुत धन्यवाद।",
-          "context": "Essential daily courtesy in shops, cafes, and meetings."
+          "name": "Lab",
+          "items": [
+            "Turing Lab",
+            "Tesla Center",
+            "Bhabha Core",
+            "Shannon Hub"
+          ]
         },
         {
-          "id": "fr-4",
-          "native": "Où sont les toilettes, s'il vous plaît ?",
-          "phonetic": "oo sohn lay twah-let, seel voo pleh",
-          "english": "Where is the restroom, please?",
-          "hindi": "शौचालय / वॉशरूम कहाँ है, कृपया बताएं?",
-          "context": "Crucial travel phrase for navigating stations, airports, and restaurants."
-        },
-        {
-          "id": "fr-5",
-          "native": "Combien ça coûte ?",
-          "phonetic": "kohm-byan sah koot",
-          "english": "How much does this cost?",
-          "hindi": "इसकी कीमत कितनी है?",
-          "context": "Asking prices while shopping or dining out."
+          "name": "Language",
+          "items": [
+            "Rust",
+            "Python",
+            "C++",
+            "Go"
+          ]
         }
       ],
-      "quiz": {
-        "question": "How do you say 'Thank you very much' in French?",
-        "options": [
-          "De rien",
-          "Merci beaucoup",
-          "Au revoir",
-          "S'il vous plaît"
-        ],
-        "correct": 1,
-        "explanation": "'Merci beaucoup' literally translates to 'Thank you very much'."
+      "clues": [
+        "The engineer working in the Bhabha Core writes their core algorithms in Go.",
+        "Kabir is researching Quantum Comp, but does not work in the Turing Lab.",
+        "The researcher coding in C++ is based at Turing Lab.",
+        "Diya works directly in the Tesla Center and collaborates with the AI Systems team.",
+        "The Quantum Comp specialist prefers Python for rapid prototyping."
+      ],
+      "solution": [
+        {
+          "person": "Aryan",
+          "field": "AI Systems",
+          "lab": "Bhabha Core",
+          "language": "Go"
+        },
+        {
+          "person": "Kabir",
+          "field": "Quantum Comp",
+          "lab": "Shannon Hub",
+          "language": "Python"
+        },
+        {
+          "person": "Ananya",
+          "field": "Robotics",
+          "lab": "Turing Lab",
+          "language": "C++"
+        },
+        {
+          "person": "Diya",
+          "field": "Cybersecurity",
+          "lab": "Tesla Center",
+          "language": "Rust"
+        }
+      ]
+    },
+    "sudoku": {
+      "medium": {
+        "initial": "530070000600195000098000060800060003400803001700020006060000280000419005000080079",
+        "solution": "534678912672195348198342567859761423426853791713924856961537284287419635345286179"
+      },
+      "hard": {
+        "initial": "000000012000000003002300400001800005060070800000009000008500000900040500470006000",
+        "solution": "683495712145728963792316458231864975564973821879152346318527694926841537457239180"
       }
     },
-    "spanish": {
-      "name": "Spanish",
-      "nativeName": "Español",
-      "flag": "🇪🇸",
-      "speechCode": "es-ES",
-      "level": "Level 0 • Foundation to Speaking",
-      "phrases": [
-        {
-          "id": "es-1",
-          "native": "¡Hola! ¿Cómo estás?",
-          "phonetic": "oh-lah, koh-moh ess-tahs",
-          "english": "Hello! How are you?",
-          "hindi": "नमस्ते! तुम कैसे हो / आप कैसे हैं?",
-          "context": "Warm, universal greeting used everywhere across the Spanish-speaking world."
-        },
-        {
-          "id": "es-2",
-          "native": "Mucho gusto, mi nombre es Krish.",
-          "phonetic": "moo-choh goos-toh, mee nohm-bray ess Krish",
-          "english": "Nice to meet you, my name is Krish.",
-          "hindi": "आपसे मिलकर अच्छा लगा, मेरा नाम क्रिश है।",
-          "context": "Handshakes and first introductions."
-        },
-        {
-          "id": "es-3",
-          "native": "Por favor y muchas gracias.",
-          "phonetic": "por fah-vor ee moo-chahs grah-syahs",
-          "english": "Please and thank you very much.",
-          "hindi": "कृपया और बहुत-बहुत धन्यवाद।",
-          "context": "Everyday polite interactions."
-        },
-        {
-          "id": "es-4",
-          "native": "¿Dónde está la estación de tren?",
-          "phonetic": "dohn-day ess-tah lah ess-tah-syohn day tren",
-          "english": "Where is the train station?",
-          "hindi": "रेलवे स्टेशन कहाँ है?",
-          "context": "Navigating public transit and directions."
-        },
-        {
-          "id": "es-5",
-          "native": "¿Cuánto cuesta esto?",
-          "phonetic": "kwahn-toh kwess-tah ess-toh",
-          "english": "How much does this cost?",
-          "hindi": "यह कितने का है?",
-          "context": "Inquiring about prices in markets and stores."
-        }
+    "numberCipher": {
+      "numbers": [
+        5,
+        7,
+        4,
+        6,
+        100,
+        75
       ],
-      "quiz": {
-        "question": "What does 'Muchas gracias' mean?",
-        "options": [
-          "Good morning",
-          "Excuse me",
-          "Thank you very much",
-          "See you later"
-        ],
-        "correct": 2,
-        "explanation": "'Muchas gracias' means 'Thank you very much'."
-      }
+      "target": 379,
+      "operations": [
+        "+",
+        "-",
+        "*",
+        "/"
+      ],
+      "timeLimitSeconds": 90
     },
-    "german": {
-      "name": "German",
-      "nativeName": "Deutsch",
-      "flag": "🇩🇪",
-      "speechCode": "de-DE",
-      "level": "Level 0 • Foundation to Speaking",
-      "phrases": [
-        {
-          "id": "de-1",
-          "native": "Guten Tag! Wie geht es Ihnen?",
-          "phonetic": "goo-ten tahk! vee gayt es ee-nen",
-          "english": "Good day! How are you? (Polite)",
-          "hindi": "नमस्ते / शुभ दिन! आप कैसे हैं? (आदरसूचक)",
-          "context": "Standard formal German greeting."
-        },
-        {
-          "id": "de-2",
-          "native": "Freut mich, ich heiße Krish.",
-          "phonetic": "froy-t mikh, ikh high-suh Krish",
-          "english": "Pleased to meet you, my name is Krish.",
-          "hindi": "आपसे मिलकर खुशी हुई, मेरा नाम क्रिश है।",
-          "context": "Introducing yourself in Germany, Austria, or Switzerland."
-        },
-        {
-          "id": "de-3",
-          "native": "Bitte und vielen Dank.",
-          "phonetic": "bit-tuh oont fee-len dahnk",
-          "english": "Please and thank you very much.",
-          "hindi": "कृपया और आपका बहुत धन्यवाद।",
-          "context": "Essential polite expression."
-        },
-        {
-          "id": "de-4",
-          "native": "Entschuldigung, wo ist der Bahnhof?",
-          "phonetic": "ent-shool-dee-goong, voh ist dair bahn-hohf",
-          "english": "Excuse me, where is the main station?",
-          "hindi": "माफ़ कीजिए, स्टेशन कहाँ है?",
-          "context": "Asking for transit directions."
-        },
-        {
-          "id": "de-5",
-          "native": "Wie viel kostet das?",
-          "phonetic": "vee feel kohs-tet dahs",
-          "english": "How much does that cost?",
-          "hindi": "इसकी कीमत कितनी है?",
-          "context": "Asking the price in restaurants and stores."
-        }
-      ],
-      "quiz": {
-        "question": "What does 'Guten Tag' mean in German?",
-        "options": [
-          "Good night",
-          "Good day / Hello",
-          "Goodbye",
-          "Please"
+    "mentalMath": [
+      {
+        "q": "17 × 8",
+        "a": 136,
+        "level": 1
+      },
+      {
+        "q": "240 ÷ 15",
+        "a": 16,
+        "level": 1
+      },
+      {
+        "q": "14 × 16",
+        "a": 224,
+        "level": 2
+      },
+      {
+        "q": "19²",
+        "a": 361,
+        "level": 2
+      },
+      {
+        "q": "15% of 640",
+        "a": 96,
+        "level": 2
+      },
+      {
+        "q": "25% of 880",
+        "a": 220,
+        "level": 2
+      },
+      {
+        "q": "√676",
+        "a": 26,
+        "level": 3
+      },
+      {
+        "q": "35 × 45",
+        "a": 1575,
+        "level": 3
+      },
+      {
+        "q": "3/8 of 192",
+        "a": 72,
+        "level": 3
+      },
+      {
+        "q": "2.5 × 84",
+        "a": 210,
+        "level": 3
+      },
+      {
+        "q": "23²",
+        "a": 529,
+        "level": 4
+      },
+      {
+        "q": "18 × 22",
+        "a": 396,
+        "level": 4
+      }
+    ],
+    "patternMaster": [
+      {
+        "sequence": [
+          "2",
+          "6",
+          "12",
+          "20",
+          "30",
+          "?"
         ],
-        "correct": 1,
-        "explanation": "'Guten Tag' is the German greeting for 'Good day' or 'Hello'."
+        "answer": "42",
+        "options": [
+          "40",
+          "42",
+          "44",
+          "48"
+        ],
+        "explanation": "Difference increases by 2 each step: +4, +6, +8, +10, +12."
+      },
+      {
+        "sequence": [
+          "1",
+          "8",
+          "27",
+          "64",
+          "125",
+          "?"
+        ],
+        "answer": "216",
+        "options": [
+          "196",
+          "216",
+          "256",
+          "343"
+        ],
+        "explanation": "Cubes of consecutive integers: 1³, 2³, 3³, 4³, 5³, 6³ = 216."
+      },
+      {
+        "sequence": [
+          "3",
+          "5",
+          "9",
+          "17",
+          "33",
+          "?"
+        ],
+        "answer": "65",
+        "options": [
+          "63",
+          "65",
+          "66",
+          "72"
+        ],
+        "explanation": "Each term is 2 × previous − 1 (or differences are powers of 2: +2, +4, +8, +16, +32)."
+      },
+      {
+        "sequence": [
+          "Z",
+          "X",
+          "U",
+          "Q",
+          "L",
+          "?"
+        ],
+        "answer": "F",
+        "options": [
+          "E",
+          "F",
+          "G",
+          "H"
+        ],
+        "explanation": "Decreasing letter steps: −2, −3, −4, −5, −6 (L − 6 = F)."
+      }
+    ],
+    "wordForge": {
+      "anagram": {
+        "scramble": "HYTGINOPRCA",
+        "solution": "CRYPTOGRAPHY",
+        "hint": "Field of secure communication and mathematical ciphers",
+        "category": "Engineering & ICT"
+      },
+      "wordLadder": {
+        "start": "CODE",
+        "target": "DATA",
+        "optimalSteps": 3,
+        "hint": "Change one letter at a time to form valid words: CODE -> CORE -> DORE -> DARE -> DATA"
       }
     }
   },
   "dhyan": {
     "verseOfTheDay": {
-      "chapter": 4,
-      "verse": 38,
-      "sanskrit": "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते।\nतत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति॥",
-      "hindiTitle": "सच्चे ज्ञान की सर्वोच्च पवित्रता",
-      "hindiMeaning": "इस संसार में ज्ञान के समान पवित्र और श्रेष्ठ कुछ भी नहीं है। निरंतर अभ्यास और निष्काम कर्म से सिद्ध हुआ व्यक्ति समय आने पर उस ज्ञान को अपने भीतर ही अनुभव करता है।",
-      "hindiLifeLesson": "आज की सीख: डिग्रियों से बड़ा होता है वास्तविक ज्ञान और कौशल। रोज़ 30 मिनट कुछ नया और उपयोगी सीखने की आदत डालें।",
-      "theme": "The Sacredness of Knowledge & Learning"
+      "chapter": 12,
+      "verse": 15,
+      "sanskrit": "यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः।\nहर्षामर्षभयोद्वेगैर्मुremote क्तो यः स च मे प्रियः॥",
+      "transliteration": "yasmān nodvijate loko lokān nodvijate ca yaḥ |\nharṣāmarṣa-bhayodvegair mukto yaḥ sa ca me priyaḥ ||",
+      "english": "He by whom no one is agitated and who is not agitated by the world, who is freed from excessive delight, envy, fear, and anxiety—he is dear to Me.",
+      "theme": "Staying Unshakable Amidst Outer Noise"
     },
     "thoughtOfTheDay": {
-      "source": "उपनिषद् अमृत वाणी",
-      "thought": "उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत — उठो, जागो और तब तक मत रुको जब तक कि अपने लक्ष्य को प्राप्त न कर लो।",
-      "reflection": "आत्मविश्वास ही सबसे बड़ी शक्ति है। अपनी आंतरिक ऊर्जा को व्यर्थ की चिंताओं में नष्ट न करें।"
+      "title": "Chitta Vritti Nirodha (Calming the Mental Whirlpools)",
+      "source": "Patanjali Yoga Sutras 1.2",
+      "quote": "योगश्चित्तवृत्तिनिरोधः — Yoga is the stilling of the fluctuations of consciousness.",
+      "reflection": "Your smartphone feeds your mind micro-waves of reactive outrage and novelty. Today, remember that focus is not the absence of thought, but the conscious choice of which single thought receives your energy. Practice single-tasking for the next 4 hours."
     },
-    "omNamahShivaya": {
-      "name": "ॐ नमः शिवाय (पंचाक्षर महामंत्र)",
-      "targetCount": 18,
-      "hindiMeaning": "मैं उस परम चेतना और शिव तत्व को नमन करता हूँ जो असीम शांति, कल्याण, सत्य और आंतरिक आनंद का स्रोत है।",
-      "instructions": "आँखें बंद करें, रीढ़ सीधी रखें। प्रत्येक श्वास के साथ मंत्र का ध्यान करें। 18 बार के इस जप से मन की चंचलता समाप्त होगी।"
+    "dailyMantra": {
+      "name": "Om Namah Shivaya (Panchakshari Mantra)",
+      "sanskrit": "ॐ नमः शिवाय॥",
+      "transliteration": "oṁ namaḥ śivāya ||",
+      "meaning": "I bow to Shiva—the purest inner Consciousness that resides peacefully in the silence beyond thoughts.",
+      "benefit": "Directly harmonizes the five elements within the body and steadies the nervous system."
     },
     "panchang": {
       "tithi": "Shukla Paksha Navami",
@@ -713,6 +953,7 @@
       "nakshatra": "Rohini",
       "masa": "Kartika / Margashirsha",
       "vikramSamvat": "Vikram Samvat 2083",
+      "formatted": "Shukla Paksha Navami • Rohini Nakshatra • Kartika / Margashirsha • Vikram Samvat 2083",
       "dailyThoughtDate": "18 Nov 2026"
     }
   }
