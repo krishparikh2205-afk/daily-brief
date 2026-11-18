@@ -1,0 +1,1092 @@
+{
+  "meta": {
+    "lastUpdated": "2026-11-18T01:12:34.347Z",
+    "lastUpdatedIST": "Wednesday, 18 Nov 2026, 06:42 am IST",
+    "istDateStr": "2026-11-18",
+    "targetMidnightIST": "2026-11-18T18:30:00.000Z",
+    "title": "Daily Brief",
+    "tagline": "Your comprehensive 30-minute morning deep dive into world intelligence, uplifting human progress, athletics, tech frontiers, wild nature, and daily focus.",
+    "creator": {
+      "name": "Krish Parikh",
+      "qualification": "PDPU ICT, Gandhinagar",
+      "mobile": "+919313775724",
+      "mobileFormatted": "+91 93137 75724"
+    }
+  },
+  "worldPulse": {
+    "regions": {
+      "india": [
+        {
+          "title": "Indian national missing after attacks on commercial vessel in Strait of Hormuz",
+          "summary": "MEA said that of the 24 Indian nationals on board MT Tara Gas, 21 have been safely evacuated",
+          "source": "The Hindu",
+          "time": "5m ago",
+          "url": "https://www.thehindu.com/news/national/indian-national-missing-after-attacks-on-commercial-vessel-in-strait-of-hormuz/article71714331.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/xfjn7j/article71714333.ece/alternates/LANDSCAPE_1200/20261110278L.jpg",
+          "category": "india"
+        },
+        {
+          "title": "Won’t allow hiring of outsiders, hire locals: J&K CM Omar Abdullah to companies",
+          "summary": "He made the statement during the inauguration of development projects worth ₹30 crores in Jammu, Samba and Kathua districts",
+          "source": "The Hindu",
+          "time": "14m ago",
+          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/wont-allow-hiring-of-outsiders-hire-locals-jk-cm-omar-abdullah-to-outside-companies/article71713475.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/4rglir/article71713480.ece/alternates/LANDSCAPE_1200/HXVKDr8akAAh_Z5.jpeg",
+          "category": "india"
+        },
+        {
+          "title": "Jharkhand SIR: Final BLO meetings at poll stations on November 18",
+          "summary": "Jharkhand CEO K Ravi Kumar appeals to all eligible Indian citizens in the state to ensure their names are included in the electoral roll by taking part in Ek Aur Avsar (One More Opportunity) camps",
+          "source": "The Hindu",
+          "time": "2h ago",
+          "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-sir-final-blo-meeting-at-poll-stations-on-november-18/article71713613.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/e5e05a/article71713614.ece/alternates/LANDSCAPE_1200/20260930290L.jpg",
+          "category": "india"
+        },
+        {
+          "title": "Construction activities on Kaziranga wildlife corridors flagged",
+          "summary": "An Eastern Assam-based environment activist writes to the Supreme Court-constituted Central Empowered Committee, highlighting the concerns",
+          "source": "The Hindu",
+          "time": "3h ago",
+          "url": "https://www.thehindu.com/news/national/assam/construction-activities-on-kaziranga-wildlife-corridors-flagged/article71713607.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/vyxyko/article71713610.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-16%20at%207.00.14%20PM.jpeg",
+          "category": "india"
+        }
+      ],
+      "usa": [
+        {
+          "title": "Nvidia says it won't reinstate Huang as firm reports bumper results",
+          "summary": "The AI chip giant reported strong quarterly earnings on Tuesday after the dramatic exit of Jensen Huang.",
+          "source": "BBC News US",
+          "time": "44m ago",
+          "url": "https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2e48/live/58880030-e2d7-11f1-99a1-253766e7ad8b.jpg",
+          "category": "usa"
+        },
+        {
+          "title": "Carney looks to China as Trump tariffs squeeze Canada's car industry",
+          "summary": "The PM has suggested Chinese automakers could replace American ones in Canada - but some say that would not be easy.",
+          "source": "BBC News US",
+          "time": "6h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dab7/live/371458b0-e299-11f1-8dda-8925a81c3da5.jpg",
+          "category": "usa"
+        },
+        {
+          "title": "Trump in Asia ahead of talks with Russian and Chinese presidents",
+          "summary": "The US president said he would be open to a one-on-one meeting with Russia's Vladimir Putin \"if it's available\".",
+          "source": "BBC News US",
+          "time": "4h ago",
+          "url": "https://www.bbc.co.uk/news/articles/crq5vlxxx32no?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b939/live/dca6f2e0-e291-11f1-99b6-a35a62fa4264.jpg",
+          "category": "usa"
+        },
+        {
+          "title": "US loses measles elimination status after 26 years amid record case numbers",
+          "summary": "States have reported over 5,400 cases and 10 measles-related deaths for the first time since the early 1990s.",
+          "source": "BBC News US",
+          "time": "4h ago",
+          "url": "https://www.bbc.co.uk/news/articles/c977p71jx0xxo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0b33/live/4927cca0-dfd1-11f1-8c90-4fc10fbf9142.jpg",
+          "category": "usa"
+        }
+      ],
+      "uk": [
+        {
+          "title": "Government backs welfare shake-up to prevent 'lost generation'",
+          "summary": "Ex-minister Alan Milburn has set out plans to divert spending from benefits towards job support.",
+          "source": "BBC News UK",
+          "time": "6h ago",
+          "url": "https://www.bbc.co.uk/news/articles/ck79210y125xo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cf5e/live/7e3d3ce0-e2b0-11f1-8226-87dfa5049e9a.jpg",
+          "category": "uk"
+        },
+        {
+          "title": "American soldier arrested by UK police on suspicion of spying taken into US military custody",
+          "summary": "The Metropolitan Police say he has been taken into custody by the US Military over suspected national security and espionage allegations.",
+          "source": "BBC News UK",
+          "time": "2h ago",
+          "url": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/42be/live/81981920-e2db-11f1-950d-ffe0c8f51f90.png",
+          "category": "uk"
+        },
+        {
+          "title": "Government risks missing climate targets if EV rules weakened, adviser warns",
+          "summary": "The UK could miss legally binding climate targets if EV targets are cut, an adviser warns",
+          "source": "BBC News UK",
+          "time": "27m ago",
+          "url": "https://www.bbc.co.uk/news/articles/c63rgqg5l9l2o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/36bf/live/43e4a6f0-e29c-11f1-8dda-8925a81c3da5.jpg",
+          "category": "uk"
+        },
+        {
+          "title": "Largest British study to check social media ban's effect on youth mental health",
+          "summary": "Ten different research teams will look at how well teenagers are coping without social media.",
+          "source": "BBC News UK",
+          "time": "23m ago",
+          "url": "https://www.bbc.co.uk/news/articles/cm0evw0d2wq4o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/02cd/live/6ddfb5f0-e2bd-11f1-a094-5fdc692f3e33.jpg",
+          "category": "uk"
+        }
+      ],
+      "europe": [
+        {
+          "title": "Hashim Thaci's second conviction in The Hague reignites debate in Kosovo about justice and the Kosovo Specialist Chambers",
+          "summary": "Former President Hashim Thaci has been convicted of trying to influence witnesses in his war crimes trial. The conviction has reignited debate in Kosovo about the Kosovo Specialist Chambers, the court that convicted him.",
+          "source": "DW Europe",
+          "time": "4h ago",
+          "url": "https://www.dw.com/en/hashim-thaci-s-second-conviction-in-the-hague-reignites-debate-in-kosovo-about-justice-and-the-kosovo-specialist-chambers/a-79975227?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/79308010_6.jpg",
+          "category": "europe"
+        },
+        {
+          "title": "Back to 1997: Russia wants NATO to roll back its eastern expansion",
+          "summary": "The Kremlin is reportedly calling on NATO to withdraw from large parts of Eastern Europe. What this would mean for the security of millions of Europeans — and what lies behind Russia's plan.",
+          "source": "DW Europe",
+          "time": "8h ago",
+          "url": "https://www.dw.com/en/back-to-1997-russia-wants-nato-to-roll-back-its-eastern-expansion/a-79970289?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/77599997_6.jpg",
+          "category": "europe"
+        },
+        {
+          "title": "Rights court rules Turkey must release jailed lawmaker Atalay",
+          "summary": "The European Court of Human Rights has called for the release of imprisoned elected lawmaker Can Atalay. Atalay has been in prison for almost five years despite rulings from the Turkish Constitutional Court.",
+          "source": "DW Europe",
+          "time": "9h ago",
+          "url": "https://www.dw.com/en/rights-court-rules-turkey-must-release-jailed-lawmaker-atalay/a-79972462?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/65838479_6.jpg",
+          "category": "europe"
+        },
+        {
+          "title": "Students' List candidates take seats as Serbian parliament opens",
+          "summary": "Serbia's Student List's candidates have taken their oaths in the inaugural parliament session. As the new majority, they have 90 days to form a government.",
+          "source": "DW Europe",
+          "time": "13h ago",
+          "url": "https://www.dw.com/en/students-list-candidates-take-seats-as-serbian-parliament-opens/a-79969166?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/79968450_6.jpg",
+          "category": "europe"
+        }
+      ],
+      "middleEast": [
+        {
+          "title": "Eisenkot ally elected Knesset speaker with Arab bloc’s backing",
+          "summary": "Israel’s parliament has elected Matan Kahana as the new speaker with support from Arab parties.",
+          "source": "Al Jazeera",
+          "time": "25m ago",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/eisenkot-ally-elected-knesset-speaker-with-arab-blocs-backing?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794962808.jpg?resize=1200%2C675",
+          "category": "middleEast"
+        },
+        {
+          "title": "Top IRGC commander in Iraq for talks amid Kataib Hezbollah tensions",
+          "summary": "Head of Iran's IRGC Quds Force to attend meetings over alleged oil smuggling linked to pro-Iranian armed groups.",
+          "source": "Al Jazeera",
+          "time": "38m ago",
+          "url": "https://www.aljazeera.com/news/2026/11/18/top-irgc-commander-in-iraq-for-talks-amid-kataib-hezbollah-tensions?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/04/ap_69ee33c984edb-1777218505.jpg?resize=1920%2C1440",
+          "category": "middleEast"
+        },
+        {
+          "title": "Forensic experts claim Epstein was strangled to death",
+          "summary": "A team of forensic scientists is challenging the ruling that convicted sex offender Jeffrey Epstein died by suicide.",
+          "source": "Al Jazeera",
+          "time": "55m ago",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/forensic-experts-claim-epstein-was-strangled-to-death?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794961023.jpg?resize=1919%2C1080&quality=80",
+          "category": "middleEast"
+        },
+        {
+          "title": "Why China’s Shenzhen was chosen for APEC summit",
+          "summary": "Al Jazeera’s Katrina Yu explains why China’s Shenzhen was chosen for APEC summit.",
+          "source": "Al Jazeera",
+          "time": "56m ago",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/why-chinas-shenzhen-was-chosen-for-apec-summit?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/WIDE-THUMB-KATRINA-APEC-1794960953.png?resize=1920%2C1080&quality=80",
+          "category": "middleEast"
+        }
+      ],
+      "russiaUkraine": [
+        {
+          "title": "Back to 1997: Russia wants NATO to roll back its eastern expansion",
+          "summary": "The Kremlin is reportedly calling on NATO to withdraw from large parts of Eastern Europe. What this would mean for the security of millions of Europeans — and what lies behind Russia's plan.",
+          "source": "DW Europe",
+          "time": "8h ago",
+          "url": "https://www.dw.com/en/back-to-1997-russia-wants-nato-to-roll-back-its-eastern-expansion/a-79970289?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/77599997_6.jpg",
+          "category": "Russia-Ukraine"
+        }
+      ],
+      "chinaAsiaPacific": [
+        {
+          "title": "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal",
+          "summary": "China worries the scandal could ramp up pressure on the US to further restrict the sale of advanced chips.",
+          "source": "BBC News Asia",
+          "time": "2h ago",
+          "url": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ec0d/live/1061d030-dea2-11f1-b441-2b33b063138f.jpg",
+          "category": "asia"
+        },
+        {
+          "title": "How new US chip restrictions on South East Asia will hit China",
+          "summary": "The new rules restrict chip exports and also access to their computing power, which China relies on heavily.",
+          "source": "BBC News Asia",
+          "time": "10h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bfea/live/8fbafe20-e225-11f1-ae7e-97d0d3a43181.jpg",
+          "category": "asia"
+        },
+        {
+          "title": "Will President Trump meet Kim Jong Un?",
+          "summary": "President Trump says he would be keen to meet the North Korea leader in China.",
+          "source": "BBC News Asia",
+          "time": "14h ago",
+          "url": "https://www.bbc.co.uk/news/videos/c6grew79p7qdo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4583/live/99273800-e263-11f1-a094-5fdc692f3e33.jpg",
+          "category": "asia"
+        },
+        {
+          "title": "Pakistan's solar revolution has been so successful the national grid is crumbling",
+          "summary": "People installing their own solar panels has helped boost the solar share of Pakistan's electricity from 1% to 28%.",
+          "source": "BBC News Asia",
+          "time": "1h ago",
+          "url": "https://www.bbc.co.uk/news/articles/ckvg2n2q3103o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7f9b/live/9d67ed20-e29e-11f1-8dda-8925a81c3da5.jpg",
+          "category": "asia"
+        }
+      ],
+      "africa": [
+        {
+          "title": "Mozambique opposition leader goes on trial for terrorism over deadly election protests",
+          "summary": "Venâncio Mondlane faces several charges over 2024 post-election protests that left hundreds of people dead.",
+          "source": "BBC News Africa",
+          "time": "8h ago",
+          "url": "https://www.bbc.co.uk/news/articles/crq5vl1l6z2po?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8344/live/da8191f0-e27d-11f1-bd1e-f9c53347c5a6.jpg",
+          "category": "africa"
+        },
+        {
+          "title": "BBC launches programme for children forced from school by bandits and poverty in West Africa",
+          "summary": "The new show brings English, maths and science lessons to children via TV, radio and social media.",
+          "source": "BBC News Africa",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/c3pw450ndyjqo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f550/live/94dd3480-e1ae-11f1-b0a4-450a350911f4.jpg",
+          "category": "africa"
+        },
+        {
+          "title": "Nigerians among 12 suspects arrested in $4.5m Canada luxury car theft syndicate",
+          "summary": "Canadian authorities say they have recovered 96 luxury vehicles destined for West Africa.",
+          "source": "BBC News Africa",
+          "time": "17h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cm5y1wr1535ko?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e5db/live/3bffede0-e252-11f1-876d-1dfc6cf3b709.jpg",
+          "category": "africa"
+        },
+        {
+          "title": "Senegal and Morocco lead Afcon qualifiers but Tunisia protest",
+          "summary": "Senegal, Cameroon and Morocco qualify for the 2027 Africa Cup of Nations, but Nigeria are in trouble, and struggling Tunisia fail with an impassioned penalty protest.",
+          "source": "BBC News Africa",
+          "time": "2h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c5evrgrvw1ezo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7391/live/363a56f0-e29a-11f1-8dda-8925a81c3da5.jpg",
+          "category": "africa"
+        }
+      ],
+      "latinAmerica": [
+        {
+          "title": "Gunmen kill Costa Rican journalist who reported on drugs trade",
+          "summary": "Rodríguez had denounced alleged links between criminal organisations and powerful figures in Costa Rica.",
+          "source": "BBC Latin America",
+          "time": "13h ago",
+          "url": "https://www.bbc.co.uk/news/articles/c6ly7g5lx7gyo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1bb5/live/140763d0-e26c-11f1-b19c-7b42f37bea48.jpg",
+          "category": "latinAmerica"
+        },
+        {
+          "title": "Mexican drug lord Miguel Ángel Félix Gallardo dies age 80",
+          "summary": "Known as the 'Boss of Bosses', he was the head of all-powerful Guadalajara Cartel in the 1980s before his arrest broke up his drug organisation.",
+          "source": "BBC Latin America",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/c51k9nkwrndxo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9e63/live/e166e240-e19c-11f1-93e1-3b657b665bcf.jpg",
+          "category": "latinAmerica"
+        },
+        {
+          "title": "Ashes of exiled Nobel Laureate Miguel Ángel Asturias returned to Guatemala",
+          "summary": "The poet, writer and diplomat died in Europe in 1974 having been forced to leave his native country.",
+          "source": "BBC Latin America",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/cvde1klewg88o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/da54/live/f1263820-e1b5-11f1-9a3f-99aca912798e.jpg",
+          "category": "latinAmerica"
+        },
+        {
+          "title": "Wife of assassinated ex-Haitian leader registers for presidential election",
+          "summary": "There has not been an election in Haiti since before the death of Jovenel Moise in 2021.",
+          "source": "BBC Latin America",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/cmwy83432q1jo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a9fe/live/01adab80-e178-11f1-9340-0b32bbf5495e.jpg",
+          "category": "latinAmerica"
+        }
+      ]
+    },
+    "ongoingTracker": [
+      {
+        "topic": "Russia - Ukraine War & European Defense",
+        "status": "Active Artillery & Drone Engagements",
+        "whatChanged": "European allies announce accelerated air-defense ammunition shipments amid cold-weather logistics shifts.",
+        "lastUpdated": "Today"
+      },
+      {
+        "topic": "Middle East Diplomatic Talks & Regional Security",
+        "status": "High-level Mediations",
+        "whatChanged": "Regional envoys continue ceasefire and humanitarian corridor framework discussions in Cairo and Doha.",
+        "lastUpdated": "Today"
+      },
+      {
+        "topic": "Global AI Regulatory Frameworks & Chip Exports",
+        "status": "Policy Enactment",
+        "whatChanged": "US and EU tech regulators finalize joint guidelines for advanced semiconductor safety evaluations.",
+        "lastUpdated": "Today"
+      },
+      {
+        "topic": "Global Clean Energy & Grid Transition Summit",
+        "status": "Negotiations Ongoing",
+        "whatChanged": "Developing economies secure new multilateral financing commitments for grid modernization and energy storage.",
+        "lastUpdated": "Today"
+      }
+    ],
+    "isStale": false
+  },
+  "goodNews": {
+    "items": [
+      {
+        "title": "Farmer Finds Unknown Seeds in His Attic – and Grows an Ancient ‘Miracle’ Grain",
+        "summary": "From the sun-soaked plains of Parma comes the story of an Italian farmer who accidentally brought on a Biblical resurrection with very modern implications for our food system.",
+        "source": "Good News Network",
+        "time": "1d ago",
+        "url": "https://www.goodnewsnetwork.org/farmer-finds-unknown-seeds-in-his-attic-and-grows-an-ancient-miracle-grain/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-ripe-ear-of-Triticum-turgidum-with-its-characteristic-varied-coloration-credit-CC-3.0.-BY-SA-Sten-Porse.jpg",
+        "category": "World Progress"
+      },
+      {
+        "title": "Tokyo Tackles Trash Troubles with New Generation of Robotic Street Waste Bins",
+        "summary": "A new generation of trash bins are aimed at conserving Japanese civic culture while addressing one of the country’s largest tourism headaches.",
+        "source": "Good News Network",
+        "time": "1d ago",
+        "url": "https://www.goodnewsnetwork.org/tokyo-tackles-trash-troubles-with-new-generation-of-robotic-street-waste-bins/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Smart-solar-powered-trash-compacters-credit-Forectec.jpg",
+        "category": "World Progress"
+      },
+      {
+        "title": "WWII Tryst at the Center of 80+Year Mystery That’s Now United Two Families",
+        "summary": "An 81-year-old Englishman grew up wondering who his real father was.  What he didn’t know was that an entire family tree in Canada was wondering who and where he was.",
+        "source": "Good News Network",
+        "time": "4d ago",
+        "url": "https://www.goodnewsnetwork.org/canadian-family-finally-identifies-grandfathers-long-lost-wwii-baby-in-england-after-80-years/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Left-Charles-Blackney-holding-his-Canadian-daughter-in-1942-right-Yvonne-Anderson-holding-Rodney-in-1945-credits-Dawn-Anderson.jpg",
+        "category": "World Progress"
+      },
+      {
+        "title": "Filmmaker Helps 103-yo D-Day Survivor Recover His Lost War Medals",
+        "summary": "A 103-year-old D-Day veteran was reunited with his war medals just in time for Remembrance Day.",
+        "source": "Good News Network",
+        "time": "5d ago",
+        "url": "https://www.goodnewsnetwork.org/documentarian-helps-103-yo-d-day-survivor-recover-his-lost-war-medals-just-in-time-for-veterans-day/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Douglas-Halley-103-with-his-grandson-Luke-credit-SWNS.jpg",
+        "category": "World Progress"
+      },
+      {
+        "title": "For Centuries, Visitors Walked Right by 280 Unseen Ice Age Cave Paintings",
+        "summary": "The third-largest collection of Ice Age-era engravings ever found on Spain’s Mediterranean side was sitting in plain sight where visitors for centuries had been walking right by them.",
+        "source": "Good News Network",
+        "time": "6d ago",
+        "url": "https://www.goodnewsnetwork.org/for-centuries-visitors-walked-right-by-280-unseen-ice-age-cave-paintings/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-horse-representaion-where-cave-floor-is-used-to-represent-the-ground-credit-2026-Verges-et-al.-Antiquiry-CC-4.0.-BY-SA-e1794413594768.jpg",
+        "category": "World Progress"
+      },
+      {
+        "title": "World’s Driest Desert Erupts into Record-Breaking Bloom Boom (LOOK)",
+        "summary": "Just a few weeks ago it was the driest place on Earth.  Now it’s the most colorful.",
+        "source": "Good News Network",
+        "time": "7d ago",
+        "url": "https://www.goodnewsnetwork.org/worlds-driest-desert-erupts-into-record-breaking-bloom-boom-look/",
+        "imageUrl": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Juan-Cortez-Estay-Unsplash.jpg",
+        "category": "World Progress"
+      }
+    ],
+    "isStale": false
+  },
+  "sports": {
+    "achievementOfTheDay": {
+      "title": "World Record in Sub-2:00 Marathon Pace & 100m Velocity",
+      "athleteOrTeam": "Global Athletics Spotlight",
+      "achievement": "Record-setting sprint velocities and historic endurance splits",
+      "detail": "World-class running conditioning and relentless technical pacing shatter historical athletic barriers, elevating the pinnacle of human speed and resilience.",
+      "source": "World Athletics / BBC Sport",
+      "url": "https://athleticsweekly.com/"
+    },
+    "categories": {
+      "athletics": [
+        {
+          "title": "Wakefield and Davies on top at Brampton to Carlisle",
+          "summary": "Harry Wakefield, usually at his best in relays, ran his fastest 10 miles by some three minutes to beat two […]",
+          "source": "Athletics Weekly",
+          "time": "12h ago",
+          "url": "https://athleticsweekly.com/news/wakefield-and-davies-on-top-at-brampton-to-carlisle-1040014141/",
+          "imageUrl": null,
+          "category": "Athletics & Running"
+        },
+        {
+          "title": "Student power on show in cross-country league action",
+          "summary": "Holly Weedall led Birmingham University to team victory at the Midland Women's League, while Oxford University runners filled the first […]",
+          "source": "Athletics Weekly",
+          "time": "1d ago",
+          "url": "https://athleticsweekly.com/news/student-power-on-show-in-cross-country-league-action-1040014137/",
+          "imageUrl": null,
+          "category": "Athletics & Running"
+        },
+        {
+          "title": "Destination Doha: Racing on the fast Doha Corniche",
+          "summary": "Olympic champion Tamirat Tola returned to winning ways on the waterfront in January 2026. Now the Doha Marathon by Ooredoo […]",
+          "source": "Athletics Weekly",
+          "time": "1d ago",
+          "url": "https://athleticsweekly.com/aw-promotion/destination-doha-racing-on-the-fast-doha-corniche-1040014124/",
+          "imageUrl": null,
+          "category": "Athletics & Running"
+        },
+        {
+          "title": "Gratton wins thriller as Ireland pip England at Masters International Dublin",
+          "summary": "John Beattie, in his first cross country season for more than a decade, lost out by inches to England team-mate […]",
+          "source": "Athletics Weekly",
+          "time": "1d ago",
+          "url": "https://athleticsweekly.com/news/gratton-wins-thriller-as-ireland-pip-england-at-masters-international-dublin-1040014120/",
+          "imageUrl": null,
+          "category": "Athletics & Running"
+        }
+      ],
+      "cricket": [
+        {
+          "title": "Dunkley's onslaught keeps Sixers top of the table",
+          "summary": "The visitors needed just 15 overs to chase the target after Melie Kerr starred with the ball",
+          "source": "ESPNcricinfo",
+          "time": "4h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1563011.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/414600/414656.jpg",
+          "category": "Cricket"
+        },
+        {
+          "title": "Travis Head to miss IPL 2027",
+          "summary": "The SRH opener has decided to skip the upcoming season to manage his workload during a busy international schedule",
+          "source": "ESPNcricinfo",
+          "time": "7h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1562856.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/415900/415972.jpg",
+          "category": "Cricket"
+        },
+        {
+          "title": "Rickelton lays out South Africa's plan: 'Bat long, get a lead, put ball in their court'",
+          "summary": "Taskin Ahmed, on the other hand, reckons that Bangladesh are \"still in the game\", particularly if they limit South Africa's lead",
+          "source": "ESPNcricinfo",
+          "time": "7h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1563004.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425300/425379.jpg",
+          "category": "Cricket"
+        }
+      ],
+      "football": [
+        {
+          "title": "FA wants to host Nations League finals in England",
+          "summary": "England could host the Nations League finals this season after Football Association officials register their interest.",
+          "source": "BBC Sport",
+          "time": "9h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c5742x4xldmpo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0a7f/live/592780e0-e29d-11f1-8dda-8925a81c3da5.jpg",
+          "category": "Football"
+        },
+        {
+          "title": "Last chance to vote for BBC Women's Footballer of the Year 2026",
+          "summary": "Voting is now open for the BBC Women's Footballer of the Year 2026, with five players on the shortlist.",
+          "source": "BBC Sport",
+          "time": "7h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cj20velkgnypo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3773/live/8814cc60-dc43-11f1-93e1-3b657b665bcf.jpg",
+          "category": "Football"
+        },
+        {
+          "title": "Madrid-bound Gabriel posts farewell Man Utd message",
+          "summary": "TeenagerJJ Gabriel posts a farewell message saying Manchester United will always be part of his story, as he prepares for a likely move to Real Madrid.",
+          "source": "BBC Sport",
+          "time": "5h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cqvg2e4208zmo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4ad8/live/9eaa4ed0-e2b7-11f1-a094-5fdc692f3e33.jpg",
+          "category": "Football"
+        }
+      ],
+      "tennis": [
+        {
+          "title": "Ruthless Zverev through to ATP Finals knockout stage",
+          "summary": "World number one Alexander Zverev produces a serving masterclass to defeat Ben Shelton and qualify for the ATP Finals knockout stage with a match to spare.",
+          "source": "BBC Sport",
+          "time": "2h ago",
+          "url": "https://www.bbc.co.uk/sport/tennis/articles/c6x2eveyyxp0o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aa9e/live/2f3ee070-e2d4-11f1-99ed-7de3e5932968.jpg",
+          "category": "Tennis"
+        }
+      ],
+      "general": [
+        {
+          "title": "Belief and bench help Northern Ireland scale new heights as promotion secured",
+          "summary": "Manager Michael O'Neill hails the belief shown by his side after they come from behind against Hungary to earn the draw required for promotion to Nations League A.",
+          "source": "BBC Sport",
+          "time": "1h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cwp9dxr80p3po?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9a30/live/f5d9d9d0-e2e1-11f1-a094-5fdc692f3e33.jpg",
+          "category": "Sports"
+        },
+        {
+          "title": "Bellamy convinced of Wales credentials despite defeat by Portugal",
+          "summary": "Wales finished bottom of their Nations League group, but boss Craig Bellamy believes his team showed they belong in the top flight.",
+          "source": "BBC Sport",
+          "time": "1h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmn507wn6gg3o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5735/live/f46405e0-e2e5-11f1-8e58-ef8e322f3c98.jpg",
+          "category": "Sports"
+        },
+        {
+          "title": "Rooney says he considered taking his own life at Man Utd",
+          "summary": "Wayne Rooney says he considered taking his own life during his playing days at Manchester United and was \"speaking to a therapist to try and figure out what was up\".",
+          "source": "BBC Sport",
+          "time": "11h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cx1l0n3v003eo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e89d/live/4c076e50-e281-11f1-b166-176de21e2352.jpg",
+          "category": "Sports"
+        }
+      ]
+    },
+    "latestScores": [
+      {
+        "match": "World Athletics 100m Trials",
+        "result": "9.81s (WL) Clinical Speed Performance",
+        "status": "Completed"
+      },
+      {
+        "match": "India vs Australia (Series)",
+        "result": "IND lead series 2-1 with clinical bowling display",
+        "status": "Recent"
+      },
+      {
+        "match": "Premier League: Arsenal vs Chelsea",
+        "result": "2 - 1 (Full Time)",
+        "status": "Completed"
+      },
+      {
+        "match": "ATP World Tour Finals",
+        "result": "Sinner def. Alcaraz 6-4, 7-6",
+        "status": "Finals"
+      }
+    ],
+    "isStale": false
+  },
+  "techScience": {
+    "items": [
+      {
+        "title": "Satya Nadella says he’s AGI-pilled now",
+        "summary": "Microsoft CEO Satya Nadella on stage at Microsoft Ignite.",
+        "source": "Tech & Science",
+        "time": "1h ago",
+        "url": "https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-17-at-3.00.15-PM.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Jeff Bezos says he was ‘heavily involved’ in picking the new James Bond",
+        "summary": "Robert Pattinson's casting as James Bond made enough sense given his recent work with director Denis Villeneuve, who's making the franchise's next film over at Amazon.",
+        "source": "Tech & Science",
+        "time": "2h ago",
+        "url": "https://www.theverge.com/entertainment/1036110/jeff-bezos-james-bond-casting-amazon",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/IMG_0270.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Read everything that Nvidia’s board chair had to say about Jensen Huang",
+        "summary": "Nvidia's quarterly earnings call on Tuesday was its first with CFO and interim CEO Colette Kress at the helm alongside the company's first board chair, Harvey C.  Jones.",
+        "source": "Tech & Science",
+        "time": "2h ago",
+        "url": "https://www.theverge.com/tech/1036160/nvidia-earnings-harvey-c-jones-jensen-huang",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK083_NVIDIA_2.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "iFixit’s Apple HomeView teardown reveals a device that will be difficult to repair",
+        "summary": "After finding recent versions of Apple's iPads and HomePods much easier to disassemble for battery replacements or other repairs, iFixit assumed it would be the same story for Apple's new HomeView hub that looks like a seven-inch tablet stuck to a smart speaker.",
+        "source": "Tech & Science",
+        "time": "2h ago",
+        "url": "https://www.theverge.com/tech/1036045/ifixit-teardown-apple-homeview-smart-home-hub",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ifixit.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Nvidia says it does not intend to reinstate Jensen Huang as CEO",
+        "summary": "Starting Nvidia's quarterly earnings call on Tuesday, new board chair Harvey Jones said that when former CEO Jensen Huang resigned, \"the Nvidia board unanimously accepted his resignation and does not intend to reinstate Jensen as CEO.",
+        "source": "Tech & Science",
+        "time": "3h ago",
+        "url": "https://www.theverge.com/report/1035465/nvidia-says-it-will-not-reinstate-jensen-huang-as-ceo",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Nvidia_Jensen_huang_02.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "The MacBook Neo is receiving a rare $50 discount ahead of Black Friday",
+        "summary": "This thing is poised to eat their lunch.  | Photo: Amelia Holowaty Krales / The Verge If you’re looking for a new laptop or a gift for the student in your life, you can save $50 on the MacBook Neo at several retailers, in both storage sizes and all four colors.",
+        "source": "Tech & Science",
+        "time": "3h ago",
+        "url": "https://www.theverge.com/gadgets/1035932/apple-macbook-neo-black-friday-2026-deal-sale",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268387_Apple_MacBook_Neo_AKrales_0543.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing",
+        "summary": "Interim Nvidia CEO Colette Kress announced the company's Q3 earnings on Tuesday, without initially mentioning former CEO Jensen Huang or the details of his departure, or possible attempt at a return.",
+        "source": "Tech & Science",
+        "time": "3h ago",
+        "url": "https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25835739/STKP210_JENSEN_HUANG_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      }
+    ],
+    "isStale": false
+  },
+  "socialTrends": {
+    "items": [
+      {
+        "title": "Meta launches Direct, a stand-alone messaging app for Instagram",
+        "summary": "Direct is launching in Turkey and Thailand, and can be used with or without an Instagram account.",
+        "source": "TechCrunch / The Verge",
+        "time": "10h ago",
+        "url": "https://techcrunch.com/2026/11/17/meta-launches-direct-a-standalone-messaging-app-for-instagram/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-17-at-9.43.05-AM.png?resize=1200,657",
+        "category": "Instagram"
+      },
+      {
+        "title": "Instagram’s new tool for creators targets unauthorized reposts and AI-modified videos",
+        "summary": "The announcement likely comes in response to creators' concerns over how easily original content can be copied and redistributed across social media platforms, especially considering how generative AI has made it easier to manipulate existing videos.",
+        "source": "TechCrunch / The Verge",
+        "time": "10h ago",
+        "url": "https://techcrunch.com/2026/11/17/instagrams-new-tool-for-creators-targets-unauthorized-reposts-and-ai-modified-videos/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2268477082.jpg?resize=1200,800",
+        "category": "Instagram"
+      },
+      {
+        "title": "Instagram now lets creators add Amazon affiliate links in reels and feed posts",
+        "summary": "While creators have long shared Amazon affiliate links through stories, DMs, and their bios, the new integration brings them to new parts of the app.",
+        "source": "TechCrunch / The Verge",
+        "time": "1d ago",
+        "url": "https://techcrunch.com/2026/11/16/instagram-now-lets-creators-add-amazon-affiliate-links-in-reels-and-feed-posts/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/hero-image-1420x746-1.webp?resize=1200,630",
+        "category": "Instagram"
+      },
+      {
+        "title": "Meta expands Instagram’s AI age-guessing tech globally",
+        "summary": "Meta says it will use its AI technology to look for clues about people it suspects to be teenagers — even if they use an adult birthday.",
+        "source": "TechCrunch / The Verge",
+        "time": "8d ago",
+        "url": "https://techcrunch.com/2026/11/09/meta-expands-instagrams-ai-age-guessing-tech-globally/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/05/instagram-header.jpg?resize=1200,800",
+        "category": "Instagram"
+      },
+      {
+        "title": "Meet Drops, the new music app bringing back the fun of sharing songs with friends",
+        "summary": "The new music discovery app lets users scroll through 10- to 30-second snippets of songs, comment, and share with friends.",
+        "source": "TechCrunch / The Verge",
+        "time": "8d ago",
+        "url": "https://techcrunch.com/2026/11/09/meet-drops-the-new-music-app-bringing-back-the-fun-of-sharing-songs-with-friends/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Drops-app.png?w=1200",
+        "category": "Social"
+      },
+      {
+        "title": "Meta, Google, and TikTok sue California AG over teen social media law",
+        "summary": "If it goes into effect next year, this California law would restrict social media access for children under 16.",
+        "source": "TechCrunch / The Verge",
+        "time": "12d ago",
+        "url": "https://techcrunch.com/2026/11/05/meta-google-and-tiktok-sue-california-ag-over-teen-social-media-law/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2268918823.jpg?resize=1200,800",
+        "category": "TikTok"
+      }
+    ],
+    "isStale": false
+  },
+  "disasters": {
+    "earthquakes": [
+      {
+        "mag": "5.3",
+        "place": "16 km W of Nereju Mic, Romania",
+        "time": "06:18 am IST",
+        "depthKm": "130.8",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyw8",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=45.6796,26.4891"
+      },
+      {
+        "mag": "5.2",
+        "place": "south of the Kermadec Islands",
+        "time": "07:50 pm IST",
+        "depthKm": "337.1",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tysq",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-32.3057,179.8423"
+      },
+      {
+        "mag": "5.0",
+        "place": "137 km SSE of Kirakira, Solomon Islands",
+        "time": "07:30 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyq5",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-11.5293,162.5497"
+      }
+    ],
+    "emergencies": [
+      {
+        "title": "Global Weather Pattern & Storm Trajectory Monitoring",
+        "summary": "Meteorological agencies track active coastal low-pressure systems with orderly emergency advisories and preparedness protocols in effect.",
+        "region": "Global Monitoring",
+        "status": "Factual Advisory",
+        "source": "World Meteorological Organization",
+        "url": "https://public.wmo.int"
+      }
+    ],
+    "isStale": false
+  },
+  "dailyFacts": [
+    {
+      "id": "fact-nature-1",
+      "category": "Regenerative Marvels",
+      "emoji": "🦎",
+      "title": "Axolotl Complete Organ Regeneration",
+      "fact": "The axolotl salamander can regrow lost limbs, crushed spines, and parts of its heart, retina, and brain without scar tissue. Transplanted organs from other axolotls are accepted without any immune rejection.",
+      "source": "Max Planck Institute for Molecular Genetics",
+      "sourceUrl": "https://www.mpg.de/en"
+    },
+    {
+      "id": "fact-nature-2",
+      "category": "Cryogenic Survival",
+      "emoji": "🐸",
+      "title": "Alaskan Wood Frog Frozen Hibernation",
+      "fact": "The Alaskan wood frog survives sub-zero winters by freezing 70% of its body water solid. Its heart completely stops beating and brain activity ceases for months, thawed unharmed when spring arrives via high-concentration glucose antifreeze.",
+      "source": "Journal of Experimental Biology",
+      "sourceUrl": "https://journals.biologists.com/jeb"
+    },
+    {
+      "id": "fact-nature-3",
+      "category": "Sensory Wonders",
+      "emoji": "🐝",
+      "title": "Bumblebee Electrostatic Foraging",
+      "fact": "Bumblebees build up positive electric charges as they fly. Because flowers possess a slight negative charge, pollen grains literally jump through the air onto the bee’s body, and the altered electric field signals to arriving bees that the flower was recently visited.",
+      "source": "Science Magazine Biomechanics",
+      "sourceUrl": "https://www.science.org/"
+    },
+    {
+      "id": "fact-nature-4",
+      "category": "Mammalian Giants",
+      "emoji": "🐋",
+      "title": "Blue Whale Vascular Dimensions",
+      "fact": "A blue whale’s main aorta is over 9 inches in diameter—large enough for a toddler to crawl through. Its heart weighs approximately 400 pounds (the size of a small golf cart), and its heartbeat can be detected by acoustic sensors over two miles away underwater.",
+      "source": "Smithsonian Ocean Portal",
+      "sourceUrl": "https://ocean.si.edu/"
+    },
+    {
+      "id": "fact-nature-5",
+      "category": "Animal Intelligence",
+      "emoji": "🦅",
+      "title": "Crow Facial Recognition & Grudges",
+      "fact": "Corvids (crows and ravens) remember individual human faces for decades. When a human treats a crow aggressively, the crow transmits that person’s description to the entire flock and teaches subsequent generations to identify and mob that specific human.",
+      "source": "University of Washington Ornithology",
+      "sourceUrl": "https://www.washington.edu/news/2012/09/10/crows-remember-faces-for-years/"
+    }
+  ],
+  "mindGym": {
+    "dateSeed": "2026-11-18",
+    "logicGrid": {
+      "title": "The Campus Research Consortium",
+      "description": "Four engineering students each lead a research lab, specialize in one technology domain, and use a distinct primary language. Deduce who works where!",
+      "categories": [
+        {
+          "name": "Person",
+          "items": [
+            "Aryan",
+            "Diya",
+            "Kabir",
+            "Ananya"
+          ]
+        },
+        {
+          "name": "Field",
+          "items": [
+            "AI Systems",
+            "Quantum Comp",
+            "Robotics",
+            "Cybersecurity"
+          ]
+        },
+        {
+          "name": "Lab",
+          "items": [
+            "Turing Lab",
+            "Tesla Center",
+            "Bhabha Core",
+            "Shannon Hub"
+          ]
+        },
+        {
+          "name": "Language",
+          "items": [
+            "Rust",
+            "Python",
+            "C++",
+            "Go"
+          ]
+        }
+      ],
+      "clues": [
+        "The engineer working in the Bhabha Core writes their core algorithms in Go.",
+        "Kabir is researching Quantum Comp, but does not work in the Turing Lab.",
+        "The researcher coding in C++ is based at Turing Lab.",
+        "Diya works directly in the Tesla Center and collaborates with the AI Systems team.",
+        "The Quantum Comp specialist prefers Python for rapid prototyping."
+      ],
+      "solution": [
+        {
+          "person": "Aryan",
+          "field": "AI Systems",
+          "lab": "Bhabha Core",
+          "language": "Go"
+        },
+        {
+          "person": "Kabir",
+          "field": "Quantum Comp",
+          "lab": "Shannon Hub",
+          "language": "Python"
+        },
+        {
+          "person": "Ananya",
+          "field": "Robotics",
+          "lab": "Turing Lab",
+          "language": "C++"
+        },
+        {
+          "person": "Diya",
+          "field": "Cybersecurity",
+          "lab": "Tesla Center",
+          "language": "Rust"
+        }
+      ]
+    },
+    "sudoku": {
+      "medium": {
+        "initial": "530070000600195000098000060800060003400803001700020006060000280000419005000080079",
+        "solution": "534678912672195348198342567859761423426853791713924856961537284287419635345286179"
+      },
+      "hard": {
+        "initial": "000000012000000003002300400001800005060070800000009000008500000900040500470006000",
+        "solution": "683495712145728963792316458231864975564973821879152346318527694926841537457239180"
+      }
+    },
+    "numberCipher": {
+      "numbers": [
+        5,
+        7,
+        4,
+        6,
+        100,
+        75
+      ],
+      "target": 379,
+      "operations": [
+        "+",
+        "-",
+        "*",
+        "/"
+      ],
+      "timeLimitSeconds": 90
+    },
+    "mentalMath": [
+      {
+        "q": "17 × 8",
+        "a": 136,
+        "level": 1
+      },
+      {
+        "q": "240 ÷ 15",
+        "a": 16,
+        "level": 1
+      },
+      {
+        "q": "14 × 16",
+        "a": 224,
+        "level": 2
+      },
+      {
+        "q": "19²",
+        "a": 361,
+        "level": 2
+      },
+      {
+        "q": "15% of 640",
+        "a": 96,
+        "level": 2
+      },
+      {
+        "q": "25% of 880",
+        "a": 220,
+        "level": 2
+      },
+      {
+        "q": "√676",
+        "a": 26,
+        "level": 3
+      },
+      {
+        "q": "35 × 45",
+        "a": 1575,
+        "level": 3
+      },
+      {
+        "q": "3/8 of 192",
+        "a": 72,
+        "level": 3
+      },
+      {
+        "q": "2.5 × 84",
+        "a": 210,
+        "level": 3
+      },
+      {
+        "q": "23²",
+        "a": 529,
+        "level": 4
+      },
+      {
+        "q": "18 × 22",
+        "a": 396,
+        "level": 4
+      }
+    ],
+    "patternMaster": [
+      {
+        "sequence": [
+          "2",
+          "6",
+          "12",
+          "20",
+          "30",
+          "?"
+        ],
+        "answer": "42",
+        "options": [
+          "40",
+          "42",
+          "44",
+          "48"
+        ],
+        "explanation": "Difference increases by 2 each step: +4, +6, +8, +10, +12."
+      },
+      {
+        "sequence": [
+          "1",
+          "8",
+          "27",
+          "64",
+          "125",
+          "?"
+        ],
+        "answer": "216",
+        "options": [
+          "196",
+          "216",
+          "256",
+          "343"
+        ],
+        "explanation": "Cubes of consecutive integers: 1³, 2³, 3³, 4³, 5³, 6³ = 216."
+      },
+      {
+        "sequence": [
+          "3",
+          "5",
+          "9",
+          "17",
+          "33",
+          "?"
+        ],
+        "answer": "65",
+        "options": [
+          "63",
+          "65",
+          "66",
+          "72"
+        ],
+        "explanation": "Each term is 2 × previous − 1 (or differences are powers of 2: +2, +4, +8, +16, +32)."
+      },
+      {
+        "sequence": [
+          "Z",
+          "X",
+          "U",
+          "Q",
+          "L",
+          "?"
+        ],
+        "answer": "F",
+        "options": [
+          "E",
+          "F",
+          "G",
+          "H"
+        ],
+        "explanation": "Decreasing letter steps: −2, −3, −4, −5, −6 (L − 6 = F)."
+      }
+    ],
+    "wordForge": {
+      "anagram": {
+        "scramble": "HYTGINOPRCA",
+        "solution": "CRYPTOGRAPHY",
+        "hint": "Field of secure communication and mathematical ciphers",
+        "category": "Engineering & ICT"
+      },
+      "wordLadder": {
+        "start": "CODE",
+        "target": "DATA",
+        "optimalSteps": 3,
+        "hint": "Change one letter at a time to form valid words: CODE -> CORE -> DORE -> DARE -> DATA"
+      }
+    }
+  },
+  "dhyan": {
+    "verseOfTheDay": {
+      "chapter": 12,
+      "verse": 15,
+      "sanskrit": "यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः।\nहर्षामर्षभयोद्वेगैर्मुremote क्तो यः स च मे प्रियः॥",
+      "transliteration": "yasmān nodvijate loko lokān nodvijate ca yaḥ |\nharṣāmarṣa-bhayodvegair mukto yaḥ sa ca me priyaḥ ||",
+      "english": "He by whom no one is agitated and who is not agitated by the world, who is freed from excessive delight, envy, fear, and anxiety—he is dear to Me.",
+      "theme": "Staying Unshakable Amidst Outer Noise"
+    },
+    "thoughtOfTheDay": {
+      "title": "Chitta Vritti Nirodha (Calming the Mental Whirlpools)",
+      "source": "Patanjali Yoga Sutras 1.2",
+      "quote": "योगश्चित्तवृत्तिनिरोधः — Yoga is the stilling of the fluctuations of consciousness.",
+      "reflection": "Your smartphone feeds your mind micro-waves of reactive outrage and novelty. Today, remember that focus is not the absence of thought, but the conscious choice of which single thought receives your energy. Practice single-tasking for the next 4 hours."
+    },
+    "dailyMantra": {
+      "name": "Om Namah Shivaya (Panchakshari Mantra)",
+      "sanskrit": "ॐ नमः शिवाय॥",
+      "transliteration": "oṁ namaḥ śivāya ||",
+      "meaning": "I bow to Shiva—the purest inner Consciousness that resides peacefully in the silence beyond thoughts.",
+      "benefit": "Directly harmonizes the five elements within the body and steadies the nervous system."
+    },
+    "panchang": {
+      "tithi": "Shukla Paksha Navami",
+      "paksha": "Shukla Paksha",
+      "nakshatra": "Rohini",
+      "masa": "Kartika / Margashirsha",
+      "vikramSamvat": "Vikram Samvat 2083",
+      "dailyThoughtDate": "18 Nov 2026"
+    }
+  }
+}
