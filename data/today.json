@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-18T16:07:38.742Z",
-    "lastUpdatedIST": "Wednesday, 18 Nov 2026, 09:37 pm IST",
+    "lastUpdated": "2026-11-18T16:08:32.383Z",
+    "lastUpdatedIST": "Wednesday, 18 Nov 2026, 09:38 pm IST",
     "istDateStr": "2026-11-18",
     "next12HourUtcIso": "2026-11-18T18:30:00.000Z",
     "title": "Worldly Affairs At Your Comfort News",
@@ -16,7 +16,7 @@
   "newsByLanguage": {
     "english": [
       {
-        "id": "item-efswz46sh",
+        "id": "item-kuwdkz4m5",
         "title": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
         "summary": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
         "source": "BBC World News",
@@ -26,7 +26,7 @@
         "category": "Global Affairs"
       },
       {
-        "id": "item-7403pyx9s",
+        "id": "item-lf5zl4ubn",
         "title": "William and Kate meet Indian Prime Minister Modi in New Delhi",
         "summary": "The meeting in New Delhi was a late addition to the royal couple's India visit, which has also included their appearance at the annual Earthshot Prize",
         "source": "BBC World News",
@@ -36,7 +36,7 @@
         "category": "Global Affairs"
       },
       {
-        "id": "item-4f9p3e0qb",
+        "id": "item-i2r1j4jjo",
         "title": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
         "summary": "Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday.",
         "source": "BBC World News",
@@ -46,7 +46,7 @@
         "category": "Global Affairs"
       },
       {
-        "id": "item-4vs47dke6",
+        "id": "item-lk9mskh2a",
         "title": "Ghana's new $60m presidential jet sparks public outrage",
         "summary": "The purchase has sparked outrage over its cost as many Ghanaians struggle with rising cost of living.",
         "source": "BBC World News",
@@ -56,59 +56,59 @@
         "category": "Global Affairs"
       },
       {
-        "id": "item-4ajmxd3p3",
-        "title": "Karnataka govt. targets e-Swathu for 8 lakh rural properties by December 31",
-        "summary": "Karnataka govt. targets e-Swathu for 8 lakh rural properties by December 31",
+        "id": "item-u6i74yora",
+        "title": "Majority of the posts removed from social media had communal content: Ramesh Chennithala",
+        "summary": "He said that no posts or graphics targeting political figures have been removed",
         "source": "The Hindu",
-        "time": "6m ago",
-        "url": "https://www.thehindu.com/news/national/karnataka/karnataka-govt-targets-e-swathu-for-8-lakh-rural-properties-by-december-31/article71717011.ece",
-        "imageUrl": "https://th-i.thgim.com/public/incoming/392lt2/article71717122.ece/alternates/LANDSCAPE_1200/_JAI2783.JPG",
+        "time": "2m ago",
+        "url": "https://www.thehindu.com/news/national/kerala/majority-of-the-posts-removed-from-social-media-had-communal-content-ramesh-chennithala/article71716874.ece",
+        "imageUrl": "https://th-i.thgim.com/public/incoming/x3js3j/article71717084.ece/alternates/LANDSCAPE_1200/Keralam-CM-SathG89GPSGBI.4.jpg.jpg",
         "category": "India & South Asia"
       },
       {
-        "id": "item-juen3p42n",
-        "title": "Huge Maoist arms dump seized near Andhra-Chhattisgarh border",
-        "summary": "Huge Maoist arms dump seized near Andhra-Chhattisgarh border",
+        "id": "item-zr4jrnkob",
+        "title": "PM Modi calls for sustained government drive against drug trade, stresses financial prudence",
+        "summary": "At a review meeting with his Council of Ministers, the Prime Minister also assessed progress in poverty reduction and the elimination of left-wing extremism",
         "source": "The Hindu",
-        "time": "6m ago",
-        "url": "https://www.thehindu.com/news/national/andhra-pradesh/huge-maoist-arms-dump-seized-near-andhra-chhattisgarh-border/article71716637.ece",
-        "imageUrl": "https://th-i.thgim.com/public/incoming/g5fkr0/article71717104.ece/alternates/LANDSCAPE_1200/hy18naxal_arm_e.jpg",
+        "time": "3m ago",
+        "url": "https://www.thehindu.com/news/national/pm-modi-calls-for-sustained-government-drive-against-drug-trade-stresses-financial-prudence/article71716138.ece",
+        "imageUrl": "https://th-i.thgim.com/public/incoming/te9dxu/article71717134.ece/alternates/LANDSCAPE_1200/PTI11_18_2026_000260B.jpg",
         "category": "India & South Asia"
       },
       {
-        "id": "item-rufhplg5g",
-        "title": "Vizhinjam to be developed as State’s EXIM maritime hub",
-        "summary": "Vizhinjam to be developed as State’s EXIM maritime hub",
+        "id": "item-x42g8do4e",
+        "title": "Cabinet to consider withdrawal of cases against farmers, Kannada activists",
+        "summary": "Cabinet to consider withdrawal of cases against farmers, Kannada activists",
         "source": "The Hindu",
-        "time": "9m ago",
-        "url": "https://www.thehindu.com/news/national/kerala/vizhinjam-to-be-developed-as-states-exim-maritime-hub/article71716385.ece",
+        "time": "Just now",
+        "url": "https://www.thehindu.com/news/national/karnataka/karnataka-cm-responds-positively-to-request-for-withdrawal-of-cases-against-farmers-and-kannada-activists/article71717090.ece",
+        "imageUrl": "https://th-i.thgim.com/public/incoming/hsusmo/article71717135.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-18%20at%2014.39.25.JPEG",
+        "category": "India & South Asia"
+      },
+      {
+        "id": "item-q7d97y93r",
+        "title": "Captain dies after Army vehicle plunges into Itam River in Imphal East",
+        "summary": "Three soldiers were injured when a military vehicle carrying troops of the 8th Bihar Regiment fell into the river",
+        "source": "The Hindu",
+        "time": "4m ago",
+        "url": "https://www.thehindu.com/news/national/manipur/captain-dies-after-army-vehicle-plunges-into-itam-river-in-imphal-east/article71715979.ece",
         "imageUrl": "https://www.thehindu.com/theme/images/og-image.png",
-        "category": "India & South Asia"
-      },
-      {
-        "id": "item-w41n47ol7",
-        "title": "Tamil Nadu’s latest representation on Mekedatu has no reference to the tribunal demand",
-        "summary": "No communication is said to have been issued by the Union government to Karnataka for comments, sources in the State government say",
-        "source": "The Hindu",
-        "time": "9m ago",
-        "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadus-latest-representation-on-mekedatu-has-no-reference-to-the-tribunal-demand/article71716808.ece",
-        "imageUrl": "https://th-i.thgim.com/public/incoming/99yzed/article71717105.ece/alternates/LANDSCAPE_1200/Karnataka-seeksG08GMR00L.5.jpg.jpg",
         "category": "India & South Asia"
       }
     ],
     "hindi": [
       {
-        "id": "hi-hni2otspy",
+        "id": "hi-ewytxye1l",
         "title": "जिनपिंग और ट्रंप के साथ ऐतिहासिक बातचीत पुतिन के लिए क्यों एक बड़ी जीत",
         "summary": "गुरुवार को अमेरिका, चीन और रूस के नेताओं की मुलाक़ात से व्लादिमीर पुतिन को दुनिया के सामने अपनी ताक़त दिखाने का बड़ा मंच मिलेगा.  लेकिन क्या इससे यूक्रेन के ख़िलाफ़ युद्ध जीतने की उनकी संभावनाओं पर असर पड़ेगा?",
         "source": "BBC News हिंदी",
-        "time": "20m ago",
+        "time": "21m ago",
         "url": "https://www.bbc.com/hindi/articles/cr1ewz3v833wo?at_medium=RSS&at_campaign=rss",
         "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/4032/live/de8abe40-e366-11f1-9f51-4bfc31543510.jpg",
         "category": "प्रमुख समाचार"
       },
       {
-        "id": "hi-goyou3vwn",
+        "id": "hi-zuywpyt03",
         "title": "विदेशी नागरिकों पर जुर्माना लगाएगा ईरान, संसद में इस प्रस्ताव को मिली मंज़ूरी",
         "summary": "ईरानी संसद ने देश के सुरक्षा हितों का उल्लंघन करने वाले विदेशी नागरिकों पर 5,000 से 10,000 यूरो तक जुर्माना लगाने के प्रस्ताव को मंज़ूरी दी.",
         "source": "BBC News हिंदी",
@@ -118,7 +118,7 @@
         "category": "प्रमुख समाचार"
       },
       {
-        "id": "hi-4qyxw6f0v",
+        "id": "hi-yclg1jv4u",
         "title": "फ़लस्तीनी फ़ुटबॉलर ने भारतीय कप्तान के साथ ऐसा क्या किया कि लगा नस्लभेद का आरोप",
         "summary": "भारत ने यह मुक़ाबला 4-1 से जीता, लेकिन मैच में रेड कार्ड और नस्लभेदी इशारे के आरोप ने विवाद खड़ा कर दिया. भारतीय फ़ुटबॉल महासंघ ने इसे लेकर शिकायत दर्ज कराई है.",
         "source": "BBC News हिंदी",
@@ -128,7 +128,7 @@
         "category": "प्रमुख समाचार"
       },
       {
-        "id": "hi-pfezj5h6r",
+        "id": "hi-9itw6jse9",
         "title": "नर्मदा के किनारे बच्चों को क्या मिला जिसका इतिहास हो सकता है लाखों साल पुराना?",
         "summary": "वैज्ञानिकों का मानना है कि पतई घाट पर मिला यह फॉसिल अकेली खोज नहीं हो सकता. इसके आसपास का पूरा इलाका प्राचीन जीवों के अध्ययन के लिहाज से महत्वपूर्ण है.",
         "source": "BBC News हिंदी",
@@ -138,7 +138,7 @@
         "category": "प्रमुख समाचार"
       },
       {
-        "id": "hi-u3pncbvok",
+        "id": "hi-csth6dhss",
         "title": "कुलगाम मुठभेड़ में मारा गया लतीफ़ बट, जो कभी था कारपेंटर फिर बना कश्मीर का 'मोस्ट वॉन्टेड'",
         "summary": "21 साल का लतीफ़ बट चरमपंथी बनने से पहले कारपेंटर और कांच लगाने का काम करता था. कुलगाम में मुठभेड़ में मारे गए इस चरमपंथी की कहानी क्या है?",
         "source": "BBC News हिंदी",
@@ -148,7 +148,7 @@
         "category": "प्रमुख समाचार"
       },
       {
-        "id": "hi-cuuref1by",
+        "id": "hi-4ckg2bxlc",
         "title": "धोनी के आईपीएल से रिटायरमेंट पर क्या बोले पाकिस्तानी और दूसरे विदेशी क्रिकेटर",
         "summary": "बतौर क्रिकेटर आईपीएल से संन्यास लेने के बाद अब एम एस धोनी प्रतियोगी क्रिकेट के सभी फ़ॉर्मेट से पूरी तरह रिटायर हो गए हैं.  उनके क्रिकेटिंग सफ़र पर पाकिस्तान समेत दुनिया भर के क्रिकेटरों की प्रतिक्रिया आ रही है.",
         "source": "BBC News हिंदी",
@@ -158,7 +158,7 @@
         "category": "प्रमुख समाचार"
       },
       {
-        "id": "hi-ldfvq2umw",
+        "id": "hi-ib6xbdzyn",
         "title": "जिस बेटे को मरा समझा, 42 साल बाद उसी का आया ईमेल",
         "summary": "यह ईमेल एक ऐसे शख्स ने भेजा था, जिसने अपने जन्म का साल और उस अस्पताल का नाम बताया था, जहां उसका जन्म हुआ था. इसके बाद उसने कुछ ऐसा लिखा, जिसने डायने की ज़िंदगी बदल दी.",
         "source": "BBC News हिंदी",
@@ -168,7 +168,7 @@
         "category": "प्रमुख समाचार"
       },
       {
-        "id": "hi-gsu18tgw1",
+        "id": "hi-sxeuixdrz",
         "title": "बेटी की शादी में चार लाख मेहमानों के आने का दावा करने वाले अनंत सिंह के पास कितनी संपत्ति है?",
         "summary": "बिहार के मोकामा से विधायक अनंत सिंह का दावा है कि उनकी बेटी की शादी में चार लाख मेहमान आएंगे.  शादी में घुड़दौड़ प्रतियोगिता भी होगी, जिसके विजेता को थार गाड़ी दी जाएगी.",
         "source": "BBC News हिंदी",
@@ -180,7 +180,7 @@
     ],
     "gujarati": [
       {
-        "id": "gu-spcebuxdz",
+        "id": "gu-nej2181a6",
         "title": "ગુજરાતના દુષ્કાળ વખતે ગાંધીજીના પૌત્ર ગોપાલકૃષ્ણ ગાંધીએ જ્યારે વેશ બદલીને ગામડાં ખૂંદ્યાં અને રાહતકામ કર્યું",
         "summary": "ગાંધીજીના પૌત્ર ગોપાલકૃષ્ણ ગાંધીએ 2000ની સાલમાં ગુજરાતમાં પડેલા દુકાળ સમયે બનાસકાંઠાની મુલાકાત લીધી હતી.  તેઓ બનાસકાંઠાના કુંડાળિયા ગામે ચાર દિવસ રોકાયા હતા.",
         "source": "BBC News ગુજરાતી",
@@ -190,7 +190,7 @@
         "category": "મુખ્ય સમાચાર"
       },
       {
-        "id": "gu-s55y4fu4r",
+        "id": "gu-z0vwian6j",
         "title": "પાટીદાર આંદોલન બાદ એવું શું થયું કે આનંદીબહેન પટેલે સીએમપદેથી રાજીનામું આપવું પડ્યું?",
         "summary": "પાટીદાર અનામત આંદોલન સમિતિના નેતા દિનેશ બાંભણિયાના માફીના નિવેદન બાદ,ગુજરાતના રાજકારણનું 10 વર્ષ જૂનું પ્રકરણ ફરી તાજું થયું છે.  દિનેશ બાંભણિયાની માફી વચ્ચે જાણો આનંદીબહેન પટેલે સીએમપદેથી કેમ રાજીનામું આપ્યું હતું?",
         "source": "BBC News ગુજરાતી",
@@ -200,17 +200,17 @@
         "category": "મુખ્ય સમાચાર"
       },
       {
-        "id": "gu-vgg2c5vch",
+        "id": "gu-3a60l1ntn",
         "title": "શી જિનપિંગની હાજરીમાં પુતિન અને ટ્રમ્પની ઉષ્માભરી મુલાકાત, આવતીકાલે યોજાશે ત્રિપક્ષીય બેઠક – ન્યૂઝ અપડેટ",
         "summary": "ગુજરાત સહિત દેશ અને દુનિયાના મહત્ત્વપૂર્ણ સમાચારો જાણવા માટે જોડાયેલા રહો બીબીસી ગુજરાતીના આ પેજ સાથે.",
         "source": "BBC News ગુજરાતી",
-        "time": "2h ago",
+        "time": "3h ago",
         "url": "https://www.bbc.com/gujarati/articles/cw1md5nnvpeno?at_medium=RSS&at_campaign=rss",
         "imageUrl": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/c722/live/eaa31080-e350-11f1-99b6-a35a62fa4264.jpg",
         "category": "મુખ્ય સમાચાર"
       },
       {
-        "id": "gu-8lk8wzg21",
+        "id": "gu-ocyqjca0e",
         "title": "રાજકોટ : 'ફોઈના ભાઈ સાથે અનૈતિક સંબધોની શંકા રાખી હત્યા કરનાર' આરોપી સગી બહેનો કેવી રીતે પકડાઈ?",
         "summary": "થોડા દિવસ પહેલાં 40 વર્ષીય ફોઈ હકુબહેનની હત્યા કરી રાજકોટના જેતપુરના નવગઢ રોડ પર ફેંકી દેવાના આરોપમાં બે સગી બહેનો સહિત કુલ ચારની પોલીસે ધરપકડ કરી છે. શું થયું હતું?",
         "source": "BBC News ગુજરાતી",
@@ -220,7 +220,7 @@
         "category": "મુખ્ય સમાચાર"
       },
       {
-        "id": "gu-73uj43tzi",
+        "id": "gu-9a2xbz2s4",
         "title": "ત્રણ અઠવાડિયાંમાં ત્રણ ભયંકર વાવાઝોડાં : બંગાળની ખાડીમાં આટલાં બધાં વાવાઝોડાં કેમ આવી રહ્યાં છે?",
         "summary": "ભારત હવામાન વિભાગ (IMD) દ્વારા 18 નવેમ્બરના રોજ સવારે 5:30 વાગ્યે જાહેર કરાયેલા અહેવાલ અનુસાર, દક્ષિણ-મધ્ય બંગાળની ખાડી અને તેની આસપાસના પશ્ચિમ-મધ્ય બંગાળની ખાડી વિસ્તારમાં સ્થિત વાવાઝોડું 'અક્વાન' છેલ્લા 6 કલાકમાં પ્રતિ કલાક 3 કિમીની ગતિએ ઉત્તર-ઉત્તરપશ્ચિમ દિશામાં ખૂબ ધીમે આગળ વધ્યું છે અને વધુ તીવ્ર બનીને અત્યંત ગંભીર ચક્રવાતી તોફાનમાં પરિવર્તિત થયું છે.",
         "source": "BBC News ગુજરાતી",
@@ -230,7 +230,7 @@
         "category": "મુખ્ય સમાચાર"
       },
       {
-        "id": "gu-96gki3elf",
+        "id": "gu-g7bhz9iqy",
         "title": "વંદે ભારત સ્લીપર ટ્રેનની ખાસિયતો : સામાન્ય ટ્રેનો કરતાં કેટલી અલગ છે આ નવી ટ્રેન? જુઓ અંદરની તસવીરો",
         "summary": "વંદે ભારત સ્લીપર ટ્રેનમાં શું છે ખાસ? તેમાં સુવિધાઓ કેવી છે અને આ ટ્રેન અંદરથી કેવી દેખાય છે?",
         "source": "BBC News ગુજરાતી",
@@ -240,7 +240,7 @@
         "category": "મુખ્ય સમાચાર"
       },
       {
-        "id": "gu-m13psgo0p",
+        "id": "gu-l5hvfgv40",
         "title": "પાકિસ્તાનના સિંધમાં મોટા પ્રમાણમાં પુરુષોની નસબંધી કેમ થઈ રહી છે?",
         "summary": "પાકિસ્તાનમાં પરિવાર નિયોજનની પદ્ધતિ તરીકે પુરુષ નસબંધી અંગે હજુ પણ પ્રમાણમાં ઓછી ચર્ચા થાય છે, પરંતુ સિંધ પ્રાંતમાં તેની લોકપ્રિયતા ધીમે ધીમે વધી રહી છે, શું છે કારણ?",
         "source": "BBC News ગુજરાતી",
@@ -250,7 +250,7 @@
         "category": "મુખ્ય સમાચાર"
       },
       {
-        "id": "gu-1myxt7vlo",
+        "id": "gu-sf495ok4p",
         "title": "ગુજરાતે નર્મદાનું વધારે પાણી મેળવવા માટે બીજાં રાજ્યોને પૈસા ચૂકવવા પડશે? શું છે મામલો",
         "summary": "નર્મદા ડૅમના ખર્ચનો 30 વર્ષ જૂનો વિવાદ શું છે, ગુજરાતે નર્મદાના પાણી માટે શા માટે નાણાં ચૂકવવા પડશે, તેના બદલામાં અસરગ્રસ્ત રાજ્યોને શું મળશે, આ બધું કેવી રીતે નક્કી થશે, તેના વિશે જાણો.",
         "source": "BBC News ગુજરાતી",
@@ -263,7 +263,7 @@
   },
   "unNews": [
     {
-      "id": "item-u0wv3do9b",
+      "id": "item-1es1sm5qb",
       "title": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
       "summary": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
       "source": "UN & World Affairs",
@@ -273,7 +273,7 @@
       "category": "United Nations"
     },
     {
-      "id": "item-srnpck568",
+      "id": "item-q2ftwasol",
       "title": "Inside the Chinese 'AI wonderland' where Xi will host Trump",
       "summary": "The meeting will take place as Trump attends the Asia-Pacific Economic Co-operation (Apec) summit in the southern city of Shenzhen.",
       "source": "UN & World Affairs",
@@ -283,7 +283,7 @@
       "category": "United Nations"
     },
     {
-      "id": "item-akw40yqsz",
+      "id": "item-g9aiospyv",
       "title": "Street cricket with a legend then metro ride as William and Kate begin India visit",
       "summary": "The Prince and Princess of Wales are visiting Mumbai for the Earthshot Prize this week, but started their trip with some fun outings.",
       "source": "UN & World Affairs",
@@ -295,7 +295,7 @@
   ],
   "goodNews": [
     {
-      "id": "item-vguw741g3",
+      "id": "item-j8gqi3fyw",
       "title": "This Blue Whale Population Grew 1,000% Since the End of Antarctic Whaling",
       "summary": "Antarctic blue whales have increased in number 1,000% since 1973 when the harpoons were finally hung up for good.  Growing from just 418 whales to 4,018, the superb recovery has averaged 4.",
       "source": "Good News Network",
@@ -305,7 +305,7 @@
       "category": "World Progress"
     },
     {
-      "id": "item-qkd3sii9q",
+      "id": "item-qmzqtq8ww",
       "title": "Scientists ‘Cure’ Deadly Brain Tumors in Every Mouse Tested with New Cancer Therapy",
       "summary": "In experiments involving mice, scientists successfully eliminated an aggressive childhood brain cancer while also providing lasting protection.",
       "source": "Good News Network",
@@ -315,7 +315,7 @@
       "category": "World Progress"
     },
     {
-      "id": "item-kwk570i2t",
+      "id": "item-ms4cickw5",
       "title": "Good News in History, November 18",
       "summary": "75 years ago today, the pioneering newsmagazine series, See It Now, was first broadcast.  Running for seven years on CBS, it was created by iconic newsman Edward R.",
       "source": "Good News Network",
@@ -325,7 +325,7 @@
       "category": "World Progress"
     },
     {
-      "id": "item-hfsowagy6",
+      "id": "item-rufhunxo7",
       "title": "West Coast’s First Ever Sea Turtle Hatchlings Released into the Pacific (LOOK)",
       "summary": "Olive ridley sea turtle hatchlings saved from an approaching storm in California were released into the wild over the weekend.",
       "source": "Good News Network",
@@ -338,17 +338,17 @@
   "sports": {
     "athletics": [
       {
-        "id": "item-3rc6tpsd2",
+        "id": "item-1pzwn5oj1",
         "title": "Final push to save Willesden’s indoor track",
         "summary": "Plans to turn their winter training home into a gym are on hold, but hundreds of young athletes have until […]",
         "source": "Athletics Weekly",
-        "time": "26m ago",
+        "time": "27m ago",
         "url": "https://athleticsweekly.com/news/final-push-to-save-willesdens-indoor-track-1040014146/",
         "imageUrl": null,
         "category": "Athletics & Running"
       },
       {
-        "id": "item-6d3xy8lgf",
+        "id": "item-uqx9b1uqj",
         "title": "Wakefield and Davies on top at Brampton to Carlisle",
         "summary": "Harry Wakefield, usually at his best in relays, ran his fastest 10 miles by some three minutes to beat two […]",
         "source": "Athletics Weekly",
@@ -358,7 +358,7 @@
         "category": "Athletics & Running"
       },
       {
-        "id": "item-d2q6sj1er",
+        "id": "item-s1chpzvv5",
         "title": "Student power on show in cross-country league action",
         "summary": "Holly Weedall led Birmingham University to team victory at the Midland Women's League, while Oxford University runners filled the first […]",
         "source": "Athletics Weekly",
@@ -368,7 +368,7 @@
         "category": "Athletics & Running"
       },
       {
-        "id": "item-qql8p62x7",
+        "id": "item-u5inowub3",
         "title": "Destination Doha: Racing on the fast Doha Corniche",
         "summary": "Olympic champion Tamirat Tola returned to winning ways on the waterfront in January 2026. Now the Doha Marathon by Ooredoo […]",
         "source": "Athletics Weekly",
@@ -380,7 +380,17 @@
     ],
     "cricket": [
       {
-        "id": "item-xuq0bu4ye",
+        "id": "item-l63rp1yzh",
+        "title": "Bad light stops play early with Bangladesh under the pump",
+        "summary": "Bangladesh still trail by 57 runs with only five wickets in hand, as South Africa look to wrap up the win on the final day",
+        "source": "ESPNcricinfo",
+        "time": "8m ago",
+        "url": "https://www.cricinfo.com/ci/content/story/1563091.html?ex_cid=OTC-RSS",
+        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425400/425439.jpg",
+        "category": "Cricket"
+      },
+      {
+        "id": "item-ps7e6ebms",
         "title": "The key takeaways from Cameron Bancroft's revelations about sandpapergate",
         "summary": "Who knew what? Who objected? And had Australia done it before they were caught?",
         "source": "ESPNcricinfo",
@@ -390,29 +400,19 @@
         "category": "Cricket"
       },
       {
-        "id": "item-u8c9ivbis",
+        "id": "item-ssoe4jmq2",
         "title": "Ghori, bowlers put Pakistan in command despite Kumara five-for",
         "summary": "Pakistan took a 227-run first-innings lead before seamers tightened the grip on second day",
         "source": "ESPNcricinfo",
-        "time": "1h ago",
+        "time": "2h ago",
         "url": "https://www.cricinfo.com/ci/content/story/1563048.html?ex_cid=OTC-RSS",
         "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425400/425418.jpg",
-        "category": "Cricket"
-      },
-      {
-        "id": "item-blp21owug",
-        "title": "Bancroft: 'I did not give a complete and truthful account'",
-        "summary": "In a 4000-word article first published in The West Australian, Cameron Bancroft admits withholding details during Australia's 2018 ball-tampering investigation",
-        "source": "ESPNcricinfo",
-        "time": "2h ago",
-        "url": "https://www.cricinfo.com/ci/content/story/1563070.html?ex_cid=OTC-RSS",
-        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/274300/274324.jpg",
         "category": "Cricket"
       }
     ],
     "general": [
       {
-        "id": "item-1e9fdtbex",
+        "id": "item-hnm9wn478",
         "title": "Explosive Bancroft sandpaper claims heap pressure on Cummins",
         "summary": "Cameron Bancroft claims the whole Australia team knew about the 2018 sandpaper plot in explosive revelations that will heap pressure on current captain Pat Cummins.",
         "source": "BBC Sport",
@@ -422,7 +422,7 @@
         "category": "Global Sports"
       },
       {
-        "id": "item-5qxodf9ay",
+        "id": "item-0przf4shp",
         "title": "Divide and conquer - how maverick Springboks coach Erasmus split the rugby world",
         "summary": "Rassie Erasmus is a serial offender when it comes to criticising officials, but he retains huge support in South Africa.",
         "source": "BBC Sport",
@@ -432,7 +432,7 @@
         "category": "Global Sports"
       },
       {
-        "id": "item-vm0znbshu",
+        "id": "item-0oi0iczyp",
         "title": "Joint-record six referee errors in last Premier League weekend",
         "summary": "The Premier League's Key Match Incidents Panel rules there were six on-field errors in the last round of games - the joint-highest in one weekend.",
         "source": "BBC Sport",
