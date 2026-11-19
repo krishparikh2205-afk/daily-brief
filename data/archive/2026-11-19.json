@@ -1,0 +1,992 @@
+{
+  "meta": {
+    "lastUpdated": "2026-11-19T00:41:36.695Z",
+    "lastUpdatedIST": "Thursday, 19 Nov 2026, 06:11 am IST",
+    "istDateStr": "2026-11-19",
+    "targetMidnightIST": "2026-11-19T18:30:00.000Z",
+    "title": "Daily Brief",
+    "tagline": "Your 10-minute morning lens on the world, sports, tech, mind, and spirit."
+  },
+  "worldPulse": {
+    "regions": {
+      "india": [
+        {
+          "title": "Madurai Bench of Madras High Court directs T.N. government not to open any new Tasmac shops",
+          "summary": "A Division Bench said the State already had a large number of Tasmac shops, and considering the public interest, new Tasmac shops should not be opened",
+          "source": "The Hindu",
+          "time": "44m ago",
+          "url": "https://www.thehindu.com/news/national/tamil-nadu/hc-directs-state-government-not-to-open-any-new-tasmac-liquor-shops-in-tamil-nadu/article71716455.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/wgsen7/article70122252.ece/alternates/LANDSCAPE_1200/9871_28_7_2024_13_4_51_3_MADRASHIGHCOURTMADURAIBENCH____01.JPG",
+          "category": "india"
+        },
+        {
+          "title": "Bihar Minister targets people’s movement for PM Modi’s ‘One Tree’ scheme",
+          "summary": "On the occasion of Akshaya Navami, State Agriculture Minister Sinha spoke about connecting five pledges with culture, nature, and farmers",
+          "source": "The Hindu",
+          "time": "1h ago",
+          "url": "https://www.thehindu.com/news/national/bihar/bihar-minister-targets-peoples-movement-for-pm-modis-one-tree-scheme/article71717698.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/gm6ezw/article71717710.ece/alternates/LANDSCAPE_1200/20261118400L.jpg",
+          "category": "india"
+        },
+        {
+          "title": "BJP turns to Mathura temple issue amid cadre unease, allies’ pressure",
+          "summary": "Political observers say the renewed focus on Krishna Janmabhoomi serves as a “smokescreen” to mask simmering discontent among the party cadre over the UGC’s equity rules, SIR drive and seat sharing wi...",
+          "source": "The Hindu",
+          "time": "1h ago",
+          "url": "https://www.thehindu.com/news/national/uttar-pradesh/bjp-turns-to-mathura-temple-issue-amid-cadre-unease-allies-pressure/article71717504.ece",
+          "imageUrl": "https://th-i.thgim.com/public/incoming/rtkxr7/article71717707.ece/alternates/LANDSCAPE_1200/PTI11_17_2026_000277B.jpg",
+          "category": "india"
+        }
+      ],
+      "usa": [
+        {
+          "title": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
+          "summary": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
+          "source": "BBC News US",
+          "time": "8h ago",
+          "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a9fb/live/b2707bf0-e349-11f1-99aa-0f40b013ad11.jpg",
+          "category": "usa"
+        },
+        {
+          "title": "BBC correspondents discuss historic Trump, Xi and Putin meeting",
+          "summary": "The BBC’s Laura Bicker, Steve Rosenberg and Nada Tawfik explain everything you need to know ahead of the unprecedented trilateral meeting.",
+          "source": "BBC News US",
+          "time": "16h ago",
+          "url": "https://www.bbc.co.uk/news/videos/cqp86k23d84ro?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e20b/live/66ff6490-e323-11f1-a094-5fdc692f3e33.jpg",
+          "category": "usa"
+        },
+        {
+          "title": "Can Anthropic's record breaking IPO stop the AI bubble bursting?",
+          "summary": "Anthropic's hotly anticipated IPO is expected to put it in the top 10 most valuable US companies, but the future is uncertain.",
+          "source": "BBC News US",
+          "time": "3h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dcc1/live/0bb55690-e36d-11f1-99a1-253766e7ad8b.jpg",
+          "category": "usa"
+        }
+      ],
+      "uk": [
+        {
+          "title": "McDonald's sex abuse: 'They were waiting for the younger girls to turn 18'",
+          "summary": "A former McDonald's worker calls on the firm to “change the way they treat younger employees” as a judge rules a legal case against the chain can go ahead.",
+          "source": "BBC News UK",
+          "time": "40m ago",
+          "url": "https://www.bbc.co.uk/news/articles/c6x2eve321jno?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/decb/live/a6ef9570-e364-11f1-99a1-253766e7ad8b.jpg",
+          "category": "uk"
+        },
+        {
+          "title": "Crew unaware of risks before Bayesian yacht accident, say investigators",
+          "summary": "The vessel sank off the coast of northern Sicily, killing seven people including British tech tycoon Mike Lynch.",
+          "source": "BBC News UK",
+          "time": "36m ago",
+          "url": "https://www.bbc.co.uk/news/articles/c6e9kn15z9d7o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6aec/live/3ca33b80-6077-11ef-aea1-e764981585c4.jpg",
+          "category": "uk"
+        },
+        {
+          "title": "Council wins legal fight against flags on lamp-posts",
+          "summary": "In her decision, Judge Emma Kelly says there was a \"compelling need\" to grant the interim injunction.",
+          "source": "BBC News UK",
+          "time": "6h ago",
+          "url": "https://www.bbc.co.uk/news/articles/ckq5vg81805qo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/05a0/live/e737dbc0-e381-11f1-99b6-a35a62fa4264.jpg",
+          "category": "uk"
+        }
+      ],
+      "europe": [
+        {
+          "title": "Hashim Thaci's second conviction in The Hague reignites debate in Kosovo about justice and the Kosovo Specialist Chambers",
+          "summary": "Former President Hashim Thaci has been convicted of trying to influence witnesses in his war crimes trial.  The conviction has reignited debate in Kosovo about the Kosovo Specialist Chambers, the court that convicted him.",
+          "source": "DW Europe",
+          "time": "1d ago",
+          "url": "https://www.dw.com/en/hashim-thaci-s-second-conviction-in-the-hague-reignites-debate-in-kosovo-about-justice-and-the-kosovo-specialist-chambers/a-79975227?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": null,
+          "category": "europe"
+        },
+        {
+          "title": "Back to 1997: Russia wants NATO to roll back its eastern expansion",
+          "summary": "The Kremlin is reportedly calling on NATO to withdraw from large parts of Eastern Europe. What this would mean for the security of millions of Europeans — and what lies behind Russia's plan.",
+          "source": "DW Europe",
+          "time": "1d ago",
+          "url": "https://www.dw.com/en/back-to-1997-russia-wants-nato-to-roll-back-its-eastern-expansion/a-79970289?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/77599997_6.jpg",
+          "category": "europe"
+        },
+        {
+          "title": "Rights court rules Turkey must release jailed lawmaker Atalay",
+          "summary": "The European Court of Human Rights has called for the release of imprisoned elected lawmaker Can Atalay.  Atalay has been in prison for almost five years despite rulings from the Turkish Constitutional Court.",
+          "source": "DW Europe",
+          "time": "1d ago",
+          "url": "https://www.dw.com/en/rights-court-rules-turkey-must-release-jailed-lawmaker-atalay/a-79972462?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/65838479_6.jpg",
+          "category": "europe"
+        }
+      ],
+      "middleEast": [
+        {
+          "title": "Iran war live: Saudi-led coalition strikes Yemen; ships on fire in Hormuz",
+          "summary": "Saudi-led coalition has said it destroyed a missile platform in Saada, Yemen as Iran claims three ships hit mines.",
+          "source": "Al Jazeera",
+          "time": "40m ago",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6afe32a94666-1795044009.jpg?resize=1920%2C1440",
+          "category": "middleEast"
+        },
+        {
+          "title": "Israel uses Gaza swimming video to minimise winter hardships",
+          "summary": "Israel shared an Al Jazeera video of Palestinians swimming, to suggest winter storms in Gaza can’t be that bad.",
+          "source": "Al Jazeera",
+          "time": "48m ago",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/israel-uses-gaza-swimming-video-to-minimise-winter-hardships?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/with-Title-1795045959.png?resize=1920%2C1080&quality=80",
+          "category": "middleEast"
+        },
+        {
+          "title": "Migrant boat capsizes off Senegal, leaving at least one dead",
+          "summary": "Incident comes days after another boat capsized in Senegalese waters, and Spain declared a migration emergency.",
+          "source": "Al Jazeera",
+          "time": "1h ago",
+          "url": "https://www.aljazeera.com/news/2026/11/18/migrant-boat-capsizes-off-senegal-leaving-at-least-one-dead?traffic_source=rss",
+          "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261118__D7WJ6DK__v1__HighRes__SenegalMigrationAccident-1795038583.jpg?resize=1920%2C1440",
+          "category": "middleEast"
+        }
+      ],
+      "russiaUkraine": [
+        {
+          "title": "Back to 1997: Russia wants NATO to roll back its eastern expansion",
+          "summary": "The Kremlin is reportedly calling on NATO to withdraw from large parts of Eastern Europe. What this would mean for the security of millions of Europeans — and what lies behind Russia's plan.",
+          "source": "DW Europe",
+          "time": "1d ago",
+          "url": "https://www.dw.com/en/back-to-1997-russia-wants-nato-to-roll-back-its-eastern-expansion/a-79970289?maca=en-rss-en-eu-2092-rdf",
+          "imageUrl": "https://static.dw.com/image/77599997_6.jpg",
+          "category": "Russia-Ukraine"
+        }
+      ],
+      "chinaAsiaPacific": [
+        {
+          "title": "Myanmar faces historic genocide verdict at UN court over Rohingya massacres",
+          "summary": "No state has ever been found guilty by an international court of committing genocide.",
+          "source": "BBC News Asia",
+          "time": "1h ago",
+          "url": "https://www.bbc.co.uk/news/articles/c5m2l90ez144o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/67fc/live/b89f41e0-e336-11f1-9479-d17d3e98c29d.jpg",
+          "category": "asia"
+        },
+        {
+          "title": "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal",
+          "summary": "China worries the scandal could ramp up pressure on the US to further restrict the sale of advanced chips.",
+          "source": "BBC News Asia",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ec0d/live/1061d030-dea2-11f1-b441-2b33b063138f.jpg",
+          "category": "asia"
+        },
+        {
+          "title": "How new US chip restrictions on South East Asia will hit China",
+          "summary": "The new rules restrict chip exports and also access to their computing power, which China relies on heavily.",
+          "source": "BBC News Asia",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bfea/live/8fbafe20-e225-11f1-ae7e-97d0d3a43181.jpg",
+          "category": "asia"
+        }
+      ],
+      "africa": [
+        {
+          "title": "Ghana's new $60m presidential jet sparks public outrage",
+          "summary": "The purchase has sparked outrage over its cost as many Ghanaians struggle with rising cost of living.",
+          "source": "BBC News Africa",
+          "time": "15h ago",
+          "url": "https://www.bbc.co.uk/news/articles/ck792dez8dp3o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/377e/live/9eb7bde0-e31b-11f1-81d5-99b8785f3e51.jpg",
+          "category": "africa"
+        },
+        {
+          "title": "Can a US-backed mineral highway bring peace and prosperity to DR Congo?",
+          "summary": "The Lobito Corridor is at the centre of a US-backed effort to secure access to Africa's critical minerals.",
+          "source": "BBC News Africa",
+          "time": "19h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cx053jrv9rz9o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7de4/live/f39e1920-e1b9-11f1-a094-5fdc692f3e33.jpg",
+          "category": "africa"
+        },
+        {
+          "title": "Nigeria approves law allowing states to run their own police",
+          "summary": "The push for state police comes amid persistent security crises across the country.",
+          "source": "BBC News Africa",
+          "time": "16h ago",
+          "url": "https://www.bbc.co.uk/news/articles/cr20vpq58093o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/36f7/live/b66d0950-e31a-11f1-81d5-99b8785f3e51.jpg",
+          "category": "africa"
+        }
+      ],
+      "latinAmerica": [
+        {
+          "title": "Venezuelan ex-world boxing champion Linares in ICE detention",
+          "summary": "Former three-weight world champion Jorge Linares remains in the custody of US immigration authorities in Texas and is facing deportation.",
+          "source": "BBC Latin America",
+          "time": "17h ago",
+          "url": "https://www.bbc.co.uk/sport/boxing/articles/cknv4q197dymo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9c8d/live/ae4ea630-e31e-11f1-baab-4b3b35d174b7.jpg",
+          "category": "latinAmerica"
+        },
+        {
+          "title": "Gunmen kill Costa Rican journalist who reported on drugs trade",
+          "summary": "Rodríguez had denounced alleged links between criminal organisations and powerful figures in Costa Rica.",
+          "source": "BBC Latin America",
+          "time": "1d ago",
+          "url": "https://www.bbc.co.uk/news/articles/c6ly7g5lx7gyo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1bb5/live/140763d0-e26c-11f1-b19c-7b42f37bea48.jpg",
+          "category": "latinAmerica"
+        },
+        {
+          "title": "Ashes of exiled Nobel Laureate Miguel Ángel Asturias returned to Guatemala",
+          "summary": "The poet, writer and diplomat died in Europe in 1974 having been forced to leave his native country.",
+          "source": "BBC Latin America",
+          "time": "2d ago",
+          "url": "https://www.bbc.co.uk/news/articles/cvde1klewg88o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/da54/live/f1263820-e1b5-11f1-9a3f-99aca912798e.jpg",
+          "category": "latinAmerica"
+        }
+      ]
+    },
+    "ongoingTracker": [
+      {
+        "topic": "Russia - Ukraine War & European Defense",
+        "status": "Active Artillery & Drone Engagements",
+        "whatChanged": "European allies announce accelerated air-defense ammunition shipments amid cold-weather logistics shifts.",
+        "lastUpdated": "Today"
+      },
+      {
+        "topic": "Middle East Diplomatic Talks & Regional Security",
+        "status": "High-level Mediations",
+        "whatChanged": "Regional envoys continue ceasefire and humanitarian corridor framework discussions in Cairo and Doha.",
+        "lastUpdated": "Today"
+      },
+      {
+        "topic": "Global AI Regulatory Frameworks & Chip Exports",
+        "status": "Policy Enactment",
+        "whatChanged": "US and EU tech regulators finalize joint guidelines for advanced semiconductor safety evaluations.",
+        "lastUpdated": "Today"
+      },
+      {
+        "topic": "Global Clean Energy & Grid Transition Summit",
+        "status": "Negotiations Ongoing",
+        "whatChanged": "Developing economies secure new multilateral financing commitments for grid modernization and energy storage.",
+        "lastUpdated": "Today"
+      }
+    ],
+    "isStale": false
+  },
+  "sports": {
+    "achievementOfTheDay": {
+      "title": "World Record & Peak Endurance Milestone",
+      "athleteOrTeam": "Global Sports Spotlight",
+      "achievement": "Record-setting performance in international championship trials",
+      "detail": "Dominant tactical execution saw benchmark milestones shattered, showcasing extraordinary conditioning and technical precision.",
+      "source": "BBC Sport / World Athletics",
+      "url": "https://www.bbc.com/sport"
+    },
+    "categories": {
+      "cricket": [
+        {
+          "title": "'Consistent and adamant' - Cummins stands by sandpaper denials",
+          "summary": "The Australia captain's agent said 'there is nothing he hasn't answered' in the wake of Bancroft's revelations",
+          "source": "ESPNcricinfo",
+          "time": "1h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1563151.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425100/425147.jpg",
+          "category": "Cricket"
+        },
+        {
+          "title": "India leave Siraj and Jadeja out of opening Test in New Zealand",
+          "summary": "India asked New Zealand to bat first on a green pitch",
+          "source": "ESPNcricinfo",
+          "time": "2h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1563144.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425400/425446.jpg",
+          "category": "Cricket"
+        },
+        {
+          "title": "New Zealand 'trying to be a little bit fluid' with fast bowlers' workloads",
+          "summary": "New Zealand have ten Tests lined up in quick succession, and captain Tom Latham hopes to look back at the end of it \"and say we had a pretty good time\"",
+          "source": "ESPNcricinfo",
+          "time": "3h ago",
+          "url": "https://www.cricinfo.com/ci/content/story/1563034.html?ex_cid=OTC-RSS",
+          "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425400/425401.jpg",
+          "category": "Cricket"
+        }
+      ],
+      "football": [
+        {
+          "title": "The tightest survival scrap for years? Why it's not too early to worry",
+          "summary": "The Premier League resumes on Saturday with Crystal Palace, Sunderland and Man Utd in the relegation zone. But is it too early to be worried?",
+          "source": "BBC Sport",
+          "time": "8h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cj3vgp36z063o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5f51/live/09641460-e33d-11f1-a094-5fdc692f3e33.png",
+          "category": "Football"
+        },
+        {
+          "title": "FA explored legal challenge to Infantino staying on",
+          "summary": "The Football Association considered challenging Gianni Infantino's eligibility to run for a fourth term as Fifa president, but it felt a case was likely to fail.",
+          "source": "BBC Sport",
+          "time": "3h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cm3eg1w4ypz5o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c8c1/live/e7141200-e37f-11f1-b879-03485a55c082.jpg",
+          "category": "Football"
+        },
+        {
+          "title": "Joint-record six referee errors in last Premier League weekend",
+          "summary": "The Premier League's Key Match Incidents Panel rules there were six on-field errors in the last round of games - the joint-highest in one weekend.",
+          "source": "BBC Sport",
+          "time": "12h ago",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c69q8jy924y4o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d44c/live/1634e590-e345-11f1-99aa-0f40b013ad11.jpg",
+          "category": "Football"
+        }
+      ],
+      "tennis": [
+        {
+          "title": "Alcaraz continues winning run despite injury concern",
+          "summary": "Carlos Alcaraz continues his sensational late-season form as he outclasses world number five Daniil Medvedev to confirm his progress at the ATP Finals.",
+          "source": "BBC Sport",
+          "time": "8h ago",
+          "url": "https://www.bbc.co.uk/sport/tennis/articles/cmdx1erlpqkxo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9a7c/live/1b8e03d0-e365-11f1-9f51-4bfc31543510.jpg",
+          "category": "Tennis"
+        }
+      ],
+      "general": [
+        {
+          "title": "The sandpaper plot - who was there, who said what?",
+          "summary": "As Cameron Bancroft's explosive allegations raise more questions about the sandpaper scandal, BBC Sport looks at who was there and what they have said since.",
+          "source": "BBC Sport",
+          "time": "8h ago",
+          "url": "https://www.bbc.co.uk/sport/cricket/articles/cqwy41w3zydgo?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f5ea/live/792a2740-e35f-11f1-a898-e7da1c1ebbf0.jpg",
+          "category": "Sports"
+        },
+        {
+          "title": "Divide and conquer - now maverick Erasmus plans online watchalong",
+          "summary": "Rassie Erasmus is a serial offender when it comes to criticising officials, but he retains huge support in South Africa - and has unique plans for following his team's game against Ireland.",
+          "source": "BBC Sport",
+          "time": "9h ago",
+          "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cmvg28v20xy0o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2423/live/8de02db0-e364-11f1-9f51-4bfc31543510.jpg",
+          "category": "Sports"
+        },
+        {
+          "title": "Littler shocked by brilliant Wattimena at Grand Slam",
+          "summary": "Defending champion Luke Littler suffers a shock early exit at the Grand Slam of Darts after a stunning display from Jermaine Wattimena.",
+          "source": "BBC Sport",
+          "time": "2h ago",
+          "url": "https://www.bbc.co.uk/sport/darts/articles/crlyenxw18d7o?at_medium=RSS&at_campaign=rss",
+          "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5960/live/a91fb6e0-e39b-11f1-9290-8f31de41e6ea.jpg",
+          "category": "Sports"
+        }
+      ]
+    },
+    "latestScores": [
+      {
+        "match": "India vs Australia (Series)",
+        "result": "IND lead series 2-1 with clinical bowling display",
+        "status": "Recent"
+      },
+      {
+        "match": "Premier League: Arsenal vs Chelsea",
+        "result": "2 - 1 (Full Time)",
+        "status": "Completed"
+      },
+      {
+        "match": "ATP World Tour Finals",
+        "result": "Sinner def. Alcaraz 6-4, 7-6",
+        "status": "Finals"
+      }
+    ],
+    "isStale": false
+  },
+  "techScience": {
+    "items": [
+      {
+        "title": "The nation’s largest school districts consider ditching Google Search",
+        "summary": "New York, Los Angeles, and Chicago schools are considering Google alternatives after the company said it will disable Search for schools that opt out of its AI features, according to The New York Times.",
+        "source": "Tech & Science",
+        "time": "1h ago",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/STK255_Google_Gemini_D.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Democrats skip a vote on adding Brendan Carr’s adviser to the FCC",
+        "summary": "Senate commerce committee Chair Ted Cruz (R-TX) began a meeting Wednesday meant to confirm President Donald Trump's nominee to the Federal Communications Commission with a lopsided dais.",
+        "source": "Tech & Science",
+        "time": "2h ago",
+        "url": "https://www.theverge.com/policy/1037134/democrats-boycott-fcc-nomination-vote-danielle-thumann-severs",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25840497/STKP211_BRENDAN_CARR_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Absolute Batman can save DC Studios",
+        "summary": "With James Gunn and Peter Safran out as the co-heads of DC Studios following Skydance's acquisition of Warner Bros.",
+        "source": "Tech & Science",
+        "time": "3h ago",
+        "url": "https://www.theverge.com/entertainment/1035722/absolute-batman-can-save-dc-studios",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/PowHeader.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "Tech"
+      },
+      {
+        "title": "Trump’s latest land grab is an AI hub in the Philippines",
+        "summary": "President Donald Trump is welcomed upon his arrival at Villamor Air Base on November 17th, 2026, in Manila, Philippines.",
+        "source": "Tech & Science",
+        "time": "5h ago",
+        "url": "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2305507602.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Nvidia’s rise, visualized",
+        "summary": "If someone handed you $8,300 every second, what would you do?  That's how much pure profit Nvidia now makes.",
+        "source": "Tech & Science",
+        "time": "5h ago",
+        "url": "https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24002526/acastro_STK083_01.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Sony’s impressive Bravia 8 II OLED hits a new low price ahead of Black Friday",
+        "summary": "The Bravia 8 II has deep and inky blacks, giving great depth to space images.  | Photo: John Higgins / The Verge Black Friday is a great time to save on a new OLED television for your winter movie nights.",
+        "source": "Tech & Science",
+        "time": "5h ago",
+        "url": "https://www.theverge.com/gadgets/1036693/sony-bravia-8-ii-oled-black-friday-2026-deal-sale",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/12/258218_Sony_Bravia_8_II_TV_JHiggins_0015.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "AI"
+      },
+      {
+        "title": "Instagram now lets you edit your stories after you post them",
+        "summary": "Instagram's latest update will allow you to edit your Stories without losing your views, likes, or replies.",
+        "source": "Tech & Science",
+        "time": "5h ago",
+        "url": "https://www.theverge.com/tech/1036941/instagram-now-lets-you-edit-your-stories-after-you-post-them",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/insta-story-edit.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+        "category": "Tech"
+      }
+    ],
+    "isStale": false
+  },
+  "socialTrends": {
+    "items": [
+      {
+        "title": "Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor",
+        "summary": "Lens creators can describe the Lens they want in plain language, and their AI assistant handles the process from start to finish, Snapchat says.",
+        "source": "TechCrunch / The Verge",
+        "time": "4h ago",
+        "url": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/06/snapchat-getty.jpg?w=1200",
+        "category": "Social"
+      },
+      {
+        "title": "Meta launches Direct, a stand-alone messaging app for Instagram",
+        "summary": "Direct is launching in Turkey and Thailand, and can be used with or without an Instagram account.",
+        "source": "TechCrunch / The Verge",
+        "time": "1d ago",
+        "url": "https://techcrunch.com/2026/11/17/meta-launches-direct-a-standalone-messaging-app-for-instagram/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-17-at-9.43.05-AM.png?resize=1200,657",
+        "category": "Instagram"
+      },
+      {
+        "title": "Instagram’s new tool for creators targets unauthorized reposts and AI-modified videos",
+        "summary": "The announcement likely comes in response to creators' concerns over how easily original content can be copied and redistributed across social media platforms, especially considering how generative AI has made it easier to manipulate existing videos.",
+        "source": "TechCrunch / The Verge",
+        "time": "1d ago",
+        "url": "https://techcrunch.com/2026/11/17/instagrams-new-tool-for-creators-targets-unauthorized-reposts-and-ai-modified-videos/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2268477082.jpg?resize=1200,800",
+        "category": "Instagram"
+      },
+      {
+        "title": "Instagram now lets creators add Amazon affiliate links in reels and feed posts",
+        "summary": "While creators have long shared Amazon affiliate links through stories, DMs, and their bios, the new integration brings them to new parts of the app.",
+        "source": "TechCrunch / The Verge",
+        "time": "2d ago",
+        "url": "https://techcrunch.com/2026/11/16/instagram-now-lets-creators-add-amazon-affiliate-links-in-reels-and-feed-posts/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/hero-image-1420x746-1.webp?resize=1200,630",
+        "category": "Instagram"
+      },
+      {
+        "title": "Meta expands Instagram’s AI age-guessing tech globally",
+        "summary": "Meta says it will use its AI technology to look for clues about people it suspects to be teenagers — even if they use an adult birthday.",
+        "source": "TechCrunch / The Verge",
+        "time": "9d ago",
+        "url": "https://techcrunch.com/2026/11/09/meta-expands-instagrams-ai-age-guessing-tech-globally/",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/05/instagram-header.jpg?resize=1200,800",
+        "category": "Instagram"
+      }
+    ],
+    "isStale": false
+  },
+  "disasters": {
+    "earthquakes": [
+      {
+        "mag": "5.2",
+        "place": "169 km S of Attu Station, Alaska",
+        "time": "02:58 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubw3",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=51.3379,172.8596"
+      },
+      {
+        "mag": "6.1",
+        "place": "Pacific-Antarctic Ridge",
+        "time": "12:44 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz37",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-57.7514,-146.746"
+      },
+      {
+        "mag": "5.0",
+        "place": "46 km NNE of Kilimatinde, Tanzania",
+        "time": "11:38 pm IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz2w",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-5.4599,35.1065"
+      },
+      {
+        "mag": "5.3",
+        "place": "4 km NNW of Tsunagi, Japan",
+        "time": "10:52 pm IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz1n",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=32.2779,130.4609"
+      },
+      {
+        "mag": "5.3",
+        "place": "149 km SSW of Merizo Village, Guam",
+        "time": "09:36 pm IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz1a",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=12.0918,143.9927"
+      },
+      {
+        "mag": "5.2",
+        "place": "86 km NW of Ryōtsu-minato, Japan",
+        "time": "03:07 pm IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyyw",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=38.7192,137.8725"
+      },
+      {
+        "mag": "5.9",
+        "place": "85 km WNW of San Juan, Peru",
+        "time": "11:37 am IST",
+        "depthKm": "21.9",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyy8",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-15.1438,-75.9238"
+      },
+      {
+        "mag": "5.2",
+        "place": "Galapagos Triple Junction region",
+        "time": "10:55 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyxz",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=0.4346,-103.0838"
+      },
+      {
+        "mag": "5.8",
+        "place": "40 km N of Ruteng, Indonesia",
+        "time": "10:11 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyxi",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-8.2501,120.5285"
+      },
+      {
+        "mag": "5.2",
+        "place": "54 km NNE of Ruteng, Indonesia",
+        "time": "09:51 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyxc",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-8.151,120.6489"
+      },
+      {
+        "mag": "5.8",
+        "place": "99 km ESE of Madang, Papua New Guinea",
+        "time": "09:12 am IST",
+        "depthKm": "52.3",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyx2",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=-5.7009,146.5479"
+      },
+      {
+        "mag": "5.8",
+        "place": "150 km SW of Merizo Village, Guam",
+        "time": "07:52 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tywi",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=12.1387,143.8866"
+      },
+      {
+        "mag": "5.3",
+        "place": "16 km ESE of Comandău, Romania",
+        "time": "06:18 am IST",
+        "depthKm": "130.3",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyw8",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=45.6863,26.452"
+      },
+      {
+        "mag": "5.3",
+        "place": "7 km SE of Karakenja, Tajikistan",
+        "time": "06:16 am IST",
+        "depthKm": "10.0",
+        "usgsUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyw6",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=39.1912,71.5875"
+      }
+    ],
+    "emergencies": [
+      {
+        "title": "Global Weather Pattern & Storm Trajectory Monitoring",
+        "summary": "Meteorological agencies track active coastal low-pressure systems with orderly emergency advisories and preparedness protocols in effect.",
+        "region": "Global Monitoring",
+        "status": "Factual Advisory",
+        "source": "World Meteorological Organization",
+        "url": "https://public.wmo.int"
+      }
+    ],
+    "isStale": false
+  },
+  "dailyFacts": [
+    {
+      "id": "wiki-2013",
+      "category": "History",
+      "emoji": "📜",
+      "title": "Historical Turning Point (2013)",
+      "fact": "A double suicide bombing at the Iranian embassy in Beirut, Lebanon, killed 23 people and injured at least 160 others.",
+      "source": "Wikipedia On This Day",
+      "sourceUrl": "https://en.wikipedia.org/wiki/2013_Iranian_embassy_bombing_in_Beirut"
+    },
+    {
+      "id": "wiki-2010",
+      "category": "History",
+      "emoji": "📜",
+      "title": "Historical Turning Point (2010)",
+      "fact": "The first of four explosions occurred at the Pike River Mine in the West Coast in New Zealand's worst mining disaster in nearly a century.",
+      "source": "Wikipedia On This Day",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pike_River_Mine_disaster"
+    },
+    {
+      "id": "fact-extra-3",
+      "category": "Geography",
+      "emoji": "🌍",
+      "title": "Oceanic Depths & Light",
+      "fact": "Over 90% of Earth’s habitable living space exists within the deep oceans, where sunlight completely vanishes beyond 200 meters down.",
+      "source": "NOAA Ocean Exploration",
+      "sourceUrl": "https://oceanexplorer.noaa.gov/"
+    },
+    {
+      "id": "fact-extra-4",
+      "category": "Science",
+      "emoji": "🔬",
+      "title": "Quantum Entanglement Precision",
+      "fact": "Modern atomic clocks lose less than one second every 300 million years by measuring quantum state transitions of strontium atoms.",
+      "source": "NIST Quantum Physics",
+      "sourceUrl": "https://www.nist.gov/"
+    },
+    {
+      "id": "fact-extra-5",
+      "category": "Human Body",
+      "emoji": "🧠",
+      "title": "Mitochondrial Lineage",
+      "fact": "All human mitochondrial DNA is inherited almost exclusively through the maternal line, tracing back to a common ancestral maternal lineage.",
+      "source": "Nature Genetics",
+      "sourceUrl": "https://www.nature.com/"
+    }
+  ],
+  "mindGym": {
+    "dateSeed": "2026-11-19",
+    "logicGrid": {
+      "title": "The Campus Research Consortium",
+      "description": "Four engineering students each lead a research lab, specialize in one technology domain, and use a distinct primary language. Deduce who works where!",
+      "categories": [
+        {
+          "name": "Person",
+          "items": [
+            "Aryan",
+            "Diya",
+            "Kabir",
+            "Ananya"
+          ]
+        },
+        {
+          "name": "Field",
+          "items": [
+            "AI Systems",
+            "Quantum Comp",
+            "Robotics",
+            "Cybersecurity"
+          ]
+        },
+        {
+          "name": "Lab",
+          "items": [
+            "Turing Lab",
+            "Tesla Center",
+            "Bhabha Core",
+            "Shannon Hub"
+          ]
+        },
+        {
+          "name": "Language",
+          "items": [
+            "Rust",
+            "Python",
+            "C++",
+            "Go"
+          ]
+        }
+      ],
+      "clues": [
+        "The engineer working in the Shannon Hub writes their core algorithms in C++.",
+        "Kabir is researching AI Systems, but does not work in the Turing Lab.",
+        "The researcher coding in Go is based at Turing Lab.",
+        "Ananya works directly in the Bhabha Core and collaborates with the Quantum Comp team.",
+        "The AI Systems specialist prefers Rust for rapid prototyping."
+      ],
+      "solution": [
+        {
+          "person": "Diya",
+          "field": "Quantum Comp",
+          "lab": "Shannon Hub",
+          "language": "C++"
+        },
+        {
+          "person": "Kabir",
+          "field": "AI Systems",
+          "lab": "Tesla Center",
+          "language": "Rust"
+        },
+        {
+          "person": "Aryan",
+          "field": "Cybersecurity",
+          "lab": "Turing Lab",
+          "language": "Go"
+        },
+        {
+          "person": "Ananya",
+          "field": "Robotics",
+          "lab": "Bhabha Core",
+          "language": "Python"
+        }
+      ]
+    },
+    "sudoku": {
+      "medium": {
+        "initial": "530070000600195000098000060800060003400803001700020006060000280000419005000080079",
+        "solution": "534678912672195348198342567859761423426853791713924856961537284287419635345286179"
+      },
+      "hard": {
+        "initial": "000000012000000003002300400001800005060070800000009000008500000900040500470006000",
+        "solution": "683495712145728963792316458231864975564973821879152346318527694926841537457239180"
+      }
+    },
+    "numberCipher": {
+      "numbers": [
+        3,
+        6,
+        7,
+        10,
+        75,
+        100
+      ],
+      "target": 381,
+      "operations": [
+        "+",
+        "-",
+        "*",
+        "/"
+      ],
+      "timeLimitSeconds": 90
+    },
+    "mentalMath": [
+      {
+        "q": "17 × 8",
+        "a": 136,
+        "level": 1
+      },
+      {
+        "q": "240 ÷ 15",
+        "a": 16,
+        "level": 1
+      },
+      {
+        "q": "14 × 16",
+        "a": 224,
+        "level": 2
+      },
+      {
+        "q": "19²",
+        "a": 361,
+        "level": 2
+      },
+      {
+        "q": "15% of 640",
+        "a": 96,
+        "level": 2
+      },
+      {
+        "q": "25% of 880",
+        "a": 220,
+        "level": 2
+      },
+      {
+        "q": "√676",
+        "a": 26,
+        "level": 3
+      },
+      {
+        "q": "35 × 45",
+        "a": 1575,
+        "level": 3
+      },
+      {
+        "q": "3/8 of 192",
+        "a": 72,
+        "level": 3
+      },
+      {
+        "q": "2.5 × 84",
+        "a": 210,
+        "level": 3
+      },
+      {
+        "q": "23²",
+        "a": 529,
+        "level": 4
+      },
+      {
+        "q": "18 × 22",
+        "a": 396,
+        "level": 4
+      }
+    ],
+    "patternMaster": [
+      {
+        "sequence": [
+          "2",
+          "6",
+          "12",
+          "20",
+          "30",
+          "?"
+        ],
+        "answer": "42",
+        "options": [
+          "40",
+          "42",
+          "44",
+          "48"
+        ],
+        "explanation": "Difference increases by 2 each step: +4, +6, +8, +10, +12."
+      },
+      {
+        "sequence": [
+          "3",
+          "5",
+          "9",
+          "17",
+          "33",
+          "?"
+        ],
+        "answer": "65",
+        "options": [
+          "63",
+          "65",
+          "66",
+          "72"
+        ],
+        "explanation": "Each term is 2 × previous − 1 (or differences are powers of 2: +2, +4, +8, +16, +32)."
+      },
+      {
+        "sequence": [
+          "Z",
+          "X",
+          "U",
+          "Q",
+          "L",
+          "?"
+        ],
+        "answer": "F",
+        "options": [
+          "E",
+          "F",
+          "G",
+          "H"
+        ],
+        "explanation": "Decreasing letter steps: −2, −3, −4, −5, −6 (L − 6 = F)."
+      },
+      {
+        "sequence": [
+          "1",
+          "8",
+          "27",
+          "64",
+          "125",
+          "?"
+        ],
+        "answer": "216",
+        "options": [
+          "196",
+          "216",
+          "256",
+          "343"
+        ],
+        "explanation": "Cubes of consecutive integers: 1³, 2³, 3³, 4³, 5³, 6³ = 216."
+      }
+    ],
+    "wordForge": {
+      "anagram": {
+        "scramble": "PHEMASERO",
+        "solution": "SEMAPHORE",
+        "hint": "Synchronization primitive used in operating systems",
+        "category": "Engineering & ICT"
+      },
+      "wordLadder": {
+        "start": "CODE",
+        "target": "DATA",
+        "optimalSteps": 3,
+        "hint": "Change one letter at a time to form valid words: CODE -> CORE -> DORE -> DARE -> DATA"
+      }
+    }
+  },
+  "dhyan": {
+    "verseOfTheDay": {
+      "chapter": 18,
+      "verse": 63,
+      "sanskrit": "इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया।\nविमृश्यैतदशेषेण यथेच्छसि तथा कुरु॥",
+      "transliteration": "iti te jñānam ākhyātaṁ guhyād guhyataraṁ mayā |\nvimṛśyaitad aśeṣeṇa yathecchasi tathā kuru ||",
+      "english": "Thus I have explained to you wisdom still more secret than all secrecy. Ponder it fully, and then act as you choose.",
+      "theme": "Intellectual Autonomy & Conscious Choice"
+    },
+    "thoughtOfTheDay": {
+      "title": "Tat Tvam Asi (Recognizing the Infinite Within)",
+      "source": "Chandogya Upanishad 6.8.7",
+      "quote": "तत्त्वमसि श्वेतकेतो — You are That, O Shvetaketu.",
+      "reflection": "When external social comparison tries to measure your worth by follower counts or peer achievements, step back. Your fundamental consciousness is unborn, complete, and boundless. Work with joy from fullness, not from a sense of lack."
+    },
+    "dailyMantra": {
+      "name": "Gayatri Mantra",
+      "sanskrit": "ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात्॥",
+      "transliteration": "oṁ bhūr bhuvaḥ svaḥ | tat savitur vareṇyaṁ | bhargo devasya dhīmahi | dhiyo yo naḥ pracodayāt ||",
+      "meaning": "We meditate upon the supreme effulgence of that luminous creator (Savitur) who pervades the physical, subtle, and celestial realms. May that Divine Light illuminate and awaken our intellect.",
+      "benefit": "Awakens cognitive clarity, dispels intellectual fog, and sharpens analytical intuition."
+    },
+    "panchang": {
+      "tithi": "Shukla Paksha Dashami",
+      "paksha": "Shukla Paksha",
+      "nakshatra": "Mrigashirsha",
+      "masa": "Kartika / Margashirsha",
+      "vikramSamvat": "Vikram Samvat 2083",
+      "formatted": "Shukla Paksha Dashami • Mrigashirsha Nakshatra • Kartika / Margashirsha • Vikram Samvat 2083",
+      "dailyThoughtDate": "19 Nov 2026"
+    }
+  }
+}
